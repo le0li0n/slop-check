@@ -28,13 +28,26 @@ Drop a `.slopcheck.json` at the repo root:
 
 ```json
 {
-  "outward":  ["marketing/", "partnerships/"],
-  "never":    ["notes/"],
-  "suffixes": [".md", ".txt"]
+  "outward":     ["marketing/", "partnerships/"],
+  "never":       ["notes/"],
+  "suffixes":    [".md", ".txt"],
+  "fix_command": "/slop-check"
 }
 ```
 
 With no config file **everything is scanned** except build output, dependencies and `.claude/`. That is deliberate — a fresh install should do something on day one. Narrow it once you know which directories are genuinely outward-facing, because a scanner that shouts about internal notes gets muted, and a muted scanner is not a check.
+
+`fix_command` is what the report footer tells the reader to run. Set it if your repo wraps this in a skill of its own name.
+
+## Vendoring instead of installing
+
+A shared repo is often better off with a copy of `hooks/ai_slop.py` committed to it than with a plugin dependency. Two reasons, both learned the hard way:
+
+**Git hooks cannot reach a plugin.** `pre-commit` runs in a bare shell with no Claude Code context, so `${CLAUDE_PLUGIN_ROOT}` is undefined. A repo that checks prose on commit needs the file at a path it controls.
+
+**Teammates would each have to install it.** Anyone who clones and does not gets no checks, silently, which is worse than no checks at all.
+
+So copy the file in, and record where it came from — upstream URL, commit, and a one-line re-sync command. Keep it unmodified so the re-sync is an overwrite rather than a merge, and put everything repo-specific in `.slopcheck.json`. That is the whole reason the config file exists.
 
 Internal writing should stay out of scope on purpose. "Not a team. A person." is good writing for colleagues, and running a slop check over it would sand it down.
 

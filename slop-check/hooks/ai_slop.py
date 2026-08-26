@@ -62,13 +62,15 @@ NEVER_PREFIXES = (
 )
 NEVER_BASENAMES = {"CLAUDE.md", "README.md", "INDEX.md", "AGENTS.md", "CHANGELOG.md"}
 SCANNED_SUFFIXES = (".md", ".txt")
+# Named in the report footer, so a repo can point at its own gate skill.
+FIX_COMMAND = "/slop-check"
 
 TOP_LEVEL_DIRS = set()
 
 
 def _load_config(start_dir=None):
     """Read .slopcheck.json from the nearest ancestor that has one."""
-    global OUTWARD_PREFIXES, NEVER_PREFIXES, SCANNED_SUFFIXES, TOP_LEVEL_DIRS
+    global OUTWARD_PREFIXES, NEVER_PREFIXES, SCANNED_SUFFIXES, TOP_LEVEL_DIRS, FIX_COMMAND
     d = os.path.abspath(start_dir or os.getcwd())
     while True:
         candidate = os.path.join(d, ".slopcheck.json")
@@ -84,6 +86,8 @@ def _load_config(start_dir=None):
                 NEVER_PREFIXES = NEVER_PREFIXES + tuple(cfg["never"])
             if cfg.get("suffixes"):
                 SCANNED_SUFFIXES = tuple(cfg["suffixes"])
+            if cfg.get("fix_command"):
+                FIX_COMMAND = cfg["fix_command"]
             TOP_LEVEL_DIRS = {p.strip("/").split("/")[0]
                               for p in OUTWARD_PREFIXES + NEVER_PREFIXES if p}
             return
@@ -804,7 +808,7 @@ def main():
     print(
         "\nx = an objective error or a chatbot artifact.  . = a signal; several together are"
         "\nevidence, one is not. False-positive rules: see the README."
-        "\nTo judge and rewrite: /slop-check.",
+        "\nTo judge and rewrite: " + FIX_COMMAND + ".",
         file=sys.stderr,
     )
     return 1
