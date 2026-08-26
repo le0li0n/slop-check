@@ -1,0 +1,6 @@
+{
+  "name": "slop-check",
+  "version": "1.0.0",
+  "description": "Flags AI writing tells in outward-facing prose before it is sent or published. Warns, never blocks.",
+  "author": { "name": "Jared Waxman" }
+}

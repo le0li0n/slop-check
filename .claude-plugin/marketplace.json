@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "slop-check",
+  "description": "A scanner for writing that reads as AI-written, and the discipline for using it without sanding good prose flat.",
+  "owner": { "name": "Jared Waxman" },
+  "plugins": [
+    {
+      "name": "slop-check",
+      "displayName": "Slop Check",
+      "source": "./slop-check",
+      "description": "Flags AI writing tells in outward-facing prose before it is sent or published. Warns, never blocks. Covers Wikipedia's signs-of-AI-writing patterns, British spellings in American copy, B2B outreach cliches, and the phrases Claude reaches for constantly.",
+      "author": { "name": "Jared Waxman" }
+    }
+  ]
+}
