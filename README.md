@@ -2,7 +2,7 @@
 
 A scanner for writing that reads as AI-written, plus the discipline for using it without sanding good prose flat.
 
-139 patterns, no third-party dependencies, one file. It **warns and never blocks**, because slop is a judgment call and a gate that fires on judgment calls gets bypassed until nobody reads it.
+139 patterns, no third-party dependencies, one file. Built on [humanizer](https://github.com/blader/humanizer) and Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) — see [`ATTRIBUTION.md`](./ATTRIBUTION.md). It **warns and never blocks**, because slop is a judgment call and a gate that fires on judgment calls gets bypassed until nobody reads it.
 
 ## Install
 
@@ -91,6 +91,10 @@ Edit `LINE_PATTERNS` in `hooks/ai_slop.py`. Keep `HARD` for objective errors and
 
 **Test both directions before committing a pattern**: the phrases that should flag, and the ordinary sentences that should not. Every over-matching pattern in this file was caught that way rather than by reading it. `organis` also matches "organism"; `analys` also matches "analysis"; a repeated-noun rule with no guard eats "the date on the card is the date on the page".
 
-## Provenance
+## Provenance and licence
 
-Built inside a private marketing repo over several months, extracted 2026-08-26. The pattern list came from Wikipedia's "Signs of AI writing", from a house styleguide, and from Jared spotting phrases in other people's newsletters and recognising them.
+**Most of the patterns here are not original.** Sections §1–§35 come from [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), by way of [blader/humanizer](https://github.com/blader/humanizer) by Siqi Chen, which organised them into the numbered sections every scan report still references.
+
+What is original: the scanner itself — scoping, weighting, thresholds, quote masking, config — and three pattern sections (`GB`, `OUT`, `CL`).
+
+Because §1–§35 derive from CC BY-SA material, this repo is **CC BY-SA 4.0**. Full detail, including what changed from upstream and why, in [`ATTRIBUTION.md`](./ATTRIBUTION.md).

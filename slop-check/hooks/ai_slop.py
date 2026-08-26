@@ -22,6 +22,11 @@ The false-positive rules live in the README. Read them before cutting.
 
 Pattern numbering (§n) tracks the `humanizer` skill's sections, so a hit here
 points at the explanation and the before/after there.
+
+ATTRIBUTION: sections §1-§35 derive from Wikipedia's "Signs of AI writing"
+(CC BY-SA 4.0, WikiProject AI Cleanup) by way of github.com/blader/humanizer
+(MIT, (c) 2025 Siqi Chen). Sections GB, OUT and CL are original, as is this
+implementation. Released under CC BY-SA 4.0 -- see ATTRIBUTION.md.
 """
 import argparse
 import glob
