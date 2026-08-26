@@ -64,13 +64,15 @@ NEVER_BASENAMES = {"CLAUDE.md", "README.md", "INDEX.md", "AGENTS.md", "CHANGELOG
 SCANNED_SUFFIXES = (".md", ".txt")
 # Named in the report footer, so a repo can point at its own gate skill.
 FIX_COMMAND = "/slop-check"
+# Where the false-positive rules live, named in the report footer.
+RULES_DOC = "the README"
 
 TOP_LEVEL_DIRS = set()
 
 
 def _load_config(start_dir=None):
     """Read .slopcheck.json from the nearest ancestor that has one."""
-    global OUTWARD_PREFIXES, NEVER_PREFIXES, SCANNED_SUFFIXES, TOP_LEVEL_DIRS, FIX_COMMAND
+    global OUTWARD_PREFIXES, NEVER_PREFIXES, SCANNED_SUFFIXES, TOP_LEVEL_DIRS, FIX_COMMAND, RULES_DOC
     d = os.path.abspath(start_dir or os.getcwd())
     while True:
         candidate = os.path.join(d, ".slopcheck.json")
@@ -88,6 +90,8 @@ def _load_config(start_dir=None):
                 SCANNED_SUFFIXES = tuple(cfg["suffixes"])
             if cfg.get("fix_command"):
                 FIX_COMMAND = cfg["fix_command"]
+            if cfg.get("rules_doc"):
+                RULES_DOC = cfg["rules_doc"]
             TOP_LEVEL_DIRS = {p.strip("/").split("/")[0]
                               for p in OUTWARD_PREFIXES + NEVER_PREFIXES if p}
             return
@@ -807,7 +811,7 @@ def main():
         print(format_report(rel, r), file=sys.stderr)
     print(
         "\nx = an objective error or a chatbot artifact.  . = a signal; several together are"
-        "\nevidence, one is not. False-positive rules: see the README."
+        "\nevidence, one is not. False-positive rules: " + RULES_DOC + "."
         "\nTo judge and rewrite: " + FIX_COMMAND + ".",
         file=sys.stderr,
     )

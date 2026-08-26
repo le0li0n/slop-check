@@ -31,13 +31,14 @@ Drop a `.slopcheck.json` at the repo root:
   "outward":     ["marketing/", "partnerships/"],
   "never":       ["notes/"],
   "suffixes":    [".md", ".txt"],
-  "fix_command": "/slop-check"
+  "fix_command": "/slop-check",
+  "rules_doc":   "the README"
 }
 ```
 
 With no config file **everything is scanned** except build output, dependencies and `.claude/`. That is deliberate — a fresh install should do something on day one. Narrow it once you know which directories are genuinely outward-facing, because a scanner that shouts about internal notes gets muted, and a muted scanner is not a check.
 
-`fix_command` is what the report footer tells the reader to run. Set it if your repo wraps this in a skill of its own name.
+`fix_command` and `rules_doc` are what the report footer tells a reader to run and to read. Set them if your repo wraps this in a skill of its own name, or keeps its false-positive rules somewhere other than a README.
 
 ## Vendoring instead of installing
 
