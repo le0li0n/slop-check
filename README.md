@@ -38,6 +38,20 @@ With no config file **everything is scanned** except build output, dependencies 
 
 Internal writing should stay out of scope on purpose. "Not a team. A person." is good writing for colleagues, and running a slop check over it would sand it down.
 
+## Call it from a build script
+
+Anywhere prose is compiled from source — an ebook built from per-chapter markdown, a newsletter assembled into a sendable, a static site — check the **source**, not the output. That is where the writing and the editing happen. Compiled HTML flags the same prose a second time and adds markup noise.
+
+Add it to whatever does the compiling:
+
+```python
+subprocess.run([sys.executable, "path/to/ai_slop.py", *chapter_files])
+```
+
+Then the book cannot be built through a path where nobody looked. **Warn, don't fail** — a build that breaks on a judgment call gets bypassed, and then nothing is checked at all.
+
+This matters most for long-form. In an email the risk is one bad sentence, and you would probably catch it. Across forty thousand words the risk is a house style drifting while nobody reads the whole thing at once, which is exactly the failure a per-file scanner is good at and a human proofreader is not.
+
 ## What it looks for
 
 | Section | Tells |
