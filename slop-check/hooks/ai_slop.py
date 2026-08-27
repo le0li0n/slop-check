@@ -413,7 +413,18 @@ LINE_PATTERNS = [
     # of pre-2012 business writing; a guide measured against that ran 4.4 per
     # 10k, seven of them the same bolded "The honest take:" callout. Ordinary
     # uses ("be honest with yourself", "an honest mistake") are left alone.
-    ("CL", MED, r"\bthe honest (?:take|version|answer|truth|read|claim|"
+    # Every other form of it. The scaffold below is the worst offender, but a
+    # guide that had it sixteen times also had "Calculate your NRR honestly",
+    # "Decide honestly which form", "be honest about who fits", "Be honest.",
+    # "measure it, honestly" and "seat pricing is honest" — none of which the
+    # scaffold pattern sees. Zero occurrences of any form across 31,282 words
+    # of pre-2012 business writing. Ordered after the scaffold so the two
+    # never double-report on one line.
+    ("CL", MED, r"\bhonestly\b|\b(?:to be|be|being)\s+honest\b|\ban honest\b|"
+                r"\b(?:is|are|was|were|seems?|feels?)\s+honest\b",
+     "realistic, objective, truthful, defensible, take a hard look, "
+     "don't fool yourself, don't round down"),
+    ("CL", HIGH, r"\bthe honest (?:take|version|answer|truth|read|claim|"
                 r"assessment|counterweight|boundary|risks?)\b",
      "say the blunt thing. Or: realistic, objective, truthful, take a hard "
      "look, don't fool yourself"),
