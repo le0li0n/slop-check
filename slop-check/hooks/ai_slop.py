@@ -32,7 +32,7 @@ import argparse
 import glob
 import json
 import os
-import re
+import re, collections
 import sys
 
 # ─── Scope: what counts as "sent or published" ─────────────────────────────
@@ -401,7 +401,12 @@ LINE_PATTERNS = [
     # next clause immediately cashes out ("the failure mode is a founder who
     # sells and never encodes, who has become the most expensive SDR on the
     # payroll"). Worth a look, not worth dominating a file's score alone.
-    ("CL", MED, r"\bfailure mode\b", "name the specific way it breaks"),
+    # Restored to HIGH. The earlier downgrade argued that the label is fine
+    # when the next clause names the specific breakage. It isn't: "failure
+    # mode" is engineering jargon standing in for ordinary English, and the
+    # specifics following it don't rescue the phrase.
+    ("CL", HIGH, r"\bfailure modes?\b",
+     "plain English: a frequent mistake / easy to miss / watch out for / where this goes wrong"),
     # Claims candour instead of demonstrating it, and arrives as a section
     # label rather than a word choice: "The honest take:", "## The honest
     # version", "the honest counterweight". Zero occurrences across 31k words
@@ -410,7 +415,8 @@ LINE_PATTERNS = [
     # uses ("be honest with yourself", "an honest mistake") are left alone.
     ("CL", MED, r"\bthe honest (?:take|version|answer|truth|read|claim|"
                 r"assessment|counterweight|boundary|risks?)\b",
-     "say the blunt thing; the label does not make it candid"),
+     "say the blunt thing. Or: realistic, objective, truthful, take a hard "
+     "look, don't fool yourself"),
     ("CL", MED,  r"\bthe (?:real|actual) question is\b", "just ask it"),
     ("CL", MED,  r"\bhere'?s the thing\b", "cut and say it"),
 ]
@@ -438,6 +444,12 @@ CURLY = re.compile("[“”‘’]")
 DASHES = re.compile("—|–|(?<!<!)--(?=\\s|$)")
 # A bold label + colon opening a line, with or without a list marker or an
 # emoji in front of it. The tell is the label, not the bullet.
+# "the honest take", "the tell", "the boundary" — a framing label, not a noun
+# the document is about. Content words (answer/question/lesson/point) are out.
+LABEL_PHRASE = re.compile(
+    r"\bthe\s+(?:\w+\s+)?(?:take|version|truth|read|claim|boundary|tell|catch|"
+    r"wrinkle|nuance|upshot|kicker|rub|twist|failure modes?|caveat|traps?|mistakes?)\b", re.I)
+
 # "…is a process, not a person" / "compound the motion, not the headcount"
 NOT_Y = re.compile(r"[^.!?\n]{10,70},\s+not\s+(?:a|an|the|just|because|of)\b")
 
@@ -556,13 +568,14 @@ def _where(line_nos, limit=4):
     return shown + (f", +{len(line_nos) - limit} more" if len(line_nos) > limit else "")
 
 
-def structural(masked, hits):
+def structural(masked, hits, raw=None):
     body = "\n".join(masked)
     dash_lines, curly_lines, emoji_lines = [], [], []
     dash_count = 0
     word_count = len(body.split())
     bold_dash = []
     not_y, not_y_count = [], 0
+    label_counts, label_first = collections.Counter(), {}
 
     for i, line in enumerate(masked, 1):
         n = len(DASHES.findall(line))
@@ -629,6 +642,38 @@ def structural(masked, hits):
                  f"{not_y_count} sentences close on \"X, not Y\" "
                  f"({rate:.0f} per 10k words; ~2 is typical) ({_where(not_y)})",
                  "vary it: state the positive, or cut the foil entirely")
+
+    # §37 The same framing label used over and over. A document earns one
+    # "the honest take" or "the tell"; sixteen of them is a template. This
+    # catches the shape rather than any particular phrase, so it finds tics a
+    # word list never will. Measured on pre-2012 business essays: one to four
+    # framing labels per piece, none repeated. One AI-assisted guide had
+    # eighty-three, with "the honest take" sixteen times.
+    #
+    # Content nouns ("the answer", "the question", "the lesson", "the point")
+    # are deliberately excluded: they can be a document's actual subject, and
+    # a guide about being the cited answer in an AI response will say "the
+    # answer" a lot for good reason.
+    # Counted on the raw lines, not the masked ones. mask() blanks a whole
+    # blockquote, and in markdown a blockquote is as often an authored callout
+    # ("> **The honest take:** ...") as it is a quotation — which is exactly
+    # where this tic likes to live. The cost is that a genuinely quoted label
+    # can be counted; the fix line says to keep it if it is not yours.
+    for i, line in enumerate(raw or masked, 1):
+        for m in LABEL_PHRASE.finditer(line):
+            k = re.sub(r"\s+", " ", m.group(0).strip().lower())
+            label_counts[k] += 1
+            label_first.setdefault(k, i)
+
+    if label_counts:
+        worst = [(k, v) for k, v in label_counts.most_common() if v >= 3]
+        if worst:
+            shown = " · ".join(f'"{k}" x{v}' for k, v in worst[:3])
+            _add(hits, label_first.get(worst[0][0], 1), "37",
+                 HIGH if worst[0][1] >= 6 else MED,
+                 f"the same framing label repeats: {shown}",
+                 "vary them, or cut the label and say the thing. If it is your "
+                 "subject matter rather than a tic, keep it")
 
     # §14b A list of "**Label** — explanation". Mechanical to fix (the dash
     # becomes a period or a colon) and it tends to dominate the dash count in
@@ -746,7 +791,7 @@ def scan_text(text):
                 if _is_proper_noun(line, m):
                     continue
                 _add(hits, i, section, weight, m.group(0), fix)
-    structural(masked, hits)
+    structural(masked, hits, text.split("\n"))
 
     seen = set()
     unique = []
