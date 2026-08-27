@@ -180,7 +180,13 @@ LINE_PATTERNS = [
     ("7", MED,  r"\bpivotal\b", "cut"),
     ("7", MED,  r"\bfoster(?:s|ing|ed)?\b", "use build or encourage"),
     ("7", MED,  r"\bgarner(?:s|ed|ing)?\b", "use get or win"),
-    ("7", MED,  r"\bleverag(?:e|es|ing|ed)\b", "use use"),
+    # The verb is the tell ("leverage the platform"). The noun is ordinary
+    # business vocabulary and often the precise word: "buying leverage on the
+    # system", "the highest-leverage hire", "the leverage is the motion, not
+    # the vendor". Flagging the noun sends writers to a worse word.
+    ("7", MED,  r"\bleverag(?:es|ing|ed)\b|"
+                r"\bleverage\s+(?:the|our|your|their|its|a|an|this|these|those)\b|"
+                r"\bleverageable\b", "use use"),
     ("7", MED,  r"\bseamless(?:ly)?\b", "cut"),
     ("7", MED,  r"\brobust\b", "say what it withstands"),
     ("7", LOW,  r"\benhanc(?:e|es|ing|ed|ement)\b", "use improve"),
@@ -391,7 +397,11 @@ LINE_PATTERNS = [
                  r"(?!(?:on|in|at|of|for|from|with|by|to|about|and|or) )"
                  r"(?:that |which |who )?[^.\n]{3,70}? is (?:a|an|the) (?:\w+ )?\1\b",
      "say the second half plainly; the restatement adds nothing"),
-    ("CL", HIGH, r"\bfailure mode\b", "name the specific way it breaks"),
+    # Weighted down from HIGH: in real copy this is usually a label that the
+    # next clause immediately cashes out ("the failure mode is a founder who
+    # sells and never encodes, who has become the most expensive SDR on the
+    # payroll"). Worth a look, not worth dominating a file's score alone.
+    ("CL", MED, r"\bfailure mode\b", "name the specific way it breaks"),
     ("CL", MED,  r"\bthe (?:real|actual) question is\b", "just ask it"),
     ("CL", MED,  r"\bhere'?s the thing\b", "cut and say it"),
 ]
@@ -415,6 +425,9 @@ CURLY = re.compile("[“”‘’]")
 DASHES = re.compile("—|–|(?<=\\s)--(?=\\s)")
 # A bold label + colon opening a line, with or without a list marker or an
 # emoji in front of it. The tell is the label, not the bullet.
+# "- **Thing** — explanation" / "1. **Thing** — explanation"
+BOLD_DASH_LEDE = re.compile(r"^\s*(?:[-*+]\s+|\d+\.\s+)?\*\*[^*]{1,60}\*\*\s+(?:\u2014|\u2013)\s+\S")
+
 BOLD_LEDE = re.compile(
     r"^\s*(?:[-*+]\s+|\d+\.\s+)?[^\w\s*]{0,3}\s*"
     r"(?:\*\*[^*]{1,45}:\*\*|\*\*[^*]{1,45}\*\*\s*:)"  # colon inside or outside the bold
@@ -530,10 +543,17 @@ def _where(line_nos, limit=4):
 def structural(masked, hits):
     body = "\n".join(masked)
     dash_lines, curly_lines, emoji_lines = [], [], []
+    dash_count = 0
+    word_count = len(body.split())
+    bold_dash = []
 
     for i, line in enumerate(masked, 1):
-        if DASHES.search(line):
+        n = len(DASHES.findall(line))
+        if n:
             dash_lines.append(i)
+            dash_count += n
+        if BOLD_DASH_LEDE.match(line):
+            bold_dash.append(i)
         if CURLY.search(line):
             curly_lines.append(i)
         h = HEADING.match(line)
@@ -563,10 +583,28 @@ def structural(masked, hits):
     # rules are explicit that one em dash, a curly quote, or an emoji proves
     # nothing; a rate does. The styleguide's line is "avoid in most
     # circumstances", not a ban.
-    if len(dash_lines) >= 3:
-        _add(hits, dash_lines[0], "14", HIGH if len(dash_lines) >= 8 else MED,
-             f"{len(dash_lines)} lines with em/en dashes ({_where(dash_lines)})",
-             "styleguide: avoid outward. Comma, period, colon, or parentheses")
+    # Rate, not line count. A dash every other sentence is the tell; the same
+    # number of dashes spread over a long document is ordinary punctuation.
+    # Counting *lines that contain* a dash also misses the densest case, a line
+    # carrying three of them. From real copy: a handful per 1,500-word piece
+    # reads human, one per 56 words does not.
+    if dash_count >= 3 and word_count >= 120:
+        per = word_count // dash_count
+        if per <= 300:
+            _add(hits, dash_lines[0], "14", HIGH if per <= 120 else MED,
+                 f"{dash_count} em/en dashes, one per {per} words "
+                 f"({_where(dash_lines)})",
+                 "aim for one per ~500 words. Period first (two sentences is "
+                 "usually the fix), then colon, then comma")
+    # §14b A list of "**Label** — explanation". Mechanical to fix (the dash
+    # becomes a period or a colon) and it tends to dominate the dash count in
+    # reference-style docs, so it is worth naming separately from the rate.
+    if len(bold_dash) >= 3:
+        _add(hits, bold_dash[0], "14b", MED,
+             f"{len(bold_dash)} list items are a bold label then an em dash "
+             f"({_where(bold_dash)})",
+             "**Label.** Sentence. Or a colon. The dash is doing a period's job")
+
     if curly_lines:
         _add(hits, curly_lines[0], "19", LOW,
              f"{len(curly_lines)} lines with curly quotes ({_where(curly_lines)})",

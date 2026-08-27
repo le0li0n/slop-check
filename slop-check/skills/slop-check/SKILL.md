@@ -15,6 +15,13 @@ python3 "${CLAUDE_PLUGIN_ROOT}/hooks/ai_slop.py" <file> [more files...]
 
 Or `--all <dir>` for every `.md` beneath a directory, `--json` for machine-readable output.
 
+**Check what the file list actually contains before reading the scores.** `--all` walks
+everything, including files no reader will ever see: build artifacts that concatenate the
+real sources (these score highest, because every finding in them is a duplicate), superseded
+drafts, raw interview transcripts, and internal briefs. Score a generated file and you will
+"fix" the same sentence twice, in the wrong place, and the next build will overwrite you.
+Work out which files are sources and which are output first.
+
 ## 2. Read the two kinds of finding differently
 
 **`x` — hard.** A chatbot artifact ("I hope this helps"), a British spelling in American copy, or one of the constructions that only ever promises and never delivers. Fix these.
