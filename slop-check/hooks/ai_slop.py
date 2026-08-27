@@ -402,6 +402,15 @@ LINE_PATTERNS = [
     # sells and never encodes, who has become the most expensive SDR on the
     # payroll"). Worth a look, not worth dominating a file's score alone.
     ("CL", MED, r"\bfailure mode\b", "name the specific way it breaks"),
+    # Claims candour instead of demonstrating it, and arrives as a section
+    # label rather than a word choice: "The honest take:", "## The honest
+    # version", "the honest counterweight". Zero occurrences across 31k words
+    # of pre-2012 business writing; a guide measured against that ran 4.4 per
+    # 10k, seven of them the same bolded "The honest take:" callout. Ordinary
+    # uses ("be honest with yourself", "an honest mistake") are left alone.
+    ("CL", MED, r"\bthe honest (?:take|version|answer|truth|read|claim|"
+                r"assessment|counterweight|boundary|risks?)\b",
+     "say the blunt thing; the label does not make it candid"),
     ("CL", MED,  r"\bthe (?:real|actual) question is\b", "just ask it"),
     ("CL", MED,  r"\bhere'?s the thing\b", "cut and say it"),
 ]
@@ -422,9 +431,16 @@ HYPHEN_PAIR_LIMIT = 4
 
 EMOJI = re.compile("[\U0001F300-\U0001FAFF\U0001F900-\U0001F9FF☀-➿⬀-⯿]")
 CURLY = re.compile("[“”‘’]")
-DASHES = re.compile("—|–|(?<=\\s)--(?=\\s)")
+# "--" attached to the preceding word is the pre-2010 house style for an em
+# dash ("comparatively easy-- at least in the sense of..."). Requiring spaces
+# on both sides missed it entirely. Trailing context only, so a CLI flag
+# (--all) and an HTML comment open (<!--) are both left alone.
+DASHES = re.compile("—|–|(?<!<!)--(?=\\s|$)")
 # A bold label + colon opening a line, with or without a list marker or an
 # emoji in front of it. The tell is the label, not the bullet.
+# "…is a process, not a person" / "compound the motion, not the headcount"
+NOT_Y = re.compile(r"[^.!?\n]{10,70},\s+not\s+(?:a|an|the|just|because|of)\b")
+
 # "- **Thing** — explanation" / "1. **Thing** — explanation"
 BOLD_DASH_LEDE = re.compile(r"^\s*(?:[-*+]\s+|\d+\.\s+)?\*\*[^*]{1,60}\*\*\s+(?:\u2014|\u2013)\s+\S")
 
@@ -546,6 +562,7 @@ def structural(masked, hits):
     dash_count = 0
     word_count = len(body.split())
     bold_dash = []
+    not_y, not_y_count = [], 0
 
     for i, line in enumerate(masked, 1):
         n = len(DASHES.findall(line))
@@ -554,6 +571,10 @@ def structural(masked, hits):
             dash_count += n
         if BOLD_DASH_LEDE.match(line):
             bold_dash.append(i)
+        n_ny = len(NOT_Y.findall(line))
+        if n_ny:
+            not_y.append(i)
+            not_y_count += n_ny
         if CURLY.search(line):
             curly_lines.append(i)
         h = HEADING.match(line)
@@ -596,6 +617,19 @@ def structural(masked, hits):
                  f"({_where(dash_lines)})",
                  "aim for one per ~500 words. Period first (two sentences is "
                  "usually the fix), then colon, then comma")
+    # §36 "X, not Y" — define by negation, land the contrast in the last
+    # clause. Once a chapter it is rhythm; as a default sentence shape it is a
+    # template a reader starts seeing everywhere. Measured at 2.0 per 10k words
+    # across pre-2012 business essays and 15.8 in one AI-assisted guide, so the
+    # gate sits between them.
+    if not_y_count >= 4 and word_count >= 400:
+        rate = not_y_count / word_count * 10000
+        if rate >= 8:
+            _add(hits, not_y[0], "36", HIGH if rate >= 14 else MED,
+                 f"{not_y_count} sentences close on \"X, not Y\" "
+                 f"({rate:.0f} per 10k words; ~2 is typical) ({_where(not_y)})",
+                 "vary it: state the positive, or cut the foil entirely")
+
     # §14b A list of "**Label** — explanation". Mechanical to fix (the dash
     # becomes a period or a colon) and it tends to dominate the dash count in
     # reference-style docs, so it is worth naming separately from the rate.
