@@ -206,6 +206,11 @@ LINE_PATTERNS = [
     ("9", HIGH, r"\bit'?s not (?:just|only|merely|about)\b", "state the point directly"),
     ("9", HIGH, r"\bnot (?:just|only|merely) .{2,60}?,\s*(?:but|it'?s|it is)\b", "state the point directly"),
     ("9", MED,  r",\s*no (?:guessing|hassle|fuss|surprises|exceptions|extra steps)\b", "write the clause out"),
+    # The antithesis epigram: a claim withdrawn and restated as its opposite,
+    # in two short sentences. Reads as insight and commits to nothing, because
+    # the second half is asserted rather than argued.
+    ("9", HIGH, r"\bI don'?t think (?:that'?s|it'?s|this is) .{2,40}\.\s*I think\b", "argue the second half"),
+    ("9", MED,  r"\bit'?s not (?:a|an|the) \w+\.\s*It'?s (?:a|an|the) \w+\.", "state the claim once"),
 
     # §12 False from X to Y ranges
     ("12", HIGH, r"\bfrom .{3,40} to .{3,40},\s*from .{3,40} to\b", "list the items"),
@@ -257,6 +262,14 @@ LINE_PATTERNS = [
     ("27", HIGH, r"\bwhat really matters\b", "say what matters"),
     ("27", HIGH, r"\bthe (?:deeper issue|heart of the matter)\b", "state the issue"),
     ("27", MED,  r"^\s*In reality,", "cut"),
+    # The withheld reveal: defer the payload, then present it as a discovery.
+    # A staging device rather than a sentence, and the shape of a post written
+    # to be shared rather than read.
+    ("27", HIGH, r"\bbut here'?s the thing\b", "say the thing"),
+    ("27", HIGH, r"\bwhat (?:nobody|no one) tells you\b", "tell them"),
+    ("27", HIGH, r"\bthe part (?:nobody|no one) (?:talks about|mentions)\b", "make the point"),
+    ("27", MED,  r"\bhere'?s the (?:kicker|catch|twist)\b", "cut the staging"),
+    ("27", MED,  r"\bthe one that (?:didn'?t|nobody did)\s*[:\u2014]", "name it"),
 
     # §28 Announcing the next point
     ("28", HIGH, r"\blet'?s (?:dive|explore|break this down|take a look|unpack|get into)\b", "make the point"),
@@ -265,6 +278,19 @@ LINE_PATTERNS = [
     ("28", MED,  r"\bnow let'?s look at\b", "cut"),
     ("28", MED,  r"^\s*(?:Quick note|Heads up)[:,]", "cut the announcement"),
     ("28", MED,  r"\bbefore I forget\b", "cut"),
+    # The counted preamble: announce and frame a list before delivering it,
+    # telling the reader how to feel about it on the way past. Weighted rather
+    # than HARD because these start as real habits; they decay into tells
+    # through repetition, which is a judgement a reader has to make.
+    ("28", HIGH, r"\b\w+ things? to sit with\b", "just say them"),
+    ("28", HIGH, r"\bsit with (?:that|this)\b", "cut"),
+    ("28", MED,  r"\b\w+ things? to (?:consider|note|keep in mind|watch)\b", "just say them"),
+    ("28", MED,  r"\b(?:is|are) top of mind\b", "say the thing itself"),
+    ("28", MED,  r"\bhere are \w+ key (?:developments|takeaways|things|points|updates)\b", "drop the preamble"),
+    ("28", HIGH, r"\bsome (?:surprising|exciting|interesting) news\b", "lead with the news"),
+    ("28", HIGH, r"\byou might find (?:this|it) (?:fascinating|interesting|surprising|useful)\b",
+                 "let them decide; state the fact"),
+    ("28", MED,  r"\bwhat'?s (?:worth(?: \w+ing)?|interesting) here is\b", "say it"),
 
     # §32 Formulaic sayings
     ("32", HIGH, r"\bis the (?:language|currency|architecture|backbone|new) of\b", "make the specific claim"),
