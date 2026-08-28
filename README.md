@@ -121,6 +121,8 @@ Worth stating plainly, because a clean scan reads as a pass and these are the on
 
 **Cleverness reaching for applause.** A turn of phrase built to be quoted rather than to be clear. "Shipped the read path first and earned the write" is doing craft where a plain sentence would do work.
 
+**Stock phrasing that reads fine in isolation.** "On day one" for "immediately" is the current example: unremarkable in one document, and conspicuous once you notice the same phrase across unrelated material by the same author. That cross-document repetition is the signal, and a single-file scanner cannot see it. If a phrase feels like one you have written before, it probably is.
+
 **Uniform cadence.** Sentences of similar length and shape, one after another. §10 catches repeated list rhythm; it cannot see prose that is simply too even.
 
 **No first-person specificity.** The writer summarizes rather than reports. Nothing in the text could only have been written by the person whose name is on it. Regex cannot detect an absence, and this absence is usually the whole problem.

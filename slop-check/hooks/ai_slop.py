@@ -266,7 +266,6 @@ LINE_PATTERNS = [
     # A staging device rather than a sentence, and the shape of a post written
     # to be shared rather than read.
     ("27", HIGH, r"\bbut here'?s the thing\b", "say the thing"),
-    ("27", HIGH, r"\bwhat (?:nobody|no one) tells you\b", "tell them"),
     ("27", HIGH, r"\bthe part (?:nobody|no one) (?:talks about|mentions)\b", "make the point"),
     ("27", MED,  r"\bhere'?s the (?:kicker|catch|twist)\b", "cut the staging"),
     ("27", MED,  r"\bthe one that (?:didn'?t|nobody did)\s*[:\u2014]", "name it"),
@@ -390,6 +389,11 @@ LINE_PATTERNS = [
     ("CL", HIGH, r"\bthe (?:uncomfortable|inconvenient|hard) truth\b",
      "just state it"),
     ("CL", HIGH, r"\bhiding in plain sight\b", "say where it is"),
+    # "on/from day one" as an idiom for "immediately". Turns up across
+    # unrelated material, which is the signature of a model reaching for a
+    # stock phrase rather than a writer picking one. Guarded against the
+    # literal sense ("day one of the cohort"), which is ordinary English.
+    ("CL", MED,  r"\b(?:on|from) day one\b(?! of\b)", "say when, or cut"),
     ("CL", HIGH, r"\bthe (?:dirty|open) (?:little )?secret\b", "say the thing"),
 
     # "Shape" as a substitute for a specific noun. `[Jared, 2026-08-26]`

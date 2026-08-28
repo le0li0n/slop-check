@@ -3,7 +3,7 @@ import importlib.util, re, sys
 
 spec = importlib.util.spec_from_file_location("s", "ai_slop.py")
 m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
-NEW = {"9", "27", "28"}
+NEW = {"9", "27", "28", "CL"}
 
 SHOULD_FLAG = [
     "Two things to sit with. One, the first.",
@@ -15,12 +15,13 @@ SHOULD_FLAG = [
     "You might find this fascinating.",
     "What's worth noting here is the price.",
     "But here's the thing nobody says.",
-    "What nobody tells you is that it breaks.",
     "The part nobody talks about is the cost.",
     "Here's the kicker: it doubled.",
     "That number travelled. The one that didn't:",
     "I don't think that's a ceiling. I think it's an order.",
     "It's not a feature. It's a platform.",
+    "You shouldn't hand it write access on day one.",
+    "We've done it this way from day one.",
 ]
 
 SHOULD_NOT_FLAG = [
@@ -37,6 +38,9 @@ SHOULD_NOT_FLAG = [
     "She talks about the part of the process that fails.",
     "Two things broke: the sync and the webhook.",
     "Top of mind share rose four points.",
+    "Day one of the cohort is 28 September.",
+    "On day one of the trial we saw the bug.",
+    "The day one report is filed by the duty manager.",
 ]
 
 def hits(t):
