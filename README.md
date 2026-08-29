@@ -99,6 +99,36 @@ Specific unusual details, mixed feelings, dated references and uneven sentence l
 
 **Rewriting prose until a regex goes quiet produces text that passes the check and still sounds like a chatbot.** Rewrite the paragraph around its point instead of patching phrase by phrase.
 
+## Short copy is under-scanned, and that is structural
+
+`THRESHOLD` is 8 and a weighted signal is worth 1 to 3. That is calibrated for a long document, where one weak word genuinely proves nothing and the evidence is several different tells in one passage.
+
+It is wrong for a 200-word post. Short copy can carry three real tells and still score 3, so **the scanner stays silent on exactly the text that gets read most closely** — the LinkedIn post, the cold email, the launch tweet, the subject line.
+
+A real case: a 220-word post opened with "quietly published" and reported clean, because `quietly` is §7 at weight 1. A human reading it caught the word; the tool could not have.
+
+Two things follow.
+
+**Scan snippets without the threshold.** For anything under ~400 words, iterate `LINE_PATTERNS` directly and report every hit with its weight, then judge each one. At that length the weight is advisory rather than decisive.
+
+**The judging still matters, and it is not only about the pattern.** In that case `quietly` was wrong twice over: it is journalese, *and* it was false, because the company had published a newsroom release. A tell that is also inaccurate is the easy call. The rest still need the false-positive rules above.
+
+## The tells this file cannot catch
+
+Worth stating plainly, because a clean scan reads as a pass and these are the ones that make short copy feel machine-written.
+
+**Nothing is throwaway.** Every sentence carries a job: set up, deliver, turn, land. Real writing has asides, hedges, a detail that is there because it is true rather than because it is load-bearing. Uniform purpose is the strongest signal available and there is no regex for it.
+
+**Cleverness reaching for applause.** A turn of phrase built to be quoted rather than to be clear. "Shipped the read path first and earned the write" is doing craft where a plain sentence would do work.
+
+**Stock phrasing that reads fine in isolation.** "On day one" for "immediately" is the current example: unremarkable in one document, and conspicuous once you notice the same phrase across unrelated material by the same author. That cross-document repetition is the signal, and a single-file scanner cannot see it. If a phrase feels like one you have written before, it probably is.
+
+**Uniform cadence.** Sentences of similar length and shape, one after another. §10 catches repeated list rhythm; it cannot see prose that is simply too even.
+
+**No first-person specificity.** The writer summarizes rather than reports. Nothing in the text could only have been written by the person whose name is on it. Regex cannot detect an absence, and this absence is usually the whole problem.
+
+If a scan comes back clean and the copy still reads as AI, look for these four before concluding the scanner disagrees with you.
+
 ## Adding a tell
 
 Edit `LINE_PATTERNS` in `hooks/ai_slop.py`. Keep `HARD` for objective errors and unambiguous artifacts only — everything a real writer might do on purpose belongs in the weighted set. Em dashes, curly quotes and emoji were all hard in the first cut and flagged every file, which is the same as flagging none of them.
