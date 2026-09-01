@@ -7,7 +7,7 @@ Use it to calibrate. Run [`ai_slop.py`](../slop-check/hooks/ai_slop.py) over the
 ## Layout
 
 ```
-texts/<author-slug>/<YYYY-MM-DD>--<title-slug>.txt
+texts/<author-slug>/<YYYY-MM-DD>--<title-slug>.txt   (not in this repo — see below)
 manifest.json      every document with its metadata
 BASELINE.md        how each pattern behaves on human prose
 tools/             the harvester, the analyser, the checks
@@ -32,6 +32,20 @@ retrieved: 2026-08-27
 ```
 
 Anything reading these files should drop everything up to and including the second `---`. `tools/baseline.py` has a `strip_front_matter` that does it in four lines.
+
+## Where the texts are
+
+**The 382 documents are not in this repository.** They are other people's copyrighted articles held in full, and this repo is public; measuring them is one thing, republishing 330,000 words of Paul Graham and Seth Godin under our own account is another.
+
+They live in [`le0li0n/human-corpus`](https://github.com/le0li0n/human-corpus), private. Clone it into `corpus/texts/` — which is gitignored here for exactly this purpose — and every tool below works with no configuration:
+
+```
+git clone git@github.com:le0li0n/human-corpus.git corpus/texts
+```
+
+Without it you can still rebuild the corpus yourself: `manifest.json` carries the source URL, archive URL and date of all 382 documents, and `tools/build.py --live-only` reconstructs it in about fifteen minutes. Expect some drift — sites die and get redesigned, which is why the private copy exists at all. The manifest is a recipe, not a backup.
+
+`ai_texts/` — the 200 generated posts — *is* in this repository. Those are our own generations with no third-party rights in them.
 
 ## How the pre-2012 cutoff is enforced
 
