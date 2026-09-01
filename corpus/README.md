@@ -85,14 +85,21 @@ Both phases are resumable and cache every response under `cache/`, so a re-run c
 
 Paul Graham, Joel Spolsky, Martin Fowler, Jakob Nielsen, Fred Wilson, Steve Blank, Eric Ries, Dave Winer, danah boyd, Nicholas Carr, Rand Fishkin, Avinash Kaushik, Doc Searls, Tim Bray, John Gruber, Aaron Swartz, and around forty-five others.
 
-## What it already tells us
+## What it found
 
-From the first run of `BASELINE.md`, on writing that predates the models entirely:
+Measured against this corpus, then acted on — see [`BASELINE.md`](./BASELINE.md) for the pattern-by-pattern rates and [`TELLS.md`](./TELLS.md) for the contrast study.
 
-- **24% of it trips the scanner.** That is the false-positive rate on human prose, and the number to drive down.
-- **Curly quotes fire in 293 of 382 documents.** Every publishing platform of the era converted quotes automatically. As an AI tell this is close to noise.
-- **"In order to", "when it comes to", "towards", "landscape", "robust", "leveraging"** all appear in ordinary pre-2012 business writing. A draft containing them has not thereby been caught.
-- The median human document scores **3** against a threshold of 8 — so the threshold is roughly in the right place, and the damage is concentrated in a few patterns rather than spread across all 139.
+**The scanner was wrong about what it was looking for.** Before calibration it flagged **24% of writing that predates the models entirely**. The worst offender, curly quotes, fired on 293 of 382 human documents and none of 200 generated ones — it was measuring the publishing platform, not the author. A dialect rule flagged British spelling at HARD, condemning a file outright for writing "towards".
+
+**And none of the classic slop appears in current model output.** Not one instance of "delve", "tapestry" or "testament to" across 137,000 words generated from these same titles. Those patterns describe models of two years ago.
+
+**What separates the two now is rhetoric, not vocabulary.** Machine prose argues by negation: `isn't X — it's Y` appears in 0.3% of human documents and 24.5% of generated ones, a 94x separation and the widest found. Alongside it: "none of this", "nobody", "the ones who", "rather than".
+
+**The strongest single tell is an absence.** 93% of human business writing uses "I", "my" or "me"; 44% of generated writing does, at a fifth the rate. A model has no war stories, so it writes from nowhere — and that cannot be fixed by swapping a word.
+
+**Structure no longer discriminates at all.** On all 25 features in `tools/profile.py` — sentence-length variation, burstiness, contraction rate, paragraph shape — current machine output sits *inside* the human envelope. The "AI writes flat, uniform sentences" heuristic is dead.
+
+After recalibration: **2.4% of human prose flagged, 40% of machine prose caught** — a separation of 37.6 points against 10.7 before. `tools/evaluate.py` scores both corpora at once, because a falling false-positive rate proves nothing on its own: deleting every pattern drives it to zero.
 
 These are working documents, not literature: blog posts, essays, articles and a manifesto, mostly written fast by people with something to say. They contain typos, ragged transitions, jokes that did not land, and sentences that run on. That is the point. A corpus of polished prose would teach the scanner to flag anything with a rough edge, which is the failure mode worth avoiding — the one where every draft gets sanded until it reads like everything else.
 
