@@ -45,13 +45,6 @@ Specific unusual details, mixed feelings, dated references and uneven sentence l
 
 Rewrite the paragraph around its point. Patching one flagged phrase at a time produces sentences that dodge the pattern and keep the rhythm, which is the thing being detected.
 
-**Varying a tic means varying it.** Swapping every "failure mode" for "the trap"
-moves the tic rather than removing it, and swapping every "honestly" for
-"candidly" is the same mistake with a thesaurus. If a phrase appears eight
-times, it needs eight decisions — and check afterwards that your replacement
-has not itself become the new repeat, or that it does not collide with a word
-another chapter is using deliberately.
-
 **Never invent a fact to make text sound human.** If a sentence needs a detail that is not in the source, ask for it or write a simpler sentence.
 
 ## 5. Report
