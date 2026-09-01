@@ -286,6 +286,14 @@ LINE_PATTERNS = [
     # through repetition, which is a judgement a reader has to make.
     ("28", HIGH, r"\b\w+ things? to sit with\b", "just say them"),
     ("28", HIGH, r"\bsit with (?:that|this)\b", "cut"),
+    # The same device one step earlier in the sentence: stage the thought as
+    # hard-won before delivering it. "The version of this I keep coming back
+    # to is X" says nothing that "X" alone does not; the preamble asks the
+    # reader to take X as earned rather than argued. 2 hits across 3,718
+    # pre-2012 human documents (0.05%), and both are the literal sense --
+    # returning to a website, not to an idea. "delve" scores 0.46% on the same
+    # set. `[2026-09-01]`
+    ("28", HIGH, r"\b(?:I|we) keep coming back to\b", "just say the thing"),
     ("28", MED,  r"\b\w+ things? to (?:consider|note|keep in mind|watch)\b", "just say them"),
     ("28", MED,  r"\b(?:is|are) top of mind\b", "say the thing itself"),
     ("28", MED,  r"\bhere are \w+ key (?:developments|takeaways|things|points|updates)\b", "drop the preamble"),

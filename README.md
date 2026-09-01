@@ -2,7 +2,7 @@
 
 A scanner for writing that reads as AI-written, plus the discipline for using it without sanding good prose flat.
 
-141 patterns, no third-party dependencies, one file. Built on [humanizer](https://github.com/blader/humanizer) and Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) — see [`ATTRIBUTION.md`](./ATTRIBUTION.md). It **warns and never blocks**, because slop is a judgment call and a gate that fires on judgment calls gets bypassed until nobody reads it.
+142 patterns, no third-party dependencies, one file. Built on [humanizer](https://github.com/blader/humanizer) and Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) — see [`ATTRIBUTION.md`](./ATTRIBUTION.md). It **warns and never blocks**, because slop is a judgment call and a gate that fires on judgment calls gets bypassed until nobody reads it.
 
 ## Install
 
