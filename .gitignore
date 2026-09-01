@@ -1,0 +1,6 @@
+# Python bytecode. Regenerated on demand, tied to one interpreter version,
+# and — because this repository is installed as a plugin — copied into every
+# user's plugin cache when they install from it. A stale .pyc that no longer
+# matches ai_slop.py is worse than no .pyc at all.
+__pycache__/
+*.pyc
