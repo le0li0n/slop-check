@@ -1,0 +1,61 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: The Rise of the Subsite - NN/GNielsen Norman GroupNielsen Norman Group
+type: article
+area: Design, UX & product
+matched_human_doc: texts/jakob-nielsen/1996-08-31--the-rise-of-the-subsite-nn-gnielsen-norman-groupnielsen.txt
+words: 969
+generated: 2026-08-31
+---
+
+# The Rise of the Subsite
+
+Something odd is happening in the information architecture of large organizations. The single, unified website — the thing we spent two decades consolidating toward, migrating into, and defending in governance meetings — is quietly fragmenting again. Not back into the chaos of the 1990s intranet, where every department bought its own domain and picked its own shade of blue, but into something more deliberate: the subsite.
+
+A subsite is a coherent, self-contained destination that lives inside a parent site but behaves like its own product. It has its own navigation, its own content model, often its own visual treatment and its own team. Think of a bank's mortgage-education hub, a university's research-center microsite, a software company's developer documentation, or a retailer's sustainability report rendered as a scrolling narrative. These are not landing pages. They are small sites wearing the parent's clothes.
+
+## Why This Is Happening Now
+
+Three forces are converging.
+
+**Audiences have diverged faster than sites have.** A single enterprise site now serves buyers, current customers, developers, investors, job seekers, journalists, and regulators. Fifteen years ago we tried to serve all of them through one global nav and a good search box. That approach fails at scale because the mental models genuinely conflict. A developer looking for an API rate limit and a procurement officer looking for a SOC 2 report do not want to share an information architecture. Forcing them to share one produces navigation that is technically complete and practically useless — the kind of menu with nine top-level items and forty-two children, none of which quite match what anyone came for.
+
+**Composable architecture made separation cheap.** When your site was one monolithic CMS with one template system, a subsite meant a fight with the platform team. Headless CMSs, edge routing, and component libraries have made it genuinely easy to run `/developers` on a different stack than `/about` while keeping the URL structure and the design tokens consistent. The technical objection to subsites has largely evaporated, and organizational behavior has rushed into the vacuum.
+
+**Search behavior stopped rewarding homepages.** Most users never see the homepage. They land deep, from search or a link or an AI assistant's citation, and they judge the site by the page they arrive on and the three clicks that follow. If the local context is coherent, the global context matters less than it used to. Subsites optimize for exactly this: strong local wayfinding, weak dependence on the global shell.
+
+## The Real Risk Is Not Inconsistency
+
+The instinctive UX objection is brand and design consistency. That objection is mostly wrong, or at least misdirected. Users tolerate — and often don't notice — meaningful visual variation between sections of a large site, provided the transitions are signposted and the core identity signals hold. What they do not tolerate is *orientation loss*: the sudden inability to answer "where am I, and how do I get back?"
+
+The genuine risks with subsites are subtler and more expensive:
+
+**Duplicated content that drifts.** Every subsite eventually needs to explain pricing, or security, or the company's mission. Each one writes its own version. Eighteen months later there are four contradictory answers to the same question, and the user finds the wrong one. This is the single most common failure we see, and it is a content-governance problem, not a design problem.
+
+**Dead-end architecture.** A subsite with excellent internal navigation and no credible path back to the parent traps users who arrived with a broader need. The "back to main site" link in the footer is not a path; nobody scrolls to find it.
+
+**Search that only searches one thing.** Site search scoped to the subsite, with no clear escape hatch to global search, is a reliable way to make users conclude your organization doesn't have something it does have.
+
+**Orphaned ownership.** Subsites are usually created by a motivated team with budget. Budgets end. The subsite persists, unmaintained, still ranking in search, still representing you.
+
+## Designing Subsites Well
+
+A few principles hold up across the organizations we've studied.
+
+Make the parent relationship visible and persistent, not decorative. A slim global bar above the subsite's own navigation does the work: it names the parent, it links home, and it stays put. This is cheap and it resolves most orientation problems.
+
+Decide explicitly what is shared and what is local. Header, footer, search, account, legal, and accessibility statement are almost always shared. Navigation, content model, and page templates are almost always local. Be deliberate about the middle ground — support, contact, and pricing are where teams disagree and users suffer.
+
+Have exactly one canonical source for any fact that appears in more than one subsite. Syndicate it; don't copy it. If your CMS can't do this, that is a real constraint worth escalating, because the alternative is guaranteed drift.
+
+Give every subsite an owner, a review cadence, and a sunset condition written down at launch. The sunset condition is the part everyone skips and the part that saves you.
+
+Test the seams, not the middles. Subsites are usually well designed internally, because a dedicated team cared. The failures cluster at the boundaries: arriving from search, crossing from parent to subsite, searching from the wrong scope. That's where your research budget belongs.
+
+## The Broader Shift
+
+The subsite trend reflects a maturing view of what a website is. Not a single artifact with a single architecture, but a portfolio of related products sharing a domain, an identity, and a set of contracts about how they interoperate. That is closer to how product organizations already think, and closer to how users actually behave.
+
+The design work moves accordingly — less time spent perfecting one global taxonomy, more spent defining the interfaces between semi-autonomous parts. It is less glamorous than a redesign, and considerably more durable.

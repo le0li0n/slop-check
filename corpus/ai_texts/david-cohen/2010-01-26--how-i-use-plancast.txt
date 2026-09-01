@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: How I use Plancast
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/david-cohen/2010-01-26--how-i-use-plancast.txt
+words: 378
+generated: 2026-08-31
+---
+
+# How I use Plancast
+
+I stopped trying to keep my startup's financial model in a spreadsheet about a year ago, and Plancast has been the replacement ever since. Here's roughly how it fits into my week.
+
+Monday mornings I open Plancast before I open anything else. It pulls in actuals from our bank and payroll connections overnight, so by the time I'm looking at it, last week's burn is already reconciled against plan. I'm not manually re-keying numbers from Mercury and Gusto into a tab anymore, which used to eat an hour every week and always felt like the least valuable hour I spent.
+
+The scenario modeling is where it actually earns its keep. When we're deciding whether to make a hire, extend a contract, or push a launch date, I duplicate the current plan, flex the assumption, and see the runway impact immediately. That sounds simple, but the speed matters — decisions that used to wait for "when I have time to update the model" now happen in the meeting where they're being discussed. I've made better calls simply because the cost of checking was low enough that I actually checked.
+
+Board prep is the other place it's become load-bearing. Instead of building a deck of static screenshots the week before a board meeting, I share a live view of the plan and actuals-vs-plan variance. Investors can poke at the assumptions themselves if they want to, which has cut down on the back-and-forth email threads asking "what if churn is 2% instead of 1.5%." A couple of our board members now open it between meetings, which has quietly replaced the monthly update email for anything numbers-related.
+
+For fundraising specifically, I use it to generate the range of outcomes I actually believe rather than a single optimistic case. Showing a VC a base, upside, and downside case — each with the assumptions visible, not just the outputs — has made diligence conversations shorter, because the model is doing the explaining instead of me.
+
+It's not magic, and it doesn't replace judgment about what the assumptions should be. But it's removed enough of the mechanical overhead of financial planning that the time I do spend on it goes toward the actual decision, not the spreadsheet plumbing underneath it.

@@ -1,0 +1,49 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: I'm moving out of New York City
+type: blog post
+area: Management & strategy
+matched_human_doc: texts/penelope-trunk/2006-08-10--i-m-moving-out-of-new-york-city.txt
+words: 810
+generated: 2026-08-31
+---
+
+# I'm moving out of New York City
+
+I signed a lease in a smaller city last month. Not a suburb of New York — a genuinely different place, four states away, with a downtown you can cross on foot in twenty minutes and an airport where the security line is a rumor.
+
+People keep asking why, and I keep giving the wrong answer. The easy answer is cost, and cost is real: the rent differential funds a lot of things I'd rather have than proximity to a subway line. But cost is a rationalization dressed as a reason. I could have afforded to stay. What actually happened is that I ran an audit on my own life and found that the thing I was paying a premium for had quietly stopped delivering.
+
+That's a strategy problem, not a real estate problem, and I think it's worth unpacking for people who make these calls professionally.
+
+## The premium was for optionality
+
+New York's core value proposition, for anyone in our line of work, is optionality. Every client, every recruiter, every potential co-founder, every person you might need to know is either here or passes through here. You pay an enormous premium — in rent, in time, in ambient friction — to hold that option open.
+
+Optionality has a carrying cost. Everyone in finance understands this in a portfolio and almost nobody applies it to their own life. You hold the option because holding it feels prudent, and you keep holding it long past the point where you would ever plausibly exercise it. I have not taken a meeting that required physical presence in Manhattan in fourteen months. I was paying a very large premium on an option I had stopped exercising and had no near-term plan to exercise.
+
+The honest version of the question isn't "can I afford New York." It's "what is the expected value of the optionality New York provides, given my actual behavior over the last two years?" Not my aspirational behavior. My actual behavior. When I priced it that way, the answer stopped being close.
+
+## The strategy shifted underneath the decision
+
+Here's the part that took me longest to see. The decision to live in New York wasn't wrong when I made it. It was correct for a strategy I was executing in 2019: build a network from nothing, be present in rooms, convert proximity into relationships. That strategy worked. The relationships exist now. They're durable, they're distributed across four time zones, and they are maintained almost entirely through channels that do not care where I sleep.
+
+The strategy changed. The infrastructure supporting the strategy did not. This is the most common failure mode I see in the companies I work with and I walked straight into it in my own life: the org chart, the office footprint, the vendor contracts, the standing meetings — all of it optimized for a strategy that got retired two pivots ago, and nobody ever went back to decommission the supports. Sunk infrastructure has a way of becoming an unexamined constraint, and then, eventually, becoming the strategy itself. You start making decisions to justify the office rather than making the office serve the decisions.
+
+Ask yourself, about your own organization: what are we still paying for that was built to support a plan we no longer have?
+
+## Reversibility is worth more than certainty
+
+I got stuck for about six months on wanting to be sure. Sure the move was right, sure I wouldn't regret it, sure the professional cost was zero.
+
+That was the wrong bar, and I knew it was the wrong bar while I was applying it. The relevant question for a decision like this isn't confidence, it's reversibility. If I'm wrong, what does it cost to come back? The answer is: a year's lease, a moving truck, and some embarrassment. That's a cheap error. Cheap errors don't deserve expensive deliberation.
+
+The decisions that warrant real agonizing are the ones with high switching costs — the acquisition, the platform rewrite, the hire who will define a function's culture for a decade. Most of what we deliberate over isn't that. We spend our scarce judgment on reversible calls because reversible calls are legible and comfortable to analyze, and then we make the genuinely irreversible ones on instinct at the end of a long quarter.
+
+## What I actually expect
+
+I expect to miss things. Density produces serendipity, and serendipity is genuinely hard to manufacture. I'll have to be deliberate about what used to be ambient — scheduling the conversations that used to just happen, flying in for the things that need a room.
+
+But I've stopped treating "New York" as an identity and started treating it as a line item with a strategic rationale that expired. That reframe was the whole thing. Everything after it was logistics.

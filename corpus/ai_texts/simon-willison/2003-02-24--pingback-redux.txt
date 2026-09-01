@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Pingback redux
+type: blog post
+area: Software engineering
+matched_human_doc: texts/simon-willison/2003-02-24--pingback-redux.txt
+words: 626
+generated: 2026-08-31
+---
+
+# Pingback redux
+
+Pingbacks were never elegant. An HTTP request wrapped in XML-RPC, fired the moment you linked to someone else's post, telling their server "hey, I mentioned you." No auth, no rate limiting worth the name, and a spam problem so severe that by 2010 most serious blogs had switched them off entirely. If you were building web software in that era, you remember the moment pingbacks stopped being a feature and became an attack surface.
+
+So it's a little strange to find myself arguing they got something right that we've since had to reinvent, badly, three separate times.
+
+The core idea was simple: notify a resource when another resource references it, without either party maintaining a subscription or a follower list. No account creation, no API key, no OAuth dance. Just "I linked to you, here's proof, do with it what you like." That's a genuinely useful primitive, and it's one the modern web keeps building narrower, more centralized versions of.
+
+Consider what happens today when someone quotes your blog post on a platform. If it's Twitter, you find out because you happen to see it, or because a notification service you've paid for scrapes for your domain. If it's a comment on Hacker News, same story. If it's a backlink from another site's article, you find out via a $99/month SEO tool that's really just doing what pingbacks did for free, plus a sales layer. We rebuilt the "who's talking about me" problem as a business model instead of a protocol.
+
+Webmention, the W3C spec that formally succeeded pingback in 2017, fixed the worst of the design flaws — it uses plain HTTP POST instead of XML-RPC, and pairs naturally with Microformats so the receiving server can verify the link actually exists in the source, not just claims to. That verification step is the whole game: pingback failed because it let you *say* you linked to something without the receiver checking. Webmention closes that hole cheaply. It's a good spec. It's also barely used outside the IndieWeb community, and I think that's worth sitting with rather than shrugging off.
+
+Part of it is timing — webmention shipped into a web that had already consolidated around platforms that don't want federated notification, because federated notification means data leaving their graph. But part of it is that we, as an industry, stopped building for the open web as a target and started building for platforms as a target. Nobody adds webmention support to their static site generator by default the way pingback was default-on in WordPress fifteen years ago. It's opt-in, niche, and requires you to already believe in the interoperable web enough to go looking for it.
+
+Which is the actual redux worth talking about: not "bring back pingback," a protocol that deserved to die, but noticing that we solved the spam and verification problems and then largely declined to use the solution. If you're maintaining a blog, a changelog, a docs site — anything where "who's referencing this" is a real question — webmention is a small, well-specified thing you can add in an afternoon, and it costs you nothing to receive. The interesting engineering problem was solved a decade ago. The open question is entirely social: whether enough of the surfaces that link to you also bother to send.
+
+That's not a reason to skip it. Protocols get adopted at the margins first. Every webmention you send is a small bet that the other side of the exchange is worth building for, even when the platforms in between aren't. Pingback's failure mode was trusting too much. Its successor's failure mode, so far, has just been obscurity — which is a much easier problem to chip away at than the one it replaced.

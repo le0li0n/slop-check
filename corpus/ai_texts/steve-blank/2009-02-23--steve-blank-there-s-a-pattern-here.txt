@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Steve Blank There’s a Pattern Here
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/steve-blank/2009-02-23--steve-blank-there-s-a-pattern-here.txt
+words: 369
+generated: 2026-08-31
+---
+
+# Steve Blank: There's a Pattern Here
+
+Steve Blank has spent thirty years telling founders the same thing in different words: you are not building a product, you are running an experiment about whether anyone wants it. The customer development method, the pivot, the minimum viable product, "get out of the building" — all of it descends from a single observation he made after eight startups, four of which worked. Startups fail not because they can't build. They fail because they build something nobody wants, and they do it with conviction.
+
+What's easy to miss is that Blank's real contribution was epistemological, not tactical. Before *The Four Steps to the Epiphany*, the startup playbook was borrowed wholesale from large companies: write a business plan, hire a VP of Sales, execute. Blank's insight was that a startup and a company are different organisms. A company executes a known model. A startup searches for one. Applying execution tools to a search problem produces exactly what the 2000s produced — beautifully staffed, well-funded firms that shipped on time into an empty room.
+
+That distinction is why the pattern keeps reappearing. Every few years, cheap capital or a new technology wave tempts founders back into execution mode before the search is finished. It happened with on-demand, with crypto, and it is happening now with AI: enormous seed rounds, hiring plans built for a scale nobody has validated, and roadmaps that assume the customer problem is already understood. The tooling changed. The failure mode didn't.
+
+For investors, Blank's frame is a diligence question, not a philosophy. Is this team still searching, and do they know it? A founder who can articulate what they don't yet know about their buyer is further along than one with a confident five-year plan. The first is running experiments. The second is running a script.
+
+The uncomfortable corollary is that the search phase cannot be compressed by money. Capital accelerates execution; it does not accelerate learning. Funding a startup that hasn't found its model simply lets it be wrong at higher velocity — and with a larger team to lay off when the answer arrives.
+
+There is a pattern here. Blank's point was always that it's knowable in advance.

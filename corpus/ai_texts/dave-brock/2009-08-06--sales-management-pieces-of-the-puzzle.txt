@@ -1,0 +1,65 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Sales Management-Pieces Of The Puzzle
+type: blog post
+area: Sales & business development
+matched_human_doc: texts/dave-brock/2009-08-06--sales-management-pieces-of-the-puzzle.txt
+words: 1303
+generated: 2026-08-31
+---
+
+Sales Management-Pieces Of The Puzzle
+
+Ask ten sales managers what their job actually is, and you'll get ten different answers. Some will say it's coaching. Others will say it's forecasting. A few will tell you, half-joking, that it's mostly babysitting a CRM and chasing people for updates. All of them are a little bit right, and that's precisely the problem. Sales management isn't one skill wearing a single hat — it's a collection of distinct disciplines that happen to live inside the same job title. Treat it as one undifferentiated blob of "manage the team" and you'll do all of it poorly. Understand it as a set of interlocking pieces, and you can actually get good at each one.
+
+Here's the puzzle, broken into the pieces that matter most.
+
+**Recruiting and selection**
+
+Everything downstream of a bad hire is expensive. A rep who can't sell costs you a territory, a quota, months of ramp time, and often a chunk of team morale before anyone admits the mistake. Yet recruiting is the piece most sales managers treat as an afterthought — something they do reactively when a seat opens up, rather than a continuous discipline.
+
+The managers who build strong teams over years, not quarters, are always recruiting. They keep a mental (or literal) list of people they've met at conferences, competitors' reps who impressed them in a negotiation, candidates who didn't quite fit last time but might fit now. They've also gotten specific about what "good" looks like for their team — not a generic list of traits like "self-starter" and "coachable," but a real profile built from what their actual top performers do differently. Selection is a forecasting exercise: you're trying to predict future performance from limited information, and vague criteria produce vague predictions.
+
+**Training and onboarding**
+
+Hiring well buys you potential. Training converts it into production. The mistake many organizations make here is treating onboarding as a one-time event — a week of product training and a shadow ride-along — rather than a system that continues for the life of the rep.
+
+Good training programs do two things simultaneously: they build a floor (so every rep can execute the basics competently) and they build a ceiling (so your best people have somewhere to grow). Skimp on the floor and you get inconsistent execution across the team. Skimp on the ceiling and your top performers plateau, get bored, and leave. The strongest sales managers treat training as a portfolio — new-hire ramp, ongoing skill development, and specialized coaching for reps who are stuck at a particular stage of the sales cycle — rather than a single program applied uniformly to everyone.
+
+**Motivation**
+
+This is the piece most often reduced to something crude: a leaderboard, a contest, a bonus for the top three reps this month. Those tools aren't wrong, but they're blunt, and they only work on people who are already motivated by competition and money. Not everyone is. Some reps are driven by recognition, some by autonomy, some by a genuine belief in the product, some by the fear of falling behind their peers, some by wanting to prove something to a former boss who doubted them.
+
+The sales managers who get the most out of their teams have taken the time to figure out what actually drives each individual rep, and they manage to that, not to a one-size-fits-all incentive plan. This doesn't mean abandoning team-wide contests — it means recognizing that the contest works for some of your team and does nothing for the rest, and building complementary approaches so nobody is running on empty.
+
+**Deployment and territory design**
+
+This piece is invisible when it's done well and glaringly obvious when it isn't. Poor territory design creates internal conflict, wastes selling time on accounts that were never going to buy, and leaves your best closers with too few qualified opportunities while your weaker reps drown in a territory built for three people.
+
+Good deployment asks a deceptively simple question: given our finite selling resources, where should they be pointed to generate the most revenue? That means being honest about account potential, being willing to redraw lines even when it's politically uncomfortable, and matching rep strengths to the kind of selling a territory actually requires. A hunter dropped into a territory of mature, low-churn accounts will be miserable and unproductive. So will a farmer dropped into greenfield.
+
+**Quota-setting and compensation**
+
+Few things damage trust between a sales force and its management faster than a quota or comp plan that feels arbitrary, unreachable, or gamed by people who aren't actually performing. Quotas need to be tied to real market potential, not just last year's number with an arbitrary percentage bolted on. Comp plans need to actually reward the behavior you want — if you say you value new-account development but only pay well on renewals, don't be surprised when nobody develops new accounts.
+
+This piece requires more analytical rigor than most managers give it, and it requires revisiting — not annually as a ritual, but whenever the underlying business assumptions change enough that the old plan no longer makes sense.
+
+**Directing sales effort**
+
+Motivated, well-trained, well-deployed reps still need direction — help figuring out where to spend their time day to day. This is where sales management becomes genuinely tactical: which accounts get priority this quarter, how much time goes to farming versus hunting, which products get emphasis when the company needs to move a particular line.
+
+Left entirely to their own judgment, reps will gravitate toward what's comfortable and immediately rewarding, which isn't always what's strategically important. Direction is the ongoing conversation that keeps individual effort aligned with company priorities without turning into micromanagement.
+
+**Evaluation and control**
+
+Finally, someone has to keep score — and do it in a way that's fair, based on the right measures, and actually used to improve performance rather than just to assign blame after the fact. This means going beyond the number closed this quarter to look at leading indicators: pipeline health, activity quality, win rates by stage, deal velocity. A rep who missed quota because of a couple of large deals slipping to next quarter is in a very different position than one whose pipeline is genuinely empty, and a control system that can't tell the difference will misdirect coaching effort and misjudge people.
+
+**Why the puzzle metaphor matters**
+
+None of these seven pieces works well in isolation. Brilliant recruiting is wasted without training to develop what you hired. A perfect comp plan can't fix a badly designed territory. Motivating a rep to work harder in the wrong direction just produces faster failure. The pieces have to fit together, and they have to be tuned to the specific business, market, and stage of company you're operating in — what works for a founder-led startup selling a novel product will not be the right assembly for a mature enterprise team defending a large installed base.
+
+The practical implication for anyone managing a sales team is this: resist the temptation to specialize in the piece that comes most naturally and neglect the rest. Managers who came up as top individual sellers often gravitate toward coaching and motivation because that's the part of the job that feels most like selling. Managers with an analytical bent gravitate toward quotas, territories, and dashboards because that's where they're comfortable. Both instincts are understandable, and both leave half the puzzle unassembled.
+
+The job isn't to be excellent at one piece. It's to make sure all seven are in place, fitted to each other, and revisited often enough that they stay fitted as the market, the product, and the team change underneath them. That's the actual work of sales management — less a single skill than a discipline of systems thinking applied to people, territory, and money at the same time.

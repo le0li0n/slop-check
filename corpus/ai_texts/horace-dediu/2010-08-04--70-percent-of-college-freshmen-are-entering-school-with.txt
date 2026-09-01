@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: 70 percent of college freshmen are entering school with Macs [Updated 2]
+type: blog post
+area: Technology & media
+matched_human_doc: texts/horace-dediu/2010-08-04--70-percent-of-college-freshmen-are-entering-school-with.txt
+words: 364
+generated: 2026-08-31
+---
+
+# 70 percent of college freshmen are entering school with Macs [Updated 2]
+
+The number came out of a Ball State University survey and it moved fast: roughly 70 percent of incoming freshmen at the school arrived on campus this fall carrying a Mac. For anyone who remembers the Windows monoculture of dorm computer labs, that figure lands hard.
+
+A few caveats before anyone builds a thesis on it. This is one campus, not a national panel. Ball State's telecom program skews the student body toward media production, and media production has skewed Apple since the desktop publishing era. The survey also counted what students brought, not what they'll be issued, subsidized, or forced to use by a registrar's system that still expects Internet Explorer.
+
+Still, the direction is real and it's been real for a while. Apple's education share has been climbing steadily on the back of the MacBook and MacBook Pro, the student pricing discount, and — the part that gets underweighted — the halo from the iPod and now the iPhone. Kids who bought an iPod in middle school met the Apple brand as a consumer product, not as an expensive design-studio machine. By the time they're buying a laptop, the switching cost is emotional as much as technical.
+
+The interesting question for this audience isn't Apple's quarter. It's what a Mac-native cohort does to everything downstream. These students will graduate into newsrooms, agencies, and production houses over the next four years, and they will have opinions about the hardware on their desks. IT departments that standardized on Dell fleets are going to spend the next decade fielding requests they've been able to deny cheaply until now. Software vendors shipping Windows-only tools are looking at a shrinking pipeline of trained users.
+
+**Update:** Several readers point out the survey sample is small and self-reported. Fair. Treat 70 percent as a signal about one campus, not a national figure.
+
+**Update 2:** Ball State clarifies the number reflects students in the telecommunications department specifically, not the entire freshman class. That's a meaningful narrowing — the trend line still points the same way, but the headline number is doing less work than it appeared to.

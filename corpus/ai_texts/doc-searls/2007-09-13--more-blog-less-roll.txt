@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: More blog, less roll
+type: blog post
+area: Technology & media
+matched_human_doc: texts/doc-searls/2007-09-13--more-blog-less-roll.txt
+words: 341
+generated: 2026-08-31
+---
+
+More Blog, Less Roll
+
+Every media org has the same slide in the same deck: "we need to be more consistent on social." What follows is usually a content calendar, a posting cadence, maybe a new hire whose job title contains the word "strategist." What rarely follows is a hard look at whether the platform itself is worth the investment anymore.
+
+Here's the uncomfortable math. A scroll-based feed rewards frequency over durability. You post, it lives for six hours, it dies, you post again. The audience relationship is rented, not owned, and the landlord changes the terms whenever it wants — reach algorithms shift, verification schemes get reshuffled, ad load creeps up. Meanwhile the actual thinking, the thing that made your outlet worth following in the first place, gets compressed into a caption.
+
+A blog post doesn't expire. It compounds. It gets cited, linked, indexed, and re-surfaced by search long after the moment that inspired it has passed. It's addressable — you can send someone a URL and know exactly what they'll see, not a card that's been quietly deprecated or an account that's been renamed. And critically, it's yours: no API changes, no sudden pivot to video, no algorithm update that decides today is not your day.
+
+None of this is an argument against social distribution. It's an argument about where the center of gravity should sit. Treat the feed as a pointer, not a destination. Let the roll do what it's good at — surfacing, teasing, reacting in real time — and let the blog do what it's good at: holding the argument, the analysis, the thing you'd stand behind in six months.
+
+The organizations that will look smart in five years are not the ones who posted the most. They're the ones who kept a durable, ownable record of what they actually thought, while everyone else was optimizing for a feed that resets to zero every morning.
+
+More blog. Less roll. Not because the roll doesn't matter — because it was never supposed to be the whole strategy.

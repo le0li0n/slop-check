@@ -1,0 +1,37 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Don’t Kill the Press Release, Shoot the Messenger
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/brian-solis/2007-02-01--don-t-kill-the-press-release-shoot-the-messenger.txt
+words: 680
+generated: 2026-08-31
+---
+
+Don't Kill the Press Release, Shoot the Messenger
+
+Every eighteen months or so, someone on your team declares the press release dead. It's too formal, they say. Nobody reads them except other PR people and the occasional bored analyst. The wire services are a pay-to-play scam. Journalists delete them unread. Let's just do a blog post and blast it on social.
+
+They're not wrong about the symptoms. They're wrong about the diagnosis.
+
+The press release isn't dying because the format failed. It's dying because most companies never learned what it was for, and so they never noticed when they stopped doing that thing and started doing something else instead — something that deserved to die, and dragged the format's reputation down with it.
+
+Here's what actually happened. The press release used to be a structured, unglamorous artifact with one job: create a canonical, dateable, citable record of a fact, written plainly enough that a stranger with no context could understand what happened and why it mattered. That's it. Not persuasion. Not brand voice. A record.
+
+Somewhere along the way, marketing teams inherited the format and decided it needed to work harder. It needed a narrative arc. A quote from the CEO about "exciting new chapters." A boilerplate paragraph that reads like it was written by a committee, because it was. Three hundred words of throat-clearing before the actual news shows up in paragraph four. The press release stopped being a record and became a piece of content — mediocre content, competing against actual mediocre content, and losing.
+
+Of course nobody reads them. You wouldn't read them either.
+
+The fix people reach for is to abandon the format. But look at what actually still works when a real announcement drops: an OpenAI model release, an Apple product launch, an FDA approval, a funding round that matters. Somewhere underneath the blog post and the video and the social thread, there is still a plain, dated, factual document that exists so that other people — journalists, analysts, competitors, historians, your own future employees — can point to a single stable source and say "here is what was claimed, and when." The press release didn't disappear from those announcements. It just stopped being the only thing you shipped, and it stopped trying to be the exciting part.
+
+That's the distinction worth holding onto: the press release was never supposed to be your marketing. It was supposed to be your record, sitting quietly underneath your marketing, doing a job nothing else does well — being citable, being neutral enough that a skeptical reporter can lift a sentence out of it without feeling used, being the thing that still makes sense five years later when nobody remembers the campaign built around it.
+
+So the actual fix isn't "kill the press release, do a blog post instead." It's: stop asking the press release to be your blog post. Let the blog post be persuasive, let the social thread have personality, let the launch video be the thing your CEO tweets. But keep one document, boring on purpose, that states what happened in a form a stranger can trust without knowing your brand voice. Put the news in the first sentence. Skip the "exciting new chapter." Write the boilerplate like you mean it, not like you're filling a template.
+
+The teams declaring press releases dead are usually the same teams who never separated the record from the pitch. They tried to make one document do both jobs, watched it do neither well, and blamed the format instead of the job description.
+
+If you're rethinking your announcement process this quarter, don't start by asking "do we still need press releases." Start by asking "where's our record" — the thing that isn't trying to sell anyone anything, that a journalist could quote without feeling like they got played. If you don't have one, that's the gap. Build it back, keep it dull on purpose, and let everything more exciting sit next to it instead of instead of it.
+
+The messenger got sloppy. That's not a reason to shoot the message.

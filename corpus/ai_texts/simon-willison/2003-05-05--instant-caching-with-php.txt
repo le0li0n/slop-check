@@ -1,0 +1,40 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Instant caching with PHP
+type: blog post
+area: Software engineering
+matched_human_doc: texts/simon-willison/2003-05-05--instant-caching-with-php.txt
+words: 351
+generated: 2026-08-31
+---
+
+# Instant caching with PHP
+
+Every PHP application eventually hits the same wall: a query that used to take 20ms now takes 400ms, and the profiler points at a page rendered thousands of times an hour from data that changes twice a day. The fix is caching. The reason people put it off is that "add a cache" sounds like adding infrastructure — Redis, a connection pool, a serialization strategy, cache invalidation on deploy. It doesn't have to be.
+
+PHP ships with two caches you already have. APCu is a shared-memory key-value store local to each PHP-FPM worker pool. OPcache compiles your scripts once and reuses the bytecode. Neither needs a server, a client library, or a network hop. If APCu is enabled, this works today:
+
+```php
+function remember(string $key, int $ttl, callable $fn): mixed
+{
+    $value = apcu_fetch($key, $ok);
+    if ($ok) {
+        return $value;
+    }
+    $value = $fn();
+    apcu_store($key, $value, $ttl);
+    return $value;
+}
+
+$rates = remember('fx:usd', 300, fn() => $api->fetchRates('USD'));
+```
+
+Ten lines, no dependencies, and a 400ms call becomes a microsecond array lookup. For read-heavy endpoints serving the same data to every user, this is often the entire optimization.
+
+The constraints matter, and they're the reason APCu is a first step rather than a destination. The cache is per-machine, so eight servers mean eight independently warming caches and eight windows during which they disagree. It's cleared on restart, which includes every deploy. It's sized by `apc.shm_size` and will evict under pressure — treat a miss as normal, never as an error. And it's genuinely susceptible to stampedes: when a popular key expires, every concurrent request recomputes it at once. A short randomized jitter on the TTL, or a lock around the recompute, handles the common case.
+
+None of that argues against using it. It argues for knowing when you've outgrown it: when you need coordinated invalidation across nodes, or cached data that must survive a deploy, you want Redis or Memcached behind PSR-6 or PSR-16 so the call sites don't change.
+
+Start with the cache you already have. Reach for the network when the data tells you to.

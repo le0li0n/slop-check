@@ -1,0 +1,31 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Remarkable renewal
+type: blog post
+area: Management & strategy
+matched_human_doc: texts/daniel-pink/2008-07-01--remarkable-renewal.txt
+words: 366
+generated: 2026-08-31
+---
+
+# Remarkable renewal
+
+The most consequential decision your organisation makes this quarter probably won't feel like a decision at all. It will be a contract that rolls over, a budget line that repeats, a supplier relationship that continues because nobody scheduled the conversation about whether it should. Renewal is the default state of most enterprises, and defaults are where strategy quietly goes to die.
+
+This matters more than it sounds. Auto-renewal is an organisational design choice disguised as an administrative convenience. When a three-year agreement lapses into a fourth year without review, the firm has effectively decided that last year's assumptions still hold — without anyone testing whether they do. Multiply that across a procurement portfolio, a product roadmap, a set of headcount allocations, and you have an institution running largely on inherited judgement.
+
+The remarkable thing about renewal, then, is not that it happens. It's how rarely it is treated as a moment of choice.
+
+Consider what a well-run renewal actually offers. It is a natural forcing function: a date on the calendar when the counterparty expects a conversation, when comparison is legitimate rather than disloyal, and when leverage is at its highest point in the relationship. Very few strategic processes hand you that for free. Most firms squander it — the notice window closes, the renewal executes, and the leverage evaporates until the next cycle.
+
+Three practical shifts separate organisations that use renewals from those that merely survive them.
+
+**Make the register visible.** Renewal dates belong in a single view that leadership actually looks at, not buried in a contracts folder. What you cannot see, you cannot decide about.
+
+**Move the trigger upstream.** The useful conversation starts three months before the notice deadline, not three weeks. Late reviews produce one outcome — renewal — regardless of the analysis.
+
+**Require an affirmative case.** Continuation should need a reason, not just an absence of objection. A renewal memo of half a page is enough, provided someone has to write it.
+
+None of this is complicated. It is simply unfashionable, because renewal work produces no launch, no announcement, and no obvious hero. It produces something better: an organisation whose commitments reflect current judgement rather than accumulated inertia.

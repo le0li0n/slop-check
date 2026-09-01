@@ -1,0 +1,79 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: DaveNet : John Shoch on Clean Rooms
+type: blog post
+area: Technology & media
+matched_human_doc: texts/dave-winer/1996-12-19--davenet-john-shoch-on-clean-rooms.txt
+words: 1370
+generated: 2026-08-31
+---
+
+# DaveNet : John Shoch on Clean Rooms
+
+John Shoch and I got onto the subject of clean rooms, and I've been thinking about it ever since. That's usually the sign that a conversation was worth having. You don't notice it while it's happening. You notice it three days later when you're doing something else entirely and the idea won't leave.
+
+Shoch is one of those people whose résumé does the arguing for him. He was at PARC when PARC was PARC. He worked on Ethernet, on PUP, on the internetwork protocols that made the whole thing hang together, and he and Jon Hupp wrote the worm programs — the benign ones, the ones that farmed idle machines overnight, before the word got its current reputation. He ran Xerox's Office Systems Division. Then he spent decades on the other side of the table, funding companies. So he's seen the invention happen, seen the company fail to capture it, and seen the lawyers arrive. Three acts, in order.
+
+## What the room actually is
+
+If you weren't around for it, here's the shape of the thing.
+
+You want to build something that works exactly like a competitor's product. The interfaces have to match. The bug-for-bug behavior has to match, because customers depend on the bugs. But you can't copy the code, because the code is copyrighted, and if you touch it your product is a derivative work and you're finished.
+
+So you build two teams. Team one takes the competitor's product apart. They read the code if it's available, they probe the binary if it isn't, they write down everything about what it *does*. They produce a specification. Team two — who have never seen the original, who have signed statements saying they've never seen the original, who are frequently in a different building — take that specification and implement it fresh.
+
+The specification passes through a lawyer. The lawyer's job is to strike anything that is expression rather than function. Variable names. Comments. The particular sequence of operations where a different sequence would do. What comes out the other side is supposed to be pure fact, and facts aren't copyrightable.
+
+That's the room. Phoenix did it with the IBM PC BIOS and the entire clone industry followed through the door. Compaq did it. It is the single most consequential piece of legal engineering in the history of the personal computer, and almost nobody outside the industry has heard of it.
+
+## Shoch's point, which is not the point you expect
+
+Here's where the conversation turned.
+
+I was talking about clean rooms as a technical practice. Shoch's view is that they're barely technical at all. The wall between the two teams isn't there to make the second implementation better, or more original, or more independent in any deep sense. Two good engineers handed the same functional spec will converge on similar solutions whether or not there's drywall between them. That's not contamination. That's just what it means for a problem to have a right answer.
+
+The wall is there so that two years later, in a deposition, someone can produce a record.
+
+That's the function. A clean room is an evidence-manufacturing apparatus. Every artifact it generates — the dated spec revisions, the signed affidavits, the badge logs showing who was in which room on which day, the lawyer's redline of the specification — exists to be introduced later. The engineering is real. But the *architecture* is legal, and the deliverable is a story with receipts.
+
+Once you hear it that way you can't unhear it. And it explains something that always bothered me: why clean rooms are so expensive relative to what they produce. You're paying to do the work twice, badly, on purpose. You're paying to keep your best people from talking to each other. No engineering manager would design this. A litigator would design exactly this.
+
+## The PARC footnote
+
+Shoch has a vantage point on this that almost nobody else has, because he watched the opposite scenario play out at close range.
+
+At PARC, the ideas walked out with no wall at all. There was no clean room around the bitmapped display, the mouse, the overlapping windows, the WYSIWYG editor, the laser printer, Ethernet. People came, people looked, people left, people built. The famous version of the story is that Xerox got robbed. The version people who were there tend to tell is that Xerox had the ideas and couldn't ship them, and the ideas went where the shipping was.
+
+So here's the tension worth sitting with. The most productive technology transfer in the history of the industry happened with no procedural protection whatsoever, and produced an enormous amount of value — just not for the people who paid for it. Meanwhile the clean room is a machine built specifically to make transfer *provable and defensible*, and it produces clones. Necessary clones. Industry-creating clones. But clones.
+
+The wall is very good at establishing that you didn't steal. It's not much use in establishing that you invented.
+
+## Why media people should care
+
+I'd guess a chunk of the people reading this have never built software and are wondering why they're still here. Stay, because you already run clean rooms. You just call them other things.
+
+The wall between the editorial floor and the ad sales floor. Church and state. The reporter who owns stock in the company recuses herself and it goes in the disclosure line. The banker who moves to the other side of the information barrier. Same structure every time: two groups who could talk, deliberately prevented from talking, generating a paper trail that proves the prevention.
+
+And notice they fail in the same way. Everybody knows the wall is porous. Everybody has watched a publisher lean on a story, or an analyst produce research that was suspiciously convenient. The wall doesn't stop it. What the wall does is make crossing it a *documented act* rather than an ambient condition. It converts a culture problem into an event with a date on it. That's a smaller claim than the one usually made for these things, and it's the one that survives contact with reality.
+
+The organizations where this actually works are the ones that treat the wall as a floor rather than a ceiling. The ones where it fails are the ones that treat the existence of the policy as the accomplishment.
+
+## Which brings us to the thing everyone's avoiding
+
+I don't want to bolt a fashionable ending onto an old man's story about the BIOS, so take this as mine and not his.
+
+We are living through the largest provenance crisis the information business has ever had. Models trained on the whole scraped corpus. Nobody can say with confidence what went in. Nobody can say with confidence what's coming out — whether a given passage is synthesis or something close to reproduction. The lawsuits are underway and they will run for years, and every one of them is going to founder on the same rock: *what can you actually prove about where this came from?*
+
+The clean room was the industry's last serious answer to that question. It was clumsy and expensive and it required doing the work twice. But it was an honest answer, because it accepted the premise — that if you want to claim independent creation, you have to build the apparatus that demonstrates it, in advance, before anyone asks. You can't reconstruct it afterward. That's the entire point. Evidence created after the accusation isn't evidence.
+
+The current posture is the opposite. Ingest everything, sort it out later, hope the doctrine bends. Maybe it does. It bent for Phoenix, it bent for Accolade, it bent for Connectix. Fair use has been generous to people building compatible things.
+
+But it was generous to people who *built the room first*.
+
+Shoch didn't say any of that. He was talking about 1982. He was making a narrower point, which is that the wall is a management artifact and you should be honest with yourself about what it's for.
+
+I think that's the whole lesson, actually. Know what your walls are for. Most people don't, and then they're surprised when the walls don't hold.
+
+Dave

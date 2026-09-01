@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: cluetrain latest
+type: manifesto
+area: Technology & media
+matched_human_doc: texts/cluetrain/1999-06-07--cluetrain-latest.txt
+words: 553
+generated: 2026-08-31
+---
+
+# cluetrain latest
+
+Twenty-seven years ago, four people posted ninety-five theses to a website and told an entire industry that markets are conversations. The document was funny, arrogant, and mostly right. It was also, we should admit now, read as a prophecy when it was really a diagnosis. The Cluetrain Manifesto described what the web was already doing to corporate voice. It did not promise that the outcome would be good.
+
+Here is what actually happened. The human voice did win — briefly, spectacularly, and then it got instrumented. "Markets are conversations" became social listening, sentiment scoring, and a brand persona team of six writing tweets that sound like your funniest friend. The manifesto's line that "hyperlinks subvert hierarchy" turned out to be true right up until the point that the platforms removed the hyperlinks. Try posting one on the major feeds now and watch the reach collapse. Subversion was a property of the architecture, not of the participants, and the architecture was rebuilt.
+
+So the interesting question for anyone working in tech or media in 2026 is not whether Cluetrain was right. It's which of its assumptions have quietly expired.
+
+The big one is scarcity. Cluetrain assumed authentic human speech was abundant and corporate speech was the artificial thing — that if you just cleared the PR layer away, real voices would flood in. That inversion is now complete. Generated text is the abundant substance. A voice that is demonstrably a person, writing from a specific position, with something to lose, is the scarce good. Every media business currently rediscovering the value of bylines, staff writers, and named newsletters is running the same trade: paying a premium for provenance.
+
+The second expired assumption is that the conversation would stay legible. Cluetrain imagined employees talking directly to customers in the open, and companies having to live with it. What we got instead is conversation routed through inference — the customer talks to an assistant, the assistant talks to a retrieval layer, and the company's actual words appear as a summarized paraphrase in a context the company never sees. If markets are conversations, a growing share of those conversations no longer include either party in the room. The practical implication for anyone building a brand right now is unglamorous: your documentation, your pricing page, and your changelog are now your voice, because those are what get read by the thing that answers on your behalf.
+
+The third is the one nobody wants to say out loud. Cluetrain's authors believed that being talked about honestly was survivable — that a company with nothing to hide would come out fine. That held while the talking was slow and attributable. It holds much less well now that reputational claims can be manufactured at volume and cost nothing to produce.
+
+None of this makes the manifesto wrong. It makes it a period document that happens to still be operationally useful, which is more than most strategy writing manages. The theses that survive are the ones about posture rather than mechanism: talk like a person, don't assume your audience is stupider than you, and understand that your company's real character is already public whether you've approved the messaging or not.
+
+That last one has aged extremely well. It just has more surveillance behind it than anyone in 1999 expected.

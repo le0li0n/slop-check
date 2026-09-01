@@ -1,0 +1,31 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Journalists Take Note: The Web is a City
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/david-meerman-scott/2005-03-01--journalists-take-note-the-web-is-a-city.txt
+words: 352
+generated: 2026-08-31
+---
+
+# Journalists Take Note: The Web is a City
+
+For thirty years we've talked about the web as a library. Sites are "pages." We "browse." Information gets "catalogued" and "archived." It's a comfortable metaphor, and it's quietly wrecking a lot of content strategies.
+
+Because the web isn't a library. It's a city.
+
+Libraries are ordered, curated, and still. Someone decides what's on the shelf and where it sits. Cities are none of those things. They're loud, competitive, unevenly lit, and organised by foot traffic rather than by decree. Nobody planned which corner would become the good coffee spot. It happened because people kept turning up.
+
+That distinction matters enormously for anyone producing content.
+
+**Location beats architecture.** In a library, a great book on a bad shelf still gets found via the catalogue. In a city, a great shop on a dead street closes. Your best-researched piece is worth very little if it's published somewhere nobody walks. Distribution isn't the thing you do after the work — it's the address you chose before you started.
+
+**Neighbourhoods have characters, and they don't transfer.** The tone that works on LinkedIn dies on Reddit. Cross-posting identical content everywhere is the marketing equivalent of wearing a tuxedo to a skate park. Read the street before you speak on it.
+
+**Cities decay.** Library books sit undisturbed for decades. A city block left untended becomes derelict fast. Your 2019 pillar page with the broken links and the outdated pricing isn't neutral — it's a boarded-up storefront telling visitors this area isn't looked after. Prune as seriously as you publish.
+
+**Serendipity is the whole point.** People come to libraries knowing what they want. People wander cities. The best content doesn't answer a search query so much as catch someone's eye mid-walk. Optimise for the glance, not just the query.
+
+The library metaphor made content professionals think their job was collection: build the archive, fill the shelves, wait to be found. The city metaphor gives a truer job description. You're not a librarian. You're opening a shop on a busy street, and you have to earn the footfall every single day.

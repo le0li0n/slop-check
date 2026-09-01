@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Who's the parasite? (Scripting News)
+type: blog post
+area: Technology & media
+matched_human_doc: texts/dave-winer/2007-03-06--who-s-the-parasite-scripting-news.txt
+words: 346
+generated: 2026-08-31
+---
+
+# Who's the parasite?
+
+Every few months the same argument comes back around wearing a new hat. The AI companies scrape the web, the publishers howl, and someone reaches for the word *parasite*. It's a good word. It has teeth. But everybody who throws it is throwing it in the same direction, and I don't think that direction is right.
+
+Here's the thing people forget. The web was built by people writing stuff and pointing at each other. That's it. That's the whole architecture. I wrote a blog post, you linked to it, somebody found their way over. Nobody billed anybody. The linking *was* the payment.
+
+Then Google came along and organized the pointing, and we all said fine, great, they're sending traffic. Then Facebook came along and ate the pointing, and we said less fine but okay, they're sending traffic. Now the AI companies come along and they don't send traffic at all. They read everything and answer the question themselves and the reader never leaves. So now the publishers are mad.
+
+But ask yourself which of those three actually changed the deal. Google took your words and gave you a visitor. That's a trade. Facebook took your words and gave you a *maybe*. The AI companies take your words and give you nothing, and then charge twenty dollars a month for the thing they built out of your nothing-payment. That's not a trade, that's just taking.
+
+Except — and this is the part I keep chewing on — the publishers weren't exactly saints in the deal either. They spent fifteen years optimizing for the machine. Writing headlines for the crawler. Stuffing recipes with childhood memories because the algorithm liked length. They fed the beast on purpose because the beast paid. Now the beast has grown up and doesn't need them and they want to talk about ethics.
+
+I'm not defending the scrapers. I'm saying the ecosystem got sick a long time ago and everybody was fine with it while the money flowed.
+
+The parasite isn't a company. It's an arrangement. And we all signed.

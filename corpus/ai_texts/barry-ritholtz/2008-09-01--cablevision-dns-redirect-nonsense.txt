@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Cablevision DNS Redirect Nonsense
+type: blog post
+area: Technology & media
+matched_human_doc: texts/barry-ritholtz/2008-09-01--cablevision-dns-redirect-nonsense.txt
+words: 358
+generated: 2026-08-31
+---
+
+# Cablevision DNS Redirect Nonsense
+
+Type a domain that doesn't exist and the internet is supposed to tell you so. NXDOMAIN. Three syllables of honest failure. Your browser shows an error, you notice the typo, you move on with your life.
+
+Unless you're on Cablevision, in which case you land on a search page full of ads.
+
+This isn't new and Cablevision isn't alone — Verizon, Charter, and most of the rest have all run some version of it. But it deserves to be called what it is: the ISP intercepting a protocol response and substituting a monetized one. You asked a question, the resolver knew the answer was "nothing," and it lied to you because a lie is worth about a nickel in ad inventory.
+
+The consumer-facing damage is mild if annoying. The technical damage is not.
+
+DNS is not just a browser thing. Every piece of software that resolves a name inherits this behavior. Mail clients that expect an NXDOMAIN to fall through to the next MX get a valid A record instead. Corporate VPN split-tunnel logic that keys off internal names failing to resolve breaks. Certificate validation, service discovery, anything that treats "no such host" as meaningful signal now receives a confident pointer to an ad server in New Jersey. Developers on Cablevision connections chase phantom bugs that don't exist anywhere else on earth.
+
+There's an opt-out, buried in account settings, and it works by setting a cookie — a cookie, to control DNS behavior, which tells you how carefully this was thought through. It doesn't survive browser changes, doesn't apply to other devices, and does nothing for non-browser traffic.
+
+The fix on your end is trivial: point at 1.1.1.1 or 8.8.8.8 and forget it happened. That's what most technically literate users have already done, which is precisely why this practice survives. The people who'd complain loudest routed around it years ago, and everyone else assumes the internet just works this way now.
+
+It doesn't have to. Resolving a name is infrastructure, not inventory. An ISP that can't resist monetizing a failed lookup has quietly told you what else it thinks your traffic is for.

@@ -1,0 +1,31 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: The Viral Garden: More on blog sponsorship/monetization
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/mack-collier/2007-07-01--the-viral-garden-more-on-blog-sponsorship-monetization.txt
+words: 362
+generated: 2026-08-31
+---
+
+# The Viral Garden: More on blog sponsorship/monetization
+
+Last week's post on sponsorship drew more email than anything I've written this year, most of it some version of the same question: *what does a sponsor actually get?*
+
+The honest answer is that most of us have been selling the wrong thing. We sell impressions because impressions are what we know how to count. A sponsor buys 50,000 monthly pageviews, gets a logo in the sidebar, renews once out of politeness, and quietly disappears. Nobody is happy, but everyone is busy, so the arrangement persists.
+
+What actually works — and I say this having gotten it wrong twice — is selling *association* rather than attention. A reader who trusts a blog transfers a small amount of that trust to the names attached to it. That transfer is the product. It is slow to build, easy to destroy, and worth considerably more per reader than a banner.
+
+Three things follow from that.
+
+**Fewer sponsors, longer terms.** A blog with four sponsors reads as a publication. A blog with fourteen reads as a billboard. I'd rather sell four quarterly slots than sell twelve monthly ones and spend the difference in credibility.
+
+**The sponsor has to fit the garden.** This is the part people resist, because turning down money feels absurd when the money is right there. But every mismatched sponsor costs you a fraction of the audience's belief that you're writing for them rather than for the advertiser. Those fractions compound.
+
+**Disclose more than you're required to.** Not because of the FTC, though there's that. Because a reader who discovers the arrangement on their own feels manipulated, and a reader you tell up front feels respected. Same facts, entirely different outcome.
+
+The uncomfortable implication for anyone building a monetization plan: this doesn't scale on the timeline your spreadsheet wants. You cannot force trust into existence by the end of the quarter. You can only plant things and water them and refuse to sell the garden to someone who'd pave it.
+
+Which is, I'll admit, terrible advice for anyone who needs revenue this month. It's very good advice for anyone who wants revenue in three years.

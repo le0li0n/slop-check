@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: VC Cliché of the Week
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/fred-wilson/2006-09-01--vc-clich-of-the-week.txt
+words: 343
+generated: 2026-08-31
+---
+
+# VC Cliché of the Week
+
+**"We're not the lead, but we'd love to be a strong follow."**
+
+You've heard it. You've probably said it. It arrives at minute forty-two of a warm, wandering call, right after the partner tells you they love the space and think you're exactly the kind of founder they back.
+
+Translated: *we like you enough to want the allocation, and not enough to price the round, negotiate the terms, or take the reputational risk of being wrong first.*
+
+There is nothing dishonest about it. Most funds genuinely are not built to lead at every stage, and a good follow with real conviction is worth having on the cap table. The problem is what the phrase does to a founder's calendar. "Strong follow" converts a no into a maybe, and maybes are the most expensive thing in a fundraise. You keep the fund in the deck, you send the monthly update, you route the diligence questions — and none of it moves you closer to a term sheet, because the entire commitment is contingent on somebody else doing the hard part.
+
+The tell is what happens next. A genuine follow says: *find a lead, and here's the number I'll commit at, and here are three leads I'll introduce you to this week.* That's a real position. A cliché follow says the same warm sentence and then asks to "stay close."
+
+So the ask is simple, and founders should make it in the room rather than three weeks later over email: **What's your check size, and will you put that in writing before a lead is signed?** The answer takes ten seconds and sorts the room cleanly. Anyone who won't name a number isn't following — they're watching.
+
+For the investors reading: the phrase costs you less than you think and costs founders more than you know. If you want the deal, say the number. If you don't, say so kindly and quickly. Founders remember the fast no far more fondly than the four-month soft yes.
+
+Next week: "We're stage-agnostic."

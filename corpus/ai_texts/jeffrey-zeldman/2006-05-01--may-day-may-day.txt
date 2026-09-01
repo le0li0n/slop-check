@@ -1,0 +1,31 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: May Day, May Day
+type: blog post
+area: Design, UX & product
+matched_human_doc: texts/jeffrey-zeldman/2006-05-01--may-day-may-day.txt
+words: 351
+generated: 2026-08-31
+---
+
+# May Day, May Day
+
+There are two ways to read that title, and product teams live in the gap between them.
+
+The first is the celebration. Workers in the street, the eight-hour day, the radical idea that the people doing the labour should have some say in how it's organised. The second is the distress call — *m'aidez*, help me — sent from a cockpit when the instruments stop agreeing with the world outside the window.
+
+Most design organisations I've watched are transmitting the second while quietly needing the first.
+
+Here's the distress call. The roadmap says one thing, the research says another, and nobody has the standing to reconcile them. A designer spends three weeks on a flow that gets cut in a planning session they weren't invited to. The design system has 400 components and no owner. Everyone is busy; nothing is being decided. That's not a resourcing problem. It's an authority problem wearing a resourcing problem's clothes.
+
+And here's where the first meaning earns its keep. May Day wasn't about working less. It was about who gets to set the terms of the work. The eight-hour day was a boundary that made craft possible — you cannot do careful thinking at hour fourteen, and the people who knew that had to organise to make it true.
+
+The equivalent boundary in our discipline is not headcount. It's the right to say *not yet*. Not yet, because we haven't spoken to a user. Not yet, because this pattern contradicts three others. Not yet, because the metric we're optimising is a proxy for something we haven't defined. Every team that has produced work you admire had someone with the standing to say that and survive it.
+
+You get that standing the same way it's always been got: not by asking, and not individually. By building the evidence, holding the line together, and making the cost of overriding you legible to the people doing the overriding.
+
+The distress call is the easy part. Anyone can transmit it, and most of us do, daily, into Slack.
+
+The other May Day requires organising.

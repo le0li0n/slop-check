@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Answering questions about Facebook, Microsoft and Identity
+type: blog post
+area: Technology & media
+matched_human_doc: texts/doc-searls/2007-10-26--answering-questions-about-facebook-microsoft-and-identi.txt
+words: 348
+generated: 2026-08-31
+---
+
+Answering Questions about Facebook, Microsoft and Identity
+
+Two questions keep surfacing whenever a large platform touches identity infrastructure: what does the platform actually see, and what happens when it decides you no longer belong. Facebook and Microsoft sit on opposite ends of that spectrum, and it's worth being precise about the difference.
+
+Facebook's identity layer is consumer-facing and social. When you use Facebook Login on a third-party app, you're handing that app a subset of your social graph data, mediated by permissions you (mostly) agreed to at some point. The concern here isn't usually "will Facebook lock me out" — it's data leakage, shadow profiles built from cross-app tracking, and the fact that most users have no real visibility into what's being shared downstream. The Cambridge Analytica episode remains the reference case, but the underlying architecture that made it possible hasn't fundamentally changed — permission scopes have narrowed, not the incentive to aggregate.
+
+Microsoft's identity layer is enterprise-facing and structural. Azure AD (now Entra ID) isn't just a login button — it's the backbone that decides whether an employee can open Outlook, join a Teams call, or access a line-of-business app built on Azure. That centrality is a feature for IT departments and a single point of failure for everyone downstream. When Microsoft suspends an account, revokes a license, or has an outage, entire organizations lose functionality simultaneously, not just one app's convenience login.
+
+The practical takeaway for anyone building or covering products in this space: "identity provider" is not one category. A social identity provider mainly risks your data. An enterprise identity provider risks your operations. Due diligence should differ accordingly — ask Facebook-adjacent products about data flows and consent; ask Microsoft-adjacent products about failover, account recovery, and what a suspension actually looks like procedurally.
+
+Neither company is going to relinquish this layer voluntarily — identity is sticky, and stickiness is the business model. The more useful question isn't whether to rely on these systems, since most organizations already do by default, but how much single-vendor dependency you're willing to carry before you build a fallback path.

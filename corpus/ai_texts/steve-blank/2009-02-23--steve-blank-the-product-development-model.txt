@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Steve Blank The Product Development Model
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/steve-blank/2009-02-23--steve-blank-the-product-development-model.txt
+words: 355
+generated: 2026-08-31
+---
+
+Steve Blank's Product Development Model
+
+For decades, startups borrowed their playbook from big companies: write a business plan, build the product to spec, then go sell it. Steve Blank looked at the wreckage of failed startups and concluded that this model was solving the wrong problem. Product development answers "can we build it?" It never asks whether anyone wants it.
+
+Blank's alternative, laid out in "The Four Steps to Epiphany," starts from a different premise: a startup is not a smaller version of a big company. It's a temporary organization designed to search for a repeatable, scalable business model. Big companies execute known models. Startups don't have one yet — and no business plan survives first contact with a customer.
+
+The four steps run in sequence, but with an escape hatch built in. Customer Discovery tests your hypotheses about the problem and who has it, talking to prospects before writing a line of code you don't need. Customer Validation builds a sales process that proves people will actually pay. Customer Creation scales demand once you know the model works. Company Building shifts from a scrappy search organization into departments and process. Crucially, the model expects founders to loop back to step one when the market says no — pivoting isn't failure, it's the method working as designed.
+
+This is the intellectual ancestor of the Lean Startup movement Eric Ries popularized: get out of the building, treat every assumption as a hypothesis, and measure learning, not just output. For founders, it reframes the earliest months as a search problem rather than an execution problem — the goal isn't a finished product, it's validated learning about customers.
+
+For VCs, Blank's model changes what a good early check-in looks like. Instead of asking "did you ship the roadmap," ask "what did you learn from customers this month, and what did you change because of it." A team executing flawlessly on the wrong hypothesis is a bigger risk than one moving slower but discarding bad assumptions fast. The model rewards teams that treat their own business plan as the first thing to test — not the plan to defend.

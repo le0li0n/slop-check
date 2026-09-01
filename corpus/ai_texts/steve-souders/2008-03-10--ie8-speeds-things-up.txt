@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: IE8 speeds things up
+type: blog post
+area: Software engineering
+matched_human_doc: texts/steve-souders/2008-03-10--ie8-speeds-things-up.txt
+words: 438
+generated: 2026-08-31
+---
+
+# IE8 speeds things up
+
+Every few years a browser release arrives claiming to have solved performance, and every few years the claim survives contact with production for about a week. Internet Explorer 8 is worth taking seriously anyway, because for once the speed story is less about the JavaScript engine and more about the plumbing around it.
+
+Start with the part that actually moves page load: connection parallelism. IE7 held to the old HTTP/1.1 guidance of two persistent connections per host. IE8 raises that to six on broadband. For a typical page pulling forty subresources off two or three hostnames, that alone can cut wall-clock load time noticeably — and it changes the calculus on domain sharding. If you sharded across four static hostnames to work around the two-connection limit, you may now be paying DNS and TCP setup costs for parallelism you no longer need. Measure before you rip it out, but do measure.
+
+The script engine got faster too, though the honest framing is "less embarrassing" rather than "competitive." IE8 improves string handling and DOM access enough that the usual jQuery-heavy page feels less sluggish, but on synthetic benchmarks it still trails the current V8, SpiderMonkey, and JavaScriptCore builds by a wide margin. The engine remains an interpreter. If your app's hot path is a tight numeric loop, IE8 will not save you; if it's `innerHTML` churn and selector queries — which, in practice, it usually is — you'll see real improvement.
+
+Two features are underrated by engineers who skim the marketing. First, `window.localStorage` and the `online`/`offline` events give you a sanctioned client-side store, which means you can stop abusing cookies for state that never needed to touch the wire. Cutting a few kilobytes off every request is a bigger latency win than most micro-optimizations you'll attempt in script. Second, `postMessage` and cross-domain requests via `XDomainRequest` let you drop some of the iframe and JSONP gymnastics that have been quietly costing you round trips.
+
+The catch, as always, is compatibility mode. IE8's standards mode is genuinely stricter than IE7's, and the `X-UA-Compatible` header exists precisely because Microsoft knew large intranets would break. Sending `IE=EmulateIE7` is a legitimate short-term move, but understand what you're buying: you keep the connection parallelism and the network improvements, and you give up the standards-mode rendering path. Treat it as a deadline, not a setting.
+
+Net assessment: IE8 doesn't close the gap with Chrome or Firefox on raw script execution, and pretending otherwise will get you caught. But it removes the network bottleneck that made IE6 and IE7 disproportionately painful, and for most real applications that bottleneck was the actual problem.

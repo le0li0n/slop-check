@@ -1,0 +1,43 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Is Your Startup Idea Viable?
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/david-skok/2009-11-29--is-your-startup-idea-viable.txt
+words: 933
+generated: 2026-08-31
+---
+
+Is Your Startup Idea Viable?
+
+Every founder has felt it: the 2am certainty that the idea is good, followed by the 9am doubt that maybe it's just a solution in search of a problem. Viability isn't a feeling — it's a set of testable claims. Before you write a pitch deck, before you write a line of code, you should be able to answer five questions with evidence rather than conviction.
+
+**Who has this problem, and how do you know?**
+
+"Everyone" is not a customer. Neither is "small businesses" or "developers." Viable ideas start with a narrow, specific person in a specific context experiencing a specific pain. If you can't name ten people by role or company who have this problem today, you don't have a target market — you have a hypothesis. Go talk to them before you build anything. Not a survey, not a landing page with a fake button — an actual conversation where you ask what they currently do about this problem and how much it costs them in time, money, or frustration. If they shrug, that's information. If they light up and start describing workarounds they've cobbled together, that's a signal worth chasing.
+
+**How painful is the problem, really?**
+
+There's a difference between a problem people will complain about and a problem people will pay to solve. The test is behavior, not sentiment. Are people already spending money on a bad solution — a spreadsheet, a consultant, a competitor they secretly hate? Existing spend is the single best proxy for willingness to pay, because it means the market has already done the work of proving the pain is real. If nobody is paying for anything remotely adjacent to your solution, you're either early to a category that doesn't exist yet — which is a much harder and more expensive bet — or the pain isn't as sharp as you think.
+
+**Why now?**
+
+Investors ask this because timing kills more good ideas than competition does. What has changed in the last two to three years that makes this possible or necessary today, when it wasn't five years ago? A cost curve that dropped (compute, storage, a new API), a regulatory shift, a behavior change accelerated by some external event, a new distribution channel opening up. If your honest answer is "nothing has changed, I just thought of it," that's not disqualifying, but it does mean you need a different kind of edge — because you're not riding a wave, you're creating one from scratch, and that's a slower, more capital-intensive path.
+
+**Can you actually win it?**
+
+Market size gets all the attention in pitch meetings, but the more useful question is narrower: given who you are, what you know, and what you have access to, can you win a meaningful slice of this before someone better resourced does? A $50B market with twelve well-funded incumbents and no wedge is often a worse bet than a $500M market where you have a genuine unfair advantage — proprietary data, a distribution channel nobody else has, domain expertise competitors would need years to replicate. Founders routinely overweight market size and underweight their actual right to win it. Ask yourself honestly what happens when a well-capitalized competitor notices you.
+
+**What does the unit economics story look like, even roughly?**
+
+You don't need a finished model, but you should have a rough sense of what it costs to acquire a customer and what that customer is worth over time — and those two numbers need to leave room for a business, not just a feature. If your acquisition cost depends on virality you haven't proven, or your margin depends on a cost line you don't control (a third-party API, a supply chain, a platform fee), stress-test that assumption early. A lot of ideas that are viable as products are not viable as businesses, and the earlier you find out which one you have, the cheaper the lesson is.
+
+**What kills most ideas isn't a bad answer — it's no answer**
+
+The founders who get into trouble aren't usually the ones with a flawed thesis. They're the ones who never stated the thesis clearly enough to be wrong. "We think X people have Y problem badly enough to pay Z for it, and we can win it because of W" is a sentence you should be able to write down and then go try to disprove. If you can't disprove it after real effort — talking to customers, checking what they currently spend, mapping who else is circling the same opportunity — that's about as close to validation as it gets before you commit real capital.
+
+For venture professionals evaluating these ideas from the outside, the same five questions apply, just with the burden of proof shifted onto the founder. Ask them to show you the conversations, not just describe them. Ask what existing spend looks like, not just what the TAM slide says. Ask why now, and watch whether the answer is a market observation or a personal epiphany — the former ages much better than the latter.
+
+None of this guarantees success. Plenty of well-validated ideas still fail on execution, timing, or luck. But viability testing isn't about eliminating risk — it's about making sure the risk you're taking is the interesting kind: can we execute, can we out-hustle the market, can we build the thing well — rather than the boring kind: does anyone actually want this. Founders who skip straight to building are often just deferring the hardest question to the point where it's most expensive to answer. Ask it first.

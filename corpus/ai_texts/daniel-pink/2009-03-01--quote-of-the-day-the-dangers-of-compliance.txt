@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Quote of the day: The dangers of compliance
+type: blog post
+area: Management & strategy
+matched_human_doc: texts/daniel-pink/2009-03-01--quote-of-the-day-the-dangers-of-compliance.txt
+words: 377
+generated: 2026-08-31
+---
+
+# Quote of the day: The dangers of compliance
+
+> "The greatest danger in an organisation is not the person who disagrees with you. It is the person who agrees with you and doesn't mean it."
+
+Every executive team has a moment it would rather forget: the strategy that sailed through approval, met no resistance in the room, and then quietly failed in the market. Afterwards, in ones and twos, people admit they had doubts. Nobody said so at the time. Everybody complied.
+
+Compliance is seductive because it looks exactly like alignment. The meeting ends on schedule. The deck gets signed off. The minutes record unanimous support. But alignment is a shared belief that a decision is right; compliance is a shared decision to stop arguing. They produce identical paperwork and radically different outcomes, and the difference only becomes visible at the point of execution — when the plan needs people to improvise in its favour and instead they follow it to the letter, or not at all.
+
+The cost shows up in three places. First, in information: the objection that goes unvoiced is usually the one closest to the customer or the factory floor. Second, in ownership: people who never truly agreed feel no authorship, and authorship is what makes them push through the inevitable obstacle at week eleven. Third, in speed of correction: a compliant organisation keeps executing a failing plan long after a candid one would have stopped.
+
+What produces compliance is rarely cowardice. It is design. Senior voices speak first. Dissent has historically cost someone a promotion. The decision arrives pre-framed as a fait accompli, with a single option and a request for questions. Under those conditions, silence is the rational response.
+
+So the fix is also design. State your position last, not first. Ask for the strongest case against the plan and assign someone to make it. Ask "what would have to be true for this to fail?" rather than "any concerns?" Notice which meetings never produce disagreement and treat that as a warning sign rather than a compliment to your leadership.
+
+The uncomfortable test: when did someone last tell you that you were wrong — and what happened to them afterwards? Your organisation already knows the answer. It is behaving accordingly.

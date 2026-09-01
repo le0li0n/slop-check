@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: A Class (or Caste) System for APIs
+type: blog post
+area: Software engineering
+matched_human_doc: texts/scott-hanselman/2003-05-12--a-class-or-caste-system-for-apis.txt
+words: 648
+generated: 2026-08-31
+---
+
+A Class (or Caste) System for APIs
+
+Every API has a caste system, even the ones that swear they don't. Look past the marketing copy about "democratized access" and "developer-first design," and you'll find tiers: the endpoints that get documented and the ones that don't, the customers who get a dedicated Slack channel and the ones who file a ticket into the void, the rate limits that flex for enterprise accounts and the ones that are actually enforced for everyone else.
+
+The polite term is "tiering." The honest term is closer to caste, because the defining feature of a caste system isn't that it has levels — plenty of reasonable systems have levels — it's that mobility between levels is hard, the rules for mobility are opaque, and the people at the bottom don't get to see the rules at all.
+
+Consider rate limiting. Most API providers present it as a simple resource-allocation problem: X requests per minute, scaled by plan tier. But the actual behavior is often stranger. A free-tier key gets throttled at the edge, sometimes silently, sometimes with a 429 that arrives after the request has already done partial work downstream. An enterprise key gets waved through a side door, sometimes literally a different ingress path with different infrastructure behind it. These aren't two points on a continuous curve. They're different products wearing the same OpenAPI spec.
+
+The same split shows up in error messages. A well-funded customer gets a stack trace, a request ID, and a named contact who can look it up in an internal dashboard. Everyone else gets `{"error": "internal_server_error"}` and a support form with a 72-hour SLA that the provider will not actually hit. The information asymmetry compounds: the customers who most need clarity because they lack in-house expertise to work around ambiguity are the ones getting the least of it.
+
+Versioning is where the caste system gets its sharpest edges. Deprecation announcements go out first — sometimes exclusively — to accounts above a revenue threshold, because that's who has an account manager checking in. Breaking changes get soft-launched to those same accounts under an opt-in flag, get feedback, get fixed, and only then ship broadly to everyone who was never in the loop. By the time the free tier hears about a change, it's not a preview, it's a fait accompli with a migration deadline.
+
+None of this is necessarily malicious. Rate limiting the free tier harder is a legitimate response to abuse and cost. Giving your biggest customer a Slack channel is a legitimate response to the fact that losing them hurts more. The problem isn't that differentiation exists — it's that most providers don't admit the differentiation exists as a designed system, which means nobody outside the top tier can reason about where they actually stand or what it would take to move up.
+
+Compare this to systems that are explicit about it: AWS's service quotas are documented, requestable, and the escalation path is a form, not a relationship. Stripe publishes exactly which error codes mean what, for every account, and the docs don't change based on your MRR. That's still a tiered system — bigger customers still get faster support — but it's a tier system with visible rules, which is the difference between a class system and a caste system. Class systems have ladders. Caste systems have walls dressed up as ladders.
+
+If you're building an API, the fix isn't to pretend tiers don't exist — they will, because your incentives aren't uniform across customers and pretending otherwise is its own kind of dishonesty. The fix is to publish the rules: what triggers a rate limit change, what a deprecation timeline actually guarantees to which tier, what the error taxonomy means regardless of who's asking. Your lowest tier won't get the same treatment as your highest. But they should be able to read the same rulebook.

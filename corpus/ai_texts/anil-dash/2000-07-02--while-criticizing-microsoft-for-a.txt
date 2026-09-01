@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: While criticizing Microsoft for a
+type: blog post
+area: Technology & media
+matched_human_doc: texts/anil-dash/2000-07-02--while-criticizing-microsoft-for-a.txt
+words: 366
+generated: 2026-08-31
+---
+
+# While criticizing Microsoft for a
+
+While criticizing Microsoft for a lapse in judgment last week, I caught myself doing the thing I keep telling other people not to do: treating a corporate decision as if it were a personality trait. The company shipped something, walked part of it back, and within hours the commentary had settled into its usual grooves — Microsoft is arrogant, Microsoft is desperate, Microsoft never learns. All plausible. None of it load-bearing.
+
+The trouble with character-based criticism is that it's unfalsifiable and therefore useless. If a company is fundamentally arrogant, every action confirms it. Ship a feature nobody asked for? Arrogance. Pull it after backlash? Arrogance, humbled. There's no outcome that would cause anyone to revise the thesis, which means the thesis isn't doing analytical work — it's doing emotional work, and it's doing it for the writer, not the reader.
+
+What would be more useful is boring: who owned the decision, what incentive structure made it look reasonable in the room, and which internal constituency lost the argument. Those questions have answers. They're harder to get, they don't scan as well in a headline, and they produce conclusions that are frequently unsatisfying — most bad product decisions turn out to be the residue of a reorg, a quarterly target, or a VP who needed a launch on their record before review season. Banal. Also true.
+
+I think the reason we reach for character is that it lets us skip the reporting. Institutional analysis requires sources, patience, and a tolerance for finding out the villain was a spreadsheet. Character analysis requires only that you have opinions and a keyboard, and it rewards you immediately with agreement from people who already share your priors.
+
+This matters more now than it did, because the companies we cover have become large enough that they contain their own opposition. The Microsoft that shipped the thing and the Microsoft that objected to shipping it are the same Microsoft. Writing as though a hundred-thousand-person organization has a unified will isn't shorthand — it's an error that makes the resulting analysis predictively worthless.
+
+I'm not exempting myself. I wrote the arrogance version first. I just didn't publish it.

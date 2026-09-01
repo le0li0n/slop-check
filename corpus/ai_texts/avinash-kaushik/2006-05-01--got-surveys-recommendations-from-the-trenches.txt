@@ -1,0 +1,61 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Got Surveys? Recommendations from the Trenches
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/avinash-kaushik/2006-05-01--got-surveys-recommendations-from-the-trenches.txt
+words: 1353
+generated: 2026-08-31
+---
+
+Got Surveys? Recommendations from the Trenches
+
+Every marketing team eventually reaches for a survey. Leadership wants a stat for the deck, sales wants a proof point for the pitch, or the content calendar has a gap that "original research" seems built to fill. The instinct is right — surveys are one of the few content formats that can produce something genuinely new, rather than repackaging what's already out there. But most surveys that marketing teams run never get used the way they were supposed to. They get fielded, the results come back messy or boring, and the whole project quietly dies somewhere between the spreadsheet and the blog post.
+
+Having run more than a few of these — and cleaned up after a few that went sideways — here's what actually matters, in roughly the order you'll hit it.
+
+## Start with the headline, not the questionnaire
+
+The single biggest mistake is writing survey questions before deciding what story you want to tell. Teams open a survey tool, brainstorm twenty questions that seem "interesting," field them, and then sit down with the results hoping a narrative will emerge. Sometimes one does. Usually it doesn't, and you end up with a report that says "we asked people about X and here's a bar chart" — which is data, not content.
+
+Work backwards instead. Before you write a single question, draft two or three hypothetical headlines: "62% of marketers say their biggest budget line is one they can't measure," or "Most B2B teams still can't agree on what a qualified lead is." You don't need to know the actual number yet — you need to know the shape of the claim you're hoping to make. Then build the questionnaire to test whether that claim is true. If it turns out to be false, that's often a better story anyway ("Everyone assumes X, but our survey found the opposite"). Either way, you're fielding a survey to answer a specific question, not to generate a vague pile of data you'll figure out later.
+
+## Sample size and sample quality are different problems
+
+Marketing teams tend to fixate on n — "we need at least 300 responses" — and pay much less attention to who those 300 people actually are. Both matter, but the second one is where credibility actually gets won or lost.
+
+A survey of 1,500 people recruited through a generic panel, where a third of them clearly speed-clicked through in ninety seconds, is worth less than a clean survey of 250 people who are unambiguously your target audience. If you're claiming to represent "marketing leaders," make sure your screening questions actually screen for seniority and function — don't just ask "do you work in marketing" and call it done. Panel providers will let you get away with weak screening because it's cheaper and faster to field. Push back on this. Ask your research vendor exactly how they're verifying respondent quality, what their fraud/bot detection looks like, and what percentage of completes get thrown out for failing attention checks. If they can't answer that clearly, that's a signal.
+
+Also: document your methodology properly from day one — sample size, field dates, margin of error, screening criteria. You will get asked for this by a journalist, an analyst, or a skeptical prospect, and scrambling to reconstruct it three months later is a bad time.
+
+## Write questions like you don't already know the answer
+
+It's tempting to write questions that nudge toward the result you want, especially when there's a product narrative you're hoping the data supports. Resist this. Leading questions produce numbers that don't hold up under scrutiny, and marketing/content audiences — especially other marketers — are unusually good at spotting a rigged survey. A question like "How much has AI improved your marketing efficiency?" assumes the improvement already happened; "How, if at all, has AI changed your marketing efficiency?" doesn't.
+
+The same discipline applies to answer options. Balanced scales, a genuine "no change" or "not applicable" option, and randomized answer order (most survey tools do this automatically) all reduce the amount of noise you're introducing yourself. If you're not willing to publish a finding you don't like, you've already decided the survey isn't really research — it's a marketing asset wearing a lab coat. That's fine as a category, but be honest with yourself about which one you're building, because it changes how much scrutiny the output can survive.
+
+## The report is not the campaign — plan the afterlife before you field
+
+This is where most survey projects actually fail. Someone commissions the research, gets a PDF report back from the vendor or agency, publishes it as a gated asset, and considers the project finished. Three weeks later nobody remembers it exists.
+
+A survey's value isn't the report — it's the twenty or thirty individual, citable data points buried inside it. Before you field anything, map out where those data points are going to live: a flagship report for the gated download, yes, but also a series of social posts each built around one surprising stat, a couple of contributed bylines for trade press, sales enablement one-pagers with the numbers most relevant to your ICP, and quotable lines your spokespeople can use on podcasts and panels for the next six months. Journalists and industry analysts are much more likely to cite a single sharp statistic with clear sourcing than to read and extract from a 20-page PDF themselves — so do that extraction work for them.
+
+Build this distribution plan at the same time as the questionnaire, not after the data comes back. It'll also sharpen your questions, because you'll notice which topics you're planning to build five assets around and which ones you're only asking out of curiosity.
+
+## Cut anything you can't defend
+
+Somewhere in the results there will be a stat that's eye-popping and also a little shaky — a small subgroup, an oddly worded question, a result that doesn't quite make sense next to the question before it. The temptation to lead with it is strong, because it's the most quotable number you have. Don't. If a journalist, a competitor, or a skeptical commenter can poke a hole in your headline stat, they will, and it will overshadow everything else that was solid in the study. Better to lead with the second-best finding that will actually survive scrutiny.
+
+This is also where it pays to have someone on the team — or an outside data person — sanity-check cross-tabs before publication. Survey tools make it trivially easy to slice by segment, and it's easy to end up reporting a "finding" that's really just a small sample size producing a weird number.
+
+## Timing and cadence beat one-off perfection
+
+A single, beautifully executed survey report is good. A survey you run every year on the same core questions is much more valuable, because after year two you can say "up from 34% last year" — and trend lines get covered and cited far more than static snapshots. If you're only going to do this once, fine, but if there's any chance you'll want to repeat it, lock down a small set of trackable questions now and keep the wording identical across waves, even if you change or add other questions around them. Nothing kills a year-two comparison faster than realizing you reworded the question just enough that the two numbers aren't actually comparable.
+
+## The unglamorous checklist
+
+Before you field: know your headline hypothesis, know your audience and how you'll verify they're real, write neutral questions, and have a distribution plan already sketched out. After the data lands: sanity-check the surprising numbers before you build a campaign around them, document your methodology properly, and pull every citable stat out into its own reusable asset rather than letting them all die inside one PDF.
+
+None of this is complicated, but it's the difference between a survey that becomes six months of content and press mentions, and one that becomes a PDF nobody opens after launch week. The data collection is the easy part. What you build around it is the actual work.

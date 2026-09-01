@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Lessons Learned: What does a startup CTO actually do?
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/eric-ries/2008-09-01--lessons-learned-what-does-a-startup-cto-actually-do.txt
+words: 879
+generated: 2026-08-31
+---
+
+Lessons Learned: What Does a Startup CTO Actually Do?
+
+Ask ten founders what their CTO does and you'll get ten different answers, most of them wrong. "Writes the code" is the most common one, and it's the one that causes the most damage — because a CTO who is heads-down in an IDE all day is, by definition, not doing the parts of the job that only a CTO can do. Here's what I've learned, mostly the hard way, about where the role actually lives.
+
+**The job changes shape every six months, and that's the point.** At five people, you are the most productive engineer on the team, full stop. You're shipping the MVP, you're the one who knows why the database schema looks the way it does, and your code output is the difference between hitting a demo deadline and missing it. At fifteen people, that same behavior becomes a liability. You're now the bottleneck on every architectural decision because nobody else has context, and you're the single point of failure if you disappear for a week. The mistake founders and CTOs both make is assuming the job at stage one is the job forever. It isn't. If you're still the top committer on the repo at Series B, something has gone wrong — either you haven't hired well, or you haven't let go.
+
+**Translation is the real function.** A startup CTO sits at the only point in the org where "what the board wants," "what the customer needs," and "what the codebase can actually support this quarter" all have to be reconciled. Investors ask for a scalability story. Sales asks for a feature that technically requires rearchitecting the permissions system. Engineering asks for six weeks to pay down debt that's invisible to everyone else. None of these parties can hear each other natively — they need someone who can hold the technical reality and the business reality in the same head and produce a decision, not a compromise cobbled together in a meeting nobody wanted to be in. That's not a technical skill. It's closer to diplomacy with a systems-design fluency requirement.
+
+**Hiring is the highest-leverage technical decision you'll make, and most CTOs underinvest in it.** Early on it's tempting to treat recruiting as an HR function you tolerate rather than a core competency you build. That's backwards. The first five engineering hires define the culture, the code quality bar, and — quietly — the ceiling on how fast you can move for the next two years. A CTO who writes a clever caching layer saves the company a few thousand dollars in infra cost. A CTO who hires the wrong VP of Engineering costs the company a year. Weight your time accordingly.
+
+**Technical debt is a financing decision, not a moral failing.** Every startup CTO eventually has the conversation where an engineer says "we need to rewrite this" and a founder says "we don't have time." Both are usually right, and the job is to figure out which debt is bridge debt — deliberately taken on to hit a milestone that unlocks the next round — and which debt is going to compound into an outage that takes down the product during a customer's board demo. The skill isn't avoiding debt. It's underwriting it with the same rigor a CFO applies to actual debt: knowing the interest rate, knowing the maturity date, and not letting it get refinanced indefinitely by a roadmap that never has room for repayment.
+
+**You are also, whether you like it or not, a signal to outsiders.** Investors doing diligence on a technical team, enterprise customers doing security reviews, engineering candidates deciding whether to take an offer — they are all, in part, evaluating the company through their read of the CTO. This means a meaningful slice of the job is external: writing the technical due-diligence narrative, sitting across from a prospective customer's security team, being the credible face that makes a skeptical senior engineer say yes to an offer with below-market cash comp. Founders who expect their CTO to be purely internal-facing are leaving a recruiting and sales channel unused.
+
+**The best CTOs I've watched treat their own calendar as the first system they architect.** If your week is 100% reactive — Slack fires, code review queues, incident calls — you have accidentally designed a role with no room for the two things only you can do: making the two-year technical bet correctly, and building the team that will execute it without you in the room. Protecting unstructured thinking time isn't indulgence; it's the same discipline you'd apply to protecting a database from unbounded queries. Left unmanaged, the reactive work will consume all available capacity every time.
+
+The uncomfortable version of all this: the CTO job at a startup is not really a technical job that occasionally requires people skills. It's a translation, judgment, and team-building job that occasionally requires you to remember how to code. The founders who get the most value from their CTO are the ones who stop asking "is she still technical enough" and start asking "is she building the right team, making the right bets, and telling me the truth about the tradeoffs." The engineers who make that transition well are the ones worth backing twice.

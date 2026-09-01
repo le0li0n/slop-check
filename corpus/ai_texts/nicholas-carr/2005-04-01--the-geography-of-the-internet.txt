@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: The geography of the Internet
+type: blog post
+area: Technology & media
+matched_human_doc: texts/nicholas-carr/2005-04-01--the-geography-of-the-internet.txt
+words: 357
+generated: 2026-08-31
+---
+
+The Geography of the Internet
+
+We were promised placelessness. The internet, we were told, would dissolve geography — a frictionless plane where a startup in Lagos and a bank in Zurich competed on equal footing, unbound by the accidents of location. Twenty years on, the opposite happened: the internet built its own geography, denser and more consequential than the one it was supposed to replace.
+
+Look at where the actual infrastructure sits. Data centers cluster in Loudoun County not because Virginia is special but because the fiber already runs there, and fiber attracts fiber. Submarine cables trace the same choke points as nineteenth-century telegraph lines — Suez, Marseille, the Luzon Strait — because the seafloor topology hasn't changed even if the payload has. Cloud regions are drawn along fault lines of power cost, water availability for cooling, and tax treaties, producing a map that has almost nothing to do with population and everything to do with utility rates in eastern Oregon.
+
+Then there's the regulatory geography, which increasingly matters more than the physical kind. GDPR didn't just constrain European companies — it forced global engineering teams to build region-aware data flows, which means "the cloud" now has borders enforced in code, not just custom. China's Great Firewall, India's data localization rules, and the EU's Digital Markets Act are each carving the same global network into differently shaped territories, and product teams now ship geography as a config file: which features exist depends on which jurisdiction a request originates from.
+
+For media specifically, this bites hardest in distribution and moderation. A platform's content policy is really a patchwork of policies, and its recommendation engine is quietly a foreign policy instrument — deciding, region by region, what gets amplified. Latency itself has become geopolitical: the milliseconds saved by an edge server in Singapore versus Mumbai shape which markets get treated as first-class.
+
+The lesson for anyone building or reporting on this industry: stop asking whether something is "on the internet" and start asking where — physically, legally, and computationally. The internet didn't erase place. It just made place harder to see, and correspondingly easier to ignore at your peril.

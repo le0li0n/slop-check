@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: The 80-hour Myth
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/naval-ravikant/2005-11-29--the-80-hour-myth.txt
+words: 399
+generated: 2026-08-31
+---
+
+The 80-Hour Myth
+
+Every founder pitch deck has a hidden slide nobody prints: the one where the team works 80-hour weeks because that's what "real" commitment looks like. Investors nod along. Advisors reference their own war stories. It's treated as a rite of passage rather than what it actually is — a proxy for something that's hard to measure directly.
+
+The myth persists because hours are visible and outcomes are lagged. You can see who's in Slack at 11pm. You can't yet see whether the thing they built at 11pm was the right thing to build. So hours become the metric everyone defaults to, especially early, when there's no revenue curve to point to instead.
+
+But the correlation between hours and outcomes breaks down fast. Past a point, more hours produce worse decisions, not more output — and startups die from bad decisions far more often than from insufficient hustle. A team that ships the wrong feature for 80 hours has done more damage than a team that ships the right one in 40. The venture business rewards judgment under uncertainty, not stamina. Those get conflated because judgment is invisible until it's tested, and stamina photographs well.
+
+There's also a selection problem baked into the myth. Founders who talk about 80-hour weeks are often the ones who haven't yet built the leverage — the team, the systems, the product-market fit — that would let them stop. Bragging about hours is sometimes a tell that the business doesn't yet run without its founder standing over it, which is closer to a risk flag than a virtue signal.
+
+None of this means intensity doesn't matter. Startups compress years of decisions into months, and that compression is real and demanding. But intensity of attention is not the same as duration of presence. The founders who compound fastest tend to protect a few hours of clear thinking over a few extra hours of tired output. Boards and investors who use hours as a proxy for commitment are optimizing for the wrong variable, and the founders who internalize that pressure often make worse calls, not better ones.
+
+The better question isn't "how many hours." It's "what's the decision this week that actually moves the business, and did the team have the clarity to make it well." That's a harder thing to ask in a board meeting. It's also the only one that predicts anything.

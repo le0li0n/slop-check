@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Daring Fireball: Labels X
+type: blog post
+area: Software engineering
+matched_human_doc: texts/john-gruber/2002-10-01--daring-fireball-labels-x.txt
+words: 484
+generated: 2026-08-31
+---
+
+**Daring Fireball: Labels X**
+
+There's a particular kind of engineering failure that doesn't show up in a stack trace: the name that stopped being true.
+
+Consider the humble label. Not the UI widget — the semantic tag we hang on things. A branch called `master`. A field called `is_deleted` that now holds three states. A metric named `active_users` that a marketing team quietly redefined in 2021 and nobody told the pipeline. Labels are the cheapest abstraction in software and the one we're worst at maintaining, because unlike code, a stale label never fails a test. It just keeps returning something.
+
+The naming of X — the platform formerly known as Twitter — was an unusually public instance of this. Overnight, an identifier that thousands of systems had encoded as `twitter`, `tweet`, `retweet`, `@handle` was declared to point at something else. The interesting part wasn't the rebrand. It was watching the long tail of software fail to follow. Share buttons that still said "Tweet." OAuth scopes that still said `twitter.read`. Analytics dashboards with a column header that no longer described the thing in the column. Three years on, you can still find production code where the label and the referent have visibly divorced.
+
+Engineers tend to file this under cosmetics. It isn't. A label is a contract between the person who wrote the code and every person who reads it afterward, and the value of that contract decays silently. The dangerous case isn't the one where the name is obviously wrong — nobody is confused by `tweet` — it's the one where the name is *plausibly* right. `user_id` in a table that now stores service accounts. `timeout_ms` that a refactor converted to seconds. `primary_region` in a system that went multi-master. Each of these reads correctly and behaves incorrectly, and the gap gets discovered at 3 a.m. by whoever is on call.
+
+The instinct is to fix this with discipline: naming conventions, review checklists, a linter for forbidden words. Those help at the margin. But the deeper move is to reduce how much weight labels have to carry. Types that make the unit part of the signature. Enums instead of booleans that outgrew themselves. Schemas where the constraint is enforced rather than described. Every piece of meaning you can move from the name into the machine is a piece of meaning that can't quietly rot.
+
+What you can't move, you should be willing to rename — and rename aggressively, in one commit, with the migration attached. The reluctance is understandable; renames are noisy, they wreck `git blame`, they touch a hundred files. But the alternative is a codebase accumulating a private dialect that only its longest-tenured engineers can translate, where onboarding means learning which words lie.
+
+X is a good reminder because it's absurd and legible. Most of our stale labels are neither. They're just quietly wrong, in a file nobody's opened in two years, waiting.

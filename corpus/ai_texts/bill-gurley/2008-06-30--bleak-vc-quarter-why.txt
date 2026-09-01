@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Bleak VC Quarter? Why?
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/bill-gurley/2008-06-30--bleak-vc-quarter-why.txt
+words: 465
+generated: 2026-08-31
+---
+
+**Bleak VC Quarter? Why?**
+
+Another quarter, another round of hand-wringing over sluggish deal flow, flat fund performance, and LPs asking pointed questions on capital calls. Before anyone reaches for the usual scapegoats — rates, macro, "the market" — it's worth separating what's actually structural from what's cyclical noise.
+
+Start with the exit math. DPI has been the industry's open wound for three years running, and it hasn't healed because the mechanisms that used to clear inventory — a hot IPO window, strategic acquirers paying up, secondary buyers stepping in size — are all still running below trend simultaneously. When none of the three exit valves opens, capital doesn't recycle, and funds that raised at 2021 marks are sitting on paper gains nobody will underwrite at those prices. That's not a bad quarter. That's a multi-year backlog working itself out slowly and unevenly.
+
+Then there's the bifurcation everyone feels but few say plainly: this isn't a broad slowdown, it's a starvation of the middle. Capital is still chasing anything with a credible AI story and enough traction to justify a markup, often at valuations that look untethered from revenue. Meanwhile, solid-but-unspectacular companies in unfashionable categories — the ones that would have raised a clean Series B two years ago — are struggling to get a term sheet at any price. Averaging those two realities into "the market is down" obscures more than it reveals. The median deal is worse off than the headline numbers suggest, because the headline is being propped up by a handful of enormous rounds.
+
+Add to that a fundraising environment where LPs are themselves cash-constrained — fewer distributions back to endowments and pensions means less recycled capital coming back into new fund commitments. Emerging managers are feeling this hardest; first-time funds are taking longer to close and closing smaller. That's not a reflection of deal quality, it's a liquidity problem one level up the stack, and it will keep compressing new fund formation until distributions pick up.
+
+None of this means the bleakness is permanent. Vintage years born in a capital-scarce, discipline-forced environment have historically outperformed — less competition for deals, saner entry prices, founders who've been tested by a harder fundraising slog before they ever pitch you. The firms complaining loudest about the quarter are often the ones still underwriting to 2021 comps.
+
+So: is it bleak? Yes, if you're marking a 2021 vintage or waiting on a DPI-driven LP re-up. Less so if you're deploying fresh capital into a market where the froth has been rung out of everything except the handful of categories getting bid up. The real question isn't "why is it bleak" — it's whether your fund is positioned to be a buyer in this environment or is still waiting for it to look like 2021 again.

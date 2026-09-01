@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Repeat After Me: Spending Surveys Are Meaningless
+type: blog post
+area: Technology & media
+matched_human_doc: texts/barry-ritholtz/2007-10-01--repeat-after-me-spending-surveys-are-meaningless.txt
+words: 394
+generated: 2026-08-31
+---
+
+Repeat After Me: Spending Surveys Are Meaningless
+
+Another quarter, another headline built on a survey. "62% of consumers plan to cut streaming spend." "Holiday shopping intent drops for third straight year." "Gen Z abandoning cable at record pace." These numbers get cited in earnings calls, investor notes, and trend pieces as if they describe behavior. They don't. They describe what people say when a stranger asks them to predict their own future spending — one of the least reliable exercises in human cognition.
+
+The problems are well documented and routinely ignored. Stated intent and revealed behavior diverge constantly; people say they'll cut back and then don't, or say nothing will change and then churn anyway. Survey samples skew toward people willing to answer surveys, which is not a neutral trait. Question wording moves results by double digits. And nobody asking "will you cancel your subscription next year" is accounting for the sign-up deal, price change, or content release that hasn't happened yet.
+
+Media and tech coverage treats these numbers as leading indicators because they arrive before the earnings report does, which makes them useful for narrative-building and useless for forecasting. A survey saying "40% considering cancellation" gets read as "40% will cancel." It won't. Some meaningful chunk of that 40% is expressing mild dissatisfaction, not intent, and plenty of the other 60% will churn anyway for reasons the survey never asked about.
+
+None of this is a knock on the firms running these surveys — the methodology disclosures are usually right there. The failure is downstream: outlets and analysts strip the caveats because "consumers plan to spend less" is a better headline than "a sample of self-selected respondents expressed lower stated intent, historically uncorrelated with actual spend."
+
+What actually predicts spend: card-linked transaction data, churn cohorts, App Store revenue rankings, actual pricing and bundling moves. These are noisier to source and harder to turn into a headline by Tuesday, which is exactly why survey data keeps winning the news cycle despite being worse.
+
+The fix isn't to ignore consumer sentiment — it's a real input, just not a spend forecast. Treat these releases as mood readings, not predictions, and ask what actual transaction data would need to show to confirm the story before repeating it as fact. If a survey stat can't survive that question, it's not a data point. It's a press release.

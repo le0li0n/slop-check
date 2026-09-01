@@ -1,0 +1,34 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: What if CU's Engineering Department was more focused on entrepreneurship?
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/david-cohen/2009-05-07--what-if-cu-s-engineering-department-was-more-focused-on.txt
+words: 885
+generated: 2026-08-31
+---
+
+What If CU's Engineering Department Was More Focused on Entrepreneurship?
+
+Boulder has the ingredients everyone claims to want: a research university producing world-class engineers, a genuinely livable city that talent doesn't want to leave, proximity to Denver capital, and a state government that has spent a decade trying to position Colorado as more than a ski destination with tax advantages. And yet CU Boulder's College of Engineering and Applied Science still functions, structurally, like a talent pipeline aimed at Lockheed, Google, and a PhD program — not like a company-formation engine. That's a design choice, not a law of physics, and it's worth asking what changes if the college decided to make it one.
+
+Start with what CU actually has. It's a top-20 public engineering program with genuine research depth in aerospace, robotics, quantum, and bioengineering — areas that map almost perfectly onto categories venture capital has spent the last three years trying to find more deal flow in. The problem isn't the science. It's that the default path for a strong research result at a public university is a paper, a patent filing that sits in the tech transfer office for eighteen months, and maybe a faculty consulting gig. The default path is not a company. Contrast that with the CS départements at Stanford or the MIT labs that treat spinouts as a primary output metric, not a side effect, and the gap isn't talent or IP quality — it's institutional intent.
+
+**What "more focused on entrepreneurship" would actually mean**
+
+This isn't a call for a bigger business plan competition or another named "innovation center" with a ribbon-cutting and no operating budget. Those exist at CU already and mostly function as extracurriculars for students who were going to start something anyway. Real focus looks structural:
+
+- **Tech transfer that moves at startup speed, not university speed.** If a lab result takes a year to license and comes with equity terms calibrated for a Fortune 500 licensee rather than a two-person startup, founders route around the university entirely — or the science just doesn't leave the building. CU's tech transfer office (Venture Partners) has gotten better, but the default terms and timelines still assume the counterparty is IBM, not a seed-stage team.
+- **Faculty incentives that don't punish company formation.** Tenure and promotion at a public R1 still run overwhelmingly on publication count and grant dollars. A professor who spends two years getting a startup off the ground is, in the current system, a professor who fell behind. Until sabbatical-equivalent structures exist for founding, the strongest technical minds on campus will keep optimizing for the metric that actually gets them promoted.
+- **Engineering students treated as potential founders, not just potential hires.** Career services at most engineering schools are built to funnel graduates into corporate recruiting pipelines because that's what's measurable and defensible to parents and rankings committees. A curriculum that actually assumes some fraction of graduates will start companies looks different: it teaches how to read a cap table, not just how to pass a technical interview.
+- **Capital and mentorship density on campus, not just adjacent to it.** Boulder has real venture infrastructure nearby — Techstars started here, Foundry Group is a short drive away — but "nearby" and "embedded" are different things. If the relationship between the engineering college and the local venture community is a once-a-semester guest lecture rather than office hours, deal flow, and warm intros baked into the student experience, the ecosystem isn't actually integrated.
+
+**Why this matters beyond CU**
+
+For founders, the case is direct: a Boulder-based deep tech startup today is competing for engineering talent against companies that can pay Bay Area or Seattle comp, and the local talent pool doesn't self-select for startup risk tolerance the way a Stanford CS cohort does. An engineering college that actively produces founders — not just employable graduates — changes the composition of who's available to hire and who's willing to take equity over salary.
+
+For venture professionals, the calculus is about deal flow density. Every serious hub — Boston, Austin, increasingly Pittsburgh with Carnegie Mellon — has an anchor research institution that functions as a company-formation machine, not just a talent farm. Colorado has genuine advantages in climate tech, aerospace (thanks to a real government and defense contractor presence), and quantum, all areas where CU has legitimate research strength. The state doesn't currently have a university that reliably converts that research into fundable, fundable-stage companies at the rate its raw research quality would predict. Closing that gap is a multi-year institutional project, not a grant program, but it's the kind of gap that, once closed, tends to compound — better spinouts attract better faculty, which attracts better students, which produces more spinouts.
+
+None of this requires CU to stop being a serious research university — that's the asset, not the obstacle. It requires the college to decide that a discovery's job isn't finished when the paper is published, and to build the tenure incentives, licensing speed, and campus capital density that make founding a plausible default rather than a heroic exception. Boulder already has the softer pieces — quality of life, some capital, a startup-friendly local culture. What's missing is a hard institutional bet that engineering research should routinely end in a cap table, not just a citation count.

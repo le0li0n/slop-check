@@ -1,0 +1,48 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: The Lincoln Fry Super Bowl ad Web tie in: Too oily for me
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/david-meerman-scott/2005-02-01--the-lincoln-fry-super-bowl-ad-web-tie-in-too-oily-for-m.txt
+words: 614
+generated: 2026-08-31
+---
+
+# The Lincoln Fry Super Bowl ad Web tie-in: Too oily for me
+
+Every few years an agency produces a campaign so committed to its own cleverness that it becomes a teaching artifact. McDonald's Lincoln Fry is one of those. If you weren't watching in February 2005, the premise: a Super Bowl spot showed a couple discovering a French fry that looked like Abraham Lincoln's profile, then putting it up for auction. The spot pointed viewers to a blog — lincolnfry.com — supposedly written by a woman who'd found the thing, complete with comments, photos, and unfolding drama across the following days.
+
+It was, for its moment, genuinely ambitious. Broadcast driving traffic to a persistent narrative destination, sustained past the game itself. That's a structure most brands still can't execute in 2026. And I still think the whole thing was too oily.
+
+## The problem wasn't the fry, it was the pretense
+
+The blog was written to read as though a real person wrote it. Not a brand's playful persona — an actual woman, with an actual life, whose actual fry had become a phenomenon. The fiction was the point, and the fiction was the failure.
+
+Audiences at the time sniffed it out fast. The comments filled with people asking whether it was a plant, and the answer was obviously yes, and the discovery of that yes became the story. Not the fry. Not McDonald's. The story became "brand pretends to be a person," which is a story that has never once ended well for the brand telling it.
+
+The lesson has aged into something close to a law: **transparency about authorship is not a constraint on creative ambition, it's the precondition for it.** You can build an elaborate fictional world. You cannot pretend the fictional world isn't yours. The moment your audience has to do detective work to establish who's talking to them, you've spent your credibility on a puzzle nobody asked for.
+
+## What it got right, which is more than it gets credit for
+
+Strip out the astroturfing and the architecture holds up. Look at what they actually built:
+
+- A broadcast moment engineered as an entry point, not a destination
+- A second surface that rewarded the people who followed through
+- A narrative that continued unfolding after the media buy ended
+- A reason to return, not just to arrive
+
+That last one is the hard part. Most campaign microsites are brochures with a countdown timer. Lincoln Fry gave people a reason to check back on Tuesday. The intent was sound; the execution poisoned it.
+
+## The version that would have worked
+
+Run the same campaign with the blog openly branded. "McDonald's presents: the Lincoln Fry." Same fiction, same absurdity, same daily updates, zero deception. You lose the frisson of "is this real?" and gain something more durable — an audience that can enjoy the bit without feeling handled.
+
+The instinct that authenticity requires concealment is exactly backwards. Audiences will happily suspend disbelief for a brand that's honest about being a brand. What they won't forgive is being made to feel gullible.
+
+## Why this matters now
+
+We are in an era where synthetic content is cheap and the provenance question is live in every channel. The Lincoln Fry problem has scaled: every brand can now generate plausible-sounding voices at volume, and the temptation to let those voices pass as organic has never been stronger or cheaper to act on.
+
+The discipline is the same as it was in 2005. Sign your work. Let the creative be as strange as you can make it. But put your name on it, at the top, where nobody has to go looking.

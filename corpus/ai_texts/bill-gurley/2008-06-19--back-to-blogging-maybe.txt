@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Back to Blogging (maybe)...
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/bill-gurley/2008-06-19--back-to-blogging-maybe.txt
+words: 320
+generated: 2026-08-31
+---
+
+Back to Blogging (maybe)...
+
+I've started this post four times now, which is itself the most honest thing I could tell you about why the blog went quiet. Somewhere between the last fundraise cycle, three board decks, and whatever Slack fire was burning that week, "write something useful for founders" kept losing to "write something urgent for founders." The urgent stuff always wins. That's not a virtue, it's just physics.
+
+Here's what changed my mind. I keep having the same conversation with different founders — about pricing, about when to say no to a term sheet, about why the board update template matters more than people think — and I realized the conversation is better than anything I'd publish anyway, because it's specific. The blog post version was always the sanded-down, defensible, nobody-gets-mad version. Less useful, safer.
+
+So here's the deal I'm making with myself, and by extension with you: I'm not promising a cadence. I'm not promising polish. What I'm promising is that when something crosses my desk that's sharper in writing than it was in the room — a framework that actually predicted an outcome, a mistake worth naming plainly, a pattern across three portfolio companies that isn't obvious until you say it out loud — I'll write it down instead of letting it evaporate into another Wednesday.
+
+Startups and the people who fund them are drowning in content that optimizes for looking smart. I'd rather be occasionally useful and often silent than reliably present and rarely worth the read. If that means six posts a year instead of six a month, fine — the ones that make it out will have survived actually being tested against a real decision, not just a blank cursor and a publish deadline.
+
+No newsletter signup, no "subscribe for more." If it's useful, it'll find you. If it's not, I'll have saved us both some time.
+
+Let's see how long this lasts.

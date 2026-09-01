@@ -1,0 +1,35 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Recovering the Lost Art of Note Taking
+type: blog post
+area: Management & strategy
+matched_human_doc: texts/michael-hyatt/2005-04-01--recovering-the-lost-art-of-note-taking.txt
+words: 1049
+generated: 2026-08-31
+---
+
+Recovering the Lost Art of Note Taking
+
+There is a particular silence in strategy meetings now that used to be filled with pen scratches. Everyone is typing, or worse, everyone is just listening, trusting that a transcript or an AI summary will handle the rest. The meeting adjourns, the summary arrives in the inbox an hour later, and something has quietly gone missing: nobody in the room actually processed what was said. They witnessed it.
+
+This is not a nostalgia piece for Moleskines. It is an argument that note taking, done properly, is not a record-keeping activity but a thinking activity, and management has drifted into treating it as the former while losing the latter almost entirely.
+
+The mechanism is worth being precise about. When you take notes by hand, or even by typing, in a way that requires you to compress what you're hearing, you are forced to make a judgment in real time: what matters, what's a tangent, how does this connect to what was said ten minutes ago. That judgment is the actual work of sense-making. A transcript captures words. A note captures a decision about which words deserved to survive contact with your attention. Those are entirely different products, and only one of them builds understanding as a byproduct of its own creation.
+
+Executives lose this in two ways simultaneously. The first is delegation of the note itself — someone else takes notes, or a tool does, and the leader is present but not processing. They heard the meeting; they didn't think the meeting. The second, subtler loss is delegation of synthesis. Even leaders who still jot things down have increasingly outsourced the harder second step — turning scattered notes into a structured view of a problem — to a summarization tool that produces something clean, plausible, and only lightly examined by the person whose name is on the strategy.
+
+Neither failure is really about laziness. Both are rational responses to volume. A manager in back-to-back meetings has no spare cycles for the old discipline of the evening review, the Cornell method, the outline that gets revisited and pruned. The tools promising to handle this exist because the underlying problem — too much input, too little synthesis time — is real. The mistake is concluding that because synthesis is expensive, it can be safely handed off. It can't, not entirely, because synthesis is where the strategist's judgment actually lives. A summary tells you what was said. It cannot tell you what you should believe, what contradicts last quarter's plan, or what a person in the room was carefully not saying. Only a mind that was actually engaged during the conversation catches that.
+
+There's a useful distinction from old note-taking systems that's gone out of fashion precisely when it's needed most: the difference between a fact and a signal. A fact is "revenue in the EMEA segment was down 4% quarter over quarter." A signal is "the VP of Sales got noticeably defensive when asked about EMEA, and pivoted to a different metric." Any transcription tool captures the fact. None of them reliably captures the signal, because the signal isn't in the words — it's in your interpretation of tone, timing, and omission, filtered through what you already know about that VP and that market. Strategy is disproportionately built on signals, not facts, and signals only get captured by a human paying close, note-taking attention in the moment. If you're not writing anything down, you're probably not catching them either; the writing is what keeps the attention honest.
+
+None of this is an argument against the tools. A good transcript is a genuine asset — it lets you verify a recollection, settle a dispute about what was promised, or retrieve a detail you correctly judged unimportant in the moment but that turned out to matter later. The problem isn't the existence of automated capture. It's the substitution of automated capture for personal synthesis, as though having a perfect record removes the need to have formed a view.
+
+A practical distinction worth adopting: let the machine handle recall, and keep the synthesis for yourself. Let the transcript be the record of what was said. Keep your own notes as the record of what you concluded — a different document, deliberately shorter, written in your own compressed shorthand, capturing judgments rather than statements. "Their pricing story doesn't hold up under a follow-up question" is worth ten times what a verbatim quote is worth, and only a human generates it by making a call in the moment.
+
+This has organizational implications beyond the individual meeting. Teams that have fully offloaded note taking often discover, weeks later, that nobody actually remembers the reasoning behind a decision — only its outcome, as recorded in a summary bullet. That's a serious institutional cost. Reasoning is what lets you revisit a call intelligently when circumstances change; an outcome without reasoning is a black box you either keep trusting blindly or discard entirely. The habit of writing your own synthesis, even briefly, is what keeps an organization's reasoning legible to itself over time.
+
+There's also a leadership-visibility dimension that's easy to underrate. A leader who is visibly taking notes — actually writing, actually pausing to think — signals to a room that what's being said is being weighed, not merely logged. That signal changes how people talk. They get more precise, less performative, when they believe their words are landing on a mind rather than a server. Losing the visible act of note taking has quietly changed the texture of meetings themselves, making them slightly more theatrical and slightly less honest, because nobody in the room believes anyone is really synthesizing in real time anymore.
+
+Recovering this doesn't require rejecting the tools that have made capture effortless. It requires re-drawing the line between what a tool should do and what a mind should still do. Let recording software remember. Reserve for yourself the harder, quieter task of deciding what it means — in your own words, in the moment, before the meeting fades and takes your judgment about it with it. That decision, made repeatedly, in real time, across years, is most of what separates a manager who has information from one who has developed strategic judgment. It was never really about the paper.

@@ -1,0 +1,59 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Designing Metrics for Success
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/david-skok/2010-02-01--designing-metrics-for-success.txt
+words: 1389
+generated: 2026-08-31
+---
+
+Designing Metrics for Success
+
+Every startup eventually confronts a version of the same crisis: the dashboard says everything is fine, and everything is not fine. Growth is up and to the right, activation is climbing, the board deck writes itself — and yet churn is quietly eating the business, or the sales team is closing deals that never expand, or the product team is optimizing a number that has stopped meaning anything. This is not a data problem. It's a design problem. Metrics are not neutral instruments that passively record reality; they are incentive structures that actively shape it. Choose the wrong one, and you don't just fail to see the truth — you build an organization that runs energetically in the wrong direction.
+
+For founders and the investors who back them, getting this right matters more than almost any other operating decision, because metrics are the interface between strategy and daily behavior. Nobody reads the strategy doc every morning. Everybody looks at the dashboard.
+
+**Goodhart's Law is not a caveat, it's the whole game**
+
+"When a measure becomes a target, it ceases to be a good measure." This line gets quoted so often it's become a throat-clearing exercise before people go on to ignore it anyway. But it deserves to be taken literally, because it describes a mechanism, not just a warning. The moment you tell a team "hit this number," you have created an optimization problem, and people — reasonably, rationally, often without any bad intent — will find the shortest path to the number rather than the path you had in mind when you chose it.
+
+Support teams measured on ticket-close time close tickets fast and reopen rates climb. Sales teams measured on logo count sign small, bad-fit accounts. Growth teams measured on signups build friction-free flows that fill the funnel with users who never activate. None of these people are cheating. They're doing exactly what the metric told them to do. The failure sits upstream, with whoever designed the metric and didn't think hard enough about what behavior it would reward.
+
+The practical implication is that you should treat every metric you adopt as a proposed incentive, not just a proposed measurement. Before you roll it out, ask: if someone wanted to hit this number without doing the thing I actually care about, how would they do it? If you can answer that question in under thirty seconds, the metric needs work.
+
+**Vanity metrics are a special case of this failure**
+
+Vanity metrics — total signups, downloads, page views, gross GMV, "impressions" — aren't useless because they're small numbers. They're useless because they're monotonic. They only go up. A metric that only goes up cannot tell you anything about whether you're actually creating value, because it never gives you the bad news. Total registered users doesn't fall when your product stops working for people; it just keeps climbing on the back of new signups while the old ones quietly leave. That's precisely why founders love them and why boards should be suspicious of them: they generate a feeling of progress that is decoupled from the underlying reality.
+
+The antidote isn't "don't measure top-of-funnel," it's "always pair a cumulative metric with a rate metric that can fall." Signups paired with activation rate. GMV paired with take-rate and repeat-purchase rate. Downloads paired with week-4 retention. If a metric structurally cannot go down, it cannot structurally tell you the truth, and it should never appear alone on a slide.
+
+**Leading versus lagging, and why startups over-index on lagging**
+
+Revenue, churn, NPS, LTV — these are lagging indicators. They tell you the outcome of decisions made weeks or months ago. They're also the metrics investors ask about, so they're the ones that dominate board decks, which creates a subtle trap: a founder can spend an entire quarter staring at lagging metrics, watching them move, without any idea which of last quarter's twenty decisions actually caused the movement.
+
+Leading indicators — time-to-first-value, weekly active usage of the core action (not just login), sales cycle velocity, qualified pipeline created — are noisier and less impressive-sounding, but they're the metrics you can actually act on this week, because they're closer in time and causal distance to the behaviors that produce them. The discipline worth building is: govern the company with lagging metrics, but run the company with leading ones. If your only operating rhythm is "watch revenue," you'll find out about a problem three months after it started and have no idea which lever broke it.
+
+**North Star metrics: powerful, and easy to get wrong**
+
+The "North Star metric" idea — one number that captures the value you deliver to customers, which in turn should predict revenue — is genuinely useful because it forces alignment across teams that otherwise optimize locally. But it fails constantly in practice for a specific, avoidable reason: teams pick a North Star that measures activity instead of value delivered.
+
+"Weekly active users" is activity. "Weekly active users who complete the core workflow that made them pay you" is value. The difference sounds pedantic until you watch a team hit a beautiful activity number while revenue stays flat, and everyone stands around confused about the disconnect. A good North Star metric has three properties: it reflects value the customer actually experiences (not value you hope they experience), it's a leading indicator of revenue rather than a restatement of it, and every team can see how their work moves it. If your product team can't trace a line from their roadmap to the North Star, either the roadmap is wrong or the metric is.
+
+**For operators: build a metrics hierarchy, not a metrics pile**
+
+The failure mode I see most often in early-stage companies isn't having bad metrics — it's having too many metrics with no hierarchy connecting them. Twenty tiles on a dashboard, all labeled equally important, is the same as having no metric at all, because nobody can tell which one to act on when two of them disagree.
+
+The fix is a simple tree: one North Star at the top, three to five leading indicators that causally drive it one level down, and team-specific operational metrics below that which each team owns and can move week to week. When a number moves, you should be able to trace it up and down that tree — this operational metric moved, which is why this leading indicator moved, which is why the North Star moved next month. If you can't trace that path, you don't have a metrics system, you have a metrics junk drawer.
+
+**For investors: read metrics as a lens on judgment, not just performance**
+
+When you're evaluating a company, the specific metrics on the dashboard tell you less than the fact of which metrics the team chose to build a dashboard around. A founder who reports net revenue retention unprompted, who volunteers the cohort curve that looks worse than the headline number, who can tell you the leading indicator that predicted last quarter's miss before it showed up in revenue — that founder understands their business causally, not just descriptively. A founder who leads with total users, cumulative GMV, and app store ranking, and gets vague when asked what predicts their revenue two quarters out, is often not lying to you. They're lying to themselves first, and the metrics are the evidence.
+
+This is also why "what metric are you most worried about right now" is a better diligence question than "what's your growth rate." Growth rate is a fact. The answer to the worry question tells you whether the team has a functioning nervous system — whether they can feel a problem before it becomes a crisis, or whether they only find out when the number everyone's been staring at finally, belatedly, turns down.
+
+**The discipline underneath all of this**
+
+Good metric design comes down to a small number of habits, repeated relentlessly: pair every cumulative number with one that can fall, prefer causally-close leading indicators for weekly operating decisions, reserve lagging indicators for quarterly governance, and periodically — deliberately — ask what behavior each metric is rewarding, because that behavior will show up whether you asked or not. None of this is complicated. It's just easy to skip when the dashboard already looks good, which is exactly when skipping it costs the most.

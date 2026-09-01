@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: You probably overestimate your emotional intelligence
+type: blog post
+area: Management & strategy
+matched_human_doc: texts/penelope-trunk/2006-04-17--you-probably-overestimate-your-emotional-intelligence.txt
+words: 358
+generated: 2026-08-31
+---
+
+# You probably overestimate your emotional intelligence
+
+Ask a room of senior managers to rate their ability to read people, and the distribution will cluster in the top quartile. This is the oldest joke in social psychology, and it holds up: self-assessed emotional intelligence correlates weakly with performance-based measures of the same construct. The people who score well on tests of reading emotion are not reliably the people who say they're good at it.
+
+There's a structural reason this misjudgement survives so well in management specifically. Seniority degrades the feedback that would correct it. Your directs laugh at your jokes. They tell you the reorg landed well. They agree that the difficult conversation went fine. You interpret this as evidence of rapport, when it's evidence of asymmetric stakes — they carry the cost of being read wrong, and they're managing it by giving you smooth signal. The higher you go, the cleaner the data looks and the less it means.
+
+Consider what "reading the room" involves at scale. Six people around a table produce a wash of micro-signals; you sample perhaps a fifth of them, mostly from whoever you're already inclined to watch. Then you build a confident narrative from the fragment. The narrative feels like perception. It's mostly inference, and inference is where your priors do the work.
+
+The practical implication isn't more empathy training. It's replacing intuition with evidence at the specific points where intuition is cheapest to check. Instead of concluding a team is bought in, ask what would be true in three weeks if they weren't, and look for it. Instead of assuming someone raising an objection is being difficult, ask what problem the objection is solving for them. Instead of trusting your read on morale, look at who's stopped volunteering opinions in meetings — attrition of candour precedes attrition of people.
+
+The uncomfortable version: the strategist's habit of falsifying your own hypotheses is the same habit that fixes this. You already apply it to markets and competitors. You almost certainly don't apply it to your reading of the people in the room, because that reading doesn't feel like a hypothesis. It is one.

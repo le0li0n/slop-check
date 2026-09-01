@@ -1,0 +1,47 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Russo & Hale: How to settle the lawsuit (Scripting News)
+type: blog post
+area: Technology & media
+matched_human_doc: texts/dave-winer/2007-03-27--russo-hale-how-to-settle-the-lawsuit-scripting-news.txt
+words: 535
+generated: 2026-08-31
+---
+
+# Russo & Hale: How to settle the lawsuit (Scripting News)
+
+I've been watching this thing for months now, and I keep coming back to the same thought: nobody in this fight wants what they say they want.
+
+Here's the shape of it. Two parties who need each other are spending money they'd rather spend on engineering, arguing about who owns what in a space where ownership was never clearly established in the first place. That's not a legal problem. That's a *design* problem that got handed to lawyers because the engineers couldn't agree, and once lawyers have it, the incentives all point away from resolution.
+
+I've been on both sides of this. I've been the guy who felt wronged and wanted a court to say so. It never once worked out the way I imagined.
+
+## What the lawsuit is actually about
+
+Strip away the filings and there are three questions:
+
+1. **Who gets to use the format?** Not who invented it — who gets to build on it going forward, without asking permission.
+2. **Who gets credit?** This matters more than money to at least one party, and everyone involved knows it.
+3. **Who pays for the last eighteen months?** Sunk cost, dressed up as damages.
+
+Notice that only the third one is really a money question, and it's the one that would evaporate if the first two got answered. Litigation runs these in the wrong order. It treats the money as primary and the other two as leverage. That's backwards for anything that's going to have to keep existing after the verdict.
+
+## The settlement
+
+So here's what I'd do, and I say this as someone with no stake and no billable hours to protect.
+
+**Release the format under a permissive license, jointly.** Both names on it. Neither party can pull it back, neither can charge for it, and anybody — including competitors, including people neither of them likes — can implement it. This costs both sides something real and gives both sides the thing they actually need, which is for the format to be somewhere other than in dispute.
+
+**Write the history down and sign it together.** One document, agreed by both parties, saying who did what and when. Not a press release. A record. The credit question is unsolvable in court because courts don't do history, they do liability. But two parties who want it over can just... write it down.
+
+**Walk away on the money.** Each side eats its own costs. This is the part nobody wants to hear and it's the part that makes the rest work. The moment either side extracts a payment, the other side has bought something, and what they've bought is a grievance they'll be nursing for a decade.
+
+## Why it won't happen
+
+Because settling requires someone to move first, and moving first looks like losing to everyone watching. The tech press has scored this as a fight, and fights have winners.
+
+But the format will outlive both companies. That's the thing worth remembering. In fifteen years nobody will remember who filed what. They'll remember whether the thing worked, and whether they were allowed to use it.
+
+Somebody should pick up the phone.

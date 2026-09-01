@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Lessons Learned: The product manager's lament
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/eric-ries/2008-10-01--lessons-learned-the-product-manager-s-lament.txt
+words: 376
+generated: 2026-08-31
+---
+
+Lessons Learned: The Product Manager's Lament
+
+Every startup post-mortem eventually arrives at the same confession, delivered in the same weary tone: "We built what was on the roadmap. We just never talked to the customer." It has become a genre unto itself, this lament, and its recurrence should tell founders and investors something more useful than the lesson itself ever does.
+
+The lament is comforting because it's retrospective. It lets a team frame a strategic failure as a process failure — as though the fix is simply more user interviews, another round of discovery calls, a tighter feedback loop bolted onto the next sprint. But the PMs writing these post-mortems were rarely undisciplined. Most ran the rituals: they shipped surveys, held office hours, read the support tickets. The rituals weren't missing. What was missing was permission to let the answers change the plan.
+
+That's the part worth sitting with if you're on a board or writing a check. A roadmap review that only asks "are we on track" will get a team that stays on track toward the wrong destination with impressive discipline. The more useful question is whether the product function has real authority to kill or redirect initiatives when evidence contradicts the plan — and whether the incentives in the room reward that redirection or punish it as a missed deadline.
+
+This is where the PM's lament becomes an organizational tell rather than a personal one. A single founder second-guessing themselves is normal. A pattern of "we knew, but shipped anyway" across multiple hires is a signal about how decisions actually get made once the pitch deck closes and the burn rate starts talking. It usually traces back to a CEO who treats the roadmap as a commitment to investors rather than a hypothesis to customers, and a PM organization that has learned, correctly, that flagging bad news late is safer than flagging it early.
+
+So the next time a portfolio company's retro reads "we should have listened to users sooner," don't accept it as the root cause. Ask what would have had to be true — structurally, not attitudinally — for listening sooner to have been rewarded rather than penalized. That's the harder conversation, and it's the one that actually prevents the sequel.

@@ -1,0 +1,45 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: PR 2.0 Is Not Web 2.0
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/brian-solis/2007-02-01--pr-2-0-is-not-web-2-0.txt
+words: 1333
+generated: 2026-08-31
+---
+
+PR 2.0 Is Not Web 2.0
+
+Every few years the PR industry reaches for a version number to describe how much has changed, and it always borrows the number from somewhere else. A decade ago it was "PR 2.0," lifted wholesale from Web 2.0 — the idea being that if the web had gone from static pages to social, participatory platforms, PR should follow the same arc: from one-way press releases to two-way conversations with audiences who talk back. It was a useful metaphor at the time. It is a bad one now, and the confusion it causes is worth untangling, because a lot of comms teams are still operating as though the analogy holds.
+
+Here's the actual claim buried inside "PR 2.0": that public relations underwent a structural shift analogous to what happened to the web between roughly 2004 and 2010 — a move from broadcast to participation, from institutions publishing at audiences to audiences publishing back. Blogs, forums, comment sections, and then social platforms let anyone become a publisher. PR's version of this was supposed to be journalists losing their gatekeeper monopoly, brands talking directly to customers, and the press release giving way to the conversation. That did happen, to a degree. But calling it "2.0" imported an assumption that doesn't actually fit: that PR was following the same technological substrate as the web, on the same timeline, driven by the same forces. It wasn't. PR's transformation has always run on a different clock, driven by different mechanics, and treating it as a synced sequel to Web 2.0 has left a lot of practitioners solving 2010's problem with 2010's playbook while the actual terrain moved somewhere else entirely.
+
+**The version-number trap**
+
+Software versioning implies a few things that don't hold for a discipline like PR. It implies a single vendor controlling the roadmap. It implies backward compatibility — 2.0 builds on 1.0 rather than replacing its logic. And it implies that once you've adopted the new version, you're current, until the next release ships and you upgrade again.
+
+None of that describes how communications work actually evolves. There was no single event that deprecated the press release the way Web 2.0 deprecated static HTML. Media relations, executive positioning, crisis response, analyst relations — these didn't get replaced by social listening dashboards, they got layered with them. A comms team today still needs the muscle memory of pitching a beat reporter and the entirely different muscle memory of managing a Slack-speed reputational moment on X. Calling that "PR 2.0" flattens two coexisting skill sets into a single upgrade narrative, and it quietly tells junior practitioners that the old skill is obsolete when it very much is not. The trade press has now run this same "2.0" relaunch three or four times — social media PR, then content-marketing-as-PR, then influencer PR — and each cycle asserted a clean version bump when what actually happened was accretion. The job got bigger, not sequentially replaced.
+
+**What's actually different now, and why it isn't a web analogy**
+
+If you want to name the real shift happening in PR right now, it isn't participatory publishing. It's the collapse of the audience itself as a legible, addressable thing.
+
+For most of PR's modern history, the job was built on a chain of intermediaries you could actually see: you pitch a journalist, the journalist writes a story, the story runs in a publication with a known readership, and that readership overlaps with the people you're trying to reach. Even in the Web 2.0 era, that chain held — you just added a parallel chain where you posted directly and an algorithmic feed did the distribution, but the feed was still legible enough to strategize against. You could reasonably guess what would perform.
+
+What's different today is that a meaningful share of how people encounter information about a company is mediated by a large language model synthesizing an answer, not a ranked list of links a person scans and clicks. When someone asks a chatbot "is this company reputable" or "what happened with their product recall," there's no click-through, no impression count, no click-through rate to optimize, and frequently no visible source at all. The old chain — pitch, coverage, readership, resonance — has a step in it now that doesn't behave like a publication or a platform. It behaves like a synthesis engine trained on a snapshot of the web, weighting sources by signals that have little to do with what got you a good placement in 2018.
+
+This is a genuinely different problem from "audiences can talk back now," which was Web 2.0's problem. It's closer to: the audience is a model, and the model doesn't attend a press conference, doesn't have a comment section, and can't be pitched an exclusive. You're no longer just earning coverage — you're trying to influence what gets encoded, cited, and reproduced in a system whose selection logic you can't fully observe and that updates on a schedule you don't control. Some practitioners have started calling elements of this "answer engine optimization" or folding it into technical SEO, but even those names undersell it, because they still assume a query-and-result mental model borrowed from search. A model doesn't return ten blue links you can rank against. It returns one synthesized position, and you either shaped the material it drew on or you didn't.
+
+**Why the distinction matters for how you plan**
+
+If you think you're living through PR 2.0, your instinct is to keep doing what you did during the last "2.0" moment, just more of it: more owned content, more platform-native posting, more direct engagement, better community management. Those are fine practices, but none of them address the actual mechanism by which an LLM decides what to say about your company. That mechanism runs on things PR teams have historically treated as secondary: the depth and consistency of factual material about you across independent, citable sources; whether your own site and newsroom state things plainly enough to be extracted rather than merely read; whether disputes about your company get resolved on the record somewhere a model can find, or just fade out unresolved, leaving the model to average across old and new information with no way to tell which is current.
+
+None of that is a "2.0" upgrade to press relations. It's a different discipline sitting alongside press relations, the same way social media PR sat alongside earned media rather than replacing it. The mistake with "PR 2.0" wasn't that it named something real — it's that it borrowed a framing that assumes a linear, versioned progression when the honest picture is additive and messier: a lot of practices persist, only some transform, and the biggest current shift doesn't resemble the last one at all.
+
+**What to do instead of waiting for PR 3.0**
+
+Drop the versioning language entirely, at least internally. It's a marketing convenience, not a description of what's happening, and it tempts teams into thinking there's a fixed next state to arrive at and rest in. There isn't. The more useful frame is to ask, discipline by discipline: who or what is actually standing between us and the people we're trying to reach right now, and what does that intermediary need from us to represent us accurately? For a trade journalist, that's a good story and a responsive source. For a platform algorithm, that's native, engaging content. For a model synthesizing an answer about your company, that's a body of clear, consistent, citable, fact-checkable material that doesn't contradict itself across sources and gets corrected quickly when it's wrong.
+
+Those are three different jobs, not three sequential releases of the same job. The teams that will handle this well aren't the ones waiting for someone to declare PR 3.0 and hand them a new playbook. They're the ones who noticed the analogy stopped fitting a while ago and started building for the actual audience in front of them, whoever — or whatever — that audience turns out to be.

@@ -1,0 +1,83 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: A List of Every Website Statistic Publicly Available - MozMoz logoMenu openMenu closeSearchMoz logo
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/rand-fishkin/2006-10-11--a-list-of-every-website-statistic-publicly-available-mo.txt
+words: 898
+generated: 2026-08-31
+---
+
+# A List of Every Website Statistic Publicly Available
+
+There's a particular kind of question that stops a marketing meeting cold. Someone asks how much traffic a competitor gets. Someone else asks whether the site that just linked to you is actually worth anything. A third person wants to know if the industry publication everyone keeps citing has an audience or just a reputation.
+
+The instinct is to reach for a paid tool. Sometimes that's right. But a surprising amount of what you need is sitting in public, free, and available to anyone who knows where to look. What follows is a working inventory of the website statistics you can gather without a subscription, organized by the question they actually answer.
+
+## Traffic and audience estimates
+
+Nobody outside a company sees its real analytics. What you get instead are estimates built from panel data, clickstream partnerships, and modeling. Treat them as directional.
+
+**Similarweb** offers free estimates of monthly visits, traffic sources by channel, average visit duration, pages per visit, bounce rate, and top referring and outgoing sites. The free tier is limited but generous enough for a competitive scan.
+
+**Semrush** and **Ahrefs** both expose partial traffic estimates without payment — enough to compare two domains, not enough to build a forecast.
+
+**Cloudflare Radar** publishes aggregate internet traffic data, including domain popularity rankings drawn from its resolver. It's one of the more credible free signals of relative scale.
+
+**Tranco** maintains a research-grade domain ranking list that combines multiple sources and resists the manipulation that plagued Alexa's old rankings. Free, downloadable, updated daily.
+
+The old standby, **Alexa**, is gone — retired in 2022. If a blog post recommends it, that post is stale, which tells you something about the blog post.
+
+## Search visibility
+
+This is where public data gets genuinely useful.
+
+**Google Search Console** gives you impressions, clicks, average position, and click-through rate for your own properties — the only truly first-party search data available, and free.
+
+**Google Trends** shows relative search interest over time, by region, with related queries. It won't give absolute volume, but it will tell you whether a topic is growing.
+
+**Bing Webmaster Tools** offers actual keyword volume figures for free, which is more than Google gives you outside of Ads.
+
+**Moz Link Explorer**, **Ahrefs Webmaster Tools**, and **Semrush** all have free tiers that surface domain authority scores, referring domain counts, top linking pages, and anchor text distribution. Ahrefs Webmaster Tools is free for verified sites you own and unusually complete.
+
+**Google's Rich Results Test** and **Schema Markup Validator** tell you what structured data a site has implemented — useful for understanding how a competitor is trying to appear in results.
+
+## Technical and performance data
+
+**PageSpeed Insights** returns lab scores plus, critically, real-world Core Web Vitals from the **Chrome User Experience Report** (CrUX) for any site with enough traffic to qualify. That's field data on actual human page loads, published freely.
+
+The **CrUX dashboard** on BigQuery goes further, letting you query historical performance across origins at scale.
+
+**BuiltWith** and **Wappalyzer** reveal the technology stack: CMS, analytics, ad networks, payment processors, CDN, marketing automation. Knowing a competitor runs HubSpot versus Marketo tells you something about their go-to-market.
+
+**Security Headers** and **SSL Labs** grade a site's security posture. **W3C Validator** checks markup. **WAVE** audits accessibility.
+
+## Content and archive data
+
+**The Wayback Machine** is the most underused competitive research tool in existence. It shows what a page said last quarter, when a pricing page changed, when a product launched, when messaging shifted. Capture frequency itself is a rough proxy for a site's prominence.
+
+**Sitemap files** — usually at `/sitemap.xml` — list every page a site wants indexed, often with last-modified dates. Publishing cadence, section sizes, and content priorities are all sitting right there.
+
+**Robots.txt** shows what a site is hiding from crawlers, including staging environments and internal search paths.
+
+**Common Crawl** publishes petabytes of crawled web data, free to query, for anyone willing to work at that scale.
+
+## Social and referral signals
+
+**Shared Count** and similar tools return public share counts for URLs across platforms that still expose them. **Reddit**, **Hacker News**, and **X** search will show you which of a site's pages actually traveled.
+
+**BuzzSumo**'s free tier surfaces top-performing content by engagement — limited queries, but enough to identify a pattern.
+
+## Business context
+
+**SEC EDGAR** contains full financial filings for public companies, including — sometimes — disclosed digital metrics. **Crunchbase** covers funding, headcount ranges, and acquisitions on a free tier. **LinkedIn** company pages show employee counts and hiring velocity, which is a leading indicator of where a business is investing. **Glassdoor** and **Indeed** job postings reveal team structure and tooling.
+
+**WHOIS** and **ICANN Lookup** give domain registration dates and registrar details. Domain age matters less for ranking than people think, but it does tell you how long a competitor has been at this.
+
+## How to actually use this
+
+The mistake is treating any single number as truth. Traffic estimates from three tools will disagree by multiples. Authority scores are proprietary and non-comparable across vendors.
+
+The discipline that works: pick one source per metric and stay consistent, so trends mean something even when absolute values don't. Triangulate anything you plan to put in a board deck. And when a number surprises you, go find out why before you act on it — the interesting finding is usually in the explanation, not the figure.

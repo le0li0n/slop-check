@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: LukeW | VizThink 08: Bob Horn Interview
+type: blog post
+area: Design, UX & product
+matched_human_doc: texts/luke-wroblewski/2008-01-28--lukew-vizthink-08-bob-horn-interview.txt
+words: 361
+generated: 2026-08-31
+---
+
+LukeW | VizThink 08: Bob Horn Interview
+
+At VizThink 08, Bob Horn sat down for an interview that anyone working in design, UX, or product would do well to revisit. Horn is the author of *Visual Language* and *Mapping Hypertext*, and his career spans decades of applying visual thinking to genuinely hard problems: healthcare policy, national defense strategy, and other domains where the stakes are too high for muddled communication.
+
+The conversation focused on Horn's core thesis: visual language isn't decoration layered on top of words, it's a distinct way of thinking that combines words, images, and shapes into a single integrated system. Done well, it lets groups reason through complexity that neither pure text nor pure imagery can handle alone. Horn's murals — massive collaborative visualizations built with stakeholders in the room — are the clearest evidence for this. They're not illustrations of a decision that's already been made; they're the medium through which the decision gets made.
+
+A few points stuck with me. First, Horn draws a hard line between visual language and mere illustration. An illustrated slide deck is still fundamentally a text document with pictures attached. True visual language treats the visual elements as carrying their own semantic weight — position, proximity, and connection mean something, the way syntax means something in a sentence.
+
+Second, he talked about the social function of these murals: getting a room of disagreeing stakeholders to literally see the same problem at the same time. That shared visual reference does something meetings and memos don't — it collapses the gap between people who think they're aligned but are actually describing different mental models.
+
+Third, and most relevant to product work: visual language scales with complexity in a way prose doesn't. The more tangled the problem, the more a well-built visual structure outperforms a written one, because it can hold multiple relationships in view simultaneously instead of forcing linear sequencing.
+
+For anyone building products or leading design teams, the takeaway isn't "use more diagrams." It's that visual structure can be a reasoning tool, not just a communication one — worth reaching for when a problem is too tangled for a doc to hold.

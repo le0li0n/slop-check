@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: DaveNet : Michegas
+type: blog post
+area: Technology & media
+matched_human_doc: texts/dave-winer/2000-08-27--davenet-michegas.txt
+words: 358
+generated: 2026-08-31
+---
+
+# DaveNet : Michegas
+
+There's a Yiddish word for what's happening right now, and it isn't *disruption*. It's michegas. Craziness. The kind your uncle makes at a wedding when he decides, at 11pm, that he should be the one running the sound board.
+
+Every few years the industry gets a new thing that everyone agrees is inevitable, and then spends eighteen months arguing about what it actually is. Nobody wants to be the one who says the obvious out loud, which is that most of the people talking confidently have not shipped anything. They've shipped a deck. A deck is not a product. A deck has never been down at 3am.
+
+Here's what I keep noticing. The media companies want the technology companies to save them, and the technology companies want the media companies to bless them, and neither side wants to admit they need the other, so they meet in the middle at a conference in a nice hotel and produce a partnership announcement that nobody will remember in a year. Meanwhile the writing still has to get written and the code still has to compile.
+
+I'm not being cynical. I love this business. But I've been around long enough to have seen the same movie with different actors. Push. Portals. Convergence. Every one of them was going to change everything, and every one of them changed *something*, just never the thing that was on the slide.
+
+The part that's real is always smaller and less glamorous than the part that's hyped, and it shows up late, and it works. RSS wasn't a revolution when it happened. It was a file format. Then one day a lot of people were reading a lot of things they wouldn't otherwise have read, and nobody threw a party about it.
+
+So my advice, worth what you paid for it: watch what people build, not what they announce. Watch the tools that get boring. Boring is the highest compliment infrastructure can receive.
+
+The rest is michegas. Enjoyable michegas, sometimes. Good gossip at dinner. But don't build your roadmap on it, and for heaven's sake don't build your newsroom on it.
+
+Dave

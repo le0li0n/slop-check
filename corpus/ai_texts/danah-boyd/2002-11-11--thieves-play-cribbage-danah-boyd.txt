@@ -1,0 +1,21 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: thieves play cribbage | danah boyd
+type: essay
+area: Technology & media
+matched_human_doc: texts/danah-boyd/2002-11-11--thieves-play-cribbage-danah-boyd.txt
+words: 393
+generated: 2026-08-31
+---
+
+thieves play cribbage | danah boyd
+
+There's a particular kind of technologist who treats every system as a game to be won rather than a commons to be tended. I keep coming back to a phrase I heard secondhand years ago: thieves play cribbage. The point wasn't the card game. It was that people who spend their days finding the gaps in rules — who make a living exploiting the seams between what's written and what's enforced — often relax by playing games with the most fussy, technical, loophole-laden scoring system imaginable. Cribbage rewards you for noticing the fifteen-two you almost missed, the nobs, the flush that only counts in the crib. It's a game built entirely out of edge cases.
+
+That's also a decent description of how a lot of platform architecture gets built now. Growth teams find the arbitrage in attention. Ad systems find the arbitrage in identity. Recommender systems find the arbitrage in engagement metrics that were themselves proxies for something else entirely. None of this is new to anyone who has watched a platform mature past its founding ideals, but what strikes me is how consistent the psychology is: the same appetite for exploiting a scoring system, whether it's a card game or a quarterly OKR, shows up in the people who build the boxes we all live inside.
+
+The uncomfortable question isn't "how do we stop the thieves." It's whether the games we've built — the metrics, the incentive structures, the entire apparatus of measurement that governs technology companies — are cribbage all the way down. If the system itself is a pile of scoring quirks waiting to be found and monetized, then hiring more earnest people doesn't fix it. You need to change what's being scored.
+
+I don't think this means nihilism about metrics or a retreat into vibes-based product management. It means treating every KPI as a live loophole rather than a settled fact, and asking, before you optimize for it, who already knows how to win it and what they'll do once they figure out you're paying attention. The thieves aren't a bug in the system. Often, they're the most honest indicator of where the system's scoring is broken. Learn to read them the way you'd read a good cribbage hand — not with suspicion, but with respect for how precisely they've found the count.

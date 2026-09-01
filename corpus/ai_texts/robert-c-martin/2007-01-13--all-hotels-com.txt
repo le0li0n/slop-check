@@ -1,0 +1,55 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: All-hotels.com
+type: blog post
+area: Software engineering
+matched_human_doc: texts/robert-c-martin/2007-01-13--all-hotels-com.txt
+words: 1279
+generated: 2026-08-31
+---
+
+# All-hotels.com
+
+There is a category of software project that looks, from the outside, like it should be easy. Someone describes it in a sentence, the sentence contains no obviously hard words, and everyone in the room nods. "We aggregate hotel inventory from every supplier and show the user the best price." Great. Two weeks, maybe three.
+
+I want to talk about that project, because I have watched several versions of it and the failure mode is always the same, and it is not a failure of engineering skill. It is a failure to notice that the sentence was lying.
+
+## The sentence was lying
+
+Start with "hotel." You would think a hotel is a thing that exists in the world and therefore has an identity. It does not, at least not in a way any two data suppliers agree on. Supplier A has "Hilton Garden Inn Milan Malpensa." Supplier B has "HGI Milano Malpensa Airport." Supplier C has two records, one of which is the hotel and one of which is the hotel's conference annex, listed at the same coordinates, with different star ratings. Supplier D has the hotel at coordinates 400 meters away because someone geocoded the mailing address and the mailing address is the management company's office in Rome.
+
+So before you can compare prices you have to solve entity resolution, and entity resolution is not a two-week problem. It is a permanent function of your business. You will build a matcher with name normalization, geo-distance thresholds, and address token overlap. It will work on 94% of properties. The remaining 6% will be the ones your users search for, because the remaining 6% is disproportionately made of properties in dense urban cores with repetitive naming, which is also where the bookings are.
+
+Then you learn that "the same hotel" is not even the right unit. Users book rooms, and a room is a rate plan, and a rate plan is a bundle of a room type, an occupancy, a cancellation policy, a meal plan, a payment timing, and a set of taxes and fees that may or may not be included depending on jurisdiction and supplier convention. Supplier A quotes €180 with breakfast, free cancellation until 48 hours prior, taxes included. Supplier B quotes €164, room only, non-refundable, plus a city tax of €5 per person per night collected at the property, plus a "resort fee" that is not a resort fee but is what their normalization layer decided to call an unmapped surcharge.
+
+Which is the best price? That question does not have an answer. It has a policy. And the policy is a product decision that engineering will end up making by accident, in a comparator function, at 11pm, because the ticket said "sort by price ascending."
+
+## Where the architecture actually goes
+
+The naive architecture is a fan-out. Request comes in, you call twelve suppliers in parallel, you merge, you sort, you render. This is correct and it is also where all your problems live.
+
+Supplier latency is not uniform and it is not stationary. One supplier answers in 200ms at the median and 9 seconds at p99. Another is fast but rate-limits you at a level calibrated to your contract, not your traffic, and the contract was signed by someone in business development who did not ask you. You now need per-supplier timeouts, circuit breakers, and a partial-results contract: what do you show when four of twelve came back? If you wait for all twelve, your search page has p99 latency of the worst supplier and your conversion rate dies. If you don't wait, your results are non-deterministic, and a user who refreshes sees a different "cheapest" hotel, and that is a support ticket and possibly a regulatory problem.
+
+So you cache. And caching is where hotel aggregation stops being a normal distributed systems problem and becomes a specifically miserable one, because the thing you are caching is a price that the supplier considers a live quote. Cache it for five minutes and some fraction of bookings will fail at the point of sale because the rate is gone. That fraction is your "look-to-book" pain, and it is measured, and suppliers will threaten to cut you off if it gets bad, because every one of your speculative searches costs them a call to their own inventory system.
+
+The industry answer is a two-tier thing: a cached "shop" tier that is allowed to be stale and drives search results, and a live "price check" that runs on the detail page and again at booking. Which means you have now committed to the fact that the price on your search page is provisional, and you have to design the UI around the moment where it changes, and the UI for "the price went up €12 while you were reading" is one of the hardest small design problems in the domain. Everyone who has built this has A/B tested it. Nobody is happy.
+
+## The part nobody budgets for
+
+Availability is a cache-invalidation problem with an adversary. The adversary is not malicious; it is just the rest of the market. The same room is sold through your competitors, through the hotel's own site, and through wholesalers you cannot see. Inventory disappears for reasons entirely outside your observability. You cannot build a consistent view. You can only build a system that degrades gracefully when the view is wrong, and measure how often it is wrong, and treat that number as a top-line health metric rather than a bug backlog.
+
+This is the general shape of the lesson. In a domain like this, correctness is not binary and it is not achievable. What you build instead is a set of explicit, measured error budgets: match precision and recall, cache staleness, book-fail rate, price-change-on-confirm rate. Each of those is a dial with money on both sides. Tighter caching means lower book-fail and higher supplier cost. Aggressive matching means better dedup and more wrong merges, and a wrong merge shows a user a photo of a hotel they are not booking.
+
+Engineers arriving in this domain from, say, internal tooling, tend to look for the correct answer and get progressively more frustrated that the domain will not yield one. The senior move is to stop looking, name the tradeoff, instrument it, and hand the dial to someone whose job is revenue.
+
+## The thing to take away
+
+I use all-hotels.com as shorthand for a class of system with three properties: the domain has no canonical entity model, the data is owned by parties whose incentives differ from yours, and the freshness requirement is adversarial to your cost structure. Payments aggregation has this shape. Ad exchanges have it. Health records interoperability has it in an especially cruel form. Anything that federates over sources you don't control and can't force to agree.
+
+For those systems, the useful early questions are not about frameworks. They are: what is our entity resolution strategy and who owns the false-merge rate? What is the contractual and economic cost of a query, and does our architecture respect it? What is the user-visible contract when the underlying truth changes between page load and commit? Which of our numbers are guarantees and which are estimates, and does the UI distinguish them?
+
+If you can answer those on day three, the rest is ordinary engineering — hard, large, but ordinary. If you can't, you will build a beautiful fan-out service, ship it, and then spend two years discovering the domain one incident at a time, in production, with the CEO forwarding you screenshots of a duplicate listing in Milan.
+
+The sentence was always lying. The skill is hearing it.

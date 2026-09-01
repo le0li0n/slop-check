@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Get Your Blogspot Shit Together Google
+type: blog post
+area: Management & strategy
+matched_human_doc: texts/mark-cuban/2005-10-16--get-your-blogspot-shit-together-google.txt
+words: 486
+generated: 2026-08-31
+---
+
+Get Your Blogspot Shit Together Google
+
+Somewhere inside Alphabet's org chart sits a product that has been quietly bleeding relevance for over a decade, and almost nobody at the executive level has been asked to answer for it. Blogger — the artist formerly known as Blogspot — still hosts millions of live domains, still ranks in Google's own search results, and still hasn't had a meaningful update since the Obama administration. This is not a nostalgia complaint. It's a governance failure worth studying, because it illustrates what happens when a product has no owner, no roadmap, and no kill switch.
+
+Every portfolio strategist knows the matrix: products get invested in, harvested, or divested. Blogger fits none of those. It isn't sunset (Google won't say the word), it isn't maintained (no feature has shipped in years), and it isn't monetized in any way that shows up on an earnings call. It exists in a fourth quadrant that doesn't appear in the textbooks — abandoned but not admitted. That quadrant has a cost. Every unpatched product is a standing security liability, a support-ticket sink, and a brand-equity drag, because users don't distinguish "legacy" from "current" when they see the Google logo in the corner.
+
+The interesting management question isn't "why does Blogger still exist" — legacy systems always persist longer than planned. It's "why has no one been made accountable for the decision either way." Alphabet's structure rewards bets that can become the next multibillion-dollar franchise and prunes anything that can't. That works well for shipping Bard, killing Stadia, or folding Google Domains into Squarespace. It works badly for products sitting in the low-growth, low-attention middle — too small to matter to a VP's OKRs, too embedded in the web's infrastructure to quietly delete. Nobody's compensation depends on fixing Blogger, so nobody does.
+
+For leaders running their own portfolios, the lesson transfers directly. Zombie products don't die from neglect — they die from the absence of a forcing function. If a product isn't explicitly on someone's roadmap for investment, it should be explicitly on someone's roadmap for retirement, communicated to users with a timeline. The dangerous state is the ambiguous middle, where a product is live enough to create obligations and dead enough to create risk, and where the org's incentive structure means it's genuinely nobody's job to decide.
+
+Google's various "graveyard" jokes miss the more serious version of this critique. It isn't funny that Killed by Google exists; it's more concerning that its inverse — a list of products spared execution purely by inertia — doesn't get the same attention, because inertia is a decision too, just one nobody signs their name to. Blogger is small potatoes financially. But it's a clean case study in what portfolio governance looks like when it silently fails, and it's worth fifteen minutes of any strategy team's time to ask which of their own products is quietly doing the same thing.

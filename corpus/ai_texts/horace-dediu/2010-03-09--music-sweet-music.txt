@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Music. Sweet music
+type: blog post
+area: Technology & media
+matched_human_doc: texts/horace-dediu/2010-03-09--music-sweet-music.txt
+words: 679
+generated: 2026-08-31
+---
+
+# Music. Sweet music
+
+There's a moment in every technology cycle when the thing that was going to kill an industry turns out to have been the thing that saved it. Music got there first, and it got there hardest. Which is why, if you work in media or the technology that serves it, the recorded music business is worth another look — not for nostalgia, but because it is the only sector that has already run the full experiment and published the results.
+
+The shape of the story is familiar enough to be a cliché. Napster in 1999, a decade of decline, streaming, recovery. But the cliché flattens the interesting part. The industry did not recover because it beat piracy. It recovered because it eventually stopped selling a physical object and started selling access, and because access turned out to be worth more per listener, per year, than anyone in 2003 was willing to believe. The album was a bundle nobody had asked for. The subscription is a bundle everybody accepted. The difference between those two sentences is roughly two decades and a great deal of destroyed shareholder value.
+
+What makes music genuinely instructive is that its unit economics are so unforgiving they expose things other media can hide. A song costs almost nothing to deliver and almost nothing to store. Catalogue never expires. Consumption is repetitive rather than one-and-done — people listen to the same track four hundred times, which no one does with a film. So the marginal economics collapse to near zero and everything comes down to two questions: who owns the rights, and who owns the relationship with the listener. Every fight in the industry for twenty-five years has been one of those two questions wearing a costume.
+
+That framing is why catalogue acquisition became an asset class. When Hipgnosis and its imitators started buying song rights at multiples that looked absurd, the underlying bet was simple: streaming turns a back catalogue into a bond. Predictable, inflation-resistant, uncorrelated with equities. Some of those bets were priced badly and the froth came off. But the insight was correct and it has generalised — the same logic is now being applied to podcast libraries, to image archives, to any corpus with durable, repeatable demand.
+
+Then there is the part that should make anyone in media pay attention right now. The music industry has spent longer than anyone else fighting about what happens when a machine consumes creative work and produces something adjacent to it. Sampling litigation in the late eighties and nineties forced the sector to build the legal and commercial plumbing for derivative use — clearance, splits, micro-licensing at scale. Nobody enjoyed it. But it means that when generative models arrived, music had a vocabulary for the argument that the rest of media is still improvising. Labels moved faster to licensing deals than publishers did, not because they are more enlightened, but because they had done this before and knew that a negotiated rate beats an unenforceable prohibition.
+
+The uncomfortable footnote is distribution. Music solved its revenue problem by handing the customer relationship to three or four platforms. Artists get paid, the majors are healthy, and almost nobody in the value chain knows who their listeners are. That is the trade, and it is the one every media business is now being asked to make in some form — with search, with social, with AI assistants that answer the question rather than sending the click. Music took the deal early and got a functioning industry out of it. Whether it got a good price is still, twenty years on, genuinely arguable.
+
+So: sweet music, yes. Revenues have grown for a decade straight, more people listen to more artists than at any point in history, and the doom-mongers of 2005 were comprehensively wrong. But the lesson isn't that technology fixes everything eventually. It's that the fix arrives on the platform's terms if you spend the disruption years litigating instead of building. Music learned that lesson expensively. It is available to the rest of us for free.

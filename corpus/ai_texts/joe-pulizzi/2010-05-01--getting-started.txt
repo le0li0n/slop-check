@@ -1,0 +1,31 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Getting Started
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/joe-pulizzi/2010-05-01--getting-started.txt
+words: 584
+generated: 2026-08-31
+---
+
+# Getting Started
+
+Every marketing team has that one project sitting in the "we should really do this" column. A new attribution model. A content refresh. A CRM migration nobody wants to own. The idea has merit, everyone nods along in the meeting, and then it sits there for another quarter because starting feels harder than it should.
+
+Here's the thing about getting started: it's rarely a knowledge problem. Most marketers already know the first three steps of whatever they're avoiding. The gap isn't information — it's momentum. So instead of another framework, here's what actually moves projects from "someday" to "in progress."
+
+**Shrink the first step until it's stupid.** Not "launch the new nurture sequence" but "write the subject line for email one." Not "rebuild the website" but "list the five pages that get the most traffic." The brain resists vague, large commitments and barely notices small, specific ones. If your first step still feels like a project, it's not small enough yet.
+
+**Pick the version you can ship this week.** Perfect campaigns don't launch — campaigns launch, and then get better. A landing page with three sections beats a twelve-section page trapped in review. A newsletter with two links beats the "content hub" that's been in planning since spring. Set a deadline that's uncomfortably close, then build only what fits inside it. You can always add the nice-to-haves in round two, and you'll know more about what's actually needed by then anyway.
+
+**Write down what "done" means before you start.** Vague goals produce vague work and endless second-guessing. "Grow the newsletter" invites paralysis; "add 200 subscribers by adding a signup form to the top three blog posts" invites action. A concrete definition of done also tells you when to stop polishing — which is its own kind of getting started, since perfectionism is often just procrastination with better lighting.
+
+**Tell someone before you're ready.** Announcing a rough plan to a colleague or your manager creates a small, useful pressure that a private to-do list never will. It doesn't need to be a formal kickoff — a Slack message saying "starting the Q3 campaign brief today, aiming to share a draft Friday" does the job. Public commitments, even tiny ones, are surprisingly effective at overriding the urge to wait for a better moment.
+
+**Expect the first draft to be bad, and start anyway.** This trips up more marketers than any tactical gap. The first outline is clunky. The first send has typos you'll wince at. The first version of the brand voice guide sounds like nothing and everything at once. That's not a sign you're doing it wrong — it's what starting looks like, for everyone, every time. Editing a bad draft is a completely different, much easier task than staring at a blank page, so your job isn't to write something good. It's to write something that exists.
+
+None of this is complicated, and that's sort of the point. Getting started was never going to require a new methodology or a better tool stack. It requires a task small enough to begin today, a deadline close enough to matter, a clear enough finish line, a little social pressure, and permission to be bad at it first.
+
+The campaign, the audit, the redesign — whatever's been sitting in that column — doesn't need you to have it figured out. It just needs a first, small, unimpressive step. Take that step today, and the rest tends to follow faster than the planning ever did.

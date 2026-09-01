@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Outside-InMoonSunTwitterLinkedInBlueskyEmailCopy Link
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/jason-cohen/2007-12-01--outside-inmoonsuntwitterlinkedinblueskyemailcopy-link.txt
+words: 451
+generated: 2026-08-31
+---
+
+# Outside-InMoonSunTwitterLinkedInBlueskyEmailCopy Link
+
+The title of this post is broken. Somewhere between the CMS and the render, the social share widget collapsed into the headline — moon and sun toggles, four platforms, an email link, a copy button, all fused to the words "Outside-In." Nobody caught it. It shipped.
+
+I'm leaving it, because it's the most honest thing I've published this year about how startups get built now.
+
+Every founder I meet is building outside-in. The distribution surface comes first: the launch tweet, the LinkedIn post announcing the launch tweet, the dark mode toggle because dark mode signals a certain kind of seriousness. The product is what's left over after the share buttons are placed. And the strange part is this isn't stupid. In a market where a thousand teams can ship the same CRUD app in a weekend, the outer layer *is* the moat. Attention is the scarce input. Anyone telling you otherwise is running a fund that closed in 2013.
+
+But look at what the broken title actually reveals. All those buttons — Twitter, LinkedIn, Bluesky — are load-bearing for exactly nothing. They're a widget the founder installed in week two and never revisited. Nobody clicks them. Every real share happens by someone copying the URL out of the address bar and pasting it into a group chat you cannot instrument. The widget exists because the widget is what a website has.
+
+That's the failure mode of outside-in. Not that you started from distribution, but that you started from a *picture* of distribution — the shape it had when someone else's company worked. You built the artifact, not the mechanism.
+
+For investors, this is a decent diligence question, and it's cheaper than a data room. Ask a founder why a specific surface exists. The good answer is causal and small: we added the Bluesky button because our first forty users came from one thread there. The bad answer is categorical: it's table stakes, everyone has one. Categorical answers mean the team is pattern-matching, and pattern-matching companies break the moment the pattern shifts — which, given the current rate of model releases and platform deprecations, is roughly every seven months.
+
+For founders: audit your own title bar. What's in your product because you measured something, and what's there because it's what products have? Kill the second category ruthlessly. It's not just clutter; it's evidence you're outsourcing judgment to the aggregate.
+
+The moon and the sun in my headline are a light/dark toggle nobody asked for, welded permanently into the name of the thing. That's the whole failure in one string. Build from the inside out far enough that the outside means something — then, and only then, add the buttons.

@@ -1,0 +1,19 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Stupid, stupid Yahoo
+type: blog post
+area: Technology & media
+matched_human_doc: texts/jeff-jarvis/2005-10-25--stupid-stupid-yahoo.txt
+words: 357
+generated: 2026-08-31
+---
+
+Stupid, stupid Yahoo
+
+Every couple of years, the tech press rediscovers a favorite pastime: cataloguing the things Yahoo could have bought, built, or kept, and didn't. It's a genre unto itself at this point, less analysis than ritual mourning. Yahoo passed on Google for a reported $1 million in 1998 and again waved off a billion-dollar-plus offer a few years later. It walked from a Microsoft acquisition north of $40 billion in 2008, only to sell the core business to Verizon in 2017 for $4.5 billion, a fraction of that number. It owned a controlling stake in Alibaba and a piece of Yahoo Japan that, at various points, were worth more than the rest of the company combined. It had Flickr before Instagram existed and let it wither. It had del.icio.us, GeoCities, Broadcast.com. It had, arguably, the first real portal and the first real search engine with meaningful scale, and it treated both like commodities rather than platforms.
+
+None of this is news to anyone who has covered the company, which is exactly the point worth making to an audience that covers companies for a living: the Yahoo story isn't really about Yahoo anymore. It's a template. Every leadership team that inherits a dominant early-mover position now gets measured against it, explicitly or not. Every acquisition memo that gets shelved, every division spun off too early, every architecture decision optimized for next quarter's ad revenue instead of the following decade — someone in the room brings up Yahoo, and the room nods, because the shorthand works.
+
+The uncomfortable part is that Yahoo's executives weren't stupid, whatever the headline writers preferred. They made a long series of individually defensible decisions under real uncertainty, and the aggregate looks like negligence only in hindsight. That's worth remembering the next time a company we currently admire — and there's always one — makes the call that looks obviously wrong five years later. The lesson isn't that Yahoo's people were fools. It's that portfolio thinking, institutional patience, and the willingness to cannibalize your own product are rarer than they should be, and the market rarely prices that rarity correctly until it's gone.

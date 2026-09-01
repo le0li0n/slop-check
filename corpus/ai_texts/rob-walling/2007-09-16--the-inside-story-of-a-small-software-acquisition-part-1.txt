@@ -1,0 +1,41 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: The Inside Story of a Small Software Acquisition (Part 1 of 3)
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/rob-walling/2007-09-16--the-inside-story-of-a-small-software-acquisition-part-1.txt
+words: 1120
+generated: 2026-08-31
+---
+
+# The Inside Story of a Small Software Acquisition (Part 1 of 3)
+
+Every acquisition story you read after the fact sounds inevitable. Two companies, complementary products, obvious synergy, deal closes, everyone shakes hands in a stock photo. What actually happens is messier, slower, and a lot more emotional than the press release ever lets on. This is the first of three posts walking through a real small-software acquisition — the names and numbers are changed, but the mechanics, the mistakes, and the moments of doubt are not. Part 1 covers how the deal started and the six weeks before anyone signed a term sheet. Part 2 will cover diligence, and Part 3 will cover closing and the ninety days after.
+
+Some context on the company being acquired, which I'll call Fenwick. Fenwick was a four-person team that had built a niche piece of infrastructure tooling — think a very good, very boring utility that a certain kind of engineering team can't live without once they've adopted it. Two and a half years old, roughly $90K in MRR, growing slowly but with almost no churn. No outside funding beyond a small friends-and-family round. The founder, who I'll call Priya, had bootstrapped it while working a day job for the first eight months and had never seriously entertained selling.
+
+The acquirer was a Series B company — I'll call it Radial — where I ran corporate development, a function that at a company that size meant "me, part-time, alongside three other jobs." Radial had looked at building the thing Fenwick built. We'd scoped it twice, put it on two different roadmaps, and killed it both times because it never cleared the bar against louder, more obviously revenue-generating work. That pattern — a capability everyone agrees is valuable but nobody can justify prioritizing — is, in my experience, the single best predictor that a small acquisition is about to make sense. If you find yourself explaining to your third VP in a row why "we should probably just build this," you've usually found your target list.
+
+## How it actually started
+
+It wasn't a banker. It wasn't an outbound email. It was a Slack message from one of our engineers, forwarding a blog post Priya had written about a design decision in her product. The engineer's comment was just: "this person has clearly thought about this more than we have." I read the post, read four more, and then did what every corp dev person should do before writing a single deck slide: I became a customer. Radial signed up for Fenwick's paid tier under a personal email, used it for three weeks, and asked support questions like a real user because we were one.
+
+That's worth dwelling on, because it's the part most acquisition narratives skip. Before there was a relationship, there was a product experience. Before there was a term sheet, there was genuine curiosity about whether the thing was as good as it looked from the outside. I've since seen the alternative — corp dev people who start with a LinkedIn message and a "we're exploring strategic partnerships" line — and it reads as exactly as hollow to founders as it sounds. Priya told me later, after the deal closed, that she almost didn't take my first call because she assumed it was a sales pitch wearing a corp-dev costume.
+
+## The first conversation
+
+When I did reach out, I was explicit about two things: I was not currently authorized to make an offer, and I was genuinely trying to understand her business, not extract a discount by pretending otherwise. That framing matters more than it sounds like it should. Founders of small, profitable, unfunded companies have enormous informational leverage in a first call — they know their numbers, their customers, and their own motivations far better than any acquirer does on day one — and the ones worth acquiring can smell a fishing expedition immediately.
+
+The first call was ninety minutes and covered almost no deal terms. I asked about her customers, her support burden, why she'd never raised a real round, what she liked about running the company and what she didn't. She asked about Radial's roadmap, why we hadn't built this ourselves, and — pointedly — what would happen to her team if a deal ever happened. I didn't have a good answer to that last one yet, and I said so. Founders remember when you admit you don't know something instead of improvising a reassuring answer you can't back up.
+
+## Why now, and why at all
+
+Two things made this the right moment rather than a permanently theoretical one. First, Radial's own roadmap had just shifted in a way that made the capability gap acute rather than annoying — a large prospect had asked for exactly what Fenwick did, in a deal big enough that the absence was no longer an abstraction. Second, Priya was quietly tired. Not of the product, and not of her customers, but of being the only person who could be on call, the only person negotiating renewals, the only person doing payroll. Small-company acquisitions rarely happen because the founder has run out of ideas. They happen because the founder has run out of hands.
+
+That combination — an acquirer with a specific, dated need and a founder with a specific, honest fatigue — is a much better predictor of deal velocity than any strategic-fit slide. Over the following month we had four more conversations, none of which mentioned price. I was building a case internally with our CEO and CFO, using nothing but the qualitative picture and Fenwick's public pricing page, because Priya wasn't ready to open her books to a company that hadn't yet told her whether it was serious. That reluctance was completely reasonable, and pushing past it too early would have cost us the deal later — a mistake I've watched other acquirers make by asking for a data room on the first call.
+
+By the end of week six, we had something closer to a shared understanding than a negotiation: a rough sense of what Radial could justify paying, a rough sense of what would actually get Priya to yes, and enough trust on both sides that the next step — a real letter of intent — felt like a formality rather than a leap. It wasn't, of course. LOIs never are. But it felt that way, which is its own kind of achievement in a process this fragile.
+
+Part 2 picks up where the comfortable part ends: the LOI, the diligence process that nearly killed the deal twice, and the week Priya almost walked away over something that had nothing to do with money.

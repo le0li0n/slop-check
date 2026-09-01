@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: John Battelle's Search Blog Thoughts on 2004
+type: blog post
+area: Technology & media
+matched_human_doc: texts/john-battelle/2003-12-22--john-battelle-s-search-blog-thoughts-on-2004.txt
+words: 695
+generated: 2026-08-31
+---
+
+# John Battelle's Search Blog: Thoughts on 2004
+
+John Battelle's Search Blog spent 2004 as one of the more useful running logs of an industry figuring out what it had just become. Battelle wasn't writing think-pieces from a distance — he was reporting from inside the shift, tracking Google's slow crawl toward an IPO, the scramble among portals to reposition themselves as "search" companies, and the emergence of search as the default lens through which the web organized itself. Read as a whole, the year's posts form a kind of field notebook for what he'd later formalize in "The Search," his 2005 book on the industry.
+
+The dominant thread was Google itself. Battelle covered the company's August IPO not as a Wall Street curiosity but as a referendum on whether the dot-com bust had actually taught the industry anything. The unusual Dutch auction structure, the eccentric S-1 filing with its "don't be evil" language, the founders' letter that read more like a manifesto than a prospectus — all of it got the close reading of someone who understood he was watching a company try to go public on its own terms, and mostly succeed. He was skeptical in places, but not cynical; he treated Google's insistence on being different as worth taking seriously rather than dismissing as PR.
+
+Alongside the Google coverage, 2004 was the year Battelle kept returning to a bigger idea: that search queries themselves were becoming a massive, continuously updated database of human intent. He'd increasingly refer to this as the "database of intentions" — the record, in aggregate, of what the world was curious about, worried about, shopping for, and trying to understand at any given moment. This wasn't just a clever turn of phrase for the blog; it was the conceptual spine that would hold together his later book, and in 2004 you can watch him testing the idea in real time against news events, product launches, and casual observations about query patterns.
+
+He also tracked the competitive response to Google's rise with real attention to detail. Yahoo's acquisition-fueled effort to build its own search technology after years of relying on Google, Microsoft's slow, heavily resourced move into search with MSN, and Amazon's A9 experiment all got coverage that treated search not as a feature but as infrastructure — something every major internet company would eventually need to own rather than license. Battelle was early to frame this as an arms race, and 2004's posts show him handicapping the contenders with a trader's eye for who had the talent, the data, and the patience to compete.
+
+Advertising was the other throughline. Battelle had spent years covering media and advertising before turning to search, and that background showed in how closely he watched the mechanics of paid search — the AdWords auction model, the rise of performance marketing, and what it meant for an entire advertising industry built on impressions and demographics to suddenly be confronted with an auction-based, intent-driven alternative. He treated this less as a technology story than a media-economics story, which set his blog apart from the more purely technical coverage elsewhere.
+
+What holds up best from that year isn't any single prediction — it's the posture. Battelle wrote as a participant-observer, someone who'd covered Wired and Industry Standard through the first bubble and was determined not to repeat the breathless mistakes of that era, while still taking seriously that something structurally new was happening. He asked good questions about privacy and data retention well before those became mainstream concerns, wondering aloud what it would mean for one company to hold a running record of collective curiosity. He didn't have the answers, and he said so.
+
+For anyone working in tech or media now, the 2004 archive of Search Blog reads less like history and more like an origin document — the moment the industry's current vocabulary (intent, query data, the ad auction, "don't be evil" as a business proposition to be tested rather than trusted) was still being assembled in public, sentence by sentence, by someone smart enough to know he was watching something important and honest enough to admit he wasn't sure yet where it led.

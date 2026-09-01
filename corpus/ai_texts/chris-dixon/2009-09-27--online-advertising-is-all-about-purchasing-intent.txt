@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Online advertising is all about purchasing intent
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/chris-dixon/2009-09-27--online-advertising-is-all-about-purchasing-intent.txt
+words: 383
+generated: 2026-08-31
+---
+
+Online advertising is all about purchasing intent
+
+Every online ad platform, no matter how it's dressed up, is selling the same underlying asset: a signal that someone is about to spend money. Google Search built a trillion-dollar business on the cleanest version of this signal — a person typing "buy running shoes" is announcing intent directly into the product. Everything else in the industry is an attempt to approximate that moment without the person having to say it out loud.
+
+This is the lens founders should use when evaluating any ad-adjacent business, whether they're building one or buying media on one. The question isn't "how many eyeballs" or "how engaged is the audience" — it's "how close is this signal to actual purchase intent, and how defensible is that proximity." Facebook's interest and lookalike targeting was always a weaker, noisier proxy than search intent, which is why its CPMs behave differently and why it's more vulnerable to platform-level shifts like iOS 14.5. Retail media networks (Amazon, Instacart, Walmart Connect) have become the fastest-growing corner of adtech precisely because they sit even closer to the purchase than search does — they see the cart, not just the query.
+
+For startups building in this space, the durable moats are the ones that own a unique, high-fidelity intent signal nobody else has: proprietary purchase data, first-party behavioral data at the point of decision, or a distribution channel where intent is expressed involuntarily (search queries, cart adds, review reads). Anything built on third-party cookie targeting or broad demographic proxies is renting a weakening signal, and the last decade of privacy regulation has made that increasingly clear.
+
+For VCs, this reframes a lot of diligence questions. When a company claims an "advertising" or "adtech" revenue line, the real question is: what intent signal are they monetizing, do they own it, and how many steps removed is it from an actual transaction? A company two steps removed from purchase intent (attention, engagement) is playing a fundamentally different, weaker-margin game than one sitting one step away (search, cart, checkout).
+
+The platforms that have compounded value over decades — Google, Amazon, now increasingly Amazon and Walmart's retail media arms — didn't win because they had more ad inventory. They won because they sat closest to the moment someone decided to buy.

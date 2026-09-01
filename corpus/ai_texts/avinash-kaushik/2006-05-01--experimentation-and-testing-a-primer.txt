@@ -1,0 +1,91 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Experimentation and Testing: A Primer
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/avinash-kaushik/2006-05-01--experimentation-and-testing-a-primer.txt
+words: 1376
+generated: 2026-08-31
+---
+
+# Experimentation and Testing: A Primer
+
+Most marketing teams have a testing program in the same way most people have a gym membership. It exists. It gets referenced in planning documents. Someone ran an A/B test on a subject line in Q2 and the results were shared in a Slack thread that nobody can find anymore.
+
+The gap between "we test things" and "we have a functioning experimentation practice" is wider than it looks, and it isn't primarily a tooling gap. It's a gap in how questions get asked, how results get read, and what happens after a test ends. This is a primer on closing it.
+
+## Why testing exists
+
+The purpose of an experiment is not to find winners. The purpose is to reduce the cost of being wrong.
+
+Every marketing decision is a bet. You pick a headline, a layout, an offer, an audience — and you commit budget and attention to that pick. Most of the time you're guessing, informed by experience and taste but guessing nonetheless. Experimentation is the practice of making small, cheap, reversible bets before you make large, expensive, sticky ones.
+
+This framing matters because it changes what counts as a good test. A test that proves your intuition wrong before you spend six figures on a campaign is enormously valuable, even though it produced no "winner." A test that produces a 2% lift on a page nobody visits is worthless, even though it produced a green checkmark in your dashboard. Value comes from the size of the decision the test informs, not the size of the effect it measures.
+
+## The anatomy of an experiment
+
+Strip away the software and every experiment has the same four parts.
+
+**A hypothesis.** Not "let's try a green button" but "we believe visitors abandon the pricing page because the plan differences aren't legible, so making the comparison table the first thing they see will increase trial starts." A hypothesis names a mechanism. It tells you what you'll learn whether the test wins or loses, which is the difference between an experiment and a coin flip.
+
+**A change.** One meaningful change, applied to one group and not another. If you rewrite the headline, change the image, and add a testimonial all at once, a win tells you the bundle worked and nothing about why. Bundled tests are legitimate when you're testing a whole concept — a full page redesign against the old page — but be honest with yourself about which one you're running.
+
+**A comparison group.** The control is the point. Without it you're looking at a before-and-after, and before-and-after is contaminated by everything else happening in the world: seasonality, a competitor's campaign, a press mention, a Tuesday. Randomized, simultaneous comparison is what turns a number into evidence.
+
+**A metric decided in advance.** Write down what you're measuring before you look. This single discipline prevents most of the ways testing programs deceive themselves.
+
+## The metric problem
+
+Choose the metric closest to the thing you actually want, that you can still measure reliably.
+
+Click-through rate is easy to measure and weakly related to revenue. Lifetime value is strongly related to revenue and nearly impossible to measure within a test window. Most teams should be optimizing somewhere in the middle: qualified leads, trial starts, first purchases — outcomes that happen often enough to detect and matter enough to justify the effort.
+
+Beware of optimizing a step in a funnel while the funnel gets worse. A more aggressive headline reliably lifts click-through and can just as reliably lower conversion, because it attracts people who were never going to buy. If you only watch the metric you're optimizing, you will eventually optimize your way into a worse business. Always track at least one downstream guardrail metric alongside your primary one.
+
+## Sample size, or why your test isn't finished
+
+This is where most programs go wrong, so it deserves plain language.
+
+Small samples produce large, meaningless swings. If forty people see version A and forty see version B, one version will "win" by a wide margin almost every time, purely by chance. Call the test after two days because variant B is up 30% and you will ship a change that does nothing — or actively harms you.
+
+The uncomfortable arithmetic: detecting small effects requires large samples. Reliably measuring a 5% relative lift on a 3% conversion rate takes tens of thousands of visitors per variant. Most marketing tests are run on traffic that cannot support the effect sizes people hope to detect.
+
+Three practical responses. First, calculate the required sample before launching — any free calculator will do — and if the answer is "eleven weeks," decide up front whether you're willing to wait. Second, test bigger changes. A radically different page can produce a 20% swing, which needs far less traffic to detect than a 3% one. Third, test higher in the funnel where volume lives, and accept qualitative or directional evidence lower down.
+
+And when you launch, commit to an end date. Peeking at results daily and stopping when the line crosses significance inflates your false positive rate substantially — you're effectively running the test many times and keeping the run that agreed with you.
+
+## What "significant" actually means
+
+Statistical significance answers one narrow question: if there were genuinely no difference between these versions, how surprising would this result be? A p-value below 0.05 means "fairly surprising." It does not mean the effect is real, large, or durable.
+
+Two consequences worth internalizing. A significant result can still be false — roughly one in twenty tests of no-difference changes will clear the bar by luck alone, which is why a program running dozens of tests accumulates phantom winners. And a non-significant result is not proof of no effect; it often just means your sample was too small to see one. "We found no difference" and "we couldn't detect a difference" are different sentences.
+
+Look at the confidence interval, not just the verdict. A result of "+4%, somewhere between +1% and +7%" tells you something useful. A result of "+4%, somewhere between -9% and +18%" tells you that you ran an underpowered test, regardless of what the significance flag says.
+
+## Beyond A/B
+
+A/B testing is the default, not the whole toolkit.
+
+**A/B/n** tests several variants at once — useful for exploring a creative space, though each additional variant splits your traffic and raises the odds of a fluke winner.
+
+**Multivariate** testing measures combinations of elements and how they interact. It's traffic-hungry and usually overkill outside very high-volume properties.
+
+**Geo and holdout tests** compare whole markets or randomly withheld audience segments. These are how you measure things cookies can't see — brand campaigns, out-of-home, the true incremental value of a paid channel. Deliberately withholding advertising from a random 10% of your audience is the single most clarifying test many teams never run.
+
+**Sequential and pre-post tests**, done carefully with seasonal controls, are the fallback when randomization genuinely isn't possible. Treat them as weak evidence and say so.
+
+## Building the habit
+
+The programs that compound share a few traits.
+
+They keep a written log — hypothesis, change, metric, sample, result, decision — that anyone can search. Institutional memory is the entire return on a testing program; without the log, you rerun the same test every eighteen months as staff turns over.
+
+They treat losses as findings. A negative result that kills a planned redesign has saved real money. If your culture only celebrates lifts, people will stop testing anything risky, and the risky things are where the learning is.
+
+They test fewer, bigger things. Ten well-powered tests on decisions that matter beat a hundred button-color tests, and they take less time in aggregate.
+
+They know the limits. Testing optimizes within a strategy; it does not choose one. No amount of landing page testing will tell you to enter a new market, and a program that only ever finds 3% improvements is often a sign that the real questions aren't being asked.
+
+Start with one decision you're about to make expensively. Ask what you'd need to see to change your mind. Then design the smallest honest test that could show you that — and agree, before it runs, what you'll do with either answer.

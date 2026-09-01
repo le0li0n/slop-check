@@ -1,0 +1,65 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: String rewriting systems
+type: blog post
+area: Software engineering
+matched_human_doc: texts/simon-willison/2002-09-25--string-rewriting-systems.txt
+words: 787
+generated: 2026-08-31
+---
+
+# String rewriting systems
+
+There's a class of computational model that most working engineers have never formally studied but have implemented dozens of times by accident. It goes by several names — semi-Thue systems, string rewriting systems, term rewriting in its more general form — and it's worth knowing about, because once you can see it you'll start noticing it everywhere in your own code.
+
+## The whole model
+
+A string rewriting system is a set of rules. Each rule is a pair: a pattern and a replacement. You have a string. You find a substring matching some rule's left side, replace it with the right side, and repeat until no rule applies.
+
+That's it. There's no state beyond the string, no control flow, no stack.
+
+```
+aa → b
+bb → a
+ab → ε
+```
+
+Start with `aabb`. The first rule matches at position 0, giving `bbb`. The second matches, giving `ab`. The third gives the empty string. Done.
+
+The surprising part is that this is Turing complete. You can encode a Turing machine's tape and head position as a string and its transition table as rewrite rules; the rewriting *is* the computation. Same for the lambda calculus, same for Post canonical systems. A set of find-and-replace rules is a universal computer.
+
+## Where you've already used one
+
+Once you have the frame, the sightings pile up.
+
+**Compiler peephole optimizers** are the purest example. `mov eax, 0` → `xor eax, eax`. Multiply-by-power-of-two → shift. Each is a rewrite rule over an instruction sequence, applied to fixpoint.
+
+**Database query planners** rewrite relational algebra trees: push selections below joins, collapse nested projections, turn `IN` subqueries into semi-joins. Postgres and Calcite both expose this as an explicit rule set you can extend.
+
+**Build systems** are rewrite systems over file paths. `%.o: %.c` is a pattern and a replacement, and `make` runs it to fixpoint.
+
+**Macro expanders**, **linters with autofix**, **codemods** — jscodeshift, `rustfmt`, ESLint's `--fix`, Semgrep's autofix — are all "match this shape, produce that shape, repeat."
+
+**Normalizing data** is rewriting too. Every `while (changed) { ... }` loop that collapses whitespace, strips trailing slashes, or resolves `..` in a path is a rewriting system with an implicit rule set.
+
+## The two questions that actually matter
+
+Formal treatments of rewriting spend their time on two properties, and both correspond to bugs you have shipped.
+
+**Termination.** Does the process stop? A rule like `x → xx` obviously doesn't. Less obviously, a *set* of individually shrinking rules can loop: `ab → ba` and `ba → ab` will ping-pong forever. This is why real systems tend to hedge — a max iteration count, a fuel budget, a "if nothing changed this pass, stop." When your formatter oscillates between two outputs on alternating saves, you've found a non-terminating rewrite system in the wild.
+
+The standard technique is to find a *well-founded measure* that strictly decreases with every rule application. Instruction count, tree depth, a lexicographic ordering on multiple metrics — something that can't decrease forever. If you can name that measure for your rule set, termination is proved. If you can't, you probably have a bug waiting.
+
+**Confluence.** If two rules both match, does the choice matter? A system is confluent when any two rewriting paths from the same start can eventually rejoin. Confluence plus termination gives you *unique normal forms*: every input has exactly one final answer, regardless of application order.
+
+This is the property you implicitly want from a code formatter, a canonicalizer, or a cache key normalizer, and it's the property that breaks quietly. If your rule set isn't confluent, output depends on rule ordering — so adding a rule changes results for inputs that rule doesn't even match, and two developers on different versions produce different normalized output for identical input. The cache key story ends with a stale-read incident.
+
+There's a real algorithm here: **Knuth–Bendix completion** takes a non-confluent rule set, finds the *critical pairs* (places where two rules overlap on the same input), and adds rules to make the divergences rejoin. It's what turns an ad-hoc pile of simplifications into a decision procedure. It doesn't always terminate either — the irony is not lost on anyone — but when it does you get a confluent system for free.
+
+## Why bother
+
+The practical payoff isn't that you'll go implement Knuth–Bendix. It's that when you write your next normalizer or optimizer pass, you'll ask two questions you'd otherwise skip: what measure decreases, and do overlapping rules commute?
+
+Those questions turn a pile of `if` statements into something you can reason about. And when the pile misbehaves, you'll know the failure has a name — which is usually the difference between a fix and a retry limit.

@@ -1,0 +1,21 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: All-hotels.com
+type: blog post
+area: Software engineering
+matched_human_doc: texts/robert-c-martin/2007-01-10--all-hotels-com.txt
+words: 361
+generated: 2026-08-31
+---
+
+All-hotels.com
+
+There's a certain genre of website that only engineers can properly appreciate, and All-hotels.com is a museum-quality specimen. It looks like it hasn't been touched since roughly 2003: table-based layout, a logo rendered in what appears to be WordArt, and a homepage that manages to cram a search box, a dozen ad units, and a wall of destination links into something resembling a phone book page. And yet it works. You can search a city, get a list of hotels, and book a room. That combination — aggressively unmaintained frontend, functioning backend — is the interesting part.
+
+It's a useful reminder that the layer users complain about and the layer that actually generates revenue are not the same layer. Somewhere behind that HTML from a bygone era sits an inventory system talking to GDS providers, a payments pipeline, and probably a rates/availability cache that's seen more engineering investment than the CSS ever will. Nobody on that team is losing sleep over flexbox. The site converts, the affiliate and booking fees clear, and there's no A/B test in the world that's going to get budget approved to redesign a page that isn't hurting the metrics anyone's bonus depends on.
+
+There's a lesson here that's easy to nod along to and hard to actually practice: users tolerate a lot of ugliness if the core task is fast and reliable, and they have near-zero tolerance for a beautiful interface wrapped around a flaky backend. We spend a disproportionate amount of review time on component structure and design polish, and a disproportionate amount of on-call time on the boring stuff — cache invalidation, retry logic, idempotency on the booking write path — that a site like this evidently got right decades ago and never had to touch again.
+
+It's also a quiet argument against premature rewrites. Nothing about that markup is "correct" by any current standard, but it isn't broken either, and every hour not spent modernizing it is an hour spent somewhere the business actually notices. Legacy code that works is not technical debt in the pejorative sense; it's paid-off principal. All-hotels.com is what "if it ain't broke" looks like when nobody blinks.

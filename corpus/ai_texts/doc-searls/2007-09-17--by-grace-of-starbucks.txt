@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: By grace of Starbucks
+type: blog post
+area: Technology & media
+matched_human_doc: texts/doc-searls/2007-09-17--by-grace-of-starbucks.txt
+words: 407
+generated: 2026-08-31
+---
+
+By Grace of Starbucks
+
+There's a particular kind of media executive who treats the nearest Starbucks as a satellite office. Not for the coffee — for the neutrality. A conference room says whose turf you're on. A Starbucks says nothing at all, which is exactly the point when you're trying to have a conversation that hasn't been cleared by anyone's comms team.
+
+This matters more than it should in an industry that has spent the last two years dissolving its own boundaries. Streaming platforms are ad platforms now. Publishers are technology companies. Technology companies are, increasingly, publishers, or at least act like it when it suits the narrative. The org chart on the door doesn't tell you much anymore about what happens inside. So the deals get done, or at least sketched, somewhere the door doesn't matter — a laminate table, a paper cup, a Wi-Fi password taped to the register.
+
+I don't think this is nostalgia for the coffee-shop-as-third-place idea that urbanists have been eulogizing for a decade. It's closer to a workaround. The formal channels — the calendared calls, the decks, the legal-reviewed emails — are where positions get staked and defended. The informal ones are where they get changed. And changing a position requires a room where nobody's taking minutes. Starbucks, for all its faults as a company and a landlord of public space, has accidentally become the industry's most reliable neutral room.
+
+There's something almost quaint about how low-tech the workaround is. We have encrypted messaging, ephemeral chat, a dozen tools built explicitly for conversations that shouldn't leave a trace. And still the move, when something actually needs figuring out, is to sit across a small table from another human being with a cardboard cup between you. Maybe that's the tell: the technology solved for privacy but not for trust, and trust turns out to still require a body in a chair.
+
+None of this is a design decision anyone made. Starbucks didn't set out to be the industry's informal negotiating floor any more than a park bench sets out to host a breakup. It happened by grace, not by strategy, which might be why it works — nobody's optimizing the room, so nobody's performing for it.
+
+Worth remembering the next time a deal seems to have moved faster than the org chart could explain. Somewhere between the standing meeting and the signed term sheet, someone probably bought two coffees they didn't finish.

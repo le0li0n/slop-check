@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Fail Bigger Cheaper: A Three Word ManifestoHarvard Business Review LogoHarvard Business Review LogoHarvard Business Revi
+type: article
+area: Management & strategy
+matched_human_doc: texts/umair-haque/2011-03-01--fail-bigger-cheaper-a-three-word-manifestoharvard-busin.txt
+words: 385
+generated: 2026-08-31
+---
+
+Fail Bigger Cheaper: A Three Word Manifesto
+
+Every strategy team claims to embrace failure. Almost none have redesigned how they fail. The distinction matters more than the sentiment: failing "fast" or "smart" says little about whether an organization actually learns anything before the next bet. Three words offer a sharper test — fail bigger, cheaper.
+
+Bigger, because small failures teach small lessons. A pilot so narrowly scoped that it can't disrupt anything also can't reveal anything. The market doesn't respond meaningfully to a change nobody notices. If a test is designed to be safe, it is probably also designed to be uninformative. Ambition in a failure is not recklessness — it's the only way to generate a signal worth acting on.
+
+Cheaper, because ambition without discipline is just risk. The organizations that fail well are not the ones that swing hardest; they're the ones that have engineered the cost of swinging down. That means shorter build cycles, modular commitments, decisions that can be unwound before they compound, and capital structures that treat an experiment as an experiment rather than a bet-the-quarter initiative. Cheap failure is what makes big failure survivable — and repeatable.
+
+Put together, the phrase describes a portfolio logic, not a slogan. Most strategic failures are neither: they are small enough to be meaningless and expensive enough to be punished. That combination produces the worst possible incentive — teams that avoid tests altogether, because the ones they're allowed to run don't justify their cost. The fix isn't more tolerance for failure in the abstract. It's a redesign of what failures are permitted to look like.
+
+For leadership teams, this reframes a familiar question. Instead of asking "how do we build a culture that tolerates failure," ask "what would it take to make our biggest bets cheap enough to lose." That is an operational question, with answers in how initiatives are funded, staged, and killed — not a cultural one, with answers in town halls and values statements.
+
+Three words won't rewrite an operating model by themselves. But they're a usable filter: before greenlighting the next initiative, ask whether it is big enough to teach you something and cheap enough that teaching won't cost you the year. Most proposals fail that test in one direction or the other. That's the point of asking it.

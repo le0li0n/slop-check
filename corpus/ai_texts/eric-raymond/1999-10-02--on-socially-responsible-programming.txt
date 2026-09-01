@@ -1,0 +1,41 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: On Socially Responsible Programming
+type: essay
+area: Software engineering
+matched_human_doc: texts/eric-raymond/1999-10-02--on-socially-responsible-programming.txt
+words: 615
+generated: 2026-08-31
+---
+
+# On Socially Responsible Programming
+
+Somewhere in your codebase there is a line that decides something about a person. Maybe it's a retry limit on a payment endpoint that quietly locks someone out of their own money. Maybe it's a default sort order that puts one set of results in front of everybody's eyes. Maybe it's a regex on a name field that says a real human being's name is invalid. None of those lines were written with malice. They were written on a Tuesday, under a deadline, by someone reasonable.
+
+That's the uncomfortable part. Most of the harm our industry does isn't produced by villains. It's produced by defaults, by shortcuts that were fine at ten thousand users and corrosive at ten million, by the accumulated weight of small decisions nobody thought were decisions at all. Socially responsible programming is mostly the practice of noticing that they were.
+
+## Scale converts preference into policy
+
+If you write a script for yourself, your assumptions are your business. If you write a function that runs a billion times a day, your assumptions are policy. A threshold you picked because it felt about right becomes the line between an account being reviewed and being frozen. A cache TTL becomes how stale someone's medical record is when a nurse reads it.
+
+Engineers are trained to think about correctness and performance at scale, and we're quite good at it. We're much less practiced at thinking about *consequences* at scale — the fact that a 0.1% false positive rate is a rounding error in a dashboard and thousands of furious, stuck human beings in the world. The skill worth building is the reflex to ask, of any threshold, default, or fallback: who's on the wrong side of this, and what happens to them?
+
+## Responsibility is a design property, not a virtue
+
+The reason "be thoughtful" doesn't work as advice is that thoughtfulness doesn't survive contact with a sprint. What survives is structure. Some things that actually hold:
+
+**Make the harmful thing hard.** If deleting user data requires a code path that's awkward to reach and logs loudly, it won't happen by accident. Ergonomics is ethics with a shorter feedback loop.
+
+**Keep the humans in your data model.** Records about people should carry provenance, consent state, and retention alongside the payload. When those live in a wiki instead of the schema, they are aspirations, not constraints.
+
+**Instrument the tail.** Your p50 is fine. Your p99.9 is where people are having a terrible day. Alert on the tail and you will find the people your system is failing before they find your support queue.
+
+**Write down what you assumed.** The most valuable comment in a file is often the one explaining why a limit is 30 and not 300, because it tells the next engineer what to reconsider when the context changes.
+
+## The part that's actually hard
+
+None of the above requires courage. What does is the moment you understand a feature well enough to know it shouldn't ship as specified, and you have to say so to people who don't want to hear it. You will be told it's not your call. Sometimes that's true. But you're the only person in the building who knows exactly what the code does, and that knowledge comes with an obligation to say it out loud, clearly, in writing, once — and then to accept the decision that follows.
+
+That's the job. Not purity, not refusing to build anything with an edge case. Just the ordinary discipline of knowing what you're making, saying what you see, and leaving the system a little easier for the next person to do the right thing in.

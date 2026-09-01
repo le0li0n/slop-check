@@ -1,0 +1,41 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Man and superman
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/chris-dixon/2009-10-10--man-and-superman.txt
+words: 471
+generated: 2026-08-31
+---
+
+# Man and Superman
+
+Shaw's play is remembered for a line most people misattribute to optimism: "The reasonable man adapts himself to the world; the unreasonable one persists in trying to adapt the world to himself. Therefore all progress depends on the unreasonable man."
+
+Venture capital has spent two decades treating this as a due diligence criterion. Unreasonableness became a proxy for conviction, conviction a proxy for outcome. We funded the founder who wouldn't take no, and told ourselves the ones who flamed out were merely insufficiently unreasonable.
+
+It's worth remembering that Shaw put the line in an appendix, in the mouth of a character he wrote as a bit of a fool. The play itself is more interesting than the epigram, and more useful.
+
+## What the play actually argues
+
+*Man and Superman* is about the Life Force — Shaw's notion that evolution has a direction and works through people who are largely unaware they're serving it. Ann Whitefield, the play's real engine, pursues John Tanner with total single-mindedness while Tanner delivers speeches about freedom. He thinks he's the protagonist. He's the instrument.
+
+The uncomfortable read for our industry: the unreasonable founder is not the cause of progress. He is the mechanism through which a market that was going to happen anyway expresses itself. Timing, distribution shifts, cost curves, regulatory windows — these are the Life Force. The founder is Tanner, giving interviews about vision while being carried.
+
+This is not a nihilistic point. It's an allocation point.
+
+## The investing implication
+
+If unreasonableness is a trait, you screen for it in people. If it's a residue of correct conditions, you screen for conditions and then ask which person the conditions require.
+
+Most of the great outcomes in any vintage share a structural feature that was visible ex ante and a personality feature that was not. The structural feature is boring: a cost that fell 90%, a behavior that changed, a rule that lapsed. The personality feature is the story we tell afterward, because it's better narrative and because it flatters the belief that we picked rather than caught.
+
+The practical test is simple. When a founder tells you why now, do you hear a description of the world or a description of themselves? Tanner's speeches are about Tanner. Ann never explains herself once.
+
+## For founders
+
+Shaw's superman was never a great individual. It was a species-level upgrade — the thing that comes after us, produced by us, indifferent to any of our particular ambitions. Being the vehicle for something larger than your own preferences is not a diminishment. It's the only version of the job that survives contact with a market.
+
+The unreasonable man persists in adapting the world to himself. Sometimes the world was already moving, and he had the good sense to persist in its direction.

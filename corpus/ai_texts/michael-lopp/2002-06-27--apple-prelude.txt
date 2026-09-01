@@ -1,0 +1,51 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Apple (Prelude)
+type: blog post
+area: Software engineering
+matched_human_doc: texts/michael-lopp/2002-06-27--apple-prelude.txt
+words: 817
+generated: 2026-08-31
+---
+
+# Apple (Prelude)
+
+There's a particular kind of silence that engineers learn to read. Not the silence of a system that's idle — that has a texture, logs ticking over, health checks passing, the low hum of a thing that is fine. I mean the other silence. The one where a company that ships on a metronome suddenly stops telling you what's next.
+
+Apple has been in that silence for a while now, and I want to talk about what it means from the inside of a build system rather than from the outside of a keynote.
+
+## The platform contract
+
+If you write software for a living, Apple isn't a company to you. It's a contract. Not a legal one — the Developer Program Agreement is the least interesting document in the relationship. I mean the implicit contract: the set of assumptions you're allowed to make about the ground under your feet for the next five years.
+
+That contract has clauses. The APIs you build against will be deprecated with warning, not withdrawn. The chips will get faster along a curve you can plan against. The distribution channel will exist and its rules will change slowly enough to absorb. The tools will be free, mostly good, and occasionally infuriating in ways that are at least stable.
+
+Most of us have never seriously examined this contract because it held. The Intel-to-ARM transition is the proof: Apple moved an entire desktop platform to a new instruction set and the median developer's experience was recompiling, shrugging, and getting on with it. Rosetta 2 was a bridge built so well that most people forgot they were crossing a chasm. That's what a platform contract looks like when it's honored.
+
+## What a prelude is
+
+A prelude isn't the thing. It's the material the thing will be made from, stated early and quietly, before you know it matters. Bach's preludes aren't warm-ups; they're arguments about what the following piece is allowed to do.
+
+I think we're in a prelude with Apple right now, and the material being stated is this: for the first time since the iPhone, the direction of computing is being set somewhere Apple doesn't control.
+
+That's not a hot take about Siri. It's a structural observation. Apple's historical strength is vertical integration around a device — silicon, OS, frameworks, distribution, retail — and that strength converts poorly into a world where the interesting layer is a model that runs in a datacenter you don't own, trained on data you don't have, improving on a cadence measured in weeks rather than annual releases. Vertical integration is a moat when the value is in the stack. It's a constraint when the value is somewhere upstream of the stack entirely.
+
+You can see the shape of the problem in the engineering decisions. On-device inference is genuinely hard and genuinely valuable, and Apple's silicon team is unusually good at it. But "the model runs on your phone" is a privacy argument and a latency argument, not a capability argument, and users have shown — repeatedly, across every product category — that they'll trade privacy for capability without much deliberation. Private Cloud Compute is a serious piece of engineering built to make that trade unnecessary. Whether it's the right answer depends entirely on whether the capability gap closes or widens.
+
+## What this means for your roadmap
+
+Here's the practical part, because I don't think abstract platform anxiety is useful to anyone shipping.
+
+If you have iOS or macOS in your product's critical path, the question worth asking this quarter isn't "will Apple do AI well." It's narrower and more answerable: **which of my assumptions about Apple are load-bearing, and what's my cost to replace each one?**
+
+Distribution through the App Store is one. Regulatory pressure has already cracked it open in the EU, and cracks propagate. If alternative distribution became viable in your largest market next year, would that be an opportunity you could act on or a migration you couldn't afford?
+
+Framework lock-in is another. Every SwiftUI-only view is a bet on a specific future. Sometimes that's the right bet — I'm not arguing for a lowest-common-denominator cross-platform mush, which is its own kind of expensive. I'm arguing that you should know the bet's size.
+
+And the third: your assumption about pace. A lot of roadmaps are implicitly synced to WWDC. If the platform's annual cadence stops matching the cadence of the capabilities your users are comparing you against, that mismatch shows up in your product as a lag you didn't choose.
+
+None of this is a prediction that Apple loses. Companies with that much cash, that much silicon expertise, and that much distribution get many attempts. But the era where you could treat the platform as weather — something that happens to you, reliably, seasonally — looks like it's ending.
+
+This is the prelude. Worth listening to what it's stating.

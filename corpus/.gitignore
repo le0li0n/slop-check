@@ -1,0 +1,15 @@
+# Raw HTTP responses. Large, regenerable, and not part of the corpus — the
+# texts and the manifest are. Keeping it locally makes a rebuild nearly free.
+cache/
+build.log
+live_probe.json
+__pycache__/
+*.pyc
+
+# The 382 human documents are NOT committed. They are other people's
+# copyrighted writing, and this repository is public — publishing them here
+# would be redistribution, whatever the fair-use case for measuring them
+# locally. manifest.json carries the source URL, archive URL and date for
+# every one, so `python3 tools/build.py --live-only` reconstructs the corpus
+# in about fifteen minutes. Ship the recipe, not the payload.
+texts/

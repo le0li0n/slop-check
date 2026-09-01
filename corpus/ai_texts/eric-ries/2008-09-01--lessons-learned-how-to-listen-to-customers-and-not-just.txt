@@ -1,0 +1,31 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Lessons Learned: How to listen to customers, and not just the loud people
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/eric-ries/2008-09-01--lessons-learned-how-to-listen-to-customers-and-not-just.txt
+words: 385
+generated: 2026-08-31
+---
+
+Lessons Learned: How to listen to customers, and not just the loud people
+
+Every founder says they're customer-obsessed. Most are obsessed with whoever emailed last. The angriest user, the one who churned loudly on Twitter, the design partner with the biggest logo — these voices get outsized weight simply because they're audible. Meanwhile your best customers, the ones quietly getting value and renewing without fuss, generate no signal at all. Silence gets mistaken for satisfaction, and volume gets mistaken for importance.
+
+This is a sampling problem, not a listening problem. If your only inputs are support tickets, sales calls, and whoever DMs you, you're building a roadmap shaped by whoever has the most free time and the strongest opinions — not by what actually moves retention or expansion. Power users and unhappy users are both overrepresented for the same reason: they have more reason to talk to you than the median customer does.
+
+A few things that have actually helped teams correct for this:
+
+Instrument before you interview. Usage data tells you what people do; conversations tell you why. Use the data to find your real segments — power users, at-risk accounts, silent-but-stable accounts — then go interview a deliberate sample across all of them, not just whoever replies fastest to a scheduling email.
+
+Weight feedback by what's at stake, not by how it's delivered. A quiet enterprise account with a growing seat count matters more than ten vocal free-tier users, even though the free-tier users will out-email them ten to one.
+
+Ask what didn't get said. In every customer conversation, there's a question like "what almost made you not renew" or "what do you wish we'd asked." It surfaces the stuff people didn't think was worth complaining about — often the actual churn risk.
+
+Separate the request from the reason. Loud customers are especially good at proposing solutions ("just add X"). The underlying problem is often narrower, or different, than the feature they asked for.
+
+For venture investors, this matters in diligence too — a founder who can describe their quiet, satisfied majority in specific terms is a better signal than one who can only recite the last support escalation.
+
+Customer obsession isn't about response time to the loudest voice. It's about building a listening system that doesn't let volume stand in for signal.

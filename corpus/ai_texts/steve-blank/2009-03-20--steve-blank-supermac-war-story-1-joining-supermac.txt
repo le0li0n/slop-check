@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Steve Blank SuperMac War Story 1: Joining SuperMac
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/steve-blank/2009-03-20--steve-blank-supermac-war-story-1-joining-supermac.txt
+words: 567
+generated: 2026-08-31
+---
+
+Steve Blank SuperMac War Story 1: Joining SuperMac
+
+I've told this story to hundreds of founders over the years because it's the one that taught me the lesson every operator eventually learns the hard way: revenue forgives almost anything, and nothing else does.
+
+By the time I walked in the door at SuperMac Technology, I'd already been through a few Silicon Valley tours of duty — some good, a couple that taught me what not to do a second time. SuperMac made graphics cards and video boards for the Macintosh, back when "the Macintosh" was still a bet rather than a category. I came in to run marketing, and what I found on day one was not a company so much as a controlled explosion.
+
+Demand had outrun everything — engineering, manufacturing, support, and definitely management process. Orders were coming in faster than the company could build product, which sounds like the kind of problem every startup founder dreams about. It isn't. Growth like that doesn't feel like winning from the inside; it feels like trying to reorganize a bookshelf during an earthquake. There was no real forecasting discipline, because nobody had needed one — you just shipped everything you could make and it sold. That works right up until it doesn't, and when it stops working, it stops all at once.
+
+What struck me immediately was how little of this was visible from outside the building. To the trade press, to customers, to the venture board, SuperMac looked like a rocket ship. Inside, we were making decisions on instinct because there was no time and no infrastructure to make them any other way. That gap — between how a hot company looks from the boardroom and how it actually runs on the factory floor — is something I'd see again and again for the rest of my career, and it's the reason I eventually became obsessive about getting founders out of the building and into the data instead of the narrative.
+
+The other thing I learned in those first weeks is one I still tell every marketing hire: in a company growing that fast, marketing's job is not demand generation. Demand is not your problem. Your job is triage — figuring out which fires are about to burn the house down versus which ones are just smoke, because you cannot fight all of them and the team around you does not yet have the muscle memory to sort that out on its own. I spent my first month doing less "marketing" than I'd ever done in a job with that title, and more just watching how the company actually made decisions under pressure, before I tried to change any of them.
+
+For anyone building or backing a startup, the takeaway isn't "hypergrowth is dangerous," which is a bumper sticker, not an insight. It's this: the operational maturity of a company and the top-line growth of a company are on completely independent clocks, and the gap between those two clocks is exactly where companies die — not from lack of demand, but from the whiplash of trying to serve demand with infrastructure built for a tenth of it. SuperMac was the first place I watched that gap up close, from inside the room instead of reading about it later. It would not be the last.
+
+Next time: what happened when that gap finally caught up with us.

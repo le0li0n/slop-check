@@ -1,0 +1,33 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Jeff Bezos: Regret Minimization Framework
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/bijan-sabet/2009-07-23--jeff-bezos-regret-minimization-framework.txt
+words: 492
+generated: 2026-08-31
+---
+
+# Jeff Bezos: Regret Minimization Framework
+
+In 1994, Jeff Bezos was a senior vice president at D. E. Shaw, a quantitative hedge fund on Wall Street. He had a salary most people would consider a destination, not a waypoint. He had also just noticed that web usage was growing at something like 2,300 percent a year, and he wanted to go sell books on the internet.
+
+His boss, David Shaw, took him on a two-hour walk through Central Park and told him it was a good idea — but a better idea for someone who didn't already have a good job. Bezos went home to think about it for forty-eight hours, and in the process invented a decision tool he has been describing in interviews ever since.
+
+The framework is disarmingly simple. Project yourself forward to age eighty. Look back at your life. Minimize the number of regrets you have.
+
+Run that on the actual decision and the answer collapses fast. At eighty, Bezos figured, he would not regret trying to build an internet company and failing. He would not regret leaving a bonus on the table — he told interviewers he wouldn't even remember the bonus. What he knew he would regret, and regret painfully, was never having tried at all. "That would have haunted me every day," he said. Once he framed it that way, the decision "was incredibly easy."
+
+## Why it works better than the spreadsheet
+
+The instinct in venture and in startups is to reach for expected value. But EV calculations on career-defining moves are close to noise: the probability of an internet bookstore succeeding in 1994 was not a number anyone could have honestly written down. What the regret framework does is swap an intractable estimate for a tractable one. You cannot forecast the outcome. You can forecast, with real confidence, how you will feel about the attempt.
+
+It also fixes a well-documented asymmetry. People systematically overweight the pain of action that fails and underweight the slower ache of inaction. Regret research finds the pattern holds across cultures — in the long run, we regret what we didn't do. Short-term regret is loud and specific; long-term regret is quiet and permanent. Standard decision-making optimizes against the loud one.
+
+## Using it well
+
+The framework has real limits, and it's worth naming them. It applies to reversible-in-cost, irreversible-in-opportunity decisions — Bezos's own Type 1 / Type 2 door distinction does the heavy lifting here. It says nothing about *which* venture to start. Applied indiscriminately, "you'll regret not trying" becomes a rationalization engine for every bad idea a founder is already in love with. Bezos had a specific, time-boxed asymmetry: a 2,300 percent growth curve and a narrow window to enter it.
+
+Where it earns its keep is at the moment of hesitation — when the analysis is done, the case is close, and what's actually holding someone back is the comfort of the thing they already have.

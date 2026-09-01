@@ -1,0 +1,21 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: fields of study | danah boyd
+type: essay
+area: Technology & media
+matched_human_doc: texts/danah-boyd/2002-05-19--fields-of-study-danah-boyd.txt
+words: 361
+generated: 2026-08-31
+---
+
+fields of study | danah boyd
+
+There's a particular discomfort in watching a technology you helped build get used in ways you warned about. danah boyd has spent two decades in that position, and it shows in how she writes — less "researcher observes phenomenon" and more "person who feels some responsibility for the phenomenon existing at all."
+
+What makes her work durable is a refusal to let the technical and the social sit in separate rooms. Networked publics, the early framework she built to describe how teenagers behave on social media, wasn't a media studies concept bolted onto tech, or a systems concept bolted onto sociology. It treated architecture as a social force from the start — persistence, replicability, scalability, and searchability weren't neutral platform features, they were the conditions that reshaped how identity and belonging actually work for a generation raised inside them. That move — reading infrastructure as something with social consequences baked in, not added later — is the thread running through everything since: her writing on algorithmic bias, on the "context collapse" that flattens audiences platforms were never built to distinguish, on data-driven decision-making with no verification loop.
+
+The founding of Data & Society in 2013 formalized what had been an instinct: that the people best positioned to interrogate a technology's harms are rarely the people building it, and that gap needs an institution, not just an op-ed. Her more recent work on Census data and statistical methodology looks like a departure — from social media to federal data infrastructure — but it's the same question relocated: who decides what gets measured, and what happens to the people such decisions render invisible or miscounted.
+
+For anyone building or covering technology, the useful habit to borrow isn't a specific finding — it's the discipline of treating "how does this work" and "who does this hurt" as one question asked in the same breath, rather than a technical review followed by an ethics addendum. boyd's frameworks age well because they were never actually about the technology of the moment; they were about power moving through whatever architecture happened to be available. The architecture keeps changing. That part doesn't.

@@ -1,0 +1,33 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Do We Need A Sales Process Or A Sales Methodology?
+type: blog post
+area: Sales & business development
+matched_human_doc: texts/dave-brock/2009-07-31--do-we-need-a-sales-process-or-a-sales-methodology.txt
+words: 703
+generated: 2026-08-31
+---
+
+Do We Need A Sales Process Or A Sales Methodology?
+
+Sales leaders throw these two words around like they're interchangeable. They're not, and the confusion costs teams real money. A process tells you what to do and when. A methodology tells you how to think and why. Most organizations have accidentally built one while believing they built the other, and that mismatch is usually where forecasts go sideways.
+
+Here's the simplest way to separate them. A sales process is a map of stages: prospecting, qualification, discovery, proposal, negotiation, close. It's the skeleton in your CRM, the stage-gates that trigger reports, the thing your VP checks on a Monday pipeline review. It answers "where is this deal right now?"
+
+A sales methodology is the discipline a rep applies inside each of those stages. MEDDIC, Challenger, SPIN, Sandler, Command of the Message — these are frameworks for judgment. They answer "is this actually a good deal, and how do I move it forward?" A methodology tells a rep what questions to ask in discovery, how to identify an economic buyer, how to handle the moment a prospect goes quiet.
+
+The reason this distinction matters is that a process without a methodology just measures activity. You can have a beautifully instrumented CRM, clean stage definitions, accurate forecast categories — and still lose deals, because nobody trained reps on what "qualified" actually means beyond a checkbox. Reps move deals forward because the process demands motion, not because the deal earned it. That's how you get a pipeline full of "commit" deals that quietly die in week twelve.
+
+The inverse is just as common. A team gets trained on MEDDIC or Challenger, reps get fluent in the language, and then there's no consistent stage structure to hang it on. Every rep qualifies differently, every manager coaches differently, and leadership has no reliable way to roll deals up into a forecast. You get brilliant individual sellers and an unmanageable business.
+
+So the honest answer is: you need both, and they serve different masters. The process is organizational infrastructure — it's what makes a sales org legible to itself, what lets a VP look at fifty deals at once and know roughly what's true about each one. The methodology is what a rep does inside a single deal, in a single conversation, when the map runs out and judgment has to take over.
+
+The mistake I see most often is treating methodology as the answer to a process problem. Leadership notices a systemic issue — deals slipping quarter over quarter, discounting out of control, no urgency to close — and the fix that gets purchased is a two-day Challenger workshop. The workshop is good. The reps leave energized. Three months later nothing has changed, because the underlying problem was never a skills gap. It was that "Proposal" stage had no exit criteria, so deals sat there indefinitely regardless of how sharp anyone's discovery questions were. No methodology fixes a process that doesn't enforce anything.
+
+The reverse mistake is just as expensive: adding process rigor — more required fields, more mandatory approvals, more stage-gate documentation — as a substitute for actually teaching people how to sell. This produces reps who are excellent at moving a deal card from column to column and mediocre at the actual conversation that determines whether the deal is real.
+
+A useful diagnostic: if your team's forecast is inaccurate, look at process first — stage definitions, exit criteria, what triggers a stage change. If your team's forecast is accurate but your win rate is mediocre, look at methodology — how reps qualify, how they handle objections, whether they're selling to the actual economic buyer or just the friendliest person who answered the phone.
+
+Build the process so the organization can see itself clearly. Build the methodology so the people inside that process make good decisions when it's their turn to act. Neither one is optional, and neither one substitutes for the other — they're solving different problems that happen to live in the same pipeline. The teams that consistently outperform aren't the ones with the best framework or the tightest CRM hygiene. They're the ones who never confused which problem they were solving in the first place.

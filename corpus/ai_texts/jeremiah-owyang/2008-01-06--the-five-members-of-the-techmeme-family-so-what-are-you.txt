@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: The Five Members of the Techmeme Family (so what are you?)
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/jeremiah-owyang/2008-01-06--the-five-members-of-the-techmeme-family-so-what-are-you.txt
+words: 414
+generated: 2026-08-31
+---
+
+# The Five Members of the Techmeme Family (so what are you?)
+
+Every marketing team has a Techmeme habit, whether or not anyone admits it. Watch how people in your org actually relate to that river of headlines and you'll find five distinct species.
+
+**The Refresher.** Opens the tab at 7:40am and again at 9:15, 11:00, and whenever a Slack thread gets quiet. The Refresher knows what happened before the newsletter writers do. This is genuinely useful — until it becomes a substitute for doing the work. Being early to a story you have no angle on is just being awake.
+
+**The Hunter.** Reads the river looking for one thing: a hook. Every headline gets held up against the current campaign to see if it fits. When it does, the Hunter turns it into a post, a comment, a pitch, within the hour. Great instinct, real risk — force enough hooks and your brand becomes a company that comments on things rather than a company that does things.
+
+**The Archivist.** Doesn't post, doesn't pitch, doesn't panic. Quietly notices that this is the fourth funding round in the same category this quarter and files it. Six months later the Archivist is the person who saw the shift coming. This is the highest-leverage role on most teams and the least visible in any dashboard.
+
+**The Aspirant.** Reads Techmeme primarily to check whether they're in it. Every announcement is measured against the standard of whether it would have made the front page. Healthy in moderation — the tier list is real, and knowing where you sit is honest. Unhealthy when it starts driving the roadmap. Building for the aggregator is how you end up with a launch that gets coverage and no customers.
+
+**The Skeptic.** Points out, correctly, that Techmeme's front page is a narrow slice of a narrow industry, that most of it will not matter in a year, and that half your buyers have never heard of it. Also correct: they still need to know what's on it. The Skeptic's real value isn't the skepticism, it's the filter — they're the person who can tell you which of today's twelve stories will still be referenced in Q4.
+
+Most of us are one of these by default and a second under pressure. The useful question isn't which one you are. It's which one your team is missing — because a room full of Hunters with no Archivist will chase every story and understand none of them.

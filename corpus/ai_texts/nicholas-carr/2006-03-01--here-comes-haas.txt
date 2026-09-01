@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Here comes HaaS
+type: blog post
+area: Technology & media
+matched_human_doc: texts/nicholas-carr/2006-03-01--here-comes-haas.txt
+words: 388
+generated: 2026-08-31
+---
+
+# Here comes HaaS
+
+Every wave of automation gets its acronym eventually. Software became SaaS. Infrastructure became IaaS. Now, as agents take over more of the work that used to require a person at a keyboard, we are arriving at the inevitable inversion: Human-as-a-Service.
+
+The phrase sounds like a joke until you look at where the money is already going. Reinforcement learning from human feedback is a labour market. Data labelling is a labour market. So is the growing business of "expert data" — hiring radiologists, litigators, and derivatives traders to write out how they think, so a model can absorb it. Scale AI, Surge, Mercor and their competitors have built billion-dollar businesses on a simple premise: models need human judgment, priced by the hour, delivered on demand, through an API.
+
+What changes now is the direction of the request. In the old arrangement, humans called software. In the new one, software calls humans. An agent working through a task hits something it cannot resolve — an ambiguous clause, a regulatory sign-off, a claim that needs a real person's name against it — and dispatches that fragment to a human, waits for the response, and continues. The human is a function call. Latency measured in minutes rather than milliseconds, but architecturally, a dependency like any other.
+
+For media and technology businesses, this is less exotic than it sounds. It is roughly what a fact-checking desk does, or a legal review queue, or a trust-and-safety escalation path. The difference is that these become services with defined interfaces, SLAs and per-call pricing rather than departments with headcount. That is a genuinely useful reframing for anyone trying to work out which parts of their organisation survive contact with capable agents. The parts that survive are the ones where a human's judgment, accountability, or licence is the actual product.
+
+There is an uncomfortable version of this too. Interfaces are commoditising: they hide the person, standardise the output, and make substitution easy. Piecework has a history, and it is not a happy one. The firms that get HaaS right will be the ones treating the human on the other end of the call as a scarce expert rather than a fungible unit of throughput.
+
+Either way, it is coming. Better to design the interface deliberately than to discover you have already become one.

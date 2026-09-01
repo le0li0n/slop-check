@@ -1,0 +1,68 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: How to Write a Social Media Press Release, Why, and What It All Means
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/brian-solis/2006-11-01--how-to-write-a-social-media-press-release-why-and-what.txt
+words: 989
+generated: 2026-08-31
+---
+
+# How to Write a Social Media Press Release, Why, and What It All Means
+
+The press release refuses to die. Every few years someone declares it obsolete, and every few years it turns out that journalists, analysts, customers, and search engines all still want a single canonical document that says what happened. What has actually changed is the shape of that document — and most of the change traces back to a format proposed in 2006 by Shift Communications' Todd Defren, called the social media press release.
+
+The idea was simple and slightly heretical: stop writing a press release as a persuasive essay, and start writing it as a set of components that other people can take apart and reuse.
+
+## What the format actually is
+
+A traditional release is prose. It opens with a lede paragraph engineered to survive a copy-paste, buries the actual news under a positioning statement, includes a quote from an executive that no executive said out loud, and ends with a boilerplate paragraph nobody reads.
+
+A social media release replaces that prose with modular blocks:
+
+- **A plain headline and a one-sentence summary.** No wordplay, no "revolutionizes." Say what happened.
+- **Core facts as bullets.** Who, what, when, how much, available where. Scannable, extractable.
+- **Quotes offered separately, and clearly attributed.** Not woven into narrative — presented as a small library a reporter can pull from.
+- **Multimedia, linked and downloadable.** Product images, logos, screenshots, video, audio. Right resolution, clear licensing, no "contact us for assets."
+- **Links to relevant context.** Prior coverage, related announcements, documentation, the actual product page.
+- **Pre-approved social copy.** A suggested post, a hashtag if one genuinely exists, an embeddable quote.
+- **Contact details that reach a human.** With a real response-time expectation.
+- **Boilerplate, last, brief.**
+
+The through-line: every element should be independently liftable. A reporter should be able to take the summary, one quote, and one image, and file a competent 200-word story without ever emailing you.
+
+## Why this works better
+
+**Because nobody reads your release the way you wrote it.** The journalist skims for the fact. The analyst wants the number. The customer-success lead wants a sentence for a client email. The community manager wants something postable. Prose serves the first reader and fails the other four. Modular content serves everyone.
+
+**Because friction kills coverage.** A reporter working three stories before lunch will choose the announcement they can process in four minutes over the one requiring an asset request and a follow-up call. Removing that friction is not a favor to the journalist — it's competitive advantage.
+
+**Because it structures better.** Bulleted facts, clean headings, explicit dates and figures, and semantic markup are what both search crawlers and language models read well. When someone asks an AI assistant about your category, models synthesize from whatever they can parse reliably. A wall of adjectives parses badly. A structured fact block parses well. This has quietly become one of the strongest arguments for the format — and it wasn't the original one.
+
+**Because it exposes weak news.** This is the underrated benefit. When you strip out the connective prose, you find out whether you have anything. If the fact block reads "We updated our dashboard," no quote will rescue it. The format is a diagnostic before it's a distribution tool.
+
+## How to write one
+
+**Start with the fact block, not the headline.** Write the bullets first — the literal, checkable facts. Then write a headline that describes them. Doing it the other way round is how you end up promising things the facts don't support.
+
+**Cut every adjective you can't source.** "Leading," "innovative," "seamless," "best-in-class." If the claim is real, there's a number behind it; use the number. If there isn't, delete the word. Nobody has ever been convinced by "industry-leading."
+
+**Make the quotes say something.** The test: could a competitor's CEO say this about their own product with only the name swapped? If yes, it's not a quote, it's filler. Good quotes explain a decision, concede a tradeoff, or provide context the facts don't carry. Two strong ones beat five hedged ones.
+
+**Front-load the assets.** Have images sized and ready before the release goes out — not "available on request." Include a one-line license note. Name files sensibly, because those filenames end up in other people's CMSes.
+
+**Write the social copy honestly.** You're drafting what you'd actually want someone to post. If you can't write a post about your own news that doesn't embarrass you, that's information about the news.
+
+**Host it as a real page.** Not a PDF, not solely a wire distribution. A proper URL with headings, structured data markup, working links, and a canonical home you can point to for years.
+
+## What it all means
+
+The deeper shift the format encodes is a change in who the release is for. The old release addressed a gatekeeper — a journalist who would decide whether the public heard about you. The new one addresses a distributed set of people who might repeat you: reporters, yes, but also customers, employees, partners, aggregators, and increasingly machine intermediaries.
+
+That reframing has consequences beyond formatting. It means the release is no longer a persuasion document; it's a supply document. Your job is not to convince anyone the news is important — it's to make the news maximally easy to carry accurately. Persuasion is what happens when other people, not you, decide to repeat it.
+
+It also means the release stops being the culmination of a campaign and starts being infrastructure for one. The fact block feeds the blog post. The quotes feed the sales enablement deck. The assets feed the social calendar. Written well, one document becomes the source of truth that keeps every downstream channel saying the same thing — which is worth more than any single placement.
+
+The format is nearly twenty years old. Most releases still ignore it. That gap is the opportunity.

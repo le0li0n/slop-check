@@ -1,0 +1,55 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Lessons Learned: A new version of the Joel Test (draft)
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/eric-ries/2008-09-01--lessons-learned-a-new-version-of-the-joel-test-draft.txt
+words: 1355
+generated: 2026-08-31
+---
+
+Lessons Learned: A new version of the Joel Test (draft)
+
+Joel Spolsky's original test turned twenty-five a few years ago, and if you go back and read it now, it reads like a postcard from a different industry. Twelve yes-or-no questions — do you use source control, can you build in one step, do you have a spec, do you fix bugs before writing new code — scored a software team's basic hygiene. It worked because it measured process discipline at a moment when process discipline was the differentiator. Teams that had it shipped reliable software; teams that didn't shipped chaos with a changelog.
+
+I've been sitting with a draft of what I'd call a new version, aimed less at "is this engineering org competent" and more at "is this startup's engineering org built for the environment it's actually operating in in 2026." That environment has three properties the original test doesn't address at all: AI-assisted development is now the default rather than a novelty, the cost of writing code has collapsed relative to the cost of deciding what code to write, and investors are increasingly diligencing engineering velocity claims that used to be unfalsifiable.
+
+Here's the draft list. I want to be upfront that it's a draft — I've stress-tested it against maybe a dozen portfolio companies and a handful of friends' teams, and I expect it to keep changing. But the shape of it feels close enough to share.
+
+**1. Can a new engineer ship a real change on day one?**
+Not "day one with supervision" — day one, alone, with the AI tooling the team actually uses. This replaces Joel's "one-step build" question but raises the bar. If your onboarding still takes a week because nobody wrote down how the pieces fit together, that's not an AI problem, it's a documentation problem that AI has made newly visible.
+
+**2. Do you know which parts of your codebase are AI-generated, and does anyone care?**
+Not as a compliance checkbox — as an engineering judgment question. Teams that track this tend to also have thought about where AI-generated code needs a second human look (auth, billing, anything touching customer data) and where it doesn't. Teams that haven't thought about it usually discover the gap during an incident.
+
+**3. Is your test suite fast enough that engineers actually run it before pushing, not just in CI?**
+This one is old wine, but it matters more now, not less. AI-assisted coding increases the volume of changes a single engineer proposes per day. If your feedback loop is slow, you're not catching more bugs with more code review — you're catching fewer, because reviewers get review fatigue at higher volume. Speed of the loop is now a leverage multiplier in both directions.
+
+**4. Can you tell me, with a number, how much faster you ship now versus eighteen months ago?**
+I put this in mostly because of what happens when founders can't answer it. Every pitch deck claims "we ship 10x faster with AI" and roughly none of the founders I've asked can produce a number that survives five minutes of questioning. This isn't a request for a dashboard — it's a proxy for whether the team measures its own velocity at all, which correlates strongly with whether they manage it deliberately or just vibe their way through sprint planning.
+
+**5. When something breaks in production, how long before the right person knows?**
+Same spirit as Joel's original bug-tracking question, but oriented toward detection rather than backlog hygiene. The bottleneck moved. It used to be "do you even track bugs." Now it's "does your alerting route to a human fast enough to matter," because AI-assisted teams ship more often and the blast radius of a bad deploy compounds faster if nobody's watching.
+
+**6. Do your engineers write the specs, or does the AI?**
+This is the one I keep coming back to, and it's the closest analog to Joel's original "do you have a spec" question, deliberately preserved because I think it matters more now, not less. A spec written by a human forces a decision about what the product should do before code gets generated to do it. Teams that skip this step and let the AI infer intent from a vague prompt end up with code that works but nobody fully understands, which is a specific and expensive kind of technical debt — debt you can't pay down by reading the code, because the code was never really designed, just produced.
+
+**7. Is there one person who could explain the whole system, or does understanding live only in the tool history?**
+This is new, and it's the one I'd flag hardest to other investors. AI-assisted development makes it easy for a small team to produce a large, functioning system without any one person holding a complete mental model of it. That's fine until the person who prompted the trickiest module leaves, or until you need to make an architectural change that touches five different AI-generated modules that were never designed to talk to each other. Ask this question in diligence. Watch the room. If everyone looks at one person, that's a bus-factor problem with a shorter fuse than it used to be, because the system got big faster than the team's shared understanding of it did.
+
+**8. Do you have a code review process that a human actually does, and does it block merges?**
+I almost cut this because it feels too close to "well, obviously," but I kept it because "obviously" is exactly where teams cut corners under velocity pressure. AI can review AI-generated code, and that's useful, but it's not a substitute for a human who owns the decision to ship. The question isn't whether AI participates in review — it's whether a human can still say no, and whether that no actually stops the merge.
+
+**9. Can you roll back a bad deploy in minutes, not hours?**
+Carried over from the spirit of Joel's build-and-release questions, updated for a world where deploys happen more often and with less deliberation per deploy. Rollback speed used to be a nice-to-have. At higher deploy frequency, it's the thing standing between a bad fifteen minutes and a bad week.
+
+**10. Would your best engineer stay if the AI tooling budget got cut tomorrow?**
+This is a culture question dressed up as a resourcing question. I added it after watching a few teams where the tooling had quietly become load-bearing to morale as much as to output — engineers who'd built their whole workflow around a specific set of AI tools, to the point where the team's actual capability was harder to separate from its subscription list than founders wanted to admit. Not disqualifying on its own. But worth knowing before you assume the velocity you're seeing is durable.
+
+A few things I'm still unsure about. I don't think this list is complete — I suspect there's a question missing about data quality or evaluation practices for teams building AI features themselves, as opposed to teams merely using AI tools to build. I also think question 4 is doing double duty as both a diligence probe and a culture probe, and it might deserve to split into two. And I've deliberately left off anything about specific tools or model providers, because that list would be stale before this post finishes rendering.
+
+What I'm confident about is the underlying shift: the old Joel Test measured whether a team had basic discipline in an era where writing code was the bottleneck. The new version has to measure whether a team has kept judgment, ownership, and understanding in the loop in an era where writing code isn't the bottleneck anymore — deciding what to write, and staying accountable for what got written, is. Every question above is really the same question asked nine different ways: when the machine can produce output faster than any human can fully verify it, who's still accountable for what shipped?
+
+If you run this against your own team or portfolio, I'd genuinely like to hear where it breaks. This is a draft for a reason.

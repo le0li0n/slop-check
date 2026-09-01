@@ -1,0 +1,35 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: So You Want to Run a Half Marathon?
+type: blog post
+area: Management & strategy
+matched_human_doc: texts/michael-hyatt/2008-01-01--so-you-want-to-run-a-half-marathon.txt
+words: 1035
+generated: 2026-08-31
+---
+
+So You Want to Run a Half Marathon?
+
+Somewhere around the third strategy off-site of the year, someone will float it: "We should do a half marathon together. Great for team building." A few hands go up. A shared spreadsheet appears. And within about six weeks, you will learn more about organizational behavior than the last two quarters of QBRs combined.
+
+Running 13.1 miles is not, in itself, a complicated problem. It is a solved one. Coaches have known the training load progression for decades; there is no market inefficiency to exploit, no clever restructuring that gets you to race day faster. And that is exactly why it's worth doing, if you spend your working life inside ambiguity. A half marathon is one of the few projects left where the plan works if you run it, and doesn't if you don't. No stakeholder is going to reinterpret the finish line for you.
+
+Here is what sixteen weeks of training will show you about yourself and your organization that a 360 review won't.
+
+**The plan is not the constraint. Adherence is.** You will download a training plan in an afternoon — four runs a week, one long, a bit of speed work, a taper before race day. This is not the hard part. The hard part is week nine, when it's raining, you have a board deck due, and the plan says six miles easy. Most training plans fail the same way most strategic plans fail: not because they were wrong, but because something more urgent kept eating the time that mattered but didn't shout. The instructive discipline is the same one you're trying to build in your team — protecting the important-but-not-urgent line item against an endless queue of important-and-urgent ones.
+
+**Progress is not linear, and the people who quit are the ones who expected it to be.** Week four will feel fantastic. Week eight will feel like you've made no progress at all, possibly regressed. This is not a signal to change the plan. It's the plan working — your body is absorbing training stress before it expresses fitness, the same way a team absorbs a new process before it shows up in the metrics. If you've ever killed an initiative at the exact moment it was about to compound, you know this pattern. The skill is distinguishing "this isn't working" from "this is what working feels like at this stage," and that distinction is only available to people who committed to a timeline long enough to see both.
+
+**Overtraining looks identical to underperforming from the outside — and identical to commitment from the inside.** The instinct, when a race is eight weeks out and you feel behind, is to add. Extra miles, extra intensity, an extra session squeezed into a rest day. This is almost always the wrong move, and it is the same wrong move that shows up as headcount thrown at a slipping project, or a burned-out team asked to "just push through Q4." Rest is not the absence of the plan; it's a scheduled input to it. The teams and the runners who last are the ones who treat recovery as load-bearing, not optional — because the adaptation happens during the rest, not during the effort. If you don't yet trust that, a half marathon will teach it to you at a cost of a few missed long runs, which is a lot cheaper than learning it from a team that quietly burns out.
+
+**You cannot sprint the whole thing, and pacing is a decision you make once, in advance, when you're calm.** The single most common failure mode for a first-time half marathoner is going out too fast — adrenaline, crowd energy, a mile split that feels easy because it is, for now. By mile nine, that decision made in mile one is the whole race. This maps uncomfortably well onto how people run the first quarter of a new mandate, or the first month of a turnaround: energetic, visible, unsustainable. The discipline is writing your pace band before the gun goes off, and trusting it over how you feel at any given moment — because how you feel at mile one is not information about mile eleven.
+
+**The taper will feel wrong, and doing it anyway is the test.** Two weeks before race day, the plan tells you to run less. Meaningfully less. This will feel, viscerally, like losing fitness, like falling behind, like you should be doing more, not less, this close to the deadline. Executives are bad at tapering — in training and in launches. The instinct to add one more feature, one more review cycle, one more all-hands right before a big date is the same anxious instinct telling you to add one more run before race day. Both instincts are usually wrong, and both are hard to override precisely because they feel like diligence rather than what they are, which is anxiety looking for an outlet.
+
+**Race day rewards nothing you didn't already bank.** There is no strategy session at mile ten. There is no reallocating resources, no stakeholder alignment call, no clever reframe. Whatever training you did is now expressed, in full, in public, at a pace you can't fake. For people whose working lives are mostly about managing ambiguity, influence, and incomplete information, this is close to a novelty: an outcome that is simply the sum of the inputs, with the accounting already done for you before you show up.
+
+None of this requires you to be fast. Nobody on the org chart cares about your split time, and neither, eventually, will you. What a half marathon gives back — reliably, to almost anyone who runs one honestly — is a small, physical proof that a plan followed over time produces the result the plan promised. That proof turns out to be harder to come by at work than you'd think, and cheaper to get here than almost anywhere else you're likely to look for it.
+
+Sixteen weeks. Four runs a week. Start now, or start the next time someone suggests it, but start with the plan you're actually willing to run, not the one that looks best in the group chat.

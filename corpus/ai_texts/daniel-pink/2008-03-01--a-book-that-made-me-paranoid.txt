@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: A book that made me paranoid
+type: blog post
+area: Management & strategy
+matched_human_doc: texts/daniel-pink/2008-03-01--a-book-that-made-me-paranoid.txt
+words: 354
+generated: 2026-08-31
+---
+
+# A book that made me paranoid
+
+I read *Normal Accidents* on a flight, which in retrospect was poor scheduling.
+
+Charles Perrow wrote it in 1984 after the Three Mile Island partial meltdown. His question was simple and awkward: why did a plant with layers of redundancy, trained operators and detailed procedures still come within hours of catastrophe? His answer was that nobody had made a serious mistake. The system did it on its own.
+
+Perrow's argument turns on two properties. A system is **interactively complex** when its parts can affect each other in ways nobody designed or anticipated — a failed valve heats a pipe that trips a sensor governing something unrelated. It is **tightly coupled** when there's no slack: no buffer stock, no time to think, no way to halt the process while you work out what's happening. Put those together and you get accidents that are, in his word, normal. Not frequent. Inherent. A property of the design, not a failure of the people inside it.
+
+The paranoia set in when I started looking at organisations through that lens.
+
+We have spent two decades removing slack. Just-in-time inventory. Single-source suppliers chosen on cost. Shared services centres where one team's outage becomes eight business units' outage. Automated approval chains that route around the person who might have asked a question. Every one of these was a defensible efficiency decision. Together they describe a system Perrow would recognise instantly.
+
+What made it worse is his finding about safety measures. Adding redundancy often *increases* interactive complexity — more components, more hidden interactions, more ways for the system to surprise you. The backup that fails in an unanticipated way is a recurring character in his case studies. So the instinct to respond to fragility by adding another control may be making things quietly worse.
+
+I don't think the conclusion is to stop optimising. It's to know which parts of your operation you've made tightly coupled, and to be deliberate about it rather than arriving there by the accumulation of sensible local decisions.
+
+Most organisations can't answer that question. That's the part that keeps me up.

@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Sometimes I forget that people
+type: blog post
+area: Technology & media
+matched_human_doc: texts/anil-dash/2001-02-17--sometimes-i-forget-that-people.txt
+words: 358
+generated: 2026-08-31
+---
+
+Sometimes I forget that people are the reason any of this works.
+
+It happens in small ways. I'll spend an afternoon debating a model's context window, a routing decision, a token budget — and somewhere in there, the actual human being who has to use the thing quietly disappears from the mental model. The dashboard becomes the product. The latency chart becomes the goal. And I'll ship something technically correct that nobody asked for, because I optimized for the system instead of the person waiting on the other end of it.
+
+It's an easy trap in this industry specifically, because so much of what we build now talks back. A chatbot response feels like an interaction, so it's tempting to treat "does it respond well" as the whole question. But a good response to a bad situation is still a bad experience. The support ticket that gets an eloquent, on-brand, completely unhelpful answer hasn't been served — it's been processed. Those aren't the same thing, and the gap between them is where trust quietly leaks out of a product.
+
+I notice this most in meetings about "users" as a category — cohorts, funnels, activation curves. The abstraction is necessary; you can't run a business by handling one person's problem at a time. But it's also lossy in a specific direction: it strips out the fact that behind every point on the curve is someone who had a Tuesday afternoon, a deadline, a reason they opened the app instead of doing something else. The data doesn't lie, but it doesn't remember that either.
+
+The fix isn't complicated, which is almost the annoying part. Read the actual transcript, not the summary of transcripts. Watch one person struggle with the onboarding flow instead of just reading the drop-off rate. Answer the support email yourself once in a while. None of that scales, and that's exactly why it works — it's a forced reminder that the thing you're building lands on somebody, specifically, not on a metric shaped like somebody.
+
+The systems will keep getting more capable. The discipline of remembering who they're for doesn't get easier just because the models do.

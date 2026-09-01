@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: The Roots of Lisp
+type: essay
+area: Startups & venture
+matched_human_doc: texts/paul-graham/2001-05-01--the-roots-of-lisp.txt
+words: 390
+generated: 2026-08-31
+---
+
+The Roots of Lisp
+
+In 1960, John McCarthy wrote a paper showing that a handful of primitive operators could generate all of computing. Not as a programming language exactly — more as a proof that computation itself has a small, elegant foundation. Everything else, he showed, could be built on top.
+
+That paper is worth thinking about if you're building or funding a company, because it's the best available case study in what durable technical leverage actually looks like. Lisp's core ideas — code as data, recursive definition, the idea that a "big" system is just small primitives composed relentlessly — didn't just produce a language. They produced a lineage. Garbage collection, functional programming, the metaprogramming techniques inside today's most popular frameworks, even the way large language models represent and manipulate structured expressions: you can trace a line back to a nine-primitive core from 65 years ago.
+
+The lesson for founders isn't "learn Lisp." It's that the startups worth the most in ten years rarely look, at year one, like they're solving the biggest visible problem. McCarthy wasn't trying to ship a product. He was trying to find the smallest true thing underneath a messy field — and the smallest true thing turned out to compound harder than anything built for a quarterly roadmap. If you're evaluating a technical team, ask less "what does the demo do" and more "what is the primitive here, and does everything else fall out of it." A team that has actually found their equivalent of car, cdr, and cons will build products faster than you expect, because they aren't re-solving the same problem in a new form every six months.
+
+There's a second lesson, quieter but just as useful: simplicity is a competitive advantage that compounds silently. Lisp code doesn't look impressive in a pitch deck. It looks like almost nothing. But "almost nothing, composed correctly" is what let it outlive languages that looked far more sophisticated on the surface. Investors are trained to reward apparent complexity — more features, more integrations, more surface area. The better signal is often the opposite: a team that can point to the two or three primitives their whole system reduces to, and mean it.
+
+McCarthy didn't set out to build an empire. He set out to find the roots. The empires came later, and they're still coming.

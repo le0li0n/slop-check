@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Dear Rhapsody: We want our YottaMusic back.
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/bijan-sabet/2008-01-01--dear-rhapsody-we-want-our-yottamusic-back.txt
+words: 373
+generated: 2026-08-31
+---
+
+# Dear Rhapsody: We want our YottaMusic back.
+
+There's a particular kind of grief in venture that nobody writes about: watching a product you loved get acquired, absorbed, and quietly ruined.
+
+YottaMusic was, for a stretch of years, the best music client nobody had heard of. It was a third-party front end for Rhapsody's catalog, built by a small team who understood something the parent company apparently didn't — that a library of ten million songs is worthless if the interface between you and it is bad. YottaMusic was fast. It was clean. It let you actually find things. Then Rhapsody bought it, folded it in, and it became indistinguishable from everything else.
+
+The pattern should be familiar to anyone who's held a board seat through an acquisition. The acquirer buys the team, tells the market it bought the product, and then subjects that product to the very processes that made the acquirer incapable of building it in the first place. Roadmap by committee. Design by legal review. The three engineers who made the thing good spend eighteen months in integration meetings, vest, and leave.
+
+For founders, the operational lesson is unglamorous but concrete: the terms that protect a product post-close are not the headline number. They're the ones nobody negotiates hard — reporting lines, roadmap authority, whether your team keeps its own deploy pipeline, what happens to the brand. If those aren't written down, the org chart will decide them for you, and the org chart is not on your side.
+
+For investors, there's a sharper point. We spend enormous energy modeling acquisition as the outcome and almost none modeling what the acquirer will do afterward. A strategic buyer who has never shipped a product like yours is not a buyer, they're a liquidation event with better PR. That's fine, sometimes it's exactly what you want. But it should be named as such in the partner meeting rather than dressed up as a strategic home.
+
+Rhapsody had, briefly, a product that could have competed with what came next. It bought that product and let it die of process.
+
+Somewhere in your portfolio right now, a founder is being told the acquirer will let them run independently. Ask what that means in writing.

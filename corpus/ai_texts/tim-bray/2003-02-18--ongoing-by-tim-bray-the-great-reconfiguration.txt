@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: ongoing by Tim Bray · The Great Reconfiguration
+type: blog post
+area: Software engineering
+matched_human_doc: texts/tim-bray/2003-02-18--ongoing-by-tim-bray-the-great-reconfiguration.txt
+words: 446
+generated: 2026-08-31
+---
+
+The Great Reconfiguration
+
+Every few years the software industry convinces itself it's found the one true architecture, then spends a decade quietly walking it back. We're in one of those walk-backs now, and it's worth naming plainly: the industry is re-learning that the pendulum between centralization and distribution never actually stops swinging, it just changes costume.
+
+Go back to the 2010s microservices wave. The pitch was clean: small, independently deployable services, each owned by a small team, communicating over well-defined APIs. It solved real problems — coordination overhead, blast radius, deployment coupling. But it also created a new tax: network calls where function calls used to be, distributed tracing where a stack trace used to be, and an operational surface area that grew faster than most teams' ability to actually run it. A lot of organizations bought the architecture without buying the discipline it required, and ended up with distributed monoliths — all the coordination cost of a monolith with all the latency and failure modes of a distributed system.
+
+Now the correction is underway. You can see it in the resurgence of "majestic monolith" arguments, in platform teams pulling services back together, in the popularity of tools that let you deploy a single artifact and get most of the benefits people thought they needed microservices for. Serverless had its own version of this arc — function-per-endpoint fragmentation followed by consolidation into fewer, fatter functions once people tired of cold starts and deployment sprawl.
+
+None of this means microservices were a mistake. For genuinely large organizations — hundreds of engineers, genuinely independent domains, real scaling differentials between components — the architecture still earns its keep. The mistake was treating it as a default rather than a response to a specific organizational shape and scale. Conway's Law cuts both ways: your system will mirror your org chart whether you plan for it or not, and a fifteen-person startup adopting a thousand-engineer company's architecture is solving a problem it doesn't have yet, at a cost it can't afford yet.
+
+The practical lesson for engineers sitting in the middle of this swing isn't "monoliths good, microservices bad" or vice versa. It's that architecture decisions should track organizational and scaling reality, not conference-talk fashion, and that the honest move is revisiting the decision as those realities change rather than defending a choice made under different conditions. The teams navigating this well aren't the ones who picked a side — they're the ones who built in enough seams that the boundary between "one deployable" and "many deployables" is a configuration decision, not a rewrite. That's the actual skill worth having: not predicting where the pendulum stops, but not needing it to.

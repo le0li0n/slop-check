@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Isn't it obvious what Web 2.0 is?
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/naval-ravikant/2005-12-19--isn-t-it-obvious-what-web-2-0-is.txt
+words: 369
+generated: 2026-08-31
+---
+
+# Isn't it obvious what Web 2.0 is?
+
+Ask ten people in this industry to define Web 2.0 and you'll get ten answers, most of them delivered with the impatience of someone explaining that water is wet. It's AJAX. It's user-generated content. It's the read-write web. It's a design aesthetic involving rounded corners and reflective logos. It's a bubble. It's not a bubble, it's a platform shift.
+
+The confidence is the interesting part. Everyone is certain the term is obvious, and almost nobody agrees on what's obvious about it.
+
+This matters more than it sounds. When a term is fuzzy but feels precise, it becomes a shortcut for thinking rather than a substitute for it. Founders write "we're a Web 2.0 company" on slide two and believe they've said something. Investors nod, because they've filled in their own definition, which is not the founder's definition. Both parties leave the meeting satisfied and neither has learned anything.
+
+Here's the version I'd defend. Web 2.0 is not a technology and not a design language. It's a change in where value accumulates. In the first web, value sat in the content you published — you built the pages, you owned the asset, your moat was your inventory. In the second, value sits in the participation you host. Your users generate the asset. The service gets structurally better as more people use it, and worse if they leave.
+
+That's a real distinction with real consequences, and it's testable. Ask any company claiming the label: what happens to your product if your user count doubles? If the honest answer is "our servers cost more," you're a Web 1.0 business with better JavaScript. If the answer is "it gets meaningfully better for everyone already using it," you have the thing worth paying for.
+
+The rest — the APIs, the tagging, the perpetual beta, the gradients — are consequences and fashions. Some will last. Most won't. The network effect is what's actually new, and it's the only part of the definition that survives contact with a spreadsheet.
+
+So no, it isn't obvious. It's just familiar. Those aren't the same thing, and the gap between them is where a lot of money is about to be lost.

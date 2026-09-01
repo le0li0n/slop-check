@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Is it OK to Sucks?MoonSunTwitterLinkedInBlueskyEmailCopy Link
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/jason-cohen/2008-10-01--is-it-ok-to-sucks-moonsuntwitterlinkedinblueskyemailcop.txt
+words: 352
+generated: 2026-08-31
+---
+
+Is it OK to Sucks?
+
+Every founder I know has a moment where the product is embarrassing. The onboarding flow has three broken states. The core feature works maybe 70% of the time. The design looks like it was assembled from three different Figma files because it was. And the instinct, especially the first time you raise money, is to hide this. To polish before you ship. To wait until it's good.
+
+That instinct is usually wrong.
+
+The startups that win aren't the ones that arrived polished. They're the ones that shipped something rough, watched exactly where it broke, and fixed the parts that mattered to the ten people who actually cared. Airbnb's first listings were air mattresses in a apartment with bad photos. Stripe's early docs were held together with duct tape. Nobody remembers that, because it stopped being true fast, and it only stopped being true because they were out in the world getting hit with reality instead of guessing at it in private.
+
+Investors know this, even the ones who act otherwise. A deck with a rough but real product and ten users who'd be upset if you shut it down beats a beautiful deck with no users every time. What VCs are actually underwriting isn't polish, it's velocity: how fast do you find out you're wrong, and how fast do you fix it. A product that sucks but is improving weekly is a better bet than a product that's fine and static, because the second one tells you nothing about the team.
+
+Where this breaks down is when "it's OK to suck" becomes an excuse to stop trying. Rough and improving is a strategy. Rough and static is just rough. The difference is whether you're using the suckiness as information, tightening the loop between shipping and learning, or whether you've just gotten comfortable with low standards because nobody's called you on it yet.
+
+So yes, it's OK to suck. Early, publicly, on purpose if that's what it takes to learn something real. What's not OK is deciding that's a permanent identity instead of a phase you're sprinting through.

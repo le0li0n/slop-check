@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: The parable of the transistor
+type: blog post
+area: Technology & media
+matched_human_doc: texts/horace-dediu/2010-08-09--the-parable-of-the-transistor.txt
+words: 643
+generated: 2026-08-31
+---
+
+The parable of the transistor
+
+In 1947, three men at Bell Labs built a device the size of a fingertip that could do what a vacuum tube did — amplify and switch electrical signals — using a fraction of the power, space, and heat. The transistor was not, at first, a better vacuum tube. It was worse in several respects: less reliable, harder to manufacture, more finicky under load. The engineers who built the great tube-based systems of the era — telephone exchanges, radar, early computers — had every professional reason to be skeptical of it. Their expertise, honed over decades, was expertise in tubes. The transistor asked them to become novices again.
+
+The parable gets told a hundred ways in a hundred boardrooms, usually as a morality tale about disruption: incumbents dismiss the crude new thing, the crude new thing improves exponentially, incumbents die. That version isn't wrong, but it's incomplete, and the incompleteness is where the useful lesson lives. What actually happened is that the transistor didn't just replace tubes at their own job. It changed what was worth building. Tubes were good at amplifying signals in radios and telephone networks. Transistors, once you could etch millions of them onto a sliver of silicon, were good at something tubes could never economically do: computing at a scale that made computing itself a mass-market product. The question "which technology is better at the tube's job" turned out to be the wrong question. The right one was "what new thing becomes possible, or cheap, or ordinary, once you stop needing tubes at all."
+
+This is the trap in how technology and media organizations are evaluating language models right now. The dominant frame is comparative: is the model better than a journalist, a paralegal, a customer service rep, at the specific task that person currently does. Sometimes yes, often not yet, and the debate consumes enormous energy because it's the debate that's visible and measurable. But it's the tube-versus-transistor comparison, and it quietly assumes the shape of the work stays fixed while only the tool underneath changes. The transistor's real story is that the shape of the work didn't stay fixed. Point-to-point telephone amplification became integrated circuits became personal computers became the internet became the phone in your pocket — a chain of category changes, not tool swaps, and none of it was visible from inside the first comparison.
+
+Nobody at Bell Labs in 1948 could have described the smartphone, and it would have been a category error to ask them to justify the transistor in those terms. The honest answer to "what is this for" was, for years, "we don't fully know yet, but the properties are unmistakable — smaller, cheaper, more numerous, more embeddable." That is an uncomfortable thing to say to a board that wants a use case and an ROI figure this quarter. It was uncomfortable in 1948 too. The engineers who won the next thirty years were not the ones who found the best tube-replacement use case fastest. They were the ones who took the properties seriously — cheap, small, tireless, embeddable — and let those properties suggest new products, rather than forcing the new thing into the old thing's job description.
+
+The discipline worth borrowing isn't optimism about the technology. It's a specific kind of patience: separate the question of whether the tool is good at your current job from the question of what jobs become newly possible because the tool exists. Newsrooms, agencies, platforms — everyone currently running the first comparison should also be running the second, deliberately, on a different clock, with different people, judged by different standards. The tube didn't lose because it got worse. It lost because the transistor made a different world possible, and the organizations that thrived were the ones already living partway inside that world before the market forced them there.

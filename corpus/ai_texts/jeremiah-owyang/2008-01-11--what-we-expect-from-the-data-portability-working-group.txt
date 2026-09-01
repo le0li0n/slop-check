@@ -1,0 +1,31 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: What we expect from the Data Portability Working Group
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/jeremiah-owyang/2008-01-11--what-we-expect-from-the-data-portability-working-group.txt
+words: 536
+generated: 2026-08-31
+---
+
+# What we expect from the Data Portability Working Group
+
+For most of the last decade, data portability has been a legal conversation happening two floors away from the marketing team. Compliance owned it, counsel wrote the clauses, and the rest of us met it once a year in a renewal review. That arrangement is ending. The working group's remit touches the systems we actually run — the CDP, the ESP, the CMS, the consent layer — and whatever standard emerges will shape how easily we can leave a vendor, and therefore how much leverage we have while we stay.
+
+So it's worth being specific about what would make this useful rather than ceremonial.
+
+**Consent and provenance travel with the data.** A portable audience file that arrives without its permission history is not portable, it's radioactive. If we move two million contacts to a new platform and can't demonstrate when and how each one opted in, we have imported a liability, not an asset. Any standard worth adopting has to treat lawful basis, timestamp, source, and preference granularity as part of the record — not as metadata a vendor may include at their discretion.
+
+**Structure, not a dump.** Most export functions today satisfy the letter of portability and none of its spirit: a flat CSV, undocumented field names, custom attributes flattened into a single column. Reassembling that on the other side takes weeks of agency time. We want defined schemas for the objects marketers actually use — contact, consent, event, segment, campaign, asset — so that migration is an import, not an archaeology project.
+
+**The derived data counts too.** Engagement scores, lifecycle stages, propensity models, behavioural segments: these are built from our customers' interactions with our content, and they are usually where the real switching cost hides. Vendors will argue this is proprietary output rather than customer data. That argument deserves scrutiny. We'd accept a reasoned line between a vendor's algorithm and our accumulated behavioural history — but we need the line drawn explicitly, not left to whichever reading suits the incumbent.
+
+**Timelines that match how procurement works.** A ninety-day export window is a renewal trap. By the time the data lands, the auto-renew has triggered. Portability that arrives after the decision point isn't portability.
+
+**Obligations a marketer can read.** If the output is forty pages of technical annex, it will be implemented by vendors and understood by nobody on our side of the table. We need a plain summary of what we're entitled to demand, in language that survives contact with a procurement conversation.
+
+What we get in return, if this goes well, is not just easier migrations. It's a change in negotiating posture. When the cost of leaving is legible and bounded, roadmap promises get kept, pricing gets more honest, and the annual renewal stops being a formality. Lock-in has quietly subsidised a lot of mediocre martech.
+
+We'll be following the group's output closely, and we'd encourage anyone running a content or lifecycle programme to do the same. This is one of the rare standards conversations where the details land directly on our desks — and the time to have opinions is before the draft is final, not after the first migration goes badly.

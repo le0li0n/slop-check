@@ -1,0 +1,35 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Response to Nikolai Bezroukov
+type: essay
+area: Software engineering
+matched_human_doc: texts/eric-raymond/1999-10-01--response-to-nikolai-bezroukov.txt
+words: 934
+generated: 2026-08-31
+---
+
+# Response to Nikolai Bezroukov
+
+Twenty-seven years is a slow turnaround for a reply, but the argument has aged into something worth settling. In 1999, writing in *First Monday*, Nikolai Bezroukov published two essays taking apart Eric Raymond's *The Cathedral and the Bazaar* — one a direct rebuttal, the other a broader attack on what he called "vulgar Raymondism," the boosterish folk theory that self-organizing volunteers reliably out-engineer funded teams. At the time he was treated as a scold at a revival meeting. With the benefit of a couple of decades of production incidents, he was mostly right, and right in ways the industry still hasn't fully priced in.
+
+Start with the claim he pressed hardest: that the bazaar was never a bazaar. Bezroukov argued that Linux succeeded not because of flat, emergent, market-like coordination but because it had a strong central architect, a tight lieutenant structure, and brutal taste-based filtering at the top. Raymond's own case study, in other words, was a cathedral with good public relations and an unusually large narthex.
+
+Nobody seriously disputes this anymore. We just renamed it. We have BDFLs and steering councils, RFC processes with formal comment periods, CODEOWNERS files that route review authority by directory, and maintainer hierarchies that are more rigid than most corporate org charts because they lack an HR department to appeal to. Rust has an RFC process more procedurally elaborate than most standards bodies. Python's governance crisis in 2018 ended not with emergence but with a written constitution. The lesson generalizes past open source: every high-functioning engineering organization I've worked in has a small number of people whose architectural judgment is load-bearing, and the org chart's main job is to keep them from being interrupted. Bezroukov saw the mechanism when the field was busy congratulating itself on not having one.
+
+Then there's Linus's Law — "given enough eyeballs, all bugs are shallow" — which Bezroukov flagged as the weakest plank in the whole structure. He pointed out the obvious thing: eyeballs are not uniformly distributed, most contributors read the parts they need, and the code nobody wants to read is exactly the code where the dangerous bugs live.
+
+The empirical record is now embarrassing. Shellshock sat in bash for roughly twenty-five years. Heartbleed lived in OpenSSL, the crypto substrate of the commercial internet, maintained at the time by a skeleton crew operating on donations that wouldn't cover one engineer's salary. Log4Shell turned a logging library into remote code execution across half the Java world. And the xz-utils backdoor in 2024 — a multi-year social engineering campaign against a burned-out solo maintainer — was caught because Andres Freund noticed his SSH logins were about half a second slower than expected. Not by eyeballs. By one person with unusual instincts and a benchmark.
+
+Where I'd push back is on the implied conclusion. The eyeballs claim failed, but the *review* claim didn't: the thing that actually hardened open source infrastructure was mechanization. Continuous integration, mandatory review gates, sanitizers, and above all continuous fuzzing — OSS-Fuzz has churned out tens of thousands of bugs in core libraries that no human reader would ever have found. The correction to Raymond wasn't fewer eyeballs or more; it was accepting that attention is a scarce resource that has to be manufactured and pointed, rather than a free externality of popularity. Bezroukov diagnosed the disease precisely and didn't anticipate the treatment.
+
+His second essay's central analogy — open source as a species of academic research, complete with reputation economies, citation-like credit, and, crucially, *hidden subsidy* — has held up best of all. He argued the volunteer model was quietly financed by universities, employers, and government grants, and that pretending otherwise made the whole enterprise look more magical and more sustainable than it was.
+
+Today the subsidy is simply corporate and no longer hidden. The overwhelming majority of Linux kernel changes come from people being paid to write them. Kubernetes is Google's org chart wearing a foundation as a disguise. The volunteer maintainer hasn't vanished, but the ones still standing alone are the failure cases: Denis Pushkarev maintaining core-js — a dependency of a large fraction of the web — while asking, largely in vain, for money; the `event-stream` maintainer handing his package to a stranger who promptly shipped a Bitcoin stealer. We built global infrastructure on a labor model Bezroukov correctly identified as a subsidy, and then acted surprised when the subsidy ran out.
+
+Where he was genuinely wrong is the scale of the outcome. Reading him in 1999, you'd conclude open source was a niche phenomenon with real merits, oversold by evangelists, likely to be absorbed and diluted by commercial interests. The absorption happened exactly as he predicted. But the dilution didn't: open source became the substrate rather than a competitor to it, and the commercial capture, for all its distortions, funded the hardening he thought was missing. He was right about the mechanics and too pessimistic about the trajectory.
+
+The reason to revisit this now is that we're running the same argument again with new nouns. Substitute "AI agents" for "eyeballs" and the 1999 debate reprints almost verbatim: an abundance claim (infinite cheap attention on every line of code), a quality claim (more reviewers means fewer defects), and a governance claim (coordination will emerge from the volume). Bezroukov's counter transfers intact. Abundant contribution is not abundant judgment. Maintainers are now drowning in plausible, well-formatted, subtly wrong patches, and the bottleneck — the person with the taste to say no — is the same scarce resource it always was.
+
+He deserved a better hearing in 1999. He'd deserve one now.
