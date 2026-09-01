@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: my morning news | danah boyd
+type: essay
+area: Technology & media
+matched_human_doc: texts/danah-boyd/2002-05-14--my-morning-news-danah-boyd.txt
+words: 489
+generated: 2026-08-31
+---
+
+my morning news | danah boyd
+
+I don't start my day with a feed. I start it with a ritual I've rebuilt three times in the last decade, each time the previous version stopped working — because the platforms changed, because the incentives changed, because I changed.
+
+Right now it looks like this: two newsletters I trust because I know the humans writing them, a folder of RSS feeds nobody else maintains anymore, and a habit of reading one long thing before I read anything short. The long thing comes first on purpose. If I open Twitter — sorry, X, sorry, whatever we're calling the discourse machines this year — before I've read something with an argument in it, my whole morning becomes reactive. I'm processing other people's outrage instead of forming my own view.
+
+This isn't nostalgia for RSS readers, though I have plenty of that. It's a structural observation: the "news" most of us consume now isn't selected by editors weighing newsworthiness, it's selected by engagement models weighing our own psychological triggers against each other. That's not a conspiracy, it's just what optimizing for attention does when you let it run unsupervised for fifteen years. The feed doesn't hate you. It also doesn't know what you actually need to know today — it knows what kept you scrolling yesterday. Those are different problems and we've collapsed them into one interface.
+
+So my morning routine is really a small act of infrastructure design, applied to an audience of one. I'm deciding, deliberately, which signals get to reach me before I've had coffee and which have to wait. Technologists talk a lot about "information diets" as if the metaphor does the work. It doesn't. A diet implies you're choosing from a menu. Most people are eating whatever the algorithm decided to put in front of them, and calling it a diet is generous.
+
+What I actually want from a morning news practice — and what I think is missing from most of the tools built for this — is friction in the right places. Not friction that slows me down generally, but friction that interrupts the automatic hand-to-scroll motion long enough for me to ask whether I'm reading this because it matters or because it's designed to feel like it matters. Every recommendation system I've studied treats friction as pure loss. It isn't. Sometimes friction is where judgment lives.
+
+I don't have a product pitch here, and I'm suspicious of anyone who does — "mindful media" apps have a way of becoming just another feed with better branding. What I have is a practice, imperfect and periodically rebuilt, and a belief that the people designing the systems the rest of us wake up to owe us more honesty about what those systems are actually optimizing for. Until that honesty shows up, we're each stuck doing what I do: assembling our own scaffolding, by hand, one newsletter at a time.

@@ -1,0 +1,59 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Modeling
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/steve-pavlina/2004-10-01--modeling.txt
+words: 808
+generated: 2026-08-31
+---
+
+# Modeling
+
+The financial model is the most-produced and least-read artifact in venture. Every seed deck has one. Almost no one opens the tabs. And yet founders spend weeks on them, investors ask for them, and boards demand updates. Something strange is going on when an object commands that much labor and that little attention.
+
+The usual explanation is that models are theater — a ritual of seriousness, the startup equivalent of wearing a suit to court. There's truth in that. A Series A model projecting $40M of revenue in year five is not a forecast; it is a genre exercise. Everyone in the room knows the number is wrong. The founder knows. The investor knows. The investor's partner, who will read the memo and not the model, definitely knows.
+
+But the theater reading is too cynical, and it leads people to the wrong conclusion — that models don't matter, so build them fast and badly. That's a mistake. Models do matter. They just don't matter for the reason stated on the tin.
+
+## What a model actually is
+
+A model is a compression of your beliefs about how the business works. Not what it will earn — how it *works*. Which inputs drive which outputs. What has to be true. Where the leverage sits.
+
+Consider two SaaS models both projecting $10M ARR in year three. In the first, the growth comes from headcount: reps hired, quota per rep, ramp time, attainment. In the second, it comes from a product-led funnel: signups, activation rate, conversion to paid, expansion. Same output. Completely different companies. Different hires, different failure modes, different reasons to lose.
+
+That difference is the actual content. The $10M is noise. The structure is signal.
+
+This is why "the model is wrong" is such a weak criticism. Of course it's wrong. The question is whether it's wrong in an interesting way — whether the wrongness comes from a well-specified belief that turned out to be false, or from a number someone typed to make the chart go up.
+
+## The diagnostic
+
+The fastest way to evaluate a founder's model is not to check the assumptions. It's to break one and watch what happens.
+
+Take the model, cut a key conversion rate in half, and ask what the founder does. Bad answer: they don't know, or they change a different number to compensate so the ending stays the same. Good answer: they tell you which of three things would have to be true, which one they'd bet on, and what experiment would resolve it by Q3.
+
+The second founder is running the model as a thinking tool. The first is running it as a rendering pipeline for a predetermined conclusion.
+
+You can apply the same test to yourself. Open your own model and ask: if I learned tomorrow that this number was half of what I assumed, would anything about my plan change? If nothing changes, that input isn't doing work. It's decoration. Most models are eighty percent decoration and twenty percent load-bearing, and the founders who know which twenty are the ones who survive contact with reality.
+
+## Sensitivity over precision
+
+The instinct in modeling is toward precision — more rows, more granularity, monthly cohorts, a tab per channel. This is almost always wasted effort. Precision in a system you don't understand produces confident nonsense.
+
+The better instinct is toward sensitivity. A model with twelve inputs where you know which three dominate is worth more than a model with four hundred where you don't. The value is in the derivative, not the level.
+
+Practically: build the small version first. Six inputs, one page, no monthly detail. Find out what breaks it. Then add granularity only where the sensitivity analysis says the outcome actually turns. Most models are elaborate everywhere and informative nowhere.
+
+## For investors
+
+The diligence use of a model is not to validate the forecast. It's to extract the founder's causal theory of their own business, and then to ask whether that theory is coherent, whether it's falsifiable, and whether the founder has been testing it.
+
+A model that projects smooth 15% month-over-month growth for thirty-six straight months is not optimistic. It's a statement that the founder has no theory of what would slow them down — which means they haven't thought about the middle of the journey at all. The interesting models have kinks: a slowdown when the founder-led sales motion runs out, a step change when the second product lands, a margin dip during the infrastructure rebuild. Kinks are evidence of thought.
+
+## The real output
+
+Nobody remembers the numbers. What survives is the structure — the founder's internal map of which levers move the business. Six months later, the forecast is void and the map is still in use.
+
+Build for the map. The spreadsheet is just where you write it down.

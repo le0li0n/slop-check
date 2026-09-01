@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Rucker Park
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/fred-wilson/2006-08-01--rucker-park.txt
+words: 365
+generated: 2026-08-31
+---
+
+# Rucker Park
+
+Every summer in Harlem, NBA players show up at a public court on 155th Street and get worked over by people you've never heard of.
+
+It's a real thing. Kobe played there. Durant dropped 66. But the folklore that matters isn't the stars — it's the locals. Guys with day jobs and knees held together by tape who, on that particular asphalt, in front of that particular crowd, are simply better than the professionals. Joe Hammond turned down the Lakers. Earl Manigault never played a pro minute and is still argued about.
+
+The obvious read is that talent is everywhere and credentials are noise. That's half right and it's the half everyone quotes. The more useful read is about the court.
+
+Rucker is small, loud, and unrefereed in spirit. The crowd is close enough to touch you. There's no shot clock discipline, no help defense, no film session. It rewards a specific skill set — handles, isolation scoring, showmanship, the ability to hit a shot while a man is talking about your mother — and it punishes the things an NBA system is built to reward. A great defender who thrives on rotations and spacing has nothing to rotate into. He just looks slow.
+
+So the local legend isn't beating the pro at basketball. He's beating him at Rucker. Different game, same ball.
+
+Founders get sorted this way constantly. The person who is electric in a pitch meeting, who fields the hard question with a grin and turns the room, is winning at a venue with a crowd, a clock, and no defense. That's a real skill. It is not the same skill as running a 200-person company through a bad year, which is played in an empty gym with no crowd, no highlights, and a scoreboard that updates quarterly.
+
+The mistake isn't overrating charisma. It's forgetting that every evaluation is a venue, and venues have shapes. The diligence call, the board meeting, the demo, the reference check — each rewards a slightly different player.
+
+Some legends never make the league. Some pros can't survive a summer in Harlem. Before you conclude someone is great, ask which court you watched them on.

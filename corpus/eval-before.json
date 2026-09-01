@@ -1,0 +1,10 @@
+{
+ "human_rate": 24.345549738219894,
+ "ai_rate": 35.0,
+ "human_flagged": 93,
+ "ai_flagged": 70,
+ "human_n": 382,
+ "ai_n": 200,
+ "human_median": 3,
+ "ai_median": 5
+}

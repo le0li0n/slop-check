@@ -1,0 +1,35 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: VC Bundling
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/naval-ravikant/2005-12-01--vc-bundling.txt
+words: 755
+generated: 2026-08-31
+---
+
+# VC Bundling
+
+Every few years, someone in venture writes the "unbundling of VC" post. Capital is commoditizing, they argue — AngelList lets any operator become a micro-fund, syndicates let LPs co-invest directly, rolling funds lower the barrier to entry, and a Series A term sheet from a no-name fund spends the same as one from a marquee name. The implication is always that venture capital, like media or software before it, is about to fracture into a thousand specialized pieces.
+
+What actually happened is closer to the opposite. The firms that won the last decade didn't unbundle — they bundled harder. A16z built out recruiting, marketing, policy, and a media operation before "platform" was a category. Sequoia built Sequoia Capital University and an ecosystem of programming for founders. Thrive built a data science team that does nothing but sit inside portfolio companies' funnels. The check is now the smallest part of the offer. What you're actually buying is a stack: capital, plus talent pipeline, plus press relationships, plus a Rolodex of enterprise buyers, plus a peer group of other founders, plus a follow-on reserve that signals to the next round.
+
+This is worth naming as its own dynamic, because it explains a lot of behavior that otherwise looks irrational — founders leaving money on the table to take a lower valuation from a bundled firm, or paying an effective premium in dilution for a name that "just writes checks and shows up to the board meeting." The bundle is the product. The capital is the loss leader.
+
+**Why bundling wins in venture specifically**
+
+Bundling works when the components are more valuable together than apart, and when assembling them yourself is expensive. Both are true here. A seed-stage founder could, in theory, hire her own recruiter, retain her own PR firm, cold-email her own enterprise logos, and raise her follow-on from a fresh set of investors. But she's also trying to build a product with twelve people and eighteen months of runway. The transaction cost of assembling all of that herself — vetting vendors, negotiating rates, managing relationships with no leverage — is exactly the kind of friction a bundle is built to absorb. The fund isn't selling capital; it's selling the removal of that friction, priced into the round.
+
+There's also a signaling effect that compounds the bundle's value beyond what any single service is worth on its own. A recruiting intro from a firm nobody's heard of gets a polite response. The same intro from a firm that just wrote the lead check on your Series B gets a same-day call. The bundle isn't just additive — the components make each other more valuable, which is the actual test of whether something deserves to be sold as a bundle rather than sold apart.
+
+**Where it breaks**
+
+The unbundling logic doesn't disappear, though — it just moves to where the bundle is weakest. Founders who already have their own network, their own press relationships, and no interest in "platform" programming are exactly the ones who go take the cheaper check from a solo GP or an angel syndicate. Cable bundling died first for the customers who only wanted ESPN; VC bundling will erode first for the founders who only want the wire transfer. That's a growing slice of the market — repeat founders, well-networked operators out of Stripe or Ramp, anyone who has done this before and knows which parts of the platform they'll actually use.
+
+The other failure mode is dilution of the bundle itself. When every fund above a certain AUM claims to offer recruiting, PR, and community, the bundle stops being a differentiator and becomes table stakes — which is roughly where the tier-one end of the market sits today. At that point the competitive question isn't "do you have a platform team" but "is your platform team actually good," which is a much smaller and more contestable claim.
+
+**What this means if you're raising**
+
+Don't evaluate a term sheet on valuation and check size alone — price the bundle. Ask which services you'd genuinely use, and discount hard for the ones you wouldn't; a platform team you'll never call is dilution with no offsetting value. And ask what happens to the bundle after the check clears, because the recruiting call and the intro deck are easy to promise in a competitive process and easy to deprioritize once the round is signed. The firms worth the premium are the ones whose bundle shows up in month fourteen, not just week one.

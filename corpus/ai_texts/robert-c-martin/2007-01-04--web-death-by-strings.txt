@@ -1,0 +1,81 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Web Death by Strings
+type: blog post
+area: Software engineering
+matched_human_doc: texts/robert-c-martin/2007-01-04--web-death-by-strings.txt
+words: 1183
+generated: 2026-08-31
+---
+
+# Web Death by Strings
+
+Every mature web codebase I've worked in has the same quiet illness. It doesn't show up in the dependency graph, it doesn't fail the build, and no linter flags it. It's the slow accumulation of application state encoded as strings, passed across boundaries no compiler can see, and reassembled by convention on the other side.
+
+I've started calling it death by strings. Not because any single string is a problem — it's that they're individually harmless and collectively fatal.
+
+## The shape of it
+
+Here's a thing I found in a production codebase last year. A React component received a `variant` prop typed as `string`. That string got forwarded to a design-system component, which mapped it to a CSS class name via template literal:
+
+```js
+const cls = `btn btn--${variant}`;
+```
+
+Somewhere else, a backend endpoint returned `{ status: "pending_review" }`, and a display layer did:
+
+```js
+const label = variant.replace(/_/g, " ");
+```
+
+Three systems agreed on a vocabulary. None of them declared it. The set of legal values for `variant` existed only in the union of a Tailwind safelist, a Postgres check constraint, and a switch statement in a component nobody had opened in a year. When product asked to rename `pending_review` to `in_review`, the change required grepping for the literal across four repos, and the grep missed the places where it was constructed dynamically. That shipped a page with unstyled buttons for eleven days.
+
+That is the disease. Not the string itself — the fact that the string *was* the interface.
+
+## Why the web is uniquely susceptible
+
+Other platforms have the same failure mode, but the web is structurally biased toward it in ways worth naming.
+
+**The DOM is a string API.** Class names, data attributes, ARIA roles, CSS custom properties, event names — all strings. `addEventListener("clik", handler)` is a valid program. `element.dataset.userId` is a string even when the underlying value is an integer. The platform's own contracts are stringly typed, and the ergonomics of working against it pull your application code the same direction.
+
+**HTTP is a string protocol.** Headers, query params, path segments, cookie values. JSON gives you five types and one of them is `string`, which means every date, every enum, every ID, every decimal amount arrives as a string and gets interpreted by convention. Your `id` field is a string in the JSON, a `uuid` in Postgres, a `string` in TypeScript, and a branded opaque type in exactly zero places.
+
+**The framework layer added more.** File-based routing turns directory names into a routing table. Config keys, feature flag names, i18n message keys, analytics event names, CSS-in-JS token references, GraphQL field selections in template literals, Tailwind class strings assembled at runtime. Each one is a place where the compiler's knowledge stops and human discipline begins.
+
+**And TypeScript made it feel solved when it isn't.** This is the part I think gets missed. Typing something as `string` is not typing it. A codebase can be at 100% TypeScript coverage with `noImplicitAny` on and still have every meaningful domain distinction collapsed into the same type. `function transfer(from: string, to: string, amount: string)` typechecks perfectly and will let you swap the first two arguments.
+
+## What it actually costs
+
+The costs aren't evenly distributed, which is why they're easy to underweight when you're writing the code and brutal when you're maintaining it.
+
+**Renames stop being mechanical.** A rename in a well-typed system is a compiler-verified refactor. A rename across string boundaries is a grep plus a prayer. And the grep is unsound in both directions: it misses dynamic construction, and it hits unrelated occurrences of the same word.
+
+**Errors move from compile time to runtime, and then from runtime to *silent*.** A misspelled event name doesn't throw. It just never fires. A wrong feature flag key returns the default. A typo'd CSS class produces an unstyled element that a human has to notice visually. These are the worst possible failures — they're invisible to your test suite unless someone thought to write the specific assertion.
+
+**Validation migrates to the edges and then dissolves.** When a value's constraints aren't in the type, they get enforced by whichever layer remembers to. Usually that means the same validation logic reimplemented in three places, slightly differently, drifting apart over a year.
+
+**Onboarding cost compounds.** The set of legal values isn't discoverable. New engineers find it by breaking something.
+
+## What to do about it
+
+I'm not arguing for a heavier type system or a rewrite. The interventions that work are small and local.
+
+**Make the vocabulary a value, not a literal.** If there's a set of legal statuses, that set should exist once, as data, and everything else should reference it. In TypeScript that's a `const` object plus a derived union type; a plain string union works too. The point is that the compiler now knows the set and will tell you when you spell it wrong.
+
+**Brand your identifiers.** `type UserId = string & { readonly __brand: "UserId" }` costs almost nothing and makes it impossible to pass an org ID where a user ID goes. This one change catches a category of bug that is otherwise found only in production, by users.
+
+**Parse at the boundary, don't validate everywhere.** When data crosses into your system — an HTTP response, a form submission, a webhook — convert it once into types that make illegal states unrepresentable, and let everything downstream trust it. Zod, Valibot, io-ts, whatever. The library matters less than the discipline of having exactly one place where untrusted strings become trusted values.
+
+**Never build a string that a machine will read.** This is the single highest-leverage rule I know. Template-literal class names, interpolated route paths, concatenated i18n keys, dynamically constructed config lookups — every one of these puts the value beyond the reach of static analysis, and beyond the reach of grep too. If a machine consumes it, construct it through a function whose input is typed.
+
+**Give the string a type even when it stays a string.** You often can't change the wire format. Fine. Type the *boundary* anyway. A `RouteName` type that resolves to a string at runtime still catches every typo at compile time.
+
+## The honest tradeoff
+
+There's a real cost here, and pretending otherwise is how these arguments lose. Branded types produce error messages that are harder to read. Schema parsing at boundaries adds bundle size and a layer of indirection. Centralizing a vocabulary means a rename touches a shared file, which means merge conflicts on a busy team. And there's a genuine kind of codebase — a prototype, a script, something with a three-week lifespan — where none of this pays for itself.
+
+The judgment call is about *lifespan* and *fan-out*. A string that lives inside one function and dies there is fine. A string that crosses a module boundary, a network boundary, or a team boundary is a contract, and contracts deserve types.
+
+Most codebases don't die from one bad decision. They die from ten thousand small ones that each seemed too minor to be worth a type.

@@ -1,0 +1,63 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Stevey's Blog Rants: Shiny and New: Emacs 22
+type: blog post
+area: Software engineering
+matched_human_doc: texts/steve-yegge/2006-06-01--stevey-s-blog-rants-shiny-and-new-emacs-22.txt
+words: 1034
+generated: 2026-08-31
+---
+
+# Stevey's Blog Rants: Shiny and New: Emacs 22
+
+So Emacs 22 finally shipped. I know, I know. You're supposed to care. There was a release announcement, there were people on Slashdot making jokes about Duke Nukem Forever, and somewhere a very tired maintainer exhaled for the first time since the Clinton administration. Emacs 21.1 came out in October 2001. Emacs 22.1 came out in June 2007. That's five years and eight months between point releases of a text editor.
+
+Let me say that again, because I want you to sit with it: **five years and eight months.** In that same window we got Ruby on Rails, we got AJAX going from a typo to a religion, we got the entire rise-and-flameout cycle of at least three JavaScript frameworks, we got Java 5 *and* Java 6, and we got an entire generation of programmers who have never once typed `C-x C-s` and never will.
+
+And the thing is? I'm not even mad. That's the part that surprises me.
+
+## The Feature List, Such As It Is
+
+Here's what you get. Unicode support that mostly works. GTK+ widgets so it doesn't look like it escaped from a SPARCstation. Drag and drop. Mouse wheel scrolling out of the box — yes, in 2007, mouse wheel scrolling is a *release-note item*. A vastly better `python-mode`. Support for editing files over TRAMP without wanting to die. Left-to-right and right-to-left text. `longlines-mode`. Improved `flymake`. GDB integration that finally has a real UI with breakpoints and watch expressions and everything.
+
+If you handed that list to a product manager they'd laugh you out of the building. Five years, and the headline is "the mouse wheel works now."
+
+But that framing is wrong, and it's wrong in a way that's actually interesting, so bear with me.
+
+## Emacs Is Not an Editor, It's a Sedimentary Deposit
+
+Every other tool in your bag is a *product*. Products have roadmaps. Products have release cadences driven by marketing calendars and competitive pressure and some VP who needs a launch on their promo packet. Products get rewritten every four years because the new team hates the old team's code and rewriting is more fun than reading.
+
+Emacs is not a product. Emacs is thirty years of accumulated sediment, and the reason the release took five years is that *nothing was allowed to break*. There is code out there — running, in production, at real companies — that was written for Emacs 18. There are `.emacs` files that predate the World Wide Web. There are people whose entire cognitive workflow, their actual externalized brain, lives in a file they've been editing since they were in grad school.
+
+That is an insane constraint. It's also, I'd argue, the single most valuable property any piece of software can have, and essentially nobody else even attempts it.
+
+Think about what you've thrown away in the last five years. Every IDE you learned got a major version that moved all the menus. Every framework you invested in either died or broke its API. Every build system got replaced by a better build system that will itself be replaced. You have spent an enormous, unaccounted-for fraction of your career relearning things you already knew.
+
+Meanwhile the Emacs guy typed `C-x C-f`, and it worked, the whole time, for thirty years.
+
+## The Actual Argument
+
+I'm going to make the case that I think matters, and it isn't about parentheses or `M-x butterfly` or whatever the joke is this week.
+
+**Your editor is the only tool you use for your entire career.** Not this job. Not this stack. Your *career*. You will change languages three or four times. You will change companies six or eight times. You will watch the entire industry rotate through paradigms — objects, then services, then whatever's next. Through all of that, the thing between your fingers and the text is the one constant.
+
+Given that, the amortization math on learning a deep tool is absolutely brutal in the tool's favor. Two weeks of pain, once, against thirty years of leverage. There is no other investment in your professional life with that payoff curve, and yet developers agonize over it constantly while cheerfully burning a month learning a framework that will be dead by 2011.
+
+And the leverage here is real, because of the second thing Emacs gets right: **it's programmable in the same language it's written in, all the way down.** Not a plugin API. Not an extension point some architect decided to expose. You hit `C-h k`, press any key, and it shows you the function. `M-x find-function`, and you're looking at the source. Edit it, eval it, and the running editor is now different. There is no build step, no restart, no plugin manifest, no signing key, no marketplace review.
+
+That is a *fundamentally different relationship* with your tools than the one most of you have. Most of you are tenants. You file bugs and wait. Emacs users own the building and can knock out walls.
+
+## Where I'll Concede
+
+The defaults are indefensible. The keybindings fight the entire rest of your operating system. The documentation is a masterpiece written for people who already understand it. Elisp is a bad Lisp — dynamic scoping in the year 2007, no real namespaces, a standard library that's a museum of good intentions. And the community's response to "this is hard to learn" has historically been somewhere between "git gud" and a lecture about freedom.
+
+Also, and I say this with love: five years. Whatever governance produced a five-year release cycle is not a governance model anyone should copy. There's a version of this project that ships every eighteen months and doesn't hemorrhage a generation of users to TextMate.
+
+## So
+
+Install it. Not because 22 is exciting — it isn't, it's a maintenance release with a nice hat on — but because the release is a decent excuse to ask a question you've probably never asked: what's the tool you'll still be using in 2030?
+
+Because you're going to be doing this for a long time. Longer than you think. And the compounding on tools you actually *own* is the most underpriced thing in this entire industry.

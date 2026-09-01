@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Checking post-conditions in SOA as (or more) important than checking pre-conditions
+type: blog post
+area: Software engineering
+matched_human_doc: texts/scott-hanselman/2003-10-21--checking-post-conditions-in-soa-as-or-more-important-th.txt
+words: 385
+generated: 2026-08-31
+---
+
+Checking Post-Conditions in SOA Is as (or More) Important Than Checking Pre-Conditions
+
+Most service contracts obsess over inputs. Every handler starts with a wall of validation: is the field present, is the type right, is the caller authorized. This is necessary, but it treats correctness as something that happens at the door and can be forgotten once you're inside.
+
+In a service-oriented architecture, the more dangerous failure mode isn't a bad request getting in — it's a bad state getting out. A pre-condition check protects one service from one malformed call. A post-condition check protects every downstream consumer of that service's output, indefinitely, across every code path that could have produced it.
+
+Consider a payment service that debits an account and emits an event. Pre-condition checks confirm the account exists and has sufficient balance. But what actually matters is the post-condition: did the balance decrease by exactly the debited amount, did exactly one event get published, is the ledger still balanced. A bug in the debit logic — an off-by-one in a retry loop, a race condition under concurrent requests — can pass every pre-condition check and still corrupt state. If nothing asserts the post-condition, that corruption propagates silently into every service that trusts the output, and by the time it surfaces in a reconciliation report, the fix requires unwinding days of downstream writes.
+
+This asymmetry gets worse as the number of services grows. Pre-condition failures are local and cheap: reject the request, return a 400, move on. Post-condition failures are systemic and expensive: the invalid state has already been persisted, replicated, and consumed. The cost of catching a bug scales with how far the bad data traveled before someone noticed, and post-conditions are what catch it at the source instead of three services downstream.
+
+Practically, this means treating post-conditions as first-class contract elements, not afterthoughts. Assert invariants before returning from a mutating operation. Validate that idempotency keys actually produced idempotent results. Check that emitted events match the state that was committed, not the state that was intended. Where performance allows, run these as real assertions in production, not just in tests — a crashed request is nearly always cheaper than a corrupted one.
+
+Pre-conditions keep bad data out. Post-conditions keep bad data from spreading. In a distributed system, spread is what actually kills you.

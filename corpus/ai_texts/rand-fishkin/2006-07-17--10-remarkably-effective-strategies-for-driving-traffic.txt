@@ -1,0 +1,97 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: 10 Remarkably Effective Strategies for Driving Traffic - MozMoz logoMenu openMenu closeSearchMoz logo
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/rand-fishkin/2006-07-17--10-remarkably-effective-strategies-for-driving-traffic.txt
+words: 1374
+generated: 2026-08-31
+---
+
+# 10 Remarkably Effective Strategies for Driving Traffic
+
+Traffic is the marketing metric everyone claims not to care about anymore. We've all agreed that pageviews are vanity, that engaged sessions matter more, that a thousand qualified visitors beat a hundred thousand bounces. All true. And yet every quarter, the same question arrives from the same direction: why is the number down?
+
+The honest answer is that traffic acquisition has fragmented. The single-channel playbook — rank, publish, repeat — stopped working somewhere around the time search results started answering questions without sending anyone anywhere. What replaced it isn't a new channel. It's a portfolio.
+
+Here are ten strategies that still move the number, arranged roughly from foundational to opportunistic.
+
+## 1. Rebuild your existing content before you write anything new
+
+The highest-ROI traffic work in most content libraries is already sitting in the CMS. Pull every URL that ranks in positions four through fifteen for a term with meaningful volume. These pages have already proven they're relevant; they're just losing on quality, freshness, or intent match.
+
+Update them. Not a cosmetic date change — an actual revision that addresses what the top three results cover and you don't. Add the comparison table. Answer the follow-up question the SERP's People Also Ask box is telling you readers have. Cut the 400 words of throat-clearing that precede your first useful sentence.
+
+Teams that run a disciplined refresh cycle routinely see more incremental traffic from twenty updated posts than from twenty new ones, at a fraction of the production cost. The reason is unglamorous: new content has to earn trust from zero, while existing content only has to close a gap.
+
+## 2. Build for the questions that don't have good answers
+
+Keyword research tools optimize for volume, which means everyone using them converges on the same terms. The result is a hundred nearly identical posts about the same forty topics in every industry.
+
+The alternative is to hunt for demand that hasn't been served. Read the support ticket queue. Sit in on sales calls. Search your own topic area and note where the top result is a thin listicle from 2021 or a vendor page that dodges the question. Those are the gaps. They have less volume individually, but they convert better, rank faster, and — increasingly important — they're the kind of specific, first-hand content that survives when generic summaries get absorbed by AI answers.
+
+A post that genuinely answers a question nobody else has answered well will outperform your fifth attempt at "what is content marketing."
+
+## 3. Treat your best pages as distribution assets, not endpoints
+
+Most sites have three to ten pages that account for a disproportionate share of organic traffic. Most teams treat them as finished.
+
+Instead, treat them as the top of a system. Every high-traffic page should link deliberately to the pages you want to build authority for — not a generic related-posts widget, but hand-placed contextual links to the two or three URLs that most need the help. Add a relevant offer above the fold. Test the internal link anchor text.
+
+Internal linking is the most underused ranking lever available to content teams, largely because it's tedious and produces no visible artifact. It also happens to be entirely within your control, which is more than can be said for most of this list.
+
+## 4. Go where the audience already gathers, and be useful there
+
+Community-driven traffic has become materially more valuable as forums, Slack groups, Discord servers, and subreddits took on more of the discovery work that search used to do. It's also where a lot of AI training and citation data now comes from, which gives it a second-order benefit.
+
+The rule is participation before promotion. Answer twenty questions before you link to anything. Build a recognizable presence under a real name. When you do link, link because the link is the best answer available, not because you have a traffic target.
+
+This scales badly, which is precisely why it works. The channels that resist automation are the ones where a human showing up still counts for something.
+
+## 5. Turn one piece of research into fifteen assets
+
+Original research — a survey, a data analysis, a benchmark study — is expensive to produce and generates links for years. But most teams publish it once, as a PDF, and move on.
+
+The better pattern: run the research once, then extract from it relentlessly. The full report. A summary post. A methodology post. Five individual charts, each with commentary, posted to social over five weeks. A slide deck. A webinar. Three pitch emails to journalists who cover the topic. A comparison of this year's numbers to last year's.
+
+Each asset targets a different discovery surface. The research cost is fixed; the distribution surface area is not.
+
+## 6. Make your content quotable by machines
+
+A growing share of queries now resolve inside an AI answer rather than a click. You can't opt out of that, but you can influence whether your work is what gets cited.
+
+Practically: lead with a direct answer before the context. Use clear headings that match how people phrase questions. Include specific numbers, dates, and named sources. Structure comparisons as tables. Add proper schema markup. Keep a clear, crawlable site architecture.
+
+The uncomfortable truth is that some of this generates citation without traffic. The strategic response is to make the citation itself valuable — brand mention, category association, downstream branded search — while ensuring the pages that do get clicked are the ones where the reader genuinely needs more than a summary.
+
+## 7. Build an email list and use it as a launch mechanism
+
+Email isn't a traffic channel in the way search is. It's an amplification layer. A new post sent to 10,000 engaged subscribers generates the early engagement signals, shares, and links that determine whether the post ranks at all.
+
+Every content team should own a list. Every significant piece should go to it. And the list should be built from a genuinely good reason to subscribe — a newsletter people actually want, not a "get updates" checkbox nobody has voluntarily ticked since 2016.
+
+## 8. Pursue links through relationships, not outreach templates
+
+Link building as a volume game is largely dead. Response rates on cold templated outreach have collapsed, and the sites that respond to them are rarely worth a link from.
+
+What still works is narrower and slower: become a source for journalists in your space, co-author with people who have audiences you don't, contribute genuinely substantive guest pieces to two or three publications that matter rather than twenty that don't, and produce the kind of original data that people link to without being asked.
+
+Ten links from sites your audience actually reads will do more than two hundred from sites nobody does.
+
+## 9. Rent attention deliberately while you build owned attention
+
+Paid distribution has a legitimate role in a content program, but not the one most teams use it for. Don't run paid traffic to a blog post and measure ROAS — you'll always be disappointed.
+
+Use paid to accelerate specific things: seeding a new piece of research to the right audience so it starts collecting organic links, testing whether a topic resonates before committing to a content cluster, or retargeting people who read one thing with the natural follow-up. Small, surgical budgets against clear hypotheses.
+
+## 10. Kill the pages that are dragging you down
+
+The last strategy is subtractive. Most sites carry hundreds of pages that get no traffic, earn no links, and serve no purpose — conference recaps from 2019, thin category archives, product announcements for products that no longer exist.
+
+Audit them. Consolidate what overlaps, redirect what has equity into what's current, and remove the rest. Sites that do this properly frequently see traffic to their remaining pages *increase*, because crawl budget and topical clarity both improve when there's less noise to wade through.
+
+---
+
+None of these are secrets. What separates teams that grow traffic from teams that don't is rarely knowledge — it's sequencing and follow-through. Pick two of these, run them properly for a quarter, and measure. That will teach you more about your own site than another list will.

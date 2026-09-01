@@ -1,0 +1,63 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: 10 Steps to a Viral Tutorial That Sells
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/brian-clark/2006-10-02--10-steps-to-a-viral-tutorial-that-sells.txt
+words: 777
+generated: 2026-08-31
+---
+
+# 10 Steps to a Viral Tutorial That Sells
+
+Most tutorials fail at one of two things. Either nobody shares them, or everybody shares them and nobody buys. The first problem is a distribution failure. The second is a design failure — and it's the more expensive of the two, because it burns real reach on content that was never built to convert.
+
+A tutorial that spreads *and* sells isn't a lucky accident. It's a structure. Here's the one that works.
+
+## 1. Pick a problem people are already trying to solve badly
+
+Don't invent demand. Find it. Search Reddit threads, support tickets, and the "how do I…" questions in your community Slack. The best tutorial topics are ones where an ugly workaround already exists — people have proven they'll spend effort on the problem, which means they'll spend attention on your solution.
+
+## 2. Choose a promise you can prove in the first 30 seconds
+
+"Build a churn dashboard in 20 minutes" beats "Understanding customer retention analytics." The promise should name a finished artifact, a time cost, and an implied before-and-after. If you can't show the end result immediately — a screenshot, a demo, a number — the promise is too abstract to travel.
+
+## 3. Make the outcome visual before it's instructional
+
+Lead with the result. The single strongest predictor of a tutorial getting shared is that someone can look at the top of it and immediately want what it produces. Put the finished thing above the fold. Everything after that is the reader deciding *how*, not *whether*.
+
+## 4. Design for the skimmer and the doer simultaneously
+
+Two people arrive at every tutorial: the one who'll follow it now and the one who'll bookmark it for later. Serve both. Numbered steps, copy-pasteable blocks, and bolded checkpoints let the doer execute; clear headers and a visible structure let the skimmer decide it's worth saving. Bookmarks are a leading indicator of shares.
+
+## 5. Remove one step, not one word
+
+Editing tutorials for length is the wrong instinct. Edit them for *steps*. Every step is a place where someone quits. If you can collapse "configure the API key" and "test the connection" into a single action with a single verification, you've meaningfully raised completion rate — which is the metric that actually correlates with purchase.
+
+## 6. Put the product in the path, not in the pitch
+
+This is where most tutorials break. The product should be the thing that makes step 4 take ten seconds instead of an hour. If your tool is genuinely the shortest path, showing the manual alternative first is the most persuasive move available — the reader experiences the friction, then experiences its absence. If your product isn't the shortest path, you have a product problem, not a content problem.
+
+## 7. Give away the working version
+
+Free tutorials that hold back the last 20% don't convert; they generate resentment and a comment section full of people explaining the missing piece to each other. Give away something that fully works. Sell the version that scales, integrates, handles the edge cases, or saves the ongoing time. Generosity at the tutorial layer is what earns the right to sell at the next one.
+
+## 8. Build in one shareable asset
+
+A template, a checklist, a Notion board, a prompt library, a spreadsheet. The asset does two jobs: it's the thing people link to when they recommend your tutorial, and it's the thing that justifies an email capture without feeling like a toll booth. Assets travel further than articles because they're useful without being read.
+
+## 9. Seed it where the problem lives
+
+Publishing is not distribution. Take the tutorial back to the exact threads and communities where you found the problem in step 1 — and answer the question directly in the thread, with the link as supporting material rather than the whole reply. Ten placements in the right rooms outperform a general broadcast, and they compound, because those threads keep ranking.
+
+## 10. Measure completion, then conversion
+
+Track scroll depth or step-completion before you track signups. If people finish and don't buy, your offer is misaligned. If they don't finish, your tutorial is too long or too hard, and no offer will fix it. Diagnosing in that order stops you from rewriting good CTAs attached to broken content.
+
+---
+
+The uncomfortable truth underneath all ten steps: a tutorial sells because it works, not because it persuades. The persuasion is a side effect of someone succeeding at something they couldn't do an hour ago — and associating that feeling with you.
+
+Build the thing that actually works. Then get out of its way.

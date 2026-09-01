@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Mahalo.com
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/fred-wilson/2007-05-01--mahalo-com.txt
+words: 411
+generated: 2026-08-31
+---
+
+# Mahalo.com
+
+In 2007, Jason Calacanis launched Mahalo with a premise that sounded reasonable at the time: search results were full of spam, so pay humans to write clean, curated pages for the queries people actually typed. Sequoia, News Corp, Elon Musk, and Mark Cuban backed it. The company raised something like $20 million and hired writers to hand-build result pages for tens of thousands of search terms.
+
+Then Google shipped the Panda update in February 2011. Mahalo's traffic collapsed, roughly two-thirds gone in a matter of days. Layoffs followed within the week. The company pivoted to how-to video on YouTube, then to apps, then quietly wound down.
+
+The obvious lesson — don't build on a platform that can kill you — is true and boring. Every founder already knows it and does it anyway, because platforms are where the users are. The more useful lesson is about the shape of the bet.
+
+Mahalo's economics required human-written pages to be cheaper than the ad revenue those pages generated, forever. That's a margin business dressed as a technology business. Each new query cost money to serve. There was no compounding asset: page 40,000 was exactly as expensive as page 400. Meanwhile Google's cost per additional query rounded to zero. When a competitor's marginal cost is zero and yours is a freelancer invoice, you are not in the same industry, whatever the pitch deck says.
+
+The second thing worth noticing is that Mahalo was directionally right. Curation did matter. Human judgment did beat algorithmic ranking on ambiguous queries. Quora, Stack Overflow, and eventually Reddit-as-a-search-layer all proved the thesis. They just structured it so users produced the content, which turned the cost line into a network effect. Same insight, different unit economics, wildly different outcome.
+
+For investors, the pattern to watch for: a thesis that's correct about user behavior and wrong about who pays for supply. These are the hardest ones to diligence, because the demand-side evidence looks great. Users genuinely wanted the product. The traffic was real. The failure lived entirely on the cost side, and cost-side failures don't show up in early traction metrics — they show up when you try to scale, which is precisely when you've already raised on the traction.
+
+Calacanis went on to become one of the more successful angel investors of the era, partly on lessons learned here. Mahalo.com now redirects nowhere in particular. The idea is alive in a dozen companies that got the structure right.

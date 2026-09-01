@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Yahoo to Microsoft: No, Thank You
+type: blog post
+area: Technology & media
+matched_human_doc: texts/barry-ritholtz/2008-02-01--yahoo-to-microsoft-no-thank-you.txt
+words: 352
+generated: 2026-08-31
+---
+
+# Yahoo to Microsoft: No, Thank You
+
+Yahoo's board has done the thing everyone said it wouldn't: it said no.
+
+Microsoft's offer was $44.6 billion, a 62% premium over Yahoo's trading price the Friday before. Jerry Yang and the board have decided that number "substantially undervalues" the company. Which is another way of saying: we think we're worth more than the market thinks we're worth, and we'd like some time to prove it.
+
+That's a bold position for a company whose stock was at $19 before Steve Ballmer went shopping.
+
+But look at what Microsoft is actually buying, and the refusal starts to make more sense. This isn't a bid for Yahoo's search technology — Microsoft has search technology, and it's fine. It's a bid for scale. Combined, Microsoft and Yahoo would hold roughly 30% of US search queries against Google's 60%. That's not parity. That's the consolation prize for second place, purchased at a premium, and Yahoo knows it's the only asset Microsoft can't build.
+
+The strategic question nobody in Redmond seems keen to answer: what happens when you merge two organizations that have both lost to Google, and assume the sum will beat Google? Portal culture and platform culture do not integrate. Yahoo is a media company that runs technology. Microsoft is a technology company that has never quite understood media. The engineering attrition alone — and it will be the good engineers, the ones with options — could hollow out the thing being acquired before the ink dries.
+
+Yahoo's alternative is thinner than its board would like. Outsourcing search advertising to Google would work commercially and die in Washington on antitrust grounds. A News Corp deal is a rumor with a press cycle attached. Standalone means asking shareholders to be patient while Panama gains ground, and shareholders have not been patient with Yahoo for three years.
+
+So this is probably not a no. It's a price. Microsoft will come back somewhere north of $35 a share, and the board will find that number more thoughtful.
+
+The interesting part is that Yahoo was willing to say the word at all.

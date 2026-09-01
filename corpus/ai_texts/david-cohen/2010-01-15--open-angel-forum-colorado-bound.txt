@@ -1,0 +1,45 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Open Angel Forum - Colorado bound!
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/david-cohen/2010-01-15--open-angel-forum-colorado-bound.txt
+words: 875
+generated: 2026-08-31
+---
+
+Open Angel Forum - Colorado bound!
+
+We're thrilled to announce that Open Angel Forum is expanding to Colorado. After years of building one of the most founder-friendly angel investing communities in the country, we're bringing our model to a state that has quietly become one of the most dynamic startup ecosystems in the American West. If you've been watching Denver, Boulder, and the Front Range corridor over the last several years, this won't come as a surprise — it's been a long time coming, and we couldn't be more excited to formally plant our flag here.
+
+For those unfamiliar with Open Angel Forum, our mission has always been simple: make angel investing more transparent, more accessible, and more useful for the founders who need capital and mentorship the most. We built our reputation on a few core principles — no fees charged to entrepreneurs to present, no back-room dealmaking, and a genuine commitment to giving early-stage companies real feedback whether or not a check gets written that day. That ethos has resonated in every market we've entered, and we believe it's exactly what the Colorado startup community deserves right now.
+
+**Why Colorado, why now**
+
+Colorado's startup scene has matured dramatically. What used to be considered a secondary market relative to the coasts has developed real density: a strong university pipeline out of CU Boulder and Colorado State, a growing base of experienced operators who've cycled through successful exits and are now angel investing themselves, and a cost-of-living and quality-of-life advantage that continues to pull talent away from the Bay Area and New York. Add to that a state government that has been genuinely supportive of entrepreneurship — through tax incentives, innovation grants, and a general openness to building things — and you have the ingredients for a venture ecosystem that's ready for more structured, active angel capital.
+
+What's been missing, in our view, isn't ambition or talent. It's connective tissue. Colorado has excellent accelerators, a handful of strong venture funds, and no shortage of founders solving hard problems in climate tech, aerospace, health IT, and enterprise software. But the angel layer — the earliest, riskiest, most relationship-driven capital that often determines whether a company gets to its Series A at all — has been more fragmented and less visible than it should be for a market this size. That's the gap we intend to fill.
+
+**What to expect**
+
+Our Colorado chapter will follow the same format that's worked in our other markets: monthly (or near-monthly) forums where three to five vetted companies present live to a room of accredited angel investors. Presentations are short, questions are direct, and feedback is real — even for companies that don't walk away with a term sheet that day. We deliberately keep the format tight because we've found that founders get more value from focused, high-signal interaction than from a marathon pitch-fest.
+
+On the investor side, we're building a member base that spans first-time angels who are just getting started, as well as more seasoned operators and syndicate leads who want deal flow without having to build their own pipeline from scratch. If you've exited a company in the last few years and are looking for a low-friction way to start deploying capital into the next generation of Colorado founders, this is very much for you.
+
+**For founders**
+
+If you're building a company in Colorado — or anywhere in the broader Mountain West and are open to relocating your cap table's center of gravity — we want to hear from you. We're especially interested in founders who are pre-seed through Series A, who have a working product or a compelling enough insight to justify early conviction, and who are looking for investors who will actually engage beyond the check. Presenting costs nothing. We don't take a fee for access to the room, and we never will — that's non-negotiable for us as an organization.
+
+**For the broader ecosystem**
+
+We also see this as an opportunity to partner, not compete, with the organizations already doing great work in the state — the accelerators, the university entrepreneurship programs, the existing angel groups and venture funds who've been building this ecosystem for years. Open Angel Forum works best when it's additive: another node in the network that helps capital and companies find each other faster. We'll be reaching out to many of you directly in the coming weeks, but if you're reading this and want to connect sooner, don't wait for us.
+
+**Getting involved**
+
+Whether you're a founder who wants to apply to present, an accredited investor who wants to join as a member, or simply someone in the Colorado ecosystem who wants to help us get the word out, we'd love to hear from you. The first Colorado forum is being organized now, and we'll be sharing dates, venue details, and application information shortly.
+
+Colorado has the founders, the talent, and the momentum. What it needs now is more structured, transparent, high-velocity angel capital — and that's exactly what we're built to provide. We're proud to call this state our newest home, and we can't wait to meet the companies and investors who are going to define its next chapter.
+
+Welcome to Open Angel Forum, Colorado. Let's build something great together.

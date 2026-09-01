@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Everything looks funny? Different style
+type: blog post
+area: Technology & media
+matched_human_doc: texts/anil-dash/2002-01-05--everything-looks-funny-different-style.txt
+words: 374
+generated: 2026-08-31
+---
+
+Everything Looks Funny? Different Style
+
+There's a moment every writer, designer, and editor knows: you've stared at the same headline, layout, or paragraph so long that it stops making sense. The words blur. The proportions look wrong. You can no longer tell if the joke lands or the lede buries the story. This isn't a failure of skill — it's a known perceptual effect, and it has real implications for how media and tech teams should structure their work.
+
+Cognitive scientists call versions of this semantic satiation and perceptual adaptation: repeated exposure to the same stimulus degrades your ability to judge it fresh. Designers get it staring at a logo for six hours. Editors get it on the fourth pass of a headline. Engineers get it reviewing their own pull request for the tenth time, convinced a bug is obvious when it's actually invisible to them and glaring to anyone else.
+
+The practical fix isn't more effort — it's changing the input. Different style, different medium, different reviewer. Read the article in a different font. Pull the layout up on a phone instead of the monitor you built it on. Hand the copy to a colleague who hasn't seen the previous nine drafts. Read the tweet thread out loud. Each of these resets the perceptual system just enough to let judgment work again.
+
+This matters more now than it used to, because production cycles have compressed. Newsrooms push updates by the hour; product teams ship copy and UI changes in the same sprint. There's less natural downtime between drafts, which used to give perception a chance to reset on its own. Teams that build deliberate "look again, differently" checkpoints into their workflow — a second reviewer, a format switch, a cooling-off period — catch more before publish than teams that simply add more passes by the same tired eyes.
+
+The uncomfortable implication is that individual vigilance doesn't scale against this problem. No amount of caring more will un-blur a headline you've read fifty times. The fix is structural: rotate reviewers, vary the display format, build in a break. If everything you're looking at has started to look funny, that's not a sign to focus harder — it's a sign to look at it differently.

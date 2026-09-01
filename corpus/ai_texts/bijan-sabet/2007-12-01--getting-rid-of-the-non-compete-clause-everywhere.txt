@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Getting rid of the non-compete clause everywhere
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/bijan-sabet/2007-12-01--getting-rid-of-the-non-compete-clause-everywhere.txt
+words: 332
+generated: 2026-08-31
+---
+
+Getting Rid of the Non-Compete Clause Everywhere
+
+The FTC's attempt at a categorical ban stalled in court, but the direction of travel hasn't changed: California never allowed non-competes, Minnesota and New York have moved toward bans, and more states are tightening enforceability every year. For founders and investors, the sensible move isn't to wait for federal clarity — it's to stop relying on non-competes as a retention or protection strategy at all.
+
+Here's why that's not actually a loss. Non-competes were always a blunt instrument for a narrower set of real risks: someone walking out the door with your customer list, your source code, or your unreleased roadmap. Those risks are already covered — better — by NDAs, invention assignment agreements, and narrowly drawn non-solicitation clauses that survive scrutiny in nearly every jurisdiction. A non-compete that tries to stop an engineer from working in the same industry for a year does little to stop IP theft; it mostly just suppresses wages and slows down the labor market you're hiring from.
+
+That last part matters more to startups than it seems. Non-competes are a founder-side liability as much as an asset. Every candidate you want to poach from a competitor is chilled by the same clause you'd love to enforce against your own departing employees. In a tight talent market, being the company that doesn't tie people down is a recruiting advantage — and increasingly, candidates ask.
+
+For venture professionals, this shows up in diligence. Portfolio companies with broad non-competes baked into offer letters are carrying latent legal risk that scales with headcount and state exposure, especially for remote teams spread across multiple states. It's cheap to fix now and expensive to unwind at Series C when an acquirer's counsel flags it.
+
+The practical move: audit existing agreements, strip non-compete language in favor of tight confidentiality and non-solicitation terms, and treat retention as a comp and culture problem, not a legal one. The clause was never doing the job you thought it was.

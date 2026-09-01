@@ -1,0 +1,43 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Relationships on the Web - NN/GNielsen Norman GroupNielsen Norman Group
+type: article
+area: Design, UX & product
+matched_human_doc: texts/jakob-nielsen/1995-12-31--relationships-on-the-web-nn-gnielsen-norman-groupnielse.txt
+words: 898
+generated: 2026-08-31
+---
+
+# Relationships on the Web
+
+Most of what we build online is designed for transactions, not relationships. A checkout flow, a form submission, a search query — these are single-purpose interactions with a clear start and end. But a growing share of digital products depend on something harder to design for: an ongoing relationship between a user and a system, a brand, or another person, sustained over months or years. Dating apps, health trackers, banking apps, social platforms, collaborative tools, even enterprise software with a login streak — all of these ask users to return, again and again, and to trust the product a little more each time. Designing for that kind of duration requires a different mental model than designing for a single task.
+
+## Transactions end. Relationships continue.
+
+A transactional interaction is judged by whether the user completed their goal efficiently. Usability heuristics like error prevention, recognition over recall, and efficiency of use map cleanly onto that kind of interaction. But relationships aren't judged task by task — they're judged in aggregate, over time, based on whether the product has been consistent, respectful, and worth the ongoing investment of attention. A single frustrating session in a long-term relationship with a product doesn't necessarily end it, the same way one bad interaction with a friend doesn't end a friendship — but a pattern of them will.
+
+This means the unit of design analysis has to shift. Instead of asking "did the user complete the task," teams building for relationships need to ask "did this interaction make the user more or less willing to come back." That's a much harder thing to measure and a much easier thing to erode without noticing.
+
+## Trust is built incrementally and spent quickly
+
+Relationships on the web accumulate trust the same way relationships offline do: through small, repeated, low-stakes proofs that the other party is reliable. A banking app that never mishandles a transaction, a health app that never sells data it promised to protect, a messaging platform that never loses a draft — each of these is unremarkable in the moment but load-bearing over time. Users rarely notice the deposits. They notice the withdrawals.
+
+This is why dark patterns are so corrosive to products that depend on relationship, not just conversion. A single deceptive cancellation flow might not tank a quarter's metrics, but it teaches the user something durable: this product will exploit an information asymmetry when it's convenient. Once that lesson is learned, everything else the product does gets read through a more suspicious lens. Trust, once spent, doesn't reset to zero — it goes negative, and every subsequent interaction has to work harder to recover it.
+
+## Design for the arc, not just the screen
+
+Practically, this means product teams need artifacts that don't exist in a typical task-based design process. Journey maps that span months, not minutes. Lifecycle emails and notifications treated as part of the interface, not bolted-on marketing. Onboarding flows evaluated not just for completion rate but for whether they set expectations the rest of the product can actually meet. If onboarding promises intimacy or reliability the product doesn't deliver on by week three, the relationship is already damaged before the user has had time to form real habits.
+
+It also means paying attention to the moments a purely transactional lens would ignore: what happens when a user takes a long break and comes back? What happens when something goes wrong and the user needs to reach a human? What happens when the relationship needs to end — can a user leave gracefully, with their data, without friction designed to punish the decision to go? Offboarding is a relationship signal as much as onboarding is; how a product treats someone on the way out often tells users more about its values than anything in the marketing copy.
+
+## Reciprocity and asymmetry
+
+One thing that distinguishes healthy relationships from exploitative ones, online or off, is reciprocity. A product relationship where only one party benefits from disclosure, effort, or attention isn't really a relationship — it's extraction wearing relationship framing. Social platforms that ask users to share personal content while giving nothing meaningful back, subscription products that make joining effortless and leaving arduous, algorithms that optimize for time spent rather than time well spent — these all borrow the language and rituals of relationship (personalization, familiarity, streaks) while structuring the actual exchange asymmetrically.
+
+Users increasingly notice this asymmetry, even when they can't articulate it precisely. It shows up as vague unease, as churn that doesn't map to any single bad session, as the sense that a product "changed" even when no single update explains why. Teams that want durable relationships with users need to audit not just individual flows but the overall balance of the exchange: what does the user give, what do they get back, and is that ratio one a reasonable person would accept if it were made explicit?
+
+## The design implication
+
+None of this replaces usability. A relationship still has to be built on a foundation of things working. But usability alone doesn't explain why people stay with, recommend, or abandon the products that matter most in their lives. Designing for relationships means treating consistency, reciprocity, graceful endings, and earned trust as first-class design materials — not soft add-ons to a task-completion model, but the actual substance of what keeps people coming back.

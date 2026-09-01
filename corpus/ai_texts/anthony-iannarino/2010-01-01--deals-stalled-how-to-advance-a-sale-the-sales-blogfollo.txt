@@ -1,0 +1,59 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Deals Stalled? How to Advance a Sale | The Sales BlogFollow me on my websiteFollow me on FacebookFollow me on LinkedInFo
+type: blog post
+area: Sales & business development
+matched_human_doc: texts/anthony-iannarino/2010-01-01--deals-stalled-how-to-advance-a-sale-the-sales-blogfollo.txt
+words: 1154
+generated: 2026-08-31
+---
+
+Deals Stalled? How to Advance a Sale
+
+Every sales pipeline has them: opportunities that were moving, then weren't. The prospect was engaged, the calls were good, the next step was agreed on — and then nothing. No response to the follow-up email. No answer on the voicemail. The deal just sits there, technically alive, quietly dying.
+
+Stalled deals are one of the most expensive problems in sales, and not because they cost you the deal itself. They cost you the time you keep spending on a deal that was never going to close, time you could have spent on one that would. Learning to recognize a stall early, diagnose why it happened, and take deliberate action to move it — or kill it — is one of the highest-leverage skills a salesperson can build.
+
+Here's how to think about it.
+
+## First, tell the difference between "slow" and "stalled"
+
+Not every quiet deal is a dead deal. Enterprise buying cycles are genuinely slow. Budget approvals take time. Legal review takes time. A prospect going quiet for a week while they work through internal steps you can't see isn't a stall — it's a process.
+
+A stall is different. A stall is when the deal stops moving forward and nobody — including you — can point to what happens next, or when. If your last call ended with "sounds great, let's talk next week" and three weeks later you still haven't talked, that's not a slow process. That's a stall. The test isn't how much time has passed; it's whether there's a defined next step with a defined owner and a defined date. If any of those three is missing, you don't have a moving deal. You have a stalled one wearing a "still in progress" costume.
+
+## Diagnose before you push
+
+The instinct when a deal goes quiet is to chase it — another email, another call, a "just checking in." That instinct is usually wrong, because it treats every stall as the same problem, when in fact there are only a handful of real causes, and each one needs a different response.
+
+**No pain, or pain that isn't urgent.** The prospect likes your product, agrees it would help, but has nothing forcing them to act now. This is the most common cause of stalls and the hardest to fix after the fact, because it usually means you didn't establish urgency early enough. The deal isn't stalled so much as it was never really moving — you just mistook politeness for momentum.
+
+**No access to the real decision-maker.** You've been talking to a champion who is genuinely enthusiastic but doesn't have the authority, budget, or organizational capital to push the deal through. The champion goes quiet not because they've lost interest, but because they've hit a wall you can't see and don't know how to tell you about it.
+
+**Unresolved objection that never got voiced.** Something is bothering the buyer — price, a competitor, a bad past experience, a feature gap — and instead of raising it, they've simply gone quiet. Silence, in sales, is very rarely neutral. It's usually a symptom of an objection you haven't heard yet.
+
+**Internal competition for priority.** Your deal isn't competing against a competitor. It's competing against every other initiative on your buyer's plate, and right now it's losing. This is common in mid-market and enterprise deals where the champion has a dozen projects and yours just isn't the one on fire this week.
+
+**Process, not people.** Legal, procurement, or security review is genuinely grinding through steps, and the silence is bureaucratic rather than personal. This is the one true "not stalled, just slow" case — but it's worth confirming rather than assuming, because sellers use this explanation to avoid looking at the other four.
+
+Before you send another "checking in" email, figure out which of these you're actually dealing with. The fix is completely different depending on the answer.
+
+## Moves that actually advance a stalled deal
+
+**Change the channel, not just the message.** If three emails haven't gotten a response, a fourth email won't either. Call. Send a short video message. Message a different stakeholder. The goal isn't persistence for its own sake — it's finding a channel that actually reaches the person.
+
+**Name the stall directly.** One of the most underused moves in sales is simply saying the quiet part out loud: "I noticed things have gone quiet since our last call — did something come up on your end, or has this dropped in priority?" This isn't weakness or desperation. It's information-gathering, and buyers respect directness more than sellers expect. A direct question gets a direct answer far more often than a soft nudge does.
+
+**Reintroduce urgency, don't manufacture it.** If the deal stalled because there was no real pain, don't invent a fake deadline. Instead, go back to the cost of inaction — what does staying with the status quo actually cost this business, in dollars or time or risk, for every month they don't act? If you can't answer that concretely, that's diagnostic in itself: the deal may not be worth continuing to chase.
+
+**Get a second thread into the account.** If your only contact has gone dark, that's a single point of failure, not a stalled deal — it's a fragile one. Ask your champion to introduce you to someone else on the team, or reach out directly to another stakeholder you identified earlier in the process. Multi-threading isn't just a best practice for new deals; it's often the exact fix a stalled one needs.
+
+**Make the next step small and concrete.** Vague next steps produce vague outcomes. Instead of "let's regroup in a few weeks," propose something specific and low-effort: a 15-minute call to review one open question, a short document for the buyer to forward internally, a specific date for a specific decision. Small, concrete asks get action. Big, open-ended ones get silence.
+
+**Know when to walk away.** Not every stalled deal should be revived. If you've diagnosed the cause and it's genuinely "no pain" or "no access," and repeated attempts haven't changed that, the correct move may be to disengage — explicitly, not by neglect. A polite, direct close-out message ("It seems like this isn't a priority right now — I'll check back in a quarter, but let me know if that changes") often does more for the relationship, and for your pipeline hygiene, than another six weeks of unanswered follow-ups.
+
+## The real lesson
+
+Stalled deals aren't usually a closing problem. They're usually a diagnosis problem — sellers treat every stall the same way, with more persistence, when what the deal actually needs is more clarity. The salespeople who consistently move stuck deals forward aren't the most persistent ones in the room. They're the ones who figure out, fastest, exactly what's actually stopping the deal — and then apply the one move that fixes that specific thing.

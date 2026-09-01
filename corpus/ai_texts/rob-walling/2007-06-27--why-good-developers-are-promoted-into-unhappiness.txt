@@ -1,0 +1,67 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Why Good Developers are Promoted into Unhappiness
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/rob-walling/2007-06-27--why-good-developers-are-promoted-into-unhappiness.txt
+words: 1300
+generated: 2026-08-31
+---
+
+# Why Good Developers are Promoted into Unhappiness
+
+There is a particular kind of quiet attrition that shows up in portfolio companies about eighteen months after a Series A. It rarely appears in the board deck. The engineer who wrote the core of the product, who onboarded the first five hires, who could be trusted with the gnarliest part of the system — they leave. Not for more money. Not for a competitor. They just leave, often for something smaller, sometimes for nothing at all.
+
+Ask the founder what happened and you will usually hear a version of this: "We promoted them. They were our best engineer, so we made them a manager. It didn't work out."
+
+That sentence contains a lot more than it seems to.
+
+## The promotion is a job change, and nobody says so
+
+When a strong individual contributor becomes an engineering manager, we describe it as moving up. The title implies continuity — Senior Engineer, then Staff, then Engineering Manager, as though these were rungs on a single ladder. They are not. They are different professions that happen to share a domain.
+
+The work of an excellent developer is largely solitary, deterministic, and fast-feedback. You form a hypothesis about a system, you test it, the system tells you whether you were right, usually within minutes. The loop is tight enough that you can feel yourself getting better at it. Over ten years, that loop builds something valuable and specific: a sense of competence that is verifiable in the moment. You know when you have done good work because the tests pass, the latency drops, the bug does not recur.
+
+Management offers none of that. The feedback loop is measured in quarters. The signal is noisy and often arrives through third parties. Your best day might consist entirely of conversations that produce no artifact. You will make a decision in March whose consequences become legible in September, by which time seven other variables have changed and you will never know for certain whether you were right. The craft is real, but its rewards are structurally invisible to the person practicing it.
+
+We take someone whose entire professional identity is built on a fast, honest feedback loop and move them into a role where that loop does not exist. Then we are surprised when they report feeling adrift.
+
+## Competence is not fungible, and the good ones know it
+
+There is a cruel asymmetry in this transition. The newly promoted manager is worse at their new job than they were at their old one — necessarily, since they have just started it. But they have also spent a decade calibrating their sense of what "good" feels like against a standard of genuine expertise.
+
+So they do not experience themselves as a beginner. They experience themselves as a person who used to be excellent and now is not. This is not impostor syndrome, which is a distorted self-assessment. This is an accurate self-assessment producing real distress. They are, at this moment, mediocre at the thing they are paid to do, and they can tell.
+
+The obvious response is to reach back for the thing they were good at. This is where it compounds. The new manager starts taking tickets again — just the hard ones, just to stay sharp, just because it's faster than explaining it. Every hour spent doing that is an hour not spent learning the new job, and it quietly removes the most interesting work from the people they are supposed to be developing. Six months in, they have a team that is not growing and a management practice that has not improved, and their calendar is full. The failure is legible to everyone, including them.
+
+## What the org gets wrong
+
+Three structural mistakes recur, and all of them are fixable.
+
+**The first is treating promotion as the only mechanism for reward.** In a small company, compensation bands are informal, equity refreshes are irregular, and the title is the most liquid currency available. When an engineer becomes indispensable, the only lever the founder feels they have is to make them a manager. This is a compensation problem being solved with an org design tool. The result is that the company converts its best builder into an average manager, and loses the builder.
+
+**The second is the absence of a real technical track.** Everyone claims to have one. Very few have one with teeth. The test is simple: at your company, can a Principal Engineer disagree with a Director of Engineering and win on the merits? Does the Principal Engineer get invited to the meetings where roadmap is decided? Do they have a budget, or the ability to kill a project? If the answer to all three is no, the technical track is a holding pen with a nice title, and every ambitious person in your engineering org has already worked that out.
+
+**The third is the myth of the one-way door.** Companies handle these transitions as though they were irreversible, which makes them enormously high-stakes and therefore rarely reversed even when both parties can see it is not working. A manager who steps back into an IC role after nine months is treated as a demotion, a story that has to be managed, something HR handles delicately. This framing means people stay in jobs that make them miserable for a year longer than they should, out of embarrassment.
+
+## What actually works
+
+Make the trial explicit and time-boxed. A six-month management assignment, framed openly to the whole team as a trial, with a scheduled decision point and no penalty for returning. This costs nothing and dissolves most of the ego problem. It also produces better information: some people discover they love it, and you want to find those people cheaply.
+
+Separate the money from the title. If someone is worth more, pay them more. Establish comp bands where a Staff Engineer can out-earn a first-line manager, and say so out loud. This single move eliminates a large fraction of unnecessary promotions.
+
+Teach the job. Most new engineering managers receive a book recommendation and a calendar invite. They are then expected to develop, in real time and under load, a skill set nobody has ever taught them — giving hard feedback, running a hiring loop, sitting with someone's disappointment without trying to fix it, saying no upward. These are learnable. Nobody learns them by accident while shipping a roadmap.
+
+Give the technical track teeth. Put your Principal Engineer in the room where the roadmap gets set. Let them own architectural decisions that managers cannot overrule. Make the seniority visible in ways that do not require direct reports.
+
+## Why this matters at the portfolio level
+
+For investors and operators, the reason to care is not primarily about employee wellbeing, though that would be reason enough.
+
+It is that this pattern destroys two things at once. You lose an exceptional engineer — replaceable, but expensively and slowly, at eighteen to twenty-four months to full productivity for a senior hire in a complex codebase. And you install a reluctant manager over a team of five to eight people, where the damage propagates. A manager who does not want the job and is not good at it will underperform on hiring, avoid necessary conflict, and lose the strongest people on their team to better-run orgs. The cost is not one person. It is the compounding output of a team, over a period during which the company can least afford it.
+
+The question worth asking in a board meeting is not "who are we promoting?" It is "what are we doing to make sure the people we promote actually want the job we are giving them?"
+
+The answer is usually silence. That silence is where the attrition comes from.

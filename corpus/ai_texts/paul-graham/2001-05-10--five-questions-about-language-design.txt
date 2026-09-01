@@ -1,0 +1,73 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Five Questions about Language Design
+type: essay
+area: Startups & venture
+matched_human_doc: texts/paul-graham/2001-05-10--five-questions-about-language-design.txt
+words: 1417
+generated: 2026-08-31
+---
+
+# Five Questions about Language Design
+
+Every company builds a language. Most do it by accident.
+
+The words a startup uses to describe itself — its category, its unit of value, the verbs its users perform — end up governing what gets built, what gets funded, and what customers think they are buying. Yet language is usually treated as a marketing output rather than a design decision, delegated late and to whoever happens to be free. That is a mistake with compounding costs. Here are five questions worth asking early, whether you are the founder doing the naming or the investor listening to how it's done.
+
+## 1. What are you making it easy to say?
+
+A vocabulary is a set of affordances. Certain thoughts become cheap to express and others become expensive, and over time the cheap ones win.
+
+Consider what happened when "engagement" became the standard currency of consumer software. It was a useful word: measurable, comparable across products, legible to boards. But it made a specific class of sentence trivially easy to construct — "this feature increased engagement by 12%" — and a different class of sentence very hard: "this feature made our users' evenings worse in a way we can feel but not count." The second sentence has no natural home in a vocabulary built around engagement. It has to be smuggled in as anecdote, and anecdote loses to data in most rooms.
+
+That is not a story about bad intentions. It is a story about a word doing exactly what words do. Every metric name, every internal category, every phase label on your pipeline is quietly making some observations articulate and others mute.
+
+So the question for a founder is not "is our terminology accurate?" but "what does this terminology make it easy for my team to notice, and what does it make it easy to overlook?" And the question for an investor sitting in a board meeting is: when this team is uneasy about something, do they have the words to say so? If the only vocabulary available is the vocabulary of the dashboard, discomfort will arrive as vibes and get dismissed as vibes.
+
+## 2. Who has to change their words for you to win?
+
+There is a real distinction between selling into an existing category and creating a new one, and it is mostly a linguistic distinction.
+
+If you sell CRM software, your buyer already has the word. It appears in their budget, their org chart, their job titles. Your work is to win a comparison inside a frame that already exists. The language cost is near zero and the competitive cost is high, because everyone else is being compared on the same axes.
+
+If you sell something that requires a new noun, the arithmetic inverts. Nobody has a budget line for a thing they can't name. Your buyer has to invent an internal justification, defend it to a finance function that pattern-matches on known categories, and take personal risk on a word that isn't yet respectable. Category creation is often described as a marketing strategy. It is more usefully described as a request that your customers do unpaid linguistic labor on your behalf.
+
+Sometimes that labor is worth it, and the payoff is enormous — the company that successfully installs a word owns the frame in which every subsequent competitor is evaluated. But the cost should be underwritten honestly. A useful diligence question: how many words does this customer have to learn before they can approve this purchase? Each one is friction, and the friction is highest in exactly the enterprise segments that startups most want to reach.
+
+The hybrid move, which many of the best companies make, is to borrow an existing budget word for the sale and introduce the new word for the product. Sell into "observability"; teach them "traces" once they're inside.
+
+## 3. What is your unit of value, and what does it hide?
+
+Every business names the thing it charges for: the seat, the query, the workflow, the agent, the token. This name does more work than almost anything else in the company. It sets pricing, it shapes the roadmap, it determines what your salespeople count and what your customers compare.
+
+It also hides things. A per-seat model makes headcount the visible variable and makes the intensity of use invisible. Consumption pricing makes volume visible and makes value invisible — which is why so many usage-priced companies end up with customers who are large, unhappy, and unsure what they got. Outcome pricing makes value visible and makes attribution a nightmare.
+
+There is no clean choice here. The point is that the unit is a lens, and you should know what falls outside it. The failure mode is not picking the wrong unit; it is forgetting that you picked one at all, and then being surprised when the business optimizes exactly the thing the unit made visible.
+
+This is worth revisiting as the product changes. The unit that fit at launch — when you sold a tool to individuals — often stops fitting when the product becomes infrastructure. Companies frequently rename the unit two or three years too late, after the roadmap has already been bent around a measurement that stopped describing the business.
+
+## 4. What does your product make your users say?
+
+Products teach verbs. Google taught "google." Slack taught "ping." Figma taught "component" to people who had never used the word in a design context. When a product's vocabulary escapes into ordinary speech, something valuable has happened — not because it's good branding, but because the user has internalized a model of the work that the product happens to be organized around.
+
+This is the most durable form of lock-in, and it is nearly invisible on a balance sheet. A team that has restructured how it talks about its own process around your product's concepts will find migration expensive in a way no data-export feature addresses. They would have to relearn how to describe their own jobs.
+
+The design question is whether your product's internal concepts are worth adopting on their own merits. Users pick up vocabulary that makes their thinking sharper and route around vocabulary that only serves the vendor's architecture. If your object model is a reflection of your database schema, users will use it grudgingly inside your app and never once outside it. If your object model is a genuine claim about how the work should be structured — and the claim is right — it will travel.
+
+For investors, a cheap and reliable signal: listen to how customers describe the product in reference calls. Do they use the company's words, or do they translate back into their own? Translation is a sign the product hasn't earned its vocabulary yet.
+
+## 5. Whose language did you inherit, and does it still fit?
+
+Most startup vocabulary is inherited rather than chosen. It arrives from the founders' previous employers, from the dominant incumbent, from whatever a16z published in 2019, from the ambient dialect of the last funding cycle. Inherited language is efficient — it makes you legible to investors and recruits fast — and it is also a set of assumptions you did not examine.
+
+The tell is when a company's own words stop matching what it does. The team is selling to a new buyer but still using the vocabulary of the old one. The pitch describes a workflow product; the actual usage is infrastructure. Everyone in the company knows the deck is stale, and nobody has the standing to rewrite it, because the words are load-bearing in fundraising documents.
+
+That gap is expensive. It shows up as sales cycles where the pitch attracts the wrong evaluator, as roadmaps that keep serving a persona who has quietly stopped mattering, as new hires who spend six months learning a vocabulary that maps onto no current reality. Language debt behaves like technical debt: the interest is paid in confusion, and the refactor gets harder the longer it waits.
+
+---
+
+None of this argues for spending more time on wordsmithing. It argues for treating a handful of words — the category, the unit, the core objects, the verbs — as design decisions with the same seriousness you'd give a schema. They are chosen once, cheaply, in a room with four people. Then they are enforced ten thousand times by everyone who joins afterward, and they get more expensive to change every quarter.
+
+Ask the five questions while the answers are still cheap.

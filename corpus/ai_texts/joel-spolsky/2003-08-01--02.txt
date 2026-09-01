@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: 02
+type: essay
+area: Software engineering
+matched_human_doc: texts/joel-spolsky/2003-08-01--02.txt
+words: 337
+generated: 2026-08-31
+---
+
+# 02
+
+There is a moment in every incident where someone says "let's just restart it." That moment is worth studying, because it is the point at which a team decides whether it is running a system or being run by one.
+
+Restarting works. That's the trap. The process comes back, the graphs recover, the pager goes quiet, and the postmortem gets a line that says "transient." Multiply that by a year and you have a service nobody understands, held together by a reflex.
+
+The alternative is not heroism. It is a habit: before the restart, take one artifact. A heap dump, a goroutine profile, a `SELECT * FROM pg_stat_activity`, thirty seconds of `perf top`, the contents of the queue. Thirty seconds of collection buys you the ability to answer the question later, at a desk, with coffee, instead of at 3am with adrenaline. Most teams skip it because during an incident the only thing that feels legitimate is restoring service. Collecting evidence feels like a luxury. It isn't — it's the difference between an incident you paid for once and an incident you will pay for repeatedly.
+
+The second habit is smaller and rarer: write down what you expected. Not what happened — what you thought was true before you looked. "I expected connection count to be flat." "I expected the retry budget to cap this." When the incident is over, the gap between those expectations and reality is the actual finding. It's more useful than the root cause, because the root cause is about one bug and the gap is about your model of the system.
+
+Most postmortem templates ask for a timeline. Timelines are easy to produce and nearly useless to read, because they record what was done rather than what was believed. Six months later nobody remembers why step four seemed reasonable. The belief is the part that decays; the belief is the part worth preserving.
+
+Two habits, both cheap, both skipped under pressure. That's usually the shape of the things that compound.

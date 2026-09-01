@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Delivering Big/Bad News
+type: blog post
+area: Software engineering
+matched_human_doc: texts/michael-lopp/2003-03-09--delivering-big-bad-news.txt
+words: 712
+generated: 2026-08-31
+---
+
+Delivering Big/Bad News
+
+The worst version of this message gets written twice. Once in your head, on the walk over or in the ten minutes before the call, where it comes out clean and honest. And once out loud, where it comes out as something else entirely — hedged, buried under context, apologizing before the sentence has finished forming. Most engineers are good at diagnosis and bad at delivery, and the gap between those two skills is where trust quietly leaks out of a team.
+
+Here's the pattern worth noticing: bad news, delayed, doesn't stay the same size. It compounds. The slipped deadline you don't flag on Monday is still a slipped deadline on Friday, except now it's also a surprise, and surprise is the thing people actually get angry about. Nobody enjoys hearing "we're going to miss the date." Almost everybody is furious to hear it two days before the date, when it was knowable two weeks before. The news was never the problem. The timing was.
+
+So the first rule is simple and almost nobody follows it: say it as soon as you know it, not as soon as you're sure. You don't need certainty to flag risk — "this might slip, here's why, here's what I'm watching" is a completely different conversation than "this has slipped." One is a status update. The other is a confession. Give people the first version and you keep your options open — more hands, a scope cut, a renegotiated date. Give them the second and you've taken all of those options off the table for them.
+
+The second rule is about structure, not tone. Lead with the headline. Not the backstory, not the three things that went wrong before the thing that actually broke, not the mitigating factors — the headline. "The migration is going to take two more weeks" belongs in the first sentence, not the fifth paragraph. Engineers especially like to build up to bad news with technical justification, as if enough context will soften the landing. It doesn't. It just makes the listener spend the first two minutes trying to figure out where you're going, which they will experience as anxiety, not empathy. Say the thing. Then explain it.
+
+Third: come with a plan, but don't let the plan become a shield. "Here's what happened, here's what we're doing about it, here's what we need from you" is the right shape. What's not the right shape is spending all your energy on the plan because the plan is the comfortable part to talk about, while the actual impact — the thing the other person needs to go manage — gets a single vague sentence. If leadership needs to reset a customer commitment, say so plainly. Don't make them extract it from you.
+
+Fourth, and this one's harder to internalize: the news isn't about you. When something's gone wrong on your watch, the instinct is to manage your own exposure — to explain, to contextualize, to make sure everyone understands it wasn't really your fault. Some of that is fine in the room later, one-on-one. In the initial delivery, it reads as self-protection at the expense of clarity, and people notice. The version that lands well is the one where you clearly know the news is bad for them, not just inconvenient for you.
+
+None of this means being blunt to the point of carelessness. There's a difference between direct and cold. You can say "we broke prod for forty minutes and I own the root cause" with real regard for the person hearing it — matching their stake in the outcome, giving them room to react, not rushing past the moment to get to the reassurance. Compressing the message so it's easy to hear is not the same as hiding it.
+
+The engineers who get a reputation for judgment aren't the ones who never have bad news. Everyone ships bugs, misses estimates, breaks things. The reputation gets built in the fifteen minutes after they find out — whether they say it early, say it straight, and show up with an actual plan instead of a story about why it isn't really their fault. That's a learnable skill, not a personality trait, which is good news, deliverable on its own terms.

@@ -1,0 +1,54 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: peterme.com: May 05, 2003 Archives
+type: blog post
+area: Design, UX & product
+matched_human_doc: texts/peter-merholz/2003-05-05--peterme-com-may-05-2003-archives.txt
+words: 745
+generated: 2026-08-31
+---
+
+# peterme.com: May 05, 2003 Archives
+
+**Information Architecture is Not a Discipline, It's a Deliverable**
+*posted 11:47am*
+
+Had another one of those conversations last night, the kind that starts over beers and ends with someone drawing boxes and arrows on a cocktail napkin. A friend — smart guy, working IA at a agency I won't name — was lamenting that nobody can agree on what Information Architecture actually *is*. Is it the sitemap? Is it the taxonomy? Is it the whole practice of shaping how people find things?
+
+I've been saying for a while now that we're fighting the wrong battle. The question isn't "what is IA" — the question is what we're actually trying to accomplish, which is coherent, humane experiences for people trying to get something done. IA is one lens. Interaction design is another. Visual design, content strategy, usability — these aren't competing disciplines fighting for territory, they're facets of the same problem. The org chart wants clean boundaries. The work doesn't care about the org chart.
+
+This is, not coincidentally, why a bunch of us keep gravitating toward this clunky phrase "user experience" even though it sounds like something a consultant invented to justify a higher day rate. It's clunky because it's trying to name something that resists naming — the whole of the thing, not the parts.
+
+---
+
+**On Jesse's Book**
+
+Speaking of naming the whole thing — if you haven't picked up Jesse James Garrett's *Elements of User Experience* yet, do it. It came out last year but I keep coming back to that diagram, the one with the five planes stacked up from strategy to surface. I've seen it taped to more studio walls in the last six months than any other artifact in this field. Say what you want about diagrams-as-arguments (I have complicated feelings about the reduction), but it gave a scattered practice a shared vocabulary, and shared vocabulary is worth more than people give it credit for. Half of our disagreements are just people using the same word to mean different things.
+
+---
+
+**Weblogs, Still**
+
+Somebody asked me at a conference last month, only half-joking, whether I was tired of talking about blogs yet. Fair question, given my history with the word. But I'll say this: watching weblogs move from "weird hobby for people who like typing about themselves" to "thing that design and product teams are quietly using to think out loud" has been one of the more satisfying trend-lines to watch. Not because it's a technology worth worshipping — RSS is plumbing, not revelation — but because the format forces a kind of honesty. You can't hide behind a polished deliverable. You post the half-formed thought and let people argue with it.
+
+That's basically what this entry is.
+
+---
+
+**Usability Testing Theater**
+
+Small rant. I sat in on a usability session recently where the moderator had a script so rigid, so committed to "not leading the participant," that by the end nobody in the room — including the participant — had learned anything they didn't already suspect going in. This happens more than we admit. We've turned a genuinely powerful method into a compliance ritual: five users, a one-way mirror, a report nobody reads past the executive summary.
+
+The good researchers I know treat the session as a conversation, not a deposition. They follow tangents. They let the participant's confusion be interesting rather than an inconvenient data point to note and move past. Rigor doesn't mean rigidity. If your test plan can't survive contact with an actual human being doing an actual unexpected thing, it wasn't testing anything real to begin with.
+
+---
+
+**Post-Bust Optimism, Cautiously**
+
+It's strange watching the field steady itself after the last couple of years of contraction. A lot of good people got laid off, a lot of bad practices got exposed as unsustainable, and what's left feels — smaller, but more serious. Fewer people doing this because it's where the money briefly was, more people doing it because they actually care whether the thing works. I don't want to overstate the silver lining; plenty of talented folks are still scraping by on contract work and there's nothing romantic about that. But there's a seriousness to the conversations happening now — in mailing lists, at meetups, in comment threads under posts like this one — that feels different from the froth of '99. We're arguing about craft now, not valuations. I'll take it.
+
+---
+
+*Comments (14) — Trackback (2)*

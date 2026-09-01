@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Paul Buchheit: Quick: Wolves
+type: blog post
+area: Software engineering
+matched_human_doc: texts/paul-buchheit/2007-06-01--paul-buchheit-quick-wolves.txt
+words: 376
+generated: 2026-08-31
+---
+
+# Paul Buchheit: Quick: Wolves
+
+Paul Buchheit — the guy who built Gmail, who wrote "don't be evil" on a whiteboard — has a habit of posting things that are two sentences long and take a week to stop thinking about. One of them is about wolves.
+
+The gist: a wolf pack running down prey doesn't succeed because any single wolf is faster than the elk. It succeeds because the pack is relentless and coordinated, and the elk eventually makes a mistake. The wolves don't need a burst of brilliance. They need to still be there in hour six.
+
+That's an uncomfortable frame for engineers, because most of us were selected on burst. Interviews reward the flash of insight. Promotion packets reward the clever architecture. The whole cultural mythology of the field is the 10x sprint, the weekend rewrite, the one person who saw the trick nobody else saw.
+
+But look at what actually kills a system in production. Not a rival team's superior algorithm. It's the slow accumulation of unhandled cases, the retry logic that was almost right, the dashboard nobody checked. Software doesn't lose to a faster competitor nearly as often as it loses to its own exhaustion — the team that stopped chasing.
+
+The wolf frame suggests something specific about how to work. First: durability beats intensity. A code review habit that survives a bad quarter is worth more than a heroic refactor that nobody maintains. Second: pressure is a strategy, not a mood. You don't have to solve the flaky test today; you have to not let it out of your sight. Keep it in the ticket queue, keep it visible, keep the pack moving toward it. Third: the mistake you're waiting for is usually yours. The bug reveals itself when you've been staring long enough that your own wrong assumption finally becomes visible. Debugging is mostly outlasting your own model of the system.
+
+There's a version of this that curdles into grind culture, and Buchheit isn't saying that. Wolves rest. Packs rotate. The point isn't hours; it's continuity of attention across time, which is a different resource than effort and much rarer.
+
+The elk is faster than you. It's been faster than you the whole time. You're still going to eat.

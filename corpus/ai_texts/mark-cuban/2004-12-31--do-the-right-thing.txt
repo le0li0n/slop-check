@@ -1,0 +1,31 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Do the Right Thing
+type: blog post
+area: Management & strategy
+matched_human_doc: texts/mark-cuban/2004-12-31--do-the-right-thing.txt
+words: 955
+generated: 2026-08-31
+---
+
+Do the Right Thing
+
+Every management team has a moment when the analysis runs out and a judgment call remains. The spreadsheet says one thing, the incentive plan says another, and the quarter's numbers are watching. What happens in that gap is not a footnote to strategy. It is strategy.
+
+Most executives will tell you they already know this. Ethics training exists, values are painted on the lobby wall, and the code of conduct is signed every January. And yet the phrase "do the right thing" keeps resurfacing in postmortems precisely because it was absent in the moment that mattered. The gap is rarely a gap in values. It is a gap in structure — the incentives, information flows, and decision rights that determine whether a good instinct survives contact with a Tuesday afternoon deadline.
+
+Consider the shape of the problem. Doing the right thing is almost always locally costly and globally beneficial. The salesperson who discloses a product limitation loses the commission this quarter but preserves the account for years. The manager who reports a safety near-miss slows this week's output but prevents next year's catastrophe. The executive who declines a deal with a client whose practices don't hold up protects the firm's reputation at the cost of a number that would have looked good on a slide. In every case, the person closest to the decision bears the cost, and the organization captures the benefit — later, diffusely, and often invisibly to whoever made the sacrifice. That mismatch is not a personal failing. It is a design flaw, and design flaws are the ones strategy is supposed to fix.
+
+This is why "hire good people and trust them" is necessary but not sufficient. Good people operating inside a system that punishes candor will, on average, become less candid — not because they changed, but because the system selected for silence and they adapted like anyone would. The task for leadership is not to find people immune to incentives. Such people are rare and you should not build a strategy that depends on their rarity. The task is to build incentives that don't require a saint to produce the right outcome.
+
+Concretely, that means a few unglamorous things. It means measuring what you actually want, not merely what is easy to measure — because whatever gets measured gets optimized, and whatever gets optimized eventually gets gamed if it diverges from the true goal. It means separating the messenger from the message: if the person who reports a problem is the one who gets blamed for it, you will very quickly stop hearing about problems, and you will not find out until they are expensive. It means giving people time-horizon cover — explicitly telling a team that a short-term hit taken for a long-term reason will not be held against them at review time, and then actually not holding it against them, because the first time you do, the policy dies and everyone remembers.
+
+It also means noticing that "the right thing" is frequently not a mystery requiring a committee. Most ethical failures in organizations are not the product of genuinely hard dilemmas debated in good faith and resolved wrongly. They are the product of a clear signal that got buried under a deadline, a reporting line that had no room for bad news, or a leader who asked a question they didn't actually want answered honestly. The philosophical case is usually easy. The organizational case — will raising this cost me anything — is what's actually being decided, often without anyone framing it that way.
+
+There is a strategic argument here beyond the moral one, and it's worth being explicit about it rather than leaving it implied. Reputation compounds. Trust, once spent, is expensive to rebuild and the rebuilding tax is paid by future you, with interest, at the worst possible time. Every quarter in which a company quietly cuts corners is a quarter in which it is drawing down a reserve that does not appear on any balance sheet but is very real to customers, regulators, and employees who are all, in their own ways, watching how the organization behaves when it thinks no one is watching closely. The firms that treat integrity as a cost center are, without exception, the ones later treating a scandal as an emergency. The math was available the whole time; it was just discounted at an unreasonable rate.
+
+None of this argues for sanctimony. "Do the right thing" is not a slogan to be recited in town halls while the underlying incentive structure goes untouched — that combination produces cynicism faster than silence would have. Nor does it mean pretending every decision is a moral one; most are ordinary tradeoffs and treating them as ethical dramas is its own kind of dysfunction that exhausts people and cheapens the label for when it's actually needed. What it asks of leadership is narrower and more tractable: look at where the system currently makes the right call expensive for the individual and cheap for the organization to ignore, and close that gap deliberately, one incentive, one reporting line, one performance metric at a time.
+
+The organizations that get this right are not the ones with the most inspiring values statement. They are the ones where the easiest path and the right path have been engineered to overlap as often as possible, so that most people, most of the time, don't need to be heroes to do well by the people around them. That is a design problem, and design problems are solvable. Strategy's job is not to hope for the right thing. It is to build the conditions under which the right thing is also, most days, the obvious one.

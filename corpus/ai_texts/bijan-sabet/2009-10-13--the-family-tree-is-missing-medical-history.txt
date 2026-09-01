@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: The family tree is missing medical history
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/bijan-sabet/2009-10-13--the-family-tree-is-missing-medical-history.txt
+words: 371
+generated: 2026-08-31
+---
+
+# The family tree is missing medical history
+
+Every founder can draw you their cap table. Almost none can draw you the other chart — the one that shows which of their beliefs came from where, and what happened to the people who held those beliefs before them.
+
+Startups inherit far more than they invent. A founder who spent four years at a company that grew through outbound builds an outbound motion. An operator who watched a rewrite destroy a quarter refuses rewrites forever. A partner who lost money on hardware in 2015 has a hardware thesis shaped by that loss, whether or not the thesis is still true. These inheritances get passed down as instinct, which is exactly the problem: instinct arrives without provenance.
+
+The family tree gets recorded. The PayPal Mafia diagrams, the "ex-Stripe" line in a pitch deck, the alumni networks that pattern-match into term sheets — we track lineage obsessively. What we don't track is the medical history. Which practices killed the parent company. Which of the inherited habits was load-bearing at the last company because of a specific condition that no longer holds — a distribution advantage, a zero-rate environment, a regulatory window that closed.
+
+The failure mode is subtle. It isn't founders doing obviously wrong things. It's founders doing things that worked brilliantly at 400 people, at a company with a brand, in a market with different unit economics. The practice is sound; the transplant is rejected. And because everyone in the room shares the same lineage, no one is positioned to notice.
+
+For investors, this is a diligence question that mostly goes unasked. Not "where did you work?" but "what did you learn there that you've since had to unlearn?" The founders who can answer are the ones who have actually done the audit. The ones who can't are running someone else's playbook and calling it conviction.
+
+The useful exercise takes an hour. List the five practices you consider non-negotiable. For each one, write down where it came from and what conditions made it work. Then check whether those conditions still hold.
+
+Some of them won't. That's the point — a family history is only useful if it tells you what to screen for.

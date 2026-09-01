@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Problems with MakeAShorterLink
+type: blog post
+area: Software engineering
+matched_human_doc: texts/aaron-swartz/2002-05-21--problems-with-makeashorterlink.txt
+words: 358
+generated: 2026-08-31
+---
+
+# Problems with MakeAShorterLink
+
+The joke writes itself: `makeashorterlink.com` is twenty characters before you reach the first slash. TinyURL is nine. Bit.ly is six. A service whose entire value proposition is character economy spent a third of its budget on its own name, and that miscalculation is a useful lens on the whole category.
+
+MakeAShorterLink launched around 2001, a year or so ahead of TinyURL, and it lost anyway. Not because the redirect logic was wrong — a 301 and a hash table is not hard engineering — but because the product was a domain name, and it picked a bad one. There's a lesson there about identifying which part of your system is actually the product. The code was commodity. The namespace was everything.
+
+The deeper problem is architectural, and it outlived the service. A shortener inserts a mandatory third party into a link's resolution path. Every shortened URL is a dependency on a company continuing to exist, continuing to pay for a domain, and continuing to serve traffic it can't monetize. MakeAShorterLink shut down in 2009 and folded its redirects into TinyURL — a genuinely graceful exit, and one nobody should have counted on. Most shorteners just stop. When they do, every link they ever minted becomes a 404, and there's no way to recover the target because the mapping only ever lived on their disk. We built a load-bearing layer of the web's citation graph on unfunded side projects.
+
+Then there's opacity. A shortened link tells the user nothing about where it goes, which is a phishing primitive dressed as a convenience. Preview features helped, but they're opt-in, and opt-in security controls are decorative. Add the analytics trade: shorteners see every click, which is precisely why the free ones stayed free.
+
+The constraint that created these services — SMS at 160 characters, then Twitter at 140 — is largely gone. Platforms shorten inline now, or display a friendly title over an arbitrary href. The problem got solved by the presentation layer, which is where it belonged.
+
+MakeAShorterLink's real failure wasn't the name. It was building a business on a temporary limitation and calling it infrastructure.

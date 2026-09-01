@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: John Battelle's Search Blog A Morning with Brewster
+type: blog post
+area: Technology & media
+matched_human_doc: texts/john-battelle/2003-12-05--john-battelle-s-search-blog-a-morning-with-brewster.txt
+words: 343
+generated: 2026-08-31
+---
+
+John Battelle's Search Blog: A Morning with Brewster
+
+I spent this morning with Brewster Kahle, and as usual, walked away recalibrated. There's a particular register Brewster operates in — equal parts engineer, archivist, and evangelist — that makes every conversation with him feel like a check-in with the internet's own conscience. We talked, as we tend to, about the Internet Archive, about what it means to build permanent infrastructure on top of an industry that treats permanence as an afterthought.
+
+What struck me this time was how little Brewster's core thesis has shifted even as everything around it has. The web he set out to archive decades ago was a scrappy, open thing. The web today is walled, algorithmic, and increasingly mediated by platforms that would rather you not leave a trace. Brewster's answer hasn't changed: build the library anyway. Assume good actors will eventually need the record, even if the platforms of the moment have no interest in preserving it.
+
+We got into the mechanics — scale, cost, the sheer physical logistics of storing a meaningful slice of human output — but the conversation kept snapping back to purpose. Brewster has a way of making infrastructure sound like a moral position, and after a few hours with him, you start to believe it is one. In a media landscape obsessed with the next quarter's engagement numbers, there's something clarifying about talking to someone whose planning horizon is measured in centuries.
+
+I left thinking about the asymmetry: the cost of not preserving something is invisible until the moment you need it, and by then it's too late. Brewster has built an institution around making that cost visible before it's paid. For an industry that increasingly treats its own history as disposable — deleted tweets, sunset APIs, dead platforms — that's not a nostalgic instinct. It's a competitive one.
+
+If you haven't spent time with Brewster or the Archive's work lately, it's worth doing. The questions he's asking about permanence, access, and who gets to own the record are only going to matter more.

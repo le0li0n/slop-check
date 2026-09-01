@@ -1,0 +1,43 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: How to be a star performer: 4 things to get good at
+type: blog post
+area: Management & strategy
+matched_human_doc: texts/penelope-trunk/2006-07-21--how-to-be-a-star-performer-4-things-to-get-good-at.txt
+words: 768
+generated: 2026-08-31
+---
+
+How to Be a Star Performer: 4 Things to Get Good At
+
+Most advice on becoming a "star performer" is really advice on becoming a more diligent version of an average performer: work harder, communicate better, manage your time well. Useful, but insufficient. The actual gap between star performers and everyone else isn't effort — it's a small set of specific, learnable skills that most people never deliberately practice. Here are four.
+
+**1. Framing the problem before solving it**
+
+Average performers get handed a problem and start working it immediately. Star performers spend disproportionate time making sure it's the right problem before they touch it. This looks slow in the moment and pays off enormously later, because most organizational waste isn't inefficient execution — it's efficient execution of the wrong thing.
+
+Concretely: when you're asked to fix something, resist the pull to jump into solution mode. Ask what happens if this problem is never solved — does anyone actually notice? Ask whether the request as stated is the real constraint, or a proxy for something else the requester hasn't articulated. Ask who else has tried to solve this and what happened. This isn't about being contrarian or slow-walking urgent work; it's about recognizing that a well-framed problem is often 80% solved, and a poorly framed one can consume months without producing anything useful.
+
+**2. Building networks of relevant expertise**
+
+Star performers aren't necessarily smarter or more technically skilled than their peers — the research on this is fairly consistent. What distinguishes them is that they know who to ask. They've built a network of people whose expertise they can call on quickly, and — just as importantly — people call on them, because they've made themselves useful to others first.
+
+This is a skill, not a personality trait. It means investing time in relationships before you need them, not when a deadline is bearing down. It means being the person who responds generously when a colleague asks for five minutes, because that generosity compounds. It means knowing not just who's technically strong, but who has organizational memory, who has influence without formal authority, and who will give you an honest read when everyone else is telling you what you want to hear. If you find yourself solving every problem alone, you're not being self-sufficient — you're operating below your actual capacity.
+
+**3. Managing up, sideways, and your own visibility**
+
+A surprising amount of what separates star performers from equally capable colleagues is how deliberately they manage the perception of their work — not through self-promotion, but through making sure the right people understand what they're doing and why it matters, at the right level of detail, at the right time.
+
+This means translating your work into terms that matter to your manager's priorities, not just your own. It means flagging problems early, before they become crises that reflect badly on you, rather than hoping they resolve themselves. It means understanding that "doing good work" and "being seen as doing good work" are related but distinct problems, and that neglecting the second one systematically disadvantages people who assume the work should speak for itself. It rarely does, not because organizations are unfair, but because attention is scarce and nobody has the bandwidth to reconstruct your contribution from first principles.
+
+**4. Taking initiative that isn't asked for**
+
+The fourth skill is the willingness to do things nobody assigned — to notice a gap, decide it's worth closing, and act without waiting for permission or a formal mandate. This is different from generic "proactiveness." It specifically means taking on work that has unclear ownership, uncertain payoff, and real risk of failure, because someone has to and the org chart doesn't make it obvious who.
+
+This is the highest-variance skill of the four. Taken poorly, it looks like scope creep or freelancing outside your lane. Taken well, it's how people become associated with outcomes rather than tasks — the difference between "did what was asked" and "made the thing happen." The distinguishing factor isn't boldness; it's judgment about which gaps are actually worth the risk, and enough self-awareness to know when initiative is landing as help versus as overreach.
+
+**The pattern underneath**
+
+None of these four are about working longer hours or being more naturally talented. They're about where you direct discretionary effort: toward the right problem, the right people, the right visibility, and the right unassigned gaps. That's also why they're hard to fake and slow to build — but for the same reason, they compound in a way that raw effort doesn't. Pick one you're weakest at and start there.

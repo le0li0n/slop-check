@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Dell Hell: One of many postscripts
+type: blog post
+area: Technology & media
+matched_human_doc: texts/jeff-jarvis/2005-07-29--dell-hell-one-of-many-postscripts.txt
+words: 357
+generated: 2026-08-31
+---
+
+# Dell Hell: One of many postscripts
+
+Twenty years on, the phrase still does work. When Jeff Jarvis posted about a broken Dell laptop in 2005 and the thread metastasized into a case study, the lesson everyone extracted was that customers now had a megaphone and brands had better start listening. Corporate blogs bloomed. Social media teams were budgeted. "Join the conversation" became a slide in every agency deck.
+
+The postscript nobody wanted: the conversation got joined, and then it got automated.
+
+What actually happened to customer complaint is not that companies started listening. It's that companies built enormous apparatus for *appearing* to listen, and that apparatus turned out to be cheaper than fixing the underlying product. The @-reply that says "DM us so we can look into this" is a Dell Hell descendant. So is the community forum where your thread sits, unanswered, alongside four hundred identical threads, each with its own SEO value. So is the AI agent that apologizes fluently and resolves nothing.
+
+The deeper structural point, which was visible in 2005 if you squinted: Jarvis's leverage came from being read. He had an audience, and the audience was concentrated. That leverage was never distributed to everyone; it was distributed to people with platforms, and then the platforms fragmented so thoroughly that almost nobody has that kind of concentration anymore. A viral complaint in 2026 needs the algorithm's cooperation, and the algorithm has other priorities. The megaphone was real. It was also brief, and it belonged to fewer people than the triumphalist version admitted.
+
+There's a version of this postscript that ends in despair, and I don't think that's right either. Public complaint still works — irregularly, unpredictably, mostly when a journalist or a regulator is already circling. What's gone is the belief that it works *systematically*, that transparency was a mechanism rather than an occasional accident.
+
+The useful thing to carry forward is more modest than the 2005 lesson. Not "the customer has power now." Rather: institutions respond to whatever they're measured on, and for a few years the measurement was public embarrassment. Find what's being measured today. That's where the leverage sits.

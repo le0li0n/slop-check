@@ -1,0 +1,55 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: The XP 2002 Conference
+type: essay
+area: Software engineering
+matched_human_doc: texts/martin-fowler/2002-05-01--the-xp-2002-conference.txt
+words: 1335
+generated: 2026-08-31
+---
+
+# The XP 2002 Conference
+
+Sardinia in late May is warm enough that the sea is worth the trip on its own, which may explain why the third international conference on Extreme Programming and Agile Processes in Software Engineering drew the crowd it did to Alghero. But the weather was not the story. The story was that a movement which spent 1999 and 2000 being dismissed as a fad for cowboys showed up with data, with war stories from real projects, and — most interestingly — with internal disagreements sharp enough to be worth listening to.
+
+If you have been following XP from a distance, through Kent Beck's white book and the noise on the c2 wiki, the conference would have surprised you in one specific way: how much of the conversation had moved past evangelism. Nobody in Alghero was trying to convince anybody that testing first was a reasonable thing to do. The arguments were about scale, about measurement, about what happens when the practices meet an organization that did not ask for them.
+
+## The mood after the Manifesto
+
+Some context for why this year felt different. The Agile Manifesto was signed at Snowbird in February 2001, and XP 2002 was the first of these conferences to happen fully in its shadow. That has had two effects, one good and one worth watching.
+
+The good effect: XP is no longer the only thing in the room. Scrum practitioners, Crystal people, DSDM consultants, and FDD advocates were all present, and the cross-talk was genuinely productive. Several of the best hallway conversations I had were people comparing how Scrum's sprint structure and XP's iteration planning solve overlapping problems with different emphases. The dominant view seemed to be that Scrum's project-management wrapper and XP's engineering practices are complementary rather than competing, and a few teams reported running both together with no particular friction.
+
+The effect worth watching: "agile" is becoming a marketing term. There were consultants at this conference selling agile transformation to organizations that want the velocity without the discipline — the standups without the tests, the iterations without the customer. Several speakers named this directly. If your management reads a magazine article and comes back asking for "agile," the first question to ask is which practices they are actually willing to fund.
+
+## What people are arguing about
+
+**Pair programming remains the hard sell, and now there is evidence.** Laurie Williams' work continues to be the most-cited empirical result in the field — roughly a 15% increase in total effort for pairs versus individuals, offset by faster completion in elapsed time and a meaningful drop in defect density. The interesting thing at this conference was that people were pushing on the boundaries of that result rather than just quoting it. When does pairing pay? The emerging practitioner consensus is: on novel or complex work, on anything touching a critical path, and on any code where the knowledge would otherwise live in one person's head. Not on routine, well-understood tasks, and not for eight hours a day — several teams reported that four to six hours of pairing is the sustainable ceiling before people are cooked.
+
+The honest counterpoint, raised more than once: pair programming has a personality cost that the studies do not capture well. Some excellent developers are genuinely worse when paired. Teams that mandate 100% pairing tend to lose those people. Teams that make it available and default-on for hard problems seem to keep them.
+
+**Testing has quietly become the least controversial practice.** JUnit and its ports have done more to spread XP than any book. There was a striking amount of practical content on testing at the boundaries — databases, GUIs, legacy code with no seams — which is exactly where test-first breaks down in practice. The techniques on offer were mostly about dependency inversion and hand-rolled fakes: extract an interface, pass in a stub, keep the untestable layer thin enough that you can eyeball it. Mock objects came up repeatedly, though the vocabulary is still settling and different people meant somewhat different things by the term.
+
+The refactoring-plus-tests combination is where XP's real argument lives, and it is starting to win on grounds that have nothing to do with methodology preference. If you have a test suite that runs in two minutes, you can change your design whenever you learn something. If you do not, your design ossifies. That is a claim about economics, not about values, and it is the one that persuades skeptical senior engineers.
+
+**Scale is the open wound.** XP was specified for ten or twelve people in a room. Most of the audience works in organizations considerably larger than that, and the honest answer to "how do I run XP with sixty developers" is still that nobody quite knows. The proposals on offer split into two camps. One says: partition the system and the team so that each subteam is XP-sized and owns a coherent chunk, then manage the interfaces between them with the same discipline you would apply to an external vendor. The other says: keep a single codebase with collective ownership and invest heavily in continuous integration to make the merge problem tractable.
+
+Both camps agreed on one thing, which I think is the most durable takeaway from the conference: the integration infrastructure is the limiting factor. If your build takes an hour and breaks twice a week, no amount of process ceremony will save you. CruiseControl came up constantly. The teams that reported the smoothest scaling experiences were, without exception, the ones that had treated automated build and integration as a first-class engineering investment rather than a chore assigned to whoever was least busy.
+
+**The on-site customer is mostly fiction.** This was the most refreshing thread of the whole event. XP's customer practice assumes a knowledgeable business representative who sits with the team and makes decisions. In practice, that person is either unavailable, not empowered, or is actually five people with conflicting agendas. Several presenters described the workarounds: a proxy customer inside the team who does the requirements legwork and gets decisions ratified in batches; scheduled customer sessions rather than continuous presence; treating the customer role as a set of responsibilities to be assigned rather than a seat to be filled. None of this is in the book. All of it is what teams actually do.
+
+## What to take home
+
+If you are considering adopting some of this, the pattern that emerged from the more credible reports is incremental and unglamorous:
+
+Start with automated tests and continuous integration. These have the best ratio of benefit to political cost, they require no permission from anyone outside the team, and they make everything else possible. A team with a fast, trustworthy build and a decent test suite has bought itself the option to adopt the rest.
+
+Then short iterations with something demonstrable at the end. This is where the feedback loop closes with the business, and it is what changes the conversation from status reports to working software.
+
+Then refactoring, which is really just the ability to spend the capability the tests bought you. Then pairing, selectively. Then the rest, if it fits.
+
+Do not adopt the whole thing as a package because a conference talk said the practices reinforce each other. They do reinforce each other, but a team that swallows twelve practices in one gulp will fail at several of them simultaneously and conclude the method does not work.
+
+The most useful thing about XP 2002 was the tone. Three years ago this community was defending itself. In Alghero it was doing something closer to engineering: measuring things, admitting where the practices fall short, and arguing about the boundaries in good faith. Whether the label survives the consultants is anyone's guess. The practices — tested code, continuous integration, short feedback loops, designs you are allowed to change — are going to outlive the label regardless, because they solve problems that every team has whether or not it has heard of Kent Beck.

@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Stevey's Blog Rants: Math For Programmers
+type: blog post
+area: Software engineering
+matched_human_doc: texts/steve-yegge/2006-03-01--stevey-s-blog-rants-math-for-programmers.txt
+words: 411
+generated: 2026-08-31
+---
+
+# Stevey's Blog Rants: Math For Programmers
+
+Every couple of years someone writes a post insisting that programmers need more math, and every couple of years a chorus of working engineers points out they've shipped a decade of production code without ever touching an eigenvalue. Both sides are right, and both sides are missing the point, which is that "math" is doing an enormous amount of hand-waving in this argument.
+
+Nobody arguing for math actually means math. They mean a specific, narrow slice of it: the discrete stuff. Combinatorics, graph theory, a little probability, some logic. Nobody is out here insisting you need real analysis to write a REST API. When people say "programmers should know more math," what they actually mean is "programmers should be comfortable with precise, formal thinking about discrete structures," which is a much less scary and much more defensible claim. It's also, not coincidentally, exactly what a CS theory course teaches, minus the intimidating font.
+
+Here's the part nobody wants to say out loud: most of you don't need it, most of the time, and you're right not to go back to school for it. The average CRUD app is bounded by IO, org charts, and product indecision, not by asymptotic complexity. You will retire having never used a Fourier transform and you will be fine.
+
+But there's a smaller, more expensive failure mode that math fixes and nothing else does: not knowing what you don't know. The engineer who reaches for an O(n²) nested loop because they've never internalized what a hash map buys them. The one who "tests" a probabilistic system with three manual runs and calls it verified. The one who can't tell a genuinely hard problem from one they're just personally bad at, because they have no formal vocabulary for hardness. That's not a math gap, it's a taste gap, and math happens to be where taste gets trained, because math is the one discipline that will not let you bluff.
+
+So the actual advice, stripped of the flame war: you don't need a math degree, you need enough discrete math to recognize the shape of a problem before you start typing. Learn it the way you'd learn a tool, not a religion. Skip the parts that don't pay rent for what you build. And the next time someone tells you "real engineers know math," feel free to ask them to invert a binary tree on a whiteboard and watch what happens.

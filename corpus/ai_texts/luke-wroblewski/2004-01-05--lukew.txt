@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: LukeW
+type: blog post
+area: Design, UX & product
+matched_human_doc: texts/luke-wroblewski/2004-01-05--lukew.txt
+words: 377
+generated: 2026-08-31
+---
+
+LukeW
+
+If you've spent any time in the design world, you already know the name. LukeW Ideation + Design is Luke Wroblewski's long-running blog and speaking practice, and it's quietly shaped how a generation of product teams think about forms, mobile, and interaction design. He's the person who made "mobile first" a design principle rather than a scheduling constraint, and his 2009 argument that designing for mobile forces better decisions everywhere else has aged into something close to industry doctrine.
+
+What makes LukeW's work durable isn't a signature aesthetic. It's the method. His writing on web forms, for instance, is built almost entirely on eye-tracking studies and conversion data rather than opinion. Single-column layouts, top-aligned labels, one thing per line — these weren't stylistic preferences, they were conclusions drawn from watching real users fail at real forms. That evidence-first posture is the throughline across two decades of talks and posts: less "here's my taste," more "here's what happened when we tested it."
+
+For product and UX people, the practical value is in the specificity. LukeW rarely stays abstract. A post on input fields will tell you exactly where the label should sit and why; a talk on mobile app design will walk through actual screens from actual products, not composite mockups. That makes the ideas easy to steal — you don't have to interpret a philosophy, you can just apply the pattern and see if your metrics move.
+
+The other reason the site has stayed relevant is that Wroblewski never stopped being a practitioner. He was a VP of Product at Yahoo, co-founded Bagcheck, ran product at Google for years, and now works in AI product at Google — so the writing has always come from someone building the thing, not just observing it. That's a rarer combination than it should be: most design commentary is written by people one step removed from shipping.
+
+If you're newer to the field, LukeW's archive is worth treating as a syllabus rather than a blog — start with the forms research and the mobile-first talks, and you'll pick up a habit that matters more than any single pattern: test the assumption before you defend it. In a discipline that argues about taste constantly, that's the most useful thing he's modeled.

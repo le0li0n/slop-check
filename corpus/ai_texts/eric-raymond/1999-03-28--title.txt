@@ -1,0 +1,71 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Title
+type: essay
+area: Software engineering
+matched_human_doc: texts/eric-raymond/1999-03-28--title.txt
+words: 1314
+generated: 2026-08-31
+---
+
+# Title
+
+There's a file in every codebase I've worked in that nobody wants to touch. Not because it's dangerous, exactly — it's usually well-tested. It's because nobody can tell you what it's *called for*. The name is `utils.ts` or `helpers.py` or `CommonService.java`, and inside it are forty functions that share nothing except the fact that someone, at some point, didn't know where else to put them.
+
+I want to argue that this is not a filing problem. It's the most reliable diagnostic signal your codebase produces, and most teams read it backwards.
+
+## Naming is compression
+
+When you name something, you're asserting that a set of behaviors can be referred to by a single handle. That assertion is a claim about coherence. `RetryPolicy` claims that retry configuration is a thing — that it has edges, that you could point at code and say "this is inside, that is outside." The name is a compression of the concept, and like all compression, it only works if there's real structure to exploit.
+
+`utils` is what you get when the compression fails. It's not a name; it's the absence of one. It says: I have a set of things, and the only property they share is membership in this set. That's a tautology, not a concept.
+
+So when a name resists you — when you sit there cycling through `Manager`, `Handler`, `Service`, `Coordinator` and none of them land — you have learned something. You've learned that the boundary you drew doesn't correspond to anything. The code inside isn't one idea. Naming difficulty is a *design* signal that arrives dressed as a *vocabulary* problem, which is why we consistently misfile it.
+
+I've watched this play out in code review a hundred times. Someone says "hmm, not sure what to call this," and the reviewer says "how about `ProcessingContext`?" and everyone moves on. A real signal about the shape of the design just got resolved as a lexical inconvenience. Six months later that file has forty functions in it.
+
+## The tell
+
+The specific tell is the word "and." If you can only describe a class by saying it "validates the request and enriches it with user data and emits a metric," you don't have one thing. You have three, currently sharing an address.
+
+The counterargument is that this is just cohesion, which we've known about since Constantine and Yourdon in the seventies. Fair. But structured design gives you cohesion as something you *assess* — you look at a module and grade it. Naming difficulty gives you cohesion as something you *feel*, in the moment, for free, at the exact point where the decision is being made. That's a meaningful difference in ergonomics. Nobody runs a cohesion audit at 4pm on a Thursday. But everybody has to type a name.
+
+There's a second tell that's subtler: names that are technically accurate but that you'd never say out loud to a colleague. If your class is `AbstractRequestProcessorFactoryBean` but you'd describe it to a teammate as "the thing that figures out which parser to use," the gap between those two utterances is the design debt. The spoken version is what the thing actually is. The written version is what the architecture forced it to become. When those diverge, the architecture is imposing structure that the problem doesn't have.
+
+I'd go further: the spoken description is usually the better name. "The thing that figures out which parser to use" compresses to `ParserSelector`, and if `ParserSelector` doesn't fit into your abstract factory hierarchy, that's information about the hierarchy.
+
+## Domain names beat mechanical ones
+
+There's a well-known heuristic here — Kevlin Henney and others have made this case — that the good names come from the problem domain, not the solution domain. `Invoice`, `Shipment`, `Ledger`, `Trade`. The bad names come from the mechanics of the implementation: `Handler`, `Manager`, `Processor`, `Data`, `Info`.
+
+The reason isn't aesthetic. Domain names are *falsifiable*. If you name something `Invoice` and then add a method that has nothing to do with invoices, someone can point at it and say that doesn't belong. The name does work. It excludes.
+
+`Manager` excludes nothing. Anything can be managed. A name that can't be violated can't guide you, and a name that can't guide you will accumulate whatever happens to need a home. That's the actual mechanism by which `utils.ts` reaches four thousand lines: not laziness, but the total absence of a boundary condition. Nobody ever gets to say "that's not a util."
+
+This gives you a practical test. For any name you're considering, ask: what code would obviously *not* belong here? If you can answer immediately and specifically, the name is doing work. If you have to think, or if the answer is "I guess anything unrelated?", you've named a bag.
+
+## What to do when the name won't come
+
+The instinct is to push harder — open a thesaurus, ask the team, settle for something. I'd suggest treating the difficulty as a stop signal instead, and running through a short sequence.
+
+**First, try to say what it does in one sentence, out loud, with no "and."** If you succeed, name it that. Most naming problems dissolve here, because the trouble was that you were trying to name the *implementation* rather than the *responsibility*.
+
+**If the sentence needs an "and," split at the "and" and try to name the pieces.** Often one piece names easily and the other is the real problem. That's progress — you've localized the incoherence.
+
+**If the pieces still don't name, look at the data.** Frequently the reason a unit won't name is that it's organized around a *sequence* (things that happen at the same time) rather than a *concept* (things that change for the same reason). Temporal cohesion is the great generator of unnameable code. `startup.py` and `on_request.js` are the honest versions of this; `ApplicationContext` is the dishonest one.
+
+**If you're still stuck, name it badly, on purpose, and leave a note.** `TODO: this is three things — validation, enrichment, metrics — and I couldn't find the seam.` A deliberately bad name with an explanation is far more useful to the next person than a plausible-sounding one that conceals the problem. `MessageCoordinator` looks like someone knew what they were doing. It will survive for years on that basis alone.
+
+That last point is the one I'd most want to land. Good-sounding names are a form of technical debt with the interest payments hidden. They stop the questions. A name that sounds like it came from a design pattern gets treated as though it came from a design.
+
+## The limits
+
+I don't want to oversell this. Some things are genuinely hard to name and are fine: cross-cutting concerns, adapters that translate between two vocabularies neither of which is yours, code at the boundary of an external system whose model you don't control. If you're integrating with a vendor API whose concepts don't map onto your domain, the translation layer will be awkward to name because the awkwardness is real and external. Naming it awkwardly is correct.
+
+And some codebases genuinely need a small pile of unrelated functions. A `strings.ts` with six string helpers is not a crisis. The crisis is the growth curve — when the pile becomes the default destination, when "where does this go" gets answered with "utils" more than occasionally.
+
+But the general case holds. Naming is the cheapest design review available. It runs continuously, it costs nothing to invoke, and it produces a signal at precisely the moment you can still act on it — before the code is written, while the boundary is still soft.
+
+The next time a name won't come, don't reach for the thesaurus. Sit with the discomfort for ninety seconds and ask what the code would have to look like for the name to be obvious. Usually you already know. The name isn't hiding. The design is.

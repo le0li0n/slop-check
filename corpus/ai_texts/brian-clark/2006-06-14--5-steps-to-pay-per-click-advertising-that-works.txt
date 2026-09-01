@@ -1,0 +1,39 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: 5 Steps to Pay Per Click Advertising That Works
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/brian-clark/2006-06-14--5-steps-to-pay-per-click-advertising-that-works.txt
+words: 718
+generated: 2026-08-31
+---
+
+5 Steps to Pay Per Click Advertising That Works
+
+Every marketing team has run a PPC campaign that looked great on paper and delivered nothing but spend. The click-through rate was fine. The impressions rolled in. And then the reporting meeting arrived with a cost-per-acquisition number nobody wanted to explain. PPC isn't broken as a channel — it's usually broken as a process. Here are five steps that separate campaigns that convert from campaigns that just consume budget.
+
+**1. Start with intent, not keywords**
+
+The instinct is to open a keyword tool and start building lists. Resist it. Before you touch search volume data, map the intent behind each stage of your funnel. Someone searching "what is marketing automation" is not in the same buying mindset as someone searching "marketing automation pricing comparison." Bucket your keywords by commercial intent first, then build campaigns around those buckets rather than around product lines or department budgets. This single shift prevents the most common PPC failure: paying premium CPCs to educate people who were never going to buy this quarter.
+
+**2. Write ad copy for the search, not the brand**
+
+Most PPC ad copy reads like it was lifted from a homepage — broad value propositions, a tagline, a generic CTA. That copy ignores the fact that the searcher just typed something specific into a box. Match your headline to the query's language as closely as possible, then use the description lines to answer the objection that specific searcher is likely to have. A campaign targeting "enterprise CRM software" should not run the same ad as one targeting "CRM for small business." Segment your ad groups tightly enough that this level of specificity is actually possible — if an ad group has 200 keywords in it, no single ad can speak to all of them.
+
+**3. Send traffic to a page built for that traffic, not your homepage**
+
+This is where most budgets quietly leak. A paid click is expensive; a homepage is a compromise built for a dozen different audiences at once. If the landing page doesn't mirror the promise made in the ad — same language, same offer, same next step — conversion rate drops and Quality Score drops with it, which raises your CPCs on the next round of bidding. Dedicated landing pages per campaign theme aren't a "nice to have" for PPC; they're closer to a requirement. Even a stripped-down page with one message and one CTA will usually outperform a homepage redirect.
+
+**4. Set a measurement framework before you set a budget**
+
+Teams frequently launch campaigns with vague success criteria — "let's see how it does" — and then argue about whether it worked after the fact using whatever data happens to be available. Decide upfront what a conversion is, how it will be tracked, and what CPA or ROAS makes the channel worth continuing. This means conversion tracking and, ideally, offline conversion imports need to be wired up before spend starts, not audited afterward. If your sales cycle is long, define a leading indicator (qualified lead, demo booked) you can optimize toward in the short term while the true revenue signal catches up.
+
+**5. Review weekly, restructure monthly**
+
+PPC platforms reward attention, and they punish neglect with rising costs and stale creative. A weekly review should be tactical: pause underperforming keywords, adjust bids, refresh ad copy that's fatiguing, check search term reports for irrelevant queries eating budget. A monthly review should be structural: is the campaign architecture still matched to how the business is actually selling, are the landing pages still aligned with current offers, has the competitive landscape shifted the cost of key terms enough to warrant a different strategy. Teams that only do the weekly tactical pass tend to optimize a structure that's already wrong; teams that only do structural reviews miss the daily budget leaks.
+
+**Putting it together**
+
+None of these steps is exotic, and that's the point — PPC underperformance is rarely a targeting or bidding-algorithm problem. It's a process problem: intent gets skipped, copy gets genericized, landing pages get reused, measurement gets defined too late, and reviews stop happening once the campaign is "live." Tighten those five points and the platform's own optimization tools have something real to work with, instead of compensating for gaps in the setup underneath them.

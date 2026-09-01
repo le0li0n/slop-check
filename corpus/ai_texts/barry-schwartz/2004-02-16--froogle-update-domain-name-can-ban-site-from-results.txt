@@ -1,0 +1,26 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Froogle Update - Domain Name Can Ban Site from Results
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/barry-schwartz/2004-02-16--froogle-update-domain-name-can-ban-site-from-results.txt
+words: 352
+generated: 2026-08-31
+---
+
+**Froogle Update: Domain Name Can Now Ban Site from Results**
+
+Google's shopping search tool Froogle has quietly rolled out a change that marketers need to understand before their next catalog refresh: domain-level signals can now get an entire site excluded from Froogle results, not just individual product listings.
+
+Previously, if a single feed item violated formatting or content guidelines, Froogle would typically drop that item and leave the rest of your catalog untouched. Under the new system, repeated or severe violations tied to a domain — duplicate content across subdomains, mismatched pricing between the feed and the landing page, or thin/auto-generated product pages — can trigger a domain-wide suppression. That means a handful of bad SKUs could take your whole storefront out of Froogle results, not just the offending pages.
+
+For content and marketing teams, this raises the stakes on feed hygiene in a way that's easy to underestimate. A few practical takeaways:
+
+- **Audit your feed against your live pages regularly.** Price, availability, and title mismatches are the most common trigger, and they creep in silently when merchandising updates outpace feed syncs.
+- **Watch subdomains and staging environments.** If test or regional subdomains are indexed and mirror your main catalog, that's exactly the kind of duplicate-content pattern the new domain check is built to catch.
+- **Don't treat individual listing removals as isolated incidents.** If you're seeing a pattern of pulled listings, treat it as an early warning, not background noise — it may be building toward a domain-level action.
+- **Keep ownership of your domain structure centralized.** The more subdomains and mirrors a large organization runs, the harder it is to guarantee consistency, and consistency is now the thing being scored.
+
+The upside is that this rewards sites that already run clean, well-maintained feeds — those teams should see little to no impact. But for anyone managing a sprawling domain footprint or leaning on syndicated/auto-generated content, this is a meaningful shift in risk. Worth flagging to whoever owns your product feed pipeline this week, and worth adding a recurring feed-vs-live audit to your workflow if you don't already have one.

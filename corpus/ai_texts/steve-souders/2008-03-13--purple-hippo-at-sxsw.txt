@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Purple Hippo at SXSW
+type: blog post
+area: Software engineering
+matched_human_doc: texts/steve-souders/2008-03-13--purple-hippo-at-sxsw.txt
+words: 339
+generated: 2026-08-31
+---
+
+# Purple Hippo at SXSW
+
+Every year SXSW produces one booth that becomes shorthand for the whole conference, and this year it was Purple Hippo. Not because of the mascot costume working the expo floor in ninety-degree Austin heat, though that helped, but because the demo underneath it actually held up when engineers started poking at it.
+
+Purple Hippo is a runtime tracing layer for distributed systems that reconstructs causal chains across service boundaries without requiring you to rewrite instrumentation into every call site. The pitch sounds familiar until you watch it work: point it at a staging cluster, trigger a request, and it draws the actual dependency graph as traffic happens, inferring boundaries from timing and payload shape rather than relying entirely on propagated headers. For anyone who has debugged a latency spike across a mesh of microservices with incomplete trace coverage, that's the part worth caring about, not the branding.
+
+The team was upfront about the tradeoffs. Inference-based tracing means false positives under adversarial or highly asynchronous traffic patterns, and they showed a case where a fire-and-forget queue consumer got misattributed to the wrong producer. They're solving it with an opt-in header fallback for the systems where you can afford the instrumentation, which is a sane middle ground rather than a marketing dodge.
+
+What stood out was the honesty about scale. The current implementation samples at the edge and reconstructs centrally, which caps you well below what you'd want for a high-throughput payments path. They were candid on stage that the roadmap for streaming reconstruction is eighteen months out, not "coming soon." That kind of specificity is rare at a conference built on vague slides.
+
+If you're evaluating observability tooling, Purple Hippo is worth a pilot on a mid-traffic service where partial coverage is tolerable, not on anything tier-one yet. The open-source core is on GitHub already; the hosted reconstruction backend is still invite-only.
+
+Silly name, real engineering underneath. That combination is why it was the one demo people were still talking about on the flight home.

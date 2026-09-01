@@ -1,0 +1,77 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Daring Fireball: Movable Type Smart Quote Devilry
+type: blog post
+area: Software engineering
+matched_human_doc: texts/john-gruber/2002-08-01--daring-fireball-movable-type-smart-quote-devilry.txt
+words: 1438
+generated: 2026-08-31
+---
+
+# Daring Fireball: Movable Type Smart Quote Devilry
+
+There is a particular kind of bug that only reveals itself after you've shipped, that nobody files a ticket for, and that quietly poisons a corner of your data every day until someone happens to look. Text encoding bugs are the archetype. And within that genre, the smart quote bug is the reigning champion — a bug so persistent that it outlived Movable Type, outlived the blogging boom, and lives on in every CMS, comment box, and Markdown pipeline shipped since.
+
+The original was simple enough to describe in a sentence. Movable Type, like most publishing systems of its era, offered a "convert line breaks" and, in various plugins and Text Formatting options, a smart-quote transformation: turn `"` into `“` and `”`, turn `'` into `’`, turn `--` into an em dash. Delightful typography, automatic, free. Except the transformation was applied at the wrong layer, at the wrong time, and to the wrong scope — and so it happily rewrote the contents of your `<code>` blocks, your inline `<pre>` samples, and the attribute values inside your HTML. A post explaining a shell one-liner would render with curly quotes inside the command. Readers would copy it, paste it into a terminal, and get a syntax error they had no way to diagnose.
+
+That's the devilry. Not that the feature was wrong, but that it was right almost everywhere and catastrophically wrong in exactly the places a technical audience cared about.
+
+## The actual failure mode
+
+The instructive part is *why* this happens, because the same shape recurs constantly in systems that have nothing to do with typography.
+
+Smart-quote conversion is a **semantic** transformation. It depends on knowing that a given `"` is prose punctuation rather than a string delimiter, an HTML attribute quote, or part of a regex. But it was implemented as a **lexical** transformation — a regex pass over a string. Regexes don't know about semantics. They know about characters.
+
+So the implementation has to approximate semantics with lexical heuristics: skip anything between `<code>` and `</code>`, skip anything inside `<pre>`, skip anything that looks like it's inside a tag. Each heuristic is a guess about structure, made by a tool that cannot see structure. Nested tags break it. A `<code>` block containing a `<` breaks it. An attribute containing a `>` breaks it. The heuristics accumulate — SmartyPants, John Gruber's own implementation, grew a set of escaping rules (backslash escapes, a `<pre>`/`<code>`/`<kbd>`/`<script>` skip list) precisely because each new failure demanded another patch to the approximation.
+
+The bug is not in any one heuristic. The bug is the decision to run a structure-aware transformation on an unstructured representation. Everything after that is symptom management.
+
+Engineers recognize this shape from a dozen other contexts. Parsing HTML with regex is the famous one. But so is: sanitizing SQL by escaping quotes rather than using bind parameters. Rewriting URLs with string replacement rather than parsing and re-serializing. Reformatting code with a line-based diff. Detecting secrets in a repo with a pattern match over raw bytes rather than a tokenizer. In every case, the fix is the same and the resistance to it is the same: parse into a structure, transform the nodes you actually mean, serialize back out. It costs more. It is correct.
+
+## Idempotence, and why you can't just re-run it
+
+Here's the second-order problem, and the one that turns an annoying bug into a data-integrity incident.
+
+Naïve smart-quote conversion is not idempotent, and it is not reversible.
+
+Not idempotent: run a converter over text that already contains `“` and, depending on implementation, you may get double-encoded entities — `&amp;#8220;` where `&#8220;` was intended. Anyone who has watched a database accumulate `&amp;amp;amp;` over successive migrations knows this dance. Each pass looks harmless. Ten passes over five years produce a field nobody can read.
+
+Not reversible: once `"` has become `”`, you cannot mechanically recover which character the author typed, because `”` is also a legitimate character an author might type directly. The information is gone. If the transformation ran at write time — on save, mutating the stored record — you have destroyed the source. If it ran at read time, on render, you have preserved the source and can fix the renderer tomorrow.
+
+This is the single most portable lesson in the whole affair, and it generalizes far past typography:
+
+> Store what the user gave you. Transform on the way out.
+
+Write-time transformation feels efficient. You pay the cost once instead of on every render. But you've traded a cheap, repeatable computation for an irreversible mutation of your only copy of the truth. When the transformation turns out to be wrong — and it will, because it encodes a product decision, and product decisions change — you have no path back. Read-time transformation means a bug fix is a deploy. Write-time transformation means a bug fix is a migration, a backfill, and a long apologetic postmortem about the records you couldn't recover.
+
+The same reasoning is why you store raw event data and compute aggregates downstream, why you keep the original uploaded image alongside the thumbnails, why you log the request body rather than the parsed struct. Derived data should be derivable. If it isn't, it isn't derived data — it's primary data you've been treating carelessly.
+
+## The layering question
+
+There's a third lesson, subtler than the other two, about *where* a transformation belongs.
+
+Smart quotes are presentation. They belong at the presentation layer — arguably, given `text-rendering` and font features, they belong even further out than that. But they were implemented in the storage-and-templating layer, because that's where the string happened to be passing through and because that's where it was easy to add.
+
+This is how transformations end up in the wrong place almost every time: not by considered design, but by proximity. Someone needed the behavior, and the most convenient place to put it was wherever they were already editing. Over a few years you get a system where the ORM does HTML escaping, the template does date formatting, the serializer does currency rounding, and no single layer has a coherent contract about what it receives or what it emits.
+
+The diagnostic question is: *if I needed this same data in a different output format, would this transformation still be correct?* Smart quotes fail that test immediately. Serve that post as JSON to a mobile client, or as an RSS feed, or into a full-text search index, and the curly quotes are at best noise and at worst a correctness problem — search for `"foo"` and miss every document where the quotes got curled.
+
+Search indexing is where these bugs usually surface, incidentally, and usually years late. Someone reports that a query doesn't match a document that obviously contains the phrase. Three days of investigation later you discover the indexer sees `’` and the query box emits `'`, and the normalization step everyone assumed existed does not exist.
+
+## What to actually do
+
+The practical shape of getting this right isn't complicated:
+
+**Keep the source of truth pristine.** Whatever the user typed, stored byte-for-byte, in a known encoding, with the encoding recorded rather than assumed.
+
+**Parse before you transform.** If the transformation depends on structure — and typography, escaping, sanitization, and linking all do — build the structure first. A Markdown AST, an HTML DOM, a token stream. Then walk it and touch only the nodes you mean.
+
+**Make transformations idempotent where you can, and detectable where you can't.** If `f(f(x)) != f(x)`, that function should never be reachable from a retry path, a migration script, or an at-least-once queue consumer — which in practice means almost nowhere.
+
+**Normalize aggressively at the boundaries.** Anything that compares text — search, dedupe, cache keys, uniqueness constraints — should normalize Unicode (NFC, typically) and fold typographic variants before comparing. This is not the same as transforming the stored value; it's a comparison-time projection.
+
+**Test with adversarial text.** Your fixtures should include a `<code>` block full of quotes, an apostrophe-heavy sentence, nested tags, an em dash, a possessive on a word ending in *s*, and a string that has already been through the transformer once.
+
+The smart-quote bug is small. That's what makes it a good teacher. Nobody died, no money moved, a few shell commands didn't paste correctly. But the anatomy — lexical tools applied to semantic problems, irreversible transformations at write time, logic placed by convenience rather than by layer — is the anatomy of the bugs that *do* move money. It's worth recognizing in its harmless form, because you will meet it again wearing something heavier.

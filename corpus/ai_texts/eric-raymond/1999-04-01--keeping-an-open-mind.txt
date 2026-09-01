@@ -1,0 +1,59 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Keeping an Open Mind
+type: essay
+area: Software engineering
+matched_human_doc: texts/eric-raymond/1999-04-01--keeping-an-open-mind.txt
+words: 1065
+generated: 2026-08-31
+---
+
+# Keeping an Open Mind
+
+There's a particular kind of engineer I've come to admire, and it took me a long time to figure out what made them different. They weren't the fastest. They weren't the ones with the deepest knowledge of the runtime or the most impressive commit history. What they had was harder to name: when they were wrong, they found out sooner than everyone else.
+
+That's the whole thing, really. Not humility as a personality trait, not some abstract intellectual virtue. Just a shorter distance between holding a belief and discovering it doesn't hold. Everything else about open-mindedness in this profession is downstream of that.
+
+## Debugging is the discipline in miniature
+
+Every debugging session is an argument you're having with reality, and reality does not lose. You have a model of what the system does. The system is doing something else. The gap between those two is the bug, and the only way to close it is to change your model — because you can't change what the system did.
+
+Yet watch how people actually debug. They form a hypothesis in the first ninety seconds and then spend forty minutes trying to confirm it. They add logging in the place they already suspect. They read the code they already think is broken. When the logs come back clean, the reaction isn't "I was wrong about where this lives," it's "the logging must be in the wrong place." The hypothesis has become load-bearing, and dropping it now would mean the last forty minutes were wasted — so the sunk cost quietly buys itself another forty.
+
+The engineers who are fast at debugging aren't guessing better. They're holding their guesses loosely enough that a contradicting observation actually lands. When the log line doesn't appear, they update: not "strange," but "so this code path isn't running, which means I've been wrong about the call graph." That's a real update, and it's cheap only if you weren't attached.
+
+A practical version of this: before you start, write down what you expect to see if you're right — and what you'd expect if you're wrong. Two lines in a scratch file. It sounds like ceremony, but it converts a vague hunch into something falsifiable, and falsifiable beliefs are much easier to let go of.
+
+## The codebase you inherited was written by people with reasons
+
+You've had this moment. You open a file, you find something baroque and awful, and the immediate feeling is contempt. Who wrote this? Why is there a retry loop with a hardcoded four-second sleep? Why does this function take a boolean flag that inverts half its behavior?
+
+Chesterton's fence is the standard reference here, and it's right, but it's usually deployed as a brake — don't remove things you don't understand. The more useful framing is that the weird code is *evidence*. Someone hit something you haven't hit yet. The four-second sleep is a fossil of a real incident. The boolean flag is a fossil of a deadline. You're looking at a compressed record of constraints that no longer announce themselves.
+
+This doesn't mean the code is good. Most of it isn't, and plenty of it is genuinely just bad. But "this is bad" and "I understand why this exists" are different claims, and the second one is worth thirty seconds of `git log -p` before you make the first one. Sometimes the answer is that a junior engineer was tired on a Thursday. Sometimes it's that the upstream API returns 200 with an error body and this was the only way anyone found to handle it. You want to know which before you rewrite it.
+
+The same courtesy applies forward. Your code will be read by someone with less context than you have right now, and they'll feel that same flash of contempt. The comment that explains *why* — not what, why — is the cheapest gift you can leave them.
+
+## Strong opinions, weakly held is mostly a lie we tell
+
+The phrase gets repeated because the first half is fun and the second half is aspirational. In practice, most people are excellent at the strong opinions and terrible at the weak holding. Opinions are social. Once you've argued for microservices in a design review, once you've told three people that ORMs are a trap, the position is attached to your standing. Abandoning it isn't just an update — it's a small public cost.
+
+Which means the honest version of open-mindedness has to account for the cost. A few things that help:
+
+**Argue for a position you don't hold.** Not as a debate exercise — actually try to build the strongest case for the approach you rejected. If you can't state the other side in a form its advocates would recognize, you haven't earned your confidence in your own side.
+
+**Notice when you're defending rather than thinking.** They feel different from the inside. Defending is fluent and fast; you already have the sentences. Thinking is slower and slightly uncomfortable. If your response to a challenge arrives fully formed, that's a signal, not a sign of expertise.
+
+**Change your mind out loud.** "I was wrong about the queue, here's what changed my mind" costs less than you think and does more than almost anything else to make it safe for everyone else. Teams calcify when nobody's ever seen it done.
+
+**Separate taste from truth.** A lot of what we defend as technical judgment is aesthetic preference wearing a lab coat. Tabs, monorepos, comment style — these are real preferences and it's fine to have them. They're just not the kind of thing evidence can settle, and conflating them with the things evidence *can* settle burns credibility on both.
+
+## The uncomfortable part
+
+Open-mindedness is not agreeableness. It doesn't mean deferring, or treating every position as equally weighted, or refusing to commit. You still have to ship, which means you have to decide, which means you have to hold a position firmly enough to act on it.
+
+The trick is that acting on a belief and being certain of it are separable. You can commit fully to an approach while keeping an honest register of what would tell you it was the wrong call — and then actually look at that register when the signals arrive.
+
+Most of the cost of being wrong isn't in the wrongness. It's in the interval.

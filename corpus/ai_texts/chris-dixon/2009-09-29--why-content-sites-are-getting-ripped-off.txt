@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Why content sites are getting ripped off
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/chris-dixon/2009-09-29--why-content-sites-are-getting-ripped-off.txt
+words: 364
+generated: 2026-08-31
+---
+
+# Why content sites are getting ripped off
+
+The economics of the open web rested on a simple bargain: publishers gave crawlers their words, and crawlers sent back readers. That trade held for twenty years. It is now broken, and the people it broke are mostly not in the room when it gets discussed.
+
+The mechanics are unremarkable. A model ingests a site's archive during training. A retrieval layer pulls its pages at inference time. The answer surfaces in a chat window, correctly and usefully, and the user never clicks. Referral traffic to publishers has been falling across categories, and the sites hit hardest are the ones that did the most expensive work — original reporting, product testing, primary research. The cheap aggregators were always going to lose. It's the sources that are the surprise.
+
+Call it what it is: an input cost that isn't being paid. Not theft in the legal sense — that question is still moving through the courts, and the fair-use analysis is genuinely unsettled. But in the ordinary business sense, a supplier is delivering a critical input and capturing none of the value. Every other layer of the AI stack gets paid. Nvidia gets paid. The cloud providers get paid. The labeling vendors get paid. The corpus that makes the output worth anything is the one line item treated as free.
+
+For founders, this is a supply risk you should be modeling rather than a moral question you can defer. The correction is already visible: paywalls hardening, robots.txt tightening, Cloudflare defaulting to blocking AI crawlers, licensing deals signed one publisher at a time. The open corpus is closing. If your product depends on fresh, high-quality, domain-specific content, your data access is a term sheet away from repricing.
+
+For investors, the diligence question is simple and rarely asked: what happens to this company's margins when its training and retrieval inputs cost money? Firms with licensing relationships and provenance discipline are buying an option on the regime that's coming. Firms scraping on the assumption that free is permanent are booking a liability they haven't reserved for.
+
+The bill for content is arriving. The interesting question is who has budgeted for it.

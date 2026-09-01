@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Harvard Business Review on what really motivates workers
+type: blog post
+area: Management & strategy
+matched_human_doc: texts/daniel-pink/2009-12-01--harvard-business-review-on-what-really-motivates-worker.txt
+words: 359
+generated: 2026-08-31
+---
+
+# Harvard Business Review on what really motivates workers
+
+Ask most executives what drives performance and you'll hear some version of incentives: bonuses, equity, recognition, a clear path to promotion. Harvard Business Review has spent decades chipping away at that assumption, and the accumulated finding is more uncomfortable than any compensation redesign: what moves people most reliably is progress in meaningful work.
+
+The clearest statement of this came from Teresa Amabile and Steven Kramer, whose HBR article "The Power of Small Wins" drew on nearly 12,000 daily diary entries from professionals across seven companies. On the days people reported their best inner work lives — the mix of emotions, motivation, and perceptions that predicts productivity — the single most common trigger was making headway on work that mattered to them. Progress outranked recognition, incentives, and interpersonal support. Managers surveyed separately ranked it dead last.
+
+That gap is the strategic problem. Leaders are optimizing the wrong variable. Recognition programs and incentive schemes are visible, budgetable, and easy to defend in a board meeting. The conditions that actually generate motivation — clear goals, sufficient autonomy, resources that arrive on time, and the removal of obstacles that make work feel futile — are diffuse, unglamorous, and largely a function of everyday managerial competence.
+
+Frederick Herzberg made the same argument in HBR in 1968 in "One More Time: How Do You Motivate Employees?" — still one of the most reprinted articles the magazine has published. His distinction between hygiene factors and motivators holds up: pay, conditions, and policy can generate dissatisfaction when deficient, but adding more of them does not produce motivation. That comes from achievement, responsibility, and the work itself.
+
+The practical implication for strategy is not to abandon compensation design; underpaying people remains an excellent way to lose them. It is to stop treating motivation as a benefits question and start treating it as an operating one. Setbacks, Amabile and Kramer found, hurt roughly two to three times more than equivalent progress helps. Clearing obstacles is therefore higher-leverage than adding rewards.
+
+The question worth asking in your next operating review is simple: what is standing between our people and visible progress?

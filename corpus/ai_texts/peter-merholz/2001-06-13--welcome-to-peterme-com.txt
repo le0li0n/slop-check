@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: welcome to peterme.com
+type: blog post
+area: Design, UX & product
+matched_human_doc: texts/peter-merholz/2001-06-13--welcome-to-peterme-com.txt
+words: 434
+generated: 2026-08-31
+---
+
+Welcome to peterme.com
+
+I've spent the better part of my career arguing that design decisions should be visible — not just their outcomes, but the reasoning behind them. This site is where I make good on that argument in public.
+
+If you've been in this field for a while, you may know me from earlier iterations of this domain, or from talks and writing about interaction design, information architecture, and the strange administrative machinery that turns good intentions into shipped products. If you're new here: welcome. I write for people who make things — designers, researchers, product managers, and the engineers who tolerate us — and who are tired of both breathless hype and reflexive cynicism about the state of the craft.
+
+This iteration of peterme.com is organized around a simple belief: the interesting problems in product work are rarely about the interface itself. They're about the organization that produces the interface. Why does a redesign that tested well in research die in a roadmap review? Why do the best product decisions often come from the people with the least formal authority to make them? Why does "customer-centric" so often mean "centered on the customer we can most easily measure"? These are the questions I want to spend time on, and I hope you'll spend some of your time on them with me.
+
+You'll find a few kinds of writing here. Case-adjacent essays that pull a specific project apart to find the general principle inside it. Field notes on tools and processes — including AI-assisted ones — that are reshaping how design work actually gets done, written with more curiosity than either boosterism or doom. And periodically, something more argumentative: a case for why a widely accepted practice deserves more scrutiny than it gets.
+
+What you won't find: a portfolio dressed up as a blog, a newsletter funnel for a course I'm selling, or takes calibrated for maximum shareability. I'd rather have a smaller audience that argues with me in good faith than a large one that skims and moves on. If something here is wrong, or half-right, or right for the wrong reasons, I want to hear about it — the comments and my inbox are both open, and I mean that as more than a formality.
+
+A note on pace: this won't be a high-frequency feed. I'd rather publish six pieces a year that hold up than sixty that don't. If you subscribe, expect infrequent but (I hope) dense mail.
+
+Thanks for showing up at the start of this. Poke around, read something that annoys you, and tell me why.
+
+— Peter

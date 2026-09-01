@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: This Week’s Sales Smack: Innovation in Sales, an Oxymoron? | The Sales BlogFollow me on my websiteFollow me on FacebookF
+type: blog post
+area: Sales & business development
+matched_human_doc: texts/anthony-iannarino/2010-01-01--this-week-s-sales-smack-innovation-in-sales-an-oxymoron.txt
+words: 360
+generated: 2026-08-31
+---
+
+# This Week's Sales Smack: Innovation in Sales, an Oxymoron? | The Sales Blog
+
+Ask a room of sales leaders what innovation looks like in their function and you'll get a list of tools. A new dialer. A conversation intelligence platform. An AI note-taker that writes the CRM entry nobody was going to write anyway. All useful. None of it innovation.
+
+Innovation is a change in *how the work creates value*. Buying software is a change in how the work gets logged.
+
+Here's the uncomfortable part: the fundamentals of selling have barely moved in fifty years. Find someone with a problem worth solving. Earn the right to a conversation. Understand their situation better than they've articulated it themselves. Help them build the internal case. Manage the risk of change. Ask for the business. A rep from 1974 dropped into a modern pipeline review would recognize every one of those moves.
+
+So is innovation in sales an oxymoron? Not quite. But it lives somewhere other than where most teams look for it.
+
+The real innovation is in **compression and precision**. It's not that prospecting changed — it's that you can now know, before you dial, that the account just lost their VP of Operations and posted three job reqs for a function you serve. It's not that discovery changed — it's that you can walk in with a hypothesis specific enough to be wrong in an interesting way. The activity is ancient. The information advantage is new.
+
+The second place innovation actually lives: **what you're willing to stop doing**. Most sales orgs innovate by addition. New tool, new cadence, new required field, new meeting. Nothing ever comes off the plate. The team that genuinely innovates is usually the team that killed something — the weekly forecast theater, the eleven-touch sequence nobody reads, the qualification framework that qualifies nothing.
+
+Try this before your next planning cycle. List every recurring activity your team performs. Next to each, write the last deal it demonstrably influenced. The blanks are your innovation budget.
+
+Sales doesn't need reinvention. It needs subtraction, and it needs sharper inputs into conversations that have always worked. Everything else is a subscription.

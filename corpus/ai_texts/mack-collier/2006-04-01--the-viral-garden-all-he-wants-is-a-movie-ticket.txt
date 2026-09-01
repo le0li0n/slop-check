@@ -1,0 +1,33 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: The Viral Garden: All he wants is a movie ticket
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/mack-collier/2006-04-01--the-viral-garden-all-he-wants-is-a-movie-ticket.txt
+words: 364
+generated: 2026-08-31
+---
+
+# The Viral Garden: All he wants is a movie ticket
+
+There's a story that circulates in marketing circles about a man who wanted to see a film. He didn't want a loyalty account. He didn't want a personalised recommendation engine, a push notification about a sequel he hadn't asked for, or a QR code that opened a landing page asking him to rate his experience. He wanted a ticket. Seat, time, screen. Done.
+
+We keep building gardens around him.
+
+The metaphor is worth sitting with. A viral garden is what happens when every growth tactic we plant takes root at once — the referral prompt, the email capture, the upsell interstitial, the "invite three friends" modal — and the thing the customer actually came for gets crowded out. Each element passed its own A/B test. Each one lifted a number. Collectively they built a hedge maze between a person and a two-hour showing of a movie.
+
+The uncomfortable part is that this isn't a failure of measurement. It's what measurement produces when nothing measures the whole. Conversion rate optimisation is local by design: it asks whether this button beats that button, never whether the button should exist. Twenty local wins compound into a global loss that no dashboard is shaped to display.
+
+Three things help.
+
+**Audit the path, not the pages.** Walk your own funnel as a stranger with no context and mild impatience. Count the decisions you force. Most teams are shocked at the number, because nobody owns the sum.
+
+**Give friction a price.** If you can't estimate what an added step costs in abandonment, you'll always underweight it against the gain it promises. Rough numbers beat no numbers.
+
+**Let something die each quarter.** Growth tactics accumulate because removal has no champion. Make it someone's job.
+
+The brands people describe as effortless aren't running fewer experiments. They're running a gardener — someone whose mandate is pruning, not planting, and who has the standing to say no to a good idea because there are already eleven good ideas in the way.
+
+Your customer isn't hostile to marketing. He's just holding a wallet, looking at a showtime, wondering why this is taking so long.

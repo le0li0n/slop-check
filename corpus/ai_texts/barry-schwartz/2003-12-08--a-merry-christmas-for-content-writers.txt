@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: A Merry Christmas for Content Writers
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/barry-schwartz/2003-12-08--a-merry-christmas-for-content-writers.txt
+words: 349
+generated: 2026-08-31
+---
+
+# A Merry Christmas for Content Writers
+
+Somewhere between the fourth "Q4 wrap-up" listicle and the tenth gift guide nobody asked for, most content writers hit the same wall. December is the month when the editorial calendar eats itself. Deadlines compress. Approvals vanish into out-of-office replies. And the work you actually care about gets postponed to "January, when things calm down."
+
+They never calm down. But December can still be good to you, if you use it differently.
+
+**Publish less. Finish more.** The last three weeks of the year are terrible for reach and excellent for repair. Traffic drops, inboxes go quiet, and nobody is watching closely enough to notice you shipped four posts instead of twelve. That's the window to fix the pillar page that's been half-right since March, rewrite the intro on the piece that ranks but doesn't convert, and finally kill the three articles that have been cannibalising each other since spring. Nobody hands out awards for a content audit. They still compound.
+
+**Bank your evidence.** Somewhere in the past twelve months you wrote something that moved a number — a lead, a demo, a retention bump. Write down what it was, what happened, and why, before the analytics roll over and the memory fades. Content teams lose budget every year not because the work didn't perform, but because nobody kept a record a CFO could read.
+
+**Ask for the brief you actually want.** Q1 planning is happening right now, mostly without writers in the room. This is the cheapest moment of the year to say: I want to own this topic, I want to talk to three customers, I want a longer runway on the flagship piece. In January that ask is a disruption. In December it's a contribution.
+
+**And take the days.** Not "check Slack from the sofa" days — real ones. The best sentences you wrote this year didn't come from grinding harder. They came from the walk, the film, the conversation that gave you something to say.
+
+The content will be there in January. It always is. Let it wait.
+
+Merry Christmas.

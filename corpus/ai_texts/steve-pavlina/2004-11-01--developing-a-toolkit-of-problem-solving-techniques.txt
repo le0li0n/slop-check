@@ -1,0 +1,57 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Developing a Toolkit of Problem-Solving Techniques
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/steve-pavlina/2004-11-01--developing-a-toolkit-of-problem-solving-techniques.txt
+words: 1379
+generated: 2026-08-31
+---
+
+Developing a Toolkit of Problem-Solving Techniques
+
+Every founder and investor eventually collides with a problem that their usual playbook can't touch. The go-to-market motion that worked at the last company stalls. The board dynamics get tense in a way no framework anticipated. The model everyone trusted for pricing breaks the moment a competitor changes the rules. In these moments, the people who navigate well aren't the ones with the single best framework — they're the ones with several, and the judgment to know which one the situation calls for.
+
+This is worth naming explicitly, because startup culture tends to romanticize one mode of thinking: fast, intuitive, pattern-matched decision-making. That mode is genuinely valuable — it's how experienced operators avoid re-deriving everything from scratch under time pressure. But treated as the only tool, it becomes a liability. Pattern-matching only works when the current situation resembles a past one closely enough that the pattern still applies. Venture-backed businesses live in exactly the conditions where that resemblance breaks down: new markets, new technology, unprecedented team dynamics, capital environments that shift underneath you. A toolkit beats a single tool because different problems have different shapes, and a technique that's perfect for one shape actively misleads you on another.
+
+**Why the tool has to match the terrain**
+
+The clearest way to think about this is in terms of the problem's structure, not its subject matter. Two problems that look completely different on the surface — a hiring decision and a fundraising decision — can have the same underlying shape, and two problems in the same domain — two different fundraising decisions — can have entirely different shapes.
+
+Some problems are decomposable: you can break them into independent pieces, solve each piece, and reassemble the answer. A go-to-market plan for a new product segment often works this way — you can separate pricing, channel, and messaging and make real progress on each without the others changing much. Decomposition is a powerful technique here because the pieces genuinely don't interact much.
+
+Other problems are exactly the opposite: highly coupled, where changing one variable changes what the right answer is for every other variable. Deciding how much runway to raise, at what valuation, with what board composition, is not decomposable — the variables trade off against each other in real time, and solving them one at a time gives you a locally sensible but globally wrong answer. These call for systems thinking: mapping the feedback loops and constraints as a whole before optimizing any single piece.
+
+Still other problems are best approached by inversion — instead of asking "how do we succeed," asking "what would guarantee failure, and are we doing any of that." This is a particularly good fit for de-risking decisions where the downside is catastrophic and hard to reverse, like a key technical hire or a structural term in a term sheet. It's a poor fit for open-ended opportunity sizing, where there's no crisp definition of failure to invert against.
+
+And some problems resist analysis entirely and call for experimentation — cheap, fast, reversible probes into the world, because no amount of internal reasoning will substitute for the information a real customer's real behavior generates. Early product-market-fit work almost always belongs here. Analysis substitutes for experimentation only when the cost of being wrong is low and the cost of testing is high; for most early-stage GTM questions, that ratio is inverted.
+
+The point isn't that any of these techniques is superior. It's that misapplying one — decomposing a coupled problem, or running an expensive experiment on a question analysis could have answered in an afternoon — produces confident, well-reasoned, wrong answers. The skill worth building isn't fluency in a single method. It's rapid, accurate diagnosis of which method the problem in front of you actually requires.
+
+**A working set of techniques**
+
+A few are worth having ready, deliberately, rather than reaching for by accident:
+
+*First-principles reasoning.* Strip a problem down to what's actually true — physical constraints, unit economics, verified customer behavior — and rebuild from there, ignoring "how it's normally done." This is expensive and slow, so it's not for everyday decisions. It's for the handful of choices where the conventional answer is suspect and getting it right matters enormously: a novel pricing model, a build-vs-buy call on core infrastructure, a market-sizing exercise where every published number is really an extrapolation from someone else's first-principles work three years ago.
+
+*Analogical reasoning — used carefully.* Reasoning from a comparable company or situation is fast and often right, which is exactly why it's dangerous. It fails silently when the analogy holds on the surface but breaks on the mechanism. "This is like Stripe's expansion into new products" is only useful if the thing that made Stripe's expansion work — an already-trusted developer relationship — is actually present in your case. The discipline here isn't avoiding analogies; it's naming out loud what the analogy depends on, so you notice when that dependency isn't there.
+
+*Pre-mortems.* Before committing to a decision, imagine it's eighteen months later and it's failed — then work backward to why. This surfaces risks that forward-looking planning tends to suppress, because forward planning is implicitly optimistic (you're describing the path you intend to take, not the ones you're at risk of sliding into). It's cheap, takes an hour, and is disproportionately good at catching board-composition and co-founder-alignment risks that don't show up in a financial model.
+
+*Base rates before stories.* Before evaluating why this particular deal, hire, or launch will beat the odds, find out what the odds actually are. What fraction of Series A companies with this burn multiple raise a Series B? What fraction of technical co-founder pairings without prior working history stay intact past eighteen months? A compelling narrative is not evidence that a specific situation is the exception — it's usually evidence that a good storyteller is in the room. Anchoring on the base rate first, then asking what specifically would move this case off it, produces better calibration than starting from the story.
+
+*Reversibility triage.* Not every decision deserves the same process. Bezos's one-way-door/two-way-door distinction is a genuine tool, not a cliché, when it's actually applied: two-way doors (a pricing experiment, a marketing channel test) should be decided fast, with a bias toward action, because the cost of being wrong is low and reversible. One-way doors (a priced round, a key executive hire, a structural cap table decision) deserve the slower techniques above. Most decision paralysis in early-stage companies comes from applying one-way-door rigor to two-way-door decisions.
+
+**Building the toolkit, not just using it**
+
+The techniques above are only half of it. The other half is building the meta-skill of matching technique to problem, and that comes from deliberate practice, not passive exposure. A few habits help:
+
+Keep a decision log — not a journal, just a short record of what technique you reached for and why, on decisions that mattered. Six months later, check it against what actually happened. This is the fastest way to learn which of your instincts about technique-selection are well-calibrated and which aren't.
+
+Notice when you're pattern-matching by default and ask whether the pattern actually applies. The moment of noticing is itself the valuable habit — most bad applications of intuition happen because the question "does this actually resemble the past case" was never consciously asked.
+
+Borrow techniques from outside the startup canon. Base-rate thinking comes from forecasting and epidemiology. Pre-mortems come from decision psychology. First-principles reasoning is closer to physics and engineering than to business strategy. The startup world's native toolkit is thinner than it looks, largely because it recycles the same few frameworks across very different problem shapes; the richest techniques usually come from fields that had to get diagnosis right under harder constraints.
+
+Finally, treat the toolkit itself as something to keep expanding, not a fixed kit you memorize once. The problems that matter most in venture — the ones that decide whether a company survives or a fund returns — are disproportionately the ones that don't fit any technique you already have. Noticing that misfit, and being willing to reach for or build a new tool rather than force the old one, is the difference between a toolkit and a single hammer with a lot of confidence behind it.

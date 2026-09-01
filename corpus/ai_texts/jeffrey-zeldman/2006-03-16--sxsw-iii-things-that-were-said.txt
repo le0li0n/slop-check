@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: SXSW III: Things That Were Said
+type: blog post
+area: Design, UX & product
+matched_human_doc: texts/jeffrey-zeldman/2006-03-16--sxsw-iii-things-that-were-said.txt
+words: 442
+generated: 2026-08-31
+---
+
+SXSW III: Things That Were Said
+
+"We're not designing screens anymore, we're designing behavior." A panelist said that on day two, half-joking, and then nobody laughed, because it's true and also kind of terrifying. That's the register this year's SXSW settled into — fewer breathless demos, more people quietly working out what their jobs are going to mean in eighteen months.
+
+A researcher from a mid-size fintech, on a hallway stage nobody had heard of an hour earlier: "Our biggest usability problem isn't the interface. It's that the AI is more confident than the data supports, and confidence reads as competence to users." That's not a UI bug. That's a trust architecture problem, and design doesn't have a pattern library for it yet.
+
+A product lead, describing her team's pivot away from a chat-first redesign: "We built the friendliest possible box for people to type into, and usage went down. Turns out choice paralysis doesn't go away just because the input field is empty." The room nodded in the specific way people nod when they've made the same mistake and are relieved someone else said it first.
+
+There was a recurring bit this year — different speakers, same line, delivered like they'd each discovered it themselves: "The prototype is the strategy now." Meaning: with generation speed what it is, the deck is dead, the wireframe is dead, and the fastest way to align a room is to just show them the thing, working, badly, in twenty minutes. Several people admitted their org charts hadn't caught up to this — that "concepting" and "building" are supposed to be different departments with different timelines, and that fiction is getting expensive.
+
+The sharpest exchange was in Q&A, not on stage. Someone asked a panel of design leads how they were evaluating AI-generated design work, and one of them said, flatly: "We're not. We're evaluating the taste of the person who accepted it." Another added, "Which means we've quietly turned design review into a personnel question," and the moderator moved on a little too fast, like everyone in the room needed a minute with that one.
+
+And the line that's going to outlast the conference, from a UX director talking about her team's AI tooling rollout: "The tool got faster. The judgment didn't. We just have more time now to find out whether we had any." She said it like a punchline. Nobody laughed at that one either.
+
+Walking out, the throughline wasn't a technology or a trend — it was a mood. Less "look what it can do," more "here's what it's quietly asking of us." Worth sitting with before the next roadmap gets written.

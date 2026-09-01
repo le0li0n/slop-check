@@ -1,0 +1,31 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: peterme.com: Who is Wired Magazine's Audience?
+type: blog post
+area: Design, UX & product
+matched_human_doc: texts/peter-merholz/2003-04-14--peterme-com-who-is-wired-magazine-s-audience.txt
+words: 545
+generated: 2026-08-31
+---
+
+# peterme.com: Who is Wired Magazine's Audience?
+
+I picked up the new *Wired* on a plane last week and spent most of the flight not reading it, but wondering who it was for.
+
+This isn't a snipe at the writing. Some of it is very good. It's that the magazine seems to be addressing at least four different people at once, and it has stopped noticing the seams. There's the piece written for someone who codes. There's the piece written for someone who invests in people who code. There's the gadget spread, which assumes disposable income and no particular technical curiosity. And there's the long cultural essay, which assumes you've read the same three books the writer has. Any one of those readers picking up the issue will find roughly a quarter of it addressed to them and three quarters addressed past them.
+
+Editors will tell you this is deliberate — that a magazine is a bundle, that the variety is the value, that readers enjoy overhearing conversations meant for others. Sometimes true. But there's a difference between a magazine with range and a magazine that has lost track of who's holding it.
+
+The tell is voice. When you genuinely know your reader, your prose settles into a consistent altitude: you know which terms need defining and which don't, which references land, how much impatience to assume. *Wired* doesn't have a consistent altitude. One article explains what an API is. Another, forty pages later, name-drops a protocol without so much as an appositive. Both can't be right about the same reader.
+
+This matters to us for reasons well beyond magazines.
+
+Editorial audience definition and product audience definition are the same discipline wearing different clothes. A magazine's reader is its user. And the failure mode I'm describing — accreting audiences without ever subtracting one — is the single most common way products go slack. You ship for the power user. Then enterprise asks for something, so you ship for the admin. Then growth wants the funnel widened, so you ship for the novice. Nobody ever stands up and says *we are no longer building for that person*. Five years on you have an interface with four altitudes in it, and every user finds a quarter of it addressed to them.
+
+The discipline isn't segmentation. Everyone does segmentation; it's cheap, and it mostly produces a slide deck with four faces and four invented names on it. The discipline is **exclusion** — being able to state, out loud, in a room with your stakeholders, who this is *not* for. That sentence is expensive. It closes doors. It makes someone in marketing visibly unhappy. Which is exactly why it's the one that does work: a persona you can't refuse anything on behalf of isn't a persona, it's a mood board.
+
+The good news is that this is diagnosable without research budget. Take your product's copy — onboarding, empty states, error messages, tooltips — and read it in one sitting, out loud if you can stand it. You'll hear the altitude changes immediately. Each one marks a place where a different imagined reader got served, and where nobody made the call.
+
+*Wired* can afford the incoherence; it's sold at a newsstand and judged by the cover. Most of us can't.

@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: CodeCon Wrapup
+type: blog post
+area: Software engineering
+matched_human_doc: texts/aaron-swartz/2002-02-19--codecon-wrapup.txt
+words: 340
+generated: 2026-08-31
+---
+
+# CodeCon Wrapup
+
+Four days, six tracks, and roughly nine thousand engineers later, CodeCon is done. Here's what stuck.
+
+**The AI talk everyone expected didn't happen.** After two years of keynotes promising autonomous engineering, this year's tone was noticeably more grounded. The best-attended session wasn't about generating code — it was about reviewing it. "Merge Discipline in the Age of Cheap Diffs" had people standing at the back, and the core argument was simple: when writing code gets cheap, the bottleneck moves to everything downstream. Review capacity, test suites, incident load. Several teams shared numbers showing PR volume up sharply with review latency up right alongside it. Nobody had a clean fix. That honesty was the most useful thing on the schedule.
+
+**Platform engineering hit its awkward teenage years.** The 2023 pitch was "internal developer platform solves everything." The 2026 retrospectives were more sober. A recurring pattern from the case studies: teams built beautiful golden paths, then discovered maybe 40% of workloads didn't fit them, and the exceptions consumed most of the platform team's time. The advice that landed hardest was to design the escape hatch first, and treat the number of teams using it as a health metric rather than a failure.
+
+**Postgres continued eating the ecosystem.** Three separate talks on replacing a specialized datastore with a Postgres extension. Queues, vectors, and analytics. The counterpoint session — "When Postgres Is the Wrong Answer" — was thinly attended, which is probably itself a signal worth watching.
+
+**Best hallway conversation:** a staff engineer describing how her org killed its microservices migration halfway through and stayed hybrid deliberately. Twelve services, not two hundred. She said the hardest part was political rather than technical, since stopping a migration reads as failure even when it's the right call.
+
+**Worth your time on video:** the merge discipline talk, the Postgres counterpoint, and the closing keynote on maintaining software nobody wants to maintain. Skip the vendor keynotes, as they were product demos wearing a thin costume.
+
+Recordings post in about two weeks. Slides are already up.

@@ -1,0 +1,57 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Have You Earned The Right To Engage In Consultative Selling?
+type: blog post
+area: Sales & business development
+matched_human_doc: texts/dave-brock/2009-07-29--have-you-earned-the-right-to-engage-in-consultative-sel.txt
+words: 924
+generated: 2026-08-31
+---
+
+Have You Earned The Right To Engage In Consultative Selling?
+
+Every sales floor has one. The rep who opens a discovery call with "So, what keeps you up at night?" Thirty seconds later, they're pitching. They call it consultative selling. It's actually just a pitch wearing a question mark.
+
+Consultative selling has become the default label for any sales approach that isn't overtly pushy. Ask a few open-ended questions, nod along, then run the same deck you were always going to run. But real consultative selling isn't a style of talking. It's a claim you make about your own competence — and it's a claim you have to earn before you're entitled to make it.
+
+Here's the test: if you removed your product from the conversation entirely, would you still have something valuable to say to this buyer? If the honest answer is no, you're not consulting. You're selling with extra steps.
+
+**What earning the right actually requires**
+
+Consultants earn trust by demonstrating expertise the client doesn't have. A management consultant walks into a room having seen twenty companies with the same problem. A doctor has treated thousands of patients with your symptoms. That pattern recognition — built from volume, not charisma — is the entire value proposition. It's what lets them say something the client couldn't have figured out alone.
+
+Most sales reps haven't done the work to earn that same standing. They know their product cold. They can recite features, pricing tiers, and competitive positioning in their sleep. But that's not the same as understanding a buyer's business well enough to advise them on it. Product knowledge is not industry expertise, and industry expertise is not the buyer's specific operational reality.
+
+Ask yourself honestly: do you know this buyer's business model, margin structure, org chart, and competitive pressures well enough to tell them something true that isn't secretly "and that's why you should buy from me"? If not, you haven't earned the right yet. You're still in information-gathering mode, and that's fine — but call it that.
+
+**The tell is in the sequencing**
+
+Genuine consultative selling has a specific rhythm: you ask questions because you're actually uncertain about the answer, not because you're navigating toward a predetermined pitch. The questions change your recommendation. If the buyer's answer wouldn't have changed what you were going to say next, you weren't consulting — you were qualifying.
+
+This is why the framework gets abused so often. Discovery questions are teachable in an afternoon. Restraint is not. It takes real discipline to sit with a buyer's answer, actually update your point of view, and sometimes conclude your product isn't the right fit this quarter. Reps who've earned the right to consult are comfortable with that outcome. Reps who are performing consultation treat every discovery call as a funnel with one exit.
+
+**What earning it looks like in practice**
+
+It usually comes from one of three places, and often all three:
+
+*Deep vertical exposure.* You've worked twenty accounts in the same industry and you recognize the pattern before the buyer finishes describing it. You're not guessing what their Q3 renewal cycle looks like — you've seen it fail the same way at four other companies.
+
+*Adjacent expertise.* Maybe you came from operations, or finance, or the exact function you now sell into. You understand the buyer's job because you've done a version of it, not because you memorized a battlecard.
+
+*Deliberate research investment.* Absent the first two, you can still earn it — but it costs real time. Reading the buyer's 10-K, understanding their competitive set, knowing their recent product launches and org changes before the call. Most reps skip this because it doesn't show up in activity metrics. It's also the single highest-leverage thing you can do before a discovery call.
+
+If none of these apply, you're not disqualified from selling well — you're just not consulting. Sell honestly as a vendor with a good product. That's a legitimate posture. It's the false claim to expertise that erodes trust, not the absence of it.
+
+**Why this matters more than it used to**
+
+Buyers have gotten good at detecting the performance. They've sat through enough "tell me about your challenges" openers that lead straight to a pitch that the pattern is instantly recognizable — and instantly discrediting. The moment a buyer clocks that your questions were theater, every subsequent claim you make gets discounted, including the true ones.
+
+Meanwhile, buyers increasingly have real alternatives to a human consultant: research reports, peer communities, AI tools that can synthesize public information faster than a rep can build rapport. The bar for what counts as "adding value beyond the product" has gone up, not down. A generic discovery framework doesn't clear it anymore.
+
+**The honest version**
+
+None of this means you need a decade of domain expertise before you're allowed to ask a good question. It means being honest with yourself about which mode you're in on any given call, and letting the buyer feel the difference. If you've done the work — the vertical exposure, the research, the pattern recognition — let it show by actually changing your recommendation based on what they tell you. If you haven't done the work yet, don't borrow the posture. Sell well, sell honestly, and go earn the right for next time.
+
+The question isn't whether consultative selling is a good idea. It obviously is. The question is whether you've done anything to deserve the label — or whether you're just asking better opening questions before delivering the same pitch you always give.

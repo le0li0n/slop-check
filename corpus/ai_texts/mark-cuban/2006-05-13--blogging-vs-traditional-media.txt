@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Blogging vs Traditional Media
+type: blog post
+area: Management & strategy
+matched_human_doc: texts/mark-cuban/2006-05-13--blogging-vs-traditional-media.txt
+words: 476
+generated: 2026-08-31
+---
+
+# Blogging vs Traditional Media
+
+For most of the twentieth century, the question of who gets to speak publicly had a simple answer: whoever owned the printing press, the broadcast licence, or the column inches. Distribution was the scarce resource, and the organisations that controlled it captured the value. Blogging — and its descendants in newsletters, Substacks, and LinkedIn essays — inverted that scarcity. Distribution became free. Attention became the constraint. Strategists should care about this not because publishing is interesting, but because it is a clean case study in what happens to an industry when its central bottleneck disappears.
+
+The first-order effect was disintermediation. Traditional media bundled several things together: reporting, editing, fact-checking, distribution, and advertising sales. Blogging unbundled them. A writer with expertise could reach an audience without the editorial apparatus, and advertisers could reach that audience without the newspaper. What was once a vertically integrated value chain became a set of separable services, and most of the profit pooled at the platform layer rather than the content layer.
+
+The second-order effect is more interesting, and it is where the naive "blogging wins" narrative breaks down. Removing editors removed a quality-assurance function that readers had never paid for explicitly but had always consumed. Traditional media's residual advantage is institutional credibility: a masthead is a reputational bond, expensive to build and costly to burn. Individual bloggers substitute personal reputation, which scales differently — deeper trust with a smaller audience, and no continuity when the author stops writing. Neither model dominates. They serve different failure modes.
+
+For management and strategy professionals, three implications follow.
+
+**Credibility is now a portfolio decision.** Your organisation's voice can sit with the institution, with named individuals, or split across both. Institutional channels are durable but slow and generic. Individual voices generate far higher engagement and travel further, but the asset walks out the door when the person does. Most firms overweight the institutional channel because it feels safer, and quietly forgo the reach.
+
+**Owned audiences are a strategic asset with a real balance-sheet logic.** An email list is not a marketing tactic; it is a distribution channel you control, insulated from algorithm changes and rising paid-acquisition costs. Firms that built one a decade ago now enjoy a structural cost advantage over competitors renting attention.
+
+**Speed and depth are the two viable positions.** Traditional media competes on breaking news and investigative depth. Blogging competes on speed of publication and depth of niche expertise. The undifferentiated middle — competent general commentary — has been thoroughly commoditised, and no amount of production quality rescues it.
+
+The broader lesson generalises well beyond publishing. When a bottleneck is removed, the incumbent's real question is not "how do we do the new thing too," but "what were we actually being paid for?" Newspapers answered that question late. Most industries facing a similar unbundling answer it later still.

@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: 14
+type: essay
+area: Software engineering
+matched_human_doc: texts/joel-spolsky/2003-07-01--14.txt
+words: 364
+generated: 2026-08-31
+---
+
+# 14
+
+Fourteen is the number of times I have been interrupted while writing this sentence. Not literally — but the exercise of counting is the point. Last month I ran a tally on a single Tuesday: every context switch that pulled me off the thing I had decided, that morning, was the most important thing to do. Fourteen. A code review ping. A "quick question" in a thread. A flaky test in CI that turned out to be a DNS blip. An incident channel I was in but not on call for. Two calendar notifications for meetings I was optional in, and one I wasn't.
+
+None of them were unreasonable. That's what makes this hard. Every one of the fourteen had a person behind it with a real need and a defensible reason for asking me specifically. The failure isn't in any individual interrupt; it's that nobody is accounting for the sum.
+
+We are precise about the cost of a cache miss and vague about the cost of a human one. We'll spend a week shaving 40ms off p99 and not blink at an org design where a senior engineer reconstructs their mental model of a distributed system fourteen times a day, from scratch, badly. The literature puts recovery at somewhere north of twenty minutes. Do the arithmetic and the day is gone before it starts.
+
+The usual advice is personal: close Slack, block focus time, turn off notifications. It doesn't work, because the interrupts are load-bearing. They're how the team routes around missing documentation, unclear ownership, and undertested code. Silencing them just moves the failure somewhere less visible.
+
+What does work is treating interrupt volume as a system signal rather than a personal discipline problem. Count them for a week. Then ask what each one was really compensating for. Ours clustered hard: about half traced to two services with no clear owner and a runbook that stopped being true in March. Fixing the runbook removed more interruptions than any amount of calendar-blocking ever did.
+
+The count isn't the finding. The count is what makes the finding arguable in a room where people want numbers.
+
+Mine's down to five. I'd like it lower.

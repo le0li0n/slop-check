@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Presentation Lessons from Star Wars.
+type: blog post
+area: Design, UX & product
+matched_human_doc: texts/garr-reynolds/2006-01-01--presentation-lessons-from-star-wars.txt
+words: 393
+generated: 2026-08-31
+---
+
+Presentation Lessons from Star Wars
+
+The Death Star briefing scene is a masterclass most decks never approach. General Dodonna doesn't open with a mission statement or a slide of acronyms. He opens with the stakes: this is a small window, they won't get another shot. Then he shows the thing itself — a schematic, glowing, rotating — before he says a word about tactics. Show the object. Let the room orient before you start narrating.
+
+Then he does something most product reviews skip entirely: he names the one weakness. Not a list of risks with mitigations bolted on — one exhaust port, two meters wide, leads straight to the reactor. Everything after that line is in service of the single vulnerability. Good critique works the same way. If you can't say what would sink the plan in one sentence, you haven't found it yet, and your audience will sense the evasion.
+
+Notice what the briefing doesn't have: no roadmap slide with twelve initiatives, no "let's align on goals" preamble. It trusts the room already knows what's at stake and gets straight to the mechanism. Most decks over-explain the problem because the presenter is still discovering it live, in front of the audience. Do that discovery beforehand.
+
+The trench run itself is the demo. Nobody talks through it in the abstract — Luke flies it, in real time, and we watch it almost fail before it works. If you have a prototype, run it live rather than describing it in past tense. The gap between "here's what it does" and "here's it doing the thing" is where trust gets built or lost.
+
+And the ending is worth stealing outright: no summary slide, no recap of "key takeaways." The medals get handed out and the room moves on. Over-explaining a win is as damaging as over-explaining a problem — it signals you don't trust the result to speak for itself.
+
+None of this is about charisma or theatrics, despite the genre. It's structural: show the object before the argument, name the single real weakness instead of hedging with ten small ones, prove the idea in motion rather than in prose, and stop talking once the point has landed. Most decks fail not because the content is weak but because they skip straight to the trench run without ever putting the Death Star on the table.

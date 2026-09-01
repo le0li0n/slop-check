@@ -1,0 +1,51 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: 5 HTML Elements You Probably Never Use (But Perhaps Should) - MozMoz logoMenu openMenu closeSearchMoz logo
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/rand-fishkin/2006-08-14--5-html-elements-you-probably-never-use-but-perhaps-shou.txt
+words: 858
+generated: 2026-08-31
+---
+
+5 HTML Elements You Probably Never Use (But Perhaps Should)
+
+If you write for the web, you probably think of HTML as your developer's problem. You drop text into a CMS, hit publish, and trust that the underlying markup takes care of itself. Most of the time, that's fine. But a handful of HTML elements exist specifically to make content clearer, more accessible, and easier to scan — and they cost you nothing to ask for. Here are five worth knowing, even if you never touch a line of code yourself.
+
+**1. `<abbr>`**
+
+Every industry drowns in acronyms, and marketing is no exception: SEO, CTR, CTA, ROI. The `<abbr>` element lets you mark up an abbreviation so that hovering over it (or tapping it on mobile, in supporting browsers) reveals the full term, without cluttering your sentence with a parenthetical explanation every single time.
+
+Instead of writing "CTR (click-through rate) improved this quarter, and CTR (click-through rate) is now our primary KPI," you write CTR once, wrapped in `<abbr title="click-through rate">`, and every reader who needs the definition can get it without you repeating yourself. It's a small thing, but it's the difference between writing for your most confused reader and writing for your most informed one — you don't have to choose.
+
+**2. `<mark>`**
+
+This one highlights text, literally, rendering with a yellow background by default. It's built for exactly the thing a lot of content teams do manually with bold text or a color override: drawing the eye to the single most important phrase in a block of copy.
+
+The distinction that matters here is semantic, not just visual. `<strong>` says "this is important." `<mark>` says "this is relevant right now, in this context" — think highlighting a search term in a results page, or calling out the one line in a testimonial that made you want to feature it. If your CMS gives you a "highlight" text option, there's a decent chance it's outputting a `<mark>` tag under the hood, and now you know why that's the more correct choice than just bolding it.
+
+**3. `<figure>` and `<figcaption>`**
+
+You already caption images. The question is whether that caption is actually attached to the image in the markup, or just sitting nearby as its own paragraph, hoping the reader connects the dots. `<figure>` wraps an image (or a chart, a quote, a code sample) together with its `<figcaption>`, so screen readers, search engines, and browsers all understand the two belong together.
+
+This matters more than it sounds like it should. For SEO, it gives search engines cleaner signal about what an image is and why it's there. For accessibility, it means a screen reader user gets the caption presented as context for the image, not as a random floating sentence. If your blog posts run image-heavy — product screenshots, infographics, before/afters — this is worth asking your dev or CMS team about directly.
+
+**4. `<time>`**
+
+Dates are everywhere in content: "Published March 3," "Updated last week," "Offer ends Friday." Humans read those fine. Machines — search engines, calendar apps, browser extensions — often can't parse "last week" into anything useful. The `<time>` element lets you show a human-friendly date while embedding a machine-readable one underneath it, like `<time datetime="2026-08-31">last week</time>`.
+
+This is a quiet SEO win. Search engines use it to understand freshness signals, which factor into how content gets ranked and surfaced, especially for anything time-sensitive like event promotion or seasonal campaigns. It also means your "published" and "updated" dates are actually trustworthy data, not just decorative text — useful if you ever want to audit content age at scale.
+
+**5. `<details>` and `<summary>`**
+
+This pair builds a native, no-JavaScript expandable section: a clickable heading (`<summary>`) that reveals hidden content (`<details>`) underneath it. If you've ever asked a developer for an "accordion" or a "click to expand" FAQ block, there's a good chance this is the honest, lightweight way to build it, instead of a heavier custom widget.
+
+For content teams, this is the FAQ page's best friend. It keeps a page scannable by hiding detail until someone asks for it, without needing a plugin or a JavaScript library that might slow the page down or break on mobile. It's also accessible by default, meaning keyboard and screen reader users get expand/collapse behavior for free, something custom-built accordions frequently get wrong.
+
+**Why this is worth five minutes with your dev team**
+
+None of these elements are exotic. They're standard HTML, supported in every modern browser, and none of them require a redesign or a new plugin. What they require is asking the question: "is our CMS actually outputting semantic markup, or just visually similar-looking divs and spans?" Often the honest answer is the latter, because it's the path of least resistance, not because anyone decided against it.
+
+The payoff isn't cosmetic. Semantic HTML is read more accurately by search engines, assistive technology, and third-party tools that scrape or index your content. If you care about SEO, accessibility compliance, or just not repeating yourself in every acronym-heavy paragraph, these five elements are a genuinely easy win — you just have to know to ask for them.

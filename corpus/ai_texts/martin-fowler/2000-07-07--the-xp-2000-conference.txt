@@ -1,0 +1,59 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: The XP 2000 Conference
+type: essay
+area: Software engineering
+matched_human_doc: texts/martin-fowler/2000-07-07--the-xp-2000-conference.txt
+words: 1309
+generated: 2026-08-31
+---
+
+# The XP 2000 Conference
+
+There is a particular kind of nostalgia that afflicts software engineers, and it usually attaches to the wrong things. We get sentimental about languages we no longer use, editors we abandoned, machines that were slower than the watch on your wrist. What we rarely get sentimental about is a meeting. And yet if you want to understand why your team does stand-ups, why your CI pipeline exists, why someone in your organization has the word "agile" in their job title, you have to go back to a set of gatherings around the turn of the millennium — and XP 2000, held in Sardinia that June, sits close to the center of them.
+
+## What was actually happening in 2000
+
+To appreciate the conference you have to remember the industry it interrupted. In 2000, the default professional narrative about software development was that it was an engineering discipline that had failed to grow up. The prescription was more process, not less. The Capability Maturity Model was ascendant; the serious organizations were pursuing Level 3 and dreaming of Level 5. The Rational Unified Process was being sold into enterprises as a complete methodology, delivered on CD-ROM with hundreds of artifacts and role definitions. The reigning metaphor was construction: you draw the blueprints, you get them signed off, and then — only then — do you pour concrete. Changing your mind late was framed as a defect in the requirements process rather than as an ordinary feature of building things for humans.
+
+Against this, a set of practitioners had been quietly doing something else. Kent Beck's work at Chrysler on the C3 payroll project had produced a named collection of practices — pair programming, test-first development, continuous integration, small releases, on-site customer, collective code ownership — that would be published as *Extreme Programming Explained* in 1999. Alistair Cockburn was doing what almost nobody else was doing: actually interviewing project teams about what had happened on their projects, and finding that the methodology documented was usually not the methodology practiced. Martin Fowler had just published *Refactoring*. Ward Cunningham had built the wiki and spent years thinking about how design emerges rather than how it is specified.
+
+These were mostly separate conversations happening in separate places, sustained by mailing lists, the Portland Pattern Repository, and the patterns community that had grown out of PLoP. XP 2000 was one of the first times they got a room.
+
+## The conference itself
+
+The first International Conference on Extreme Programming and Flexible Processes in Software Engineering was organized by Michele Marchesi and Giancarlo Succi and convened in Cagliari, Sardinia, on 21–23 June 2000. It was small by the standards of what agile conferences would become — a few hundred people rather than a few thousand — and it had an unusual composition. Academic researchers were present in real numbers, which mattered: the organizers had made a deliberate choice to run it as a proper peer-reviewed conference rather than a practitioner rally. That decision shaped what the movement became, for better and for worse.
+
+The program mixed formal papers with experience reports and workshops. Beck spoke. Cockburn was there. The talks and hallway conversations covered the questions that would occupy the next decade: Does pair programming actually work, and how would you know? What happens to XP when the team is larger than twelve, or distributed across time zones, or working under a fixed-price contract? Is test-first a design technique or a verification technique? Can any of this survive contact with a customer who will not sit in the room?
+
+What is striking, reading the proceedings now, is how unsettled it all was. This was not a movement announcing settled doctrine. It was people comparing notes on practices that had worked for them in specific circumstances and arguing, sometimes sharply, about which parts generalized.
+
+## Why it mattered
+
+Three things came out of that period that have outlasted the vocabulary.
+
+**First, the feedback loop became the primary design object.** The deepest idea in XP was not any individual practice but the claim that the cost of change need not rise exponentially over a project's life — and that if you could flatten that curve, an enormous amount of upfront ceremony became unnecessary. Every core practice was in service of shortening a loop. Tests shorten the loop between writing a defect and discovering it. Continuous integration shortens the loop between two developers' incompatible assumptions and the moment those assumptions collide. Pairing shortens code review to seconds. Small releases shorten the loop between a guess about what users want and evidence about what they actually do.
+
+Nearly everything your team does today is downstream of that reframing. The modern deployment pipeline, feature flags, trunk-based development, canary releases, observability as a first-class engineering concern — these are all answers to the question XP put on the table, which is: how fast can you find out you were wrong?
+
+**Second, it legitimized the practitioner's account.** The academic presence at XP 2000 cut both ways, but the experience-report format — here is what we did, here is what happened, here is what we would not do again — established that a careful narrative of one project was a contribution worth publishing. That is a modest-sounding claim with large consequences. It created an evidentiary culture, however imperfect, in a field that had largely been running on assertion.
+
+**Third, it set up the Snowbird meeting.** In February 2001, seventeen people met in Utah and produced the Agile Manifesto. The threads that converged there — XP, Scrum, Crystal, DSDM, FDD, Adaptive Software Development, pragmatic programming — had been braiding together at events like XP 2000 for a couple of years. The Manifesto did not spring from nowhere; it was the consolidation of a conversation that Sardinia helped host.
+
+## The uncomfortable part
+
+Honesty requires noting what happened next, because the story of XP is also a cautionary tale about what scales and what does not.
+
+XP's practices are demanding and mutually reinforcing. Test-first without refactoring produces a brittle test suite that cements bad design. Collective ownership without continuous integration produces chaos. Short iterations without a real customer produce a treadmill. The practices were designed as a system, and systems resist partial adoption.
+
+What the industry mostly adopted was the ceremony and not the engineering. Stand-ups, iterations, story points, and retrospectives are cheap to install and require nothing of your codebase. Pairing, ruthless refactoring, and a test suite fast and trustworthy enough to run on every commit are expensive and require a great deal of it. The predictable result is a generation of teams doing two-week sprints on top of code they are frightened to change — which is to say, doing waterfall in fortnight-sized pieces, with more meetings.
+
+That was not what the people in Cagliari were arguing for. Beck's framing was always that XP was primarily a set of technical practices with a social structure around them, not a management framework with some coding tips attached. The industry inverted the emphasis, and we have been living with the inversion since.
+
+## What to take from it
+
+The useful question is not whether to "do XP" — that framing has been dead for years, and it was never the point. The useful question is the one the conference put in play: which of your feedback loops is longest, and what would it cost to halve it?
+
+For most teams the honest answer is not the sprint cadence. It is the time between writing a line of code and having a real user's behavior tell you something about it. XP 2000 is worth remembering not as a founding myth but as an example of a professional community taking its own experience seriously enough to publish it, argue about it, and revise it — which is a practice we could stand to reclaim.

@@ -1,0 +1,53 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Daring Fireball: Cruft
+type: blog post
+area: Software engineering
+matched_human_doc: texts/john-gruber/2002-11-01--daring-fireball-cruft.txt
+words: 731
+generated: 2026-08-31
+---
+
+# Daring Fireball: Cruft
+
+There's a particular kind of file that exists in every codebase I've ever worked in. It compiles. It ships. Nobody knows what it does. Somebody wrote it in 2019 to work around a bug in a dependency that was patched in 2020, and it has been dutifully executing ever since, consuming three milliseconds per request and the attention of every engineer who has ever grepped past it.
+
+We call this cruft, which is a wonderfully dismissive word for something that is actually quite expensive.
+
+The interesting thing about cruft is not that it accumulates. Of course it accumulates — entropy is not a controversial position. The interesting thing is *why we can't get rid of it*, and the answer is almost never technical.
+
+## The economics are upside down
+
+Deleting code is the highest-leverage work available to a software engineer and the worst-compensated. Consider the incentive structure at a typical company. Shipping a feature gets you a demo, a changelog entry, and a line in your performance review. Deleting eight hundred lines of dead abstraction gets you a pull request that nobody wants to review, because reviewing a deletion requires understanding what the deleted thing did, and the entire reason it needs deleting is that nobody does.
+
+So the reviewer has three options: approve it blind, spend two hours reconstructing archaeology nobody asked for, or — most commonly — let the PR sit until it goes stale and the author gives up. The third option is free. The third option wins.
+
+This is not a failure of individual engineers. It's a failure of what we choose to measure. We have elaborate tooling for tracking code that gets added — coverage, complexity, velocity, burndown — and almost none for tracking code that should be removed. Nobody's dashboard has a "lines nobody has read in eighteen months" widget. It would be trivially easy to build and profoundly uncomfortable to look at.
+
+## Cruft is a coordination problem
+
+Here's the part that took me too long to understand. Most cruft isn't ignorance. It's *rational risk aversion in the absence of shared knowledge*.
+
+You are looking at a config flag called `ENABLE_LEGACY_SYNC`. Grep says it's referenced in two places. Git blame says a person who left the company three years ago. The commit message says "fix sync." You can spend a day tracing it, or you can leave it, and leaving it costs you nothing today and costs the company a little bit forever.
+
+Every individual decision to leave it is correct. The aggregate is a disaster. This is the tragedy of the commons with a build step.
+
+The fix isn't heroism. Every team has tried the "cleanup sprint," and every cleanup sprint produces a burst of deletions followed by eighteen months of renewed sedimentation. Sprints treat cruft as a backlog when it's a flow problem. You don't fix a leaking roof with an annual bucket-emptying ceremony.
+
+## What actually works
+
+Three things, in my experience, and none of them are glamorous.
+
+**Attach deletion to the work that touches it.** The engineer modifying the sync module is the only person in the building who will ever have the context to kill `ENABLE_LEGACY_SYNC` cheaply. Make removal part of the definition of done for adjacent work, not a separate ticket that will never be prioritized against a customer request.
+
+**Write expiration dates.** A feature flag with a comment saying `// remove after Q3 2026 rollout` is worth ten times a feature flag without one, because it converts an archaeology problem into a calendar problem. Better yet, make it fail the build after the date. Cruft that screams is cruft that gets removed.
+
+**Make deletion PRs socially cheap.** If your team treats a 900-line deletion with the same review rigor as a 900-line addition, you have priced deletion out of the market. The risk profiles are not symmetrical. A deletion that breaks something breaks it loudly and gets reverted in ten minutes. Approve them fast, revert them faster.
+
+---
+
+The underlying observation is that codebases don't rot because engineers are careless. They rot because the cost of removal is paid entirely up front by one person, and the benefit is distributed thinly across everyone, forever, including people who haven't been hired yet. That's a structural problem wearing a technical costume.
+
+You can't discipline your way out of it. You can only change the price.

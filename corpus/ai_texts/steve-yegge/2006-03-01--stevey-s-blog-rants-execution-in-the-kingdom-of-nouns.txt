@@ -1,0 +1,31 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Stevey's Blog Rants: Execution in the Kingdom of Nouns
+type: blog post
+area: Software engineering
+matched_human_doc: texts/steve-yegge/2006-03-01--stevey-s-blog-rants-execution-in-the-kingdom-of-nouns.txt
+words: 358
+generated: 2026-08-31
+---
+
+# Stevey's Blog Rants: Execution in the Kingdom of Nouns
+
+They've done it again.
+
+You remember the Kingdom of Nouns. Land of the Executives, where nothing simply *happens* — where you can't just eat, you have to instantiate a `FoodConsumptionActivityStrategy` and hand it to a `MealExecutionCoordinator` which delegates to an `IngestionServiceImpl`. Verbs, in that kingdom, were second-class citizens. They had to be adopted by a noun before they were allowed to work.
+
+Well, the verbs escaped. We got lambdas. We got closures in Java, functions as values in C#, `map` and `filter` in every language shipping today. For about ten years it looked like the peasants had won.
+
+And then we invented agents.
+
+Look at what we're writing now. You want a model to send an email. Does it send an email? Of course not. You define a **Tool**. The Tool has a **Schema**. The Schema is consumed by a **Registry**, which is injected into an **Executor**, which is wrapped by an **Orchestrator**, which is supervised by a **Planner**, which reports to a **Controller** that maintains **State** in a **Memory Store** behind a **Retriever** fronted by a **Context Manager**.
+
+Somewhere at the bottom of that pile is one line of code that calls an SMTP library. That line is the only part of the system that does anything. Everything above it is nouns holding a meeting about the verb.
+
+The kingdom didn't fall. It relocated. We stopped putting the ceremony in the type system and started putting it in the architecture diagram, where it's harder to refactor and impossible to typecheck. `AbstractSingletonProxyFactoryBean` at least had the decency to be a compiler error when you got it wrong. A seven-layer agent stack just quietly does nothing for forty seconds and returns an empty string.
+
+Here's the test, and it's the same test it's always been: count the classes between the user's intent and the side effect. If the answer is more than three, you're not building a system. You're building a bureaucracy, and bureaucracies don't execute. They *coordinate the execution*, which is a noun, which is the whole problem.
+
+Write the function. Call the function. The kingdom is optional.

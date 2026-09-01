@@ -1,0 +1,53 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: 3 Coercive Copywriting Techniques
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/brian-clark/2006-09-06--3-coercive-copywriting-techniques.txt
+words: 727
+generated: 2026-08-31
+---
+
+# 3 Coercive Copywriting Techniques
+
+There's a line between persuasion and coercion, and most of us have crossed it without noticing. Persuasion gives someone a reason to act. Coercion manufactures a state — anxiety, shame, confusion — and then offers your product as the exit. The distinction matters commercially, not just ethically: coerced conversions churn, refund, and complain at rates that quietly eat the lift you thought you'd won.
+
+Here are three techniques that show up constantly in otherwise respectable marketing, and what to do instead.
+
+## 1. Manufactured scarcity
+
+Real scarcity is information. If you have forty seats and thirty-eight are gone, saying so helps people decide. Manufactured scarcity is different: the countdown timer that resets when you reload the page, the "only 3 left in stock" that has never once said 4, the cohort that closes Friday and reopens the following Tuesday.
+
+What makes this coercive rather than merely persuasive is that it removes deliberation on purpose. The whole mechanism is designed to stop someone from doing the thing a good buyer does — thinking about it, comparing, asking a colleague. You're not making the offer better. You're making careful evaluation feel expensive.
+
+The tell is simple: **if the deadline would be embarrassing to explain, it's fake.** "The price goes up because we're adding live coaching in March" survives scrutiny. "The price goes up because urgency converts" does not.
+
+The honest alternative isn't to abandon deadlines. It's to have real ones and state them plainly. Real cohort dates, real inventory, real seasonal pricing. These convert nearly as well and don't require you to hide how the sausage is made.
+
+## 2. Problem inflation
+
+This is the technique of taking a mild inconvenience and describing it as a crisis of identity or competence. The reader arrived mildly curious about a project management tool. Three paragraphs later, they're apparently disorganised, letting their team down, and watching competitors pull ahead while they drown in Slack.
+
+Some of this is standard copywriting: agitate the problem before presenting the solution. The coercive version goes further by inflating the problem past what the evidence supports, and by relocating it from *a thing that is happening* to *a thing you are*. "Your reporting takes too long" is a problem statement. "You're the kind of founder who's always reacting instead of leading" is an attack dressed as empathy.
+
+It works, briefly, because shame produces action. But shame-driven purchases are followed by shame-driven regret, and the customer who bought because you made them feel small does not become an advocate. They become a refund request and, increasingly, a screenshot.
+
+The test: **would you say this sentence to the reader's face, in a meeting, with their boss present?** If the copy only works because it's anonymous and one-directional, that's a signal.
+
+The alternative is specificity. Name the actual cost — the hours, the errors, the missed renewal — and let the reader decide how much it hurts. Accurate problems are usually motivating enough.
+
+## 3. Consent friction
+
+The third technique isn't in the body copy at all. It's in the mechanics: the confirmshaming opt-out ("No thanks, I like wasting money"), the unsubscribe link buried three pages deep, the pre-ticked box, the cancellation flow that requires a phone call while signup took one click.
+
+This is the most legally exposed of the three — regulators across multiple jurisdictions have moved hard on dark patterns and asymmetric cancellation — but the commercial argument is stronger than the compliance one. Every friction you add to leaving is a tax on trust for everyone who stays. Customers notice how hard it was to cancel the *last* thing, and they price it into whether they sign up for yours.
+
+The rule of thumb is symmetry: **leaving should be roughly as easy as arriving.** One click in, one click out. Opt-out language that a reasonable person would write if they had no stake in the answer.
+
+## The underlying question
+
+All three techniques share a structure: they work by reducing the reader's capacity to make a clear-headed decision, rather than by giving them better grounds for one.
+
+That's a useful diagnostic to run over your own drafts. Ask whether the copy would still work if the reader could see exactly what you were doing. Good persuasion survives that. Coercion doesn't — which is precisely why it depends on not being noticed.

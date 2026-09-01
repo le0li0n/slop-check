@@ -1,0 +1,71 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Developing a Content Marketing Strategy
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/joe-pulizzi/2010-12-01--developing-a-content-marketing-strategy.txt
+words: 1488
+generated: 2026-08-31
+---
+
+# Developing a Content Marketing Strategy
+
+Most content programs don't fail because the writing is weak. They fail because nobody wrote down what the content is supposed to do before the first draft went out. Teams publish because a competitor is publishing, because the calendar has a gap, because someone in a meeting said "we should probably have a blog post about that." None of this is strategy. It's motion dressed up as progress, and it burns budget without moving anything that matters to the business.
+
+A real content marketing strategy is a small number of decisions, made deliberately, that everything downstream inherits. Get those decisions right and a lean team with modest resources will outperform a well-funded team that skipped the thinking. Get them wrong and no amount of production volume fixes it.
+
+## Start with the business outcome, not the content calendar
+
+Before touching topics, formats, or channels, answer one question precisely: what business result is this content supposed to produce? Not "brand awareness" — that's a proxy, not an outcome. Pipeline generated, trial signups, retention of existing customers, sales cycle shortened because prospects arrive better educated, support tickets reduced because documentation answers questions before they're asked. Pick the outcome that's actually true for your business right now, because it determines almost everything that follows.
+
+A B2B software company trying to shorten an 11-month enterprise sales cycle needs content that arms the champion inside the buying committee — comparison guides, ROI calculators, security documentation. A DTC brand trying to build repeat purchase behavior needs something else entirely — usage content, community, lifestyle framing that keeps the product top of mind between purchases. Both are "content marketing." They should look almost nothing alike. Confusing the two is the single most common strategic error, and it's usually invisible from inside the marketing team because everyone is busy and the content is getting made.
+
+Write the outcome down in one sentence. If you can't, you're not ready to plan topics yet.
+
+## Know who you're writing for, specifically
+
+"Marketing leaders at mid-market companies" is a job title, not an audience. Effective content strategy requires understanding what your audience already believes, what they're skeptical of, what they've already tried and had fail, and what language they use to describe their own problem — which is often not the language your product team uses to describe the solution.
+
+This is where talking to actual customers earns its keep over guessing in a conference room. Sales call transcripts, support tickets, win/loss interviews, and churn conversations contain the real vocabulary and the real objections. If your content answers questions your audience isn't actually asking, or answers them using internal jargon, it will read as competent and generate nothing.
+
+It's also worth being honest about how many audiences you're actually serving. Many B2B companies write for one persona while selling to three — an economic buyer, a technical evaluator, and a day-to-day user, each of whom needs different proof before they'll say yes. A strategy that pretends there's one audience produces content that half-satisfies everyone and fully satisfies no one.
+
+## Audit before you plan anything new
+
+Almost every organization considering a "content strategy" already has content — a blog with three years of posts, some gated whitepapers nobody's touched since 2022, a handful of case studies buried on a resources page nobody links to. Before proposing anything new, audit what exists. Group it by topic, format, and performance, and be ruthless about what's actually driving traffic, engagement, or conversions versus what's just sitting there.
+
+This does three things. It stops you from planning content that duplicates something already published. It surfaces which existing topics and formats are working, which is a far better guide to what to do next than intuition. And it identifies decayed content worth refreshing — updating an existing asset with current data and better positioning is usually cheaper than creating something new, and it inherits whatever search equity the original already built.
+
+## Build the pillar-and-cluster structure, not a list of blog ideas
+
+A content calendar that's just a list of loosely related topics produces a body of work with no internal architecture — nothing reinforces anything else, and search engines have no signal that you have real authority on the subject. The alternative is organizing content around a small number of pillar topics — the three to five core themes that map directly to your business outcome and your audience's actual problems — with cluster content underneath each pillar that goes deeper on specific subtopics and links back to the pillar page.
+
+This structure does double duty. It builds topical authority for SEO, because a cluster of interlinked, related content signals depth in a way that scattered individual posts never do. And it gives your team a decision-making framework: when someone proposes a new topic, the question becomes "which pillar does this serve, and what's the cluster it belongs to" rather than "does this sound interesting." That single filter eliminates most of the off-strategy content that otherwise creeps into a calendar over time.
+
+## Match format and channel to how the audience actually behaves
+
+Format decisions should follow from where your audience already spends attention and how they consume information at each stage of their decision — not from what's trendy or what a competitor is doing. Someone at the earliest stage of recognizing a problem behaves differently than someone comparing three vendors on a shortlist. Top-of-funnel content should be built for discovery — search-optimized, accessible without a form, framed around the problem rather than the product. Bottom-of-funnel content can be more direct, more product-specific, and gated if the value exchange justifies asking for contact information.
+
+Channel strategy follows the same logic. Long-form written content still anchors most B2B strategies because it compounds through search, but it rarely stands alone anymore. Video serves audiences who won't read a 2,000-word guide but will watch a four-minute walkthrough. LinkedIn works for distribution and thought leadership in B2B; TikTok and Instagram often outperform it for consumer categories where discovery is more visual and impulsive. Email remains the highest-leverage channel for reaching people who've already opted in, precisely because it doesn't depend on an algorithm's mood that day.
+
+Resist the temptation to be everywhere. A strategy spread across six channels at low quality loses to a strategy executed well on two.
+
+## Decide how success gets measured before publishing starts
+
+Vanity metrics are seductive because they're easy to report and always trend upward with volume. Pageviews and social shares feel like progress but rarely connect to the business outcome defined at the start. Tie measurement back to that original outcome instead: pipeline influenced, assisted conversions, organic traffic to commercial-intent pages, content-attributed revenue, time-to-close for prospects who engaged with content versus those who didn't.
+
+Set the measurement framework before content starts publishing, not after someone asks for a quarterly report. Retrofitting attribution onto eighteen months of unstructured content is painful and usually produces answers nobody trusts. Build UTM conventions, define what counts as an engaged visit, and agree with sales or revenue teams in advance on how content-influenced pipeline gets credited. That agreement, made early, prevents the credit-assignment arguments that otherwise erode trust in the entire program later.
+
+## Staff and resource for consistency, not bursts
+
+Content marketing compounds — search rankings build over months, audience trust builds over repeated exposure, and a library of interlinked content becomes more valuable as it grows. That compounding only works with consistency. A team that publishes intensely for six weeks and then goes quiet for two months loses most of the momentum it built, because both algorithms and audiences reward reliability.
+
+This has direct implications for how a strategy gets resourced. It's better to commit to a sustainable cadence — even a modest one — than to plan an ambitious calendar that collapses the first time a team member is out sick or a launch pulls everyone's attention elsewhere. Build in the operational reality: who writes, who edits, who approves, and how long each stage actually takes, not how long it takes in the optimistic version of the plan.
+
+## Revisit the strategy on a cycle, not never
+
+A content strategy isn't a document you write once and execute against for two years. Search algorithms shift, competitors publish, audience needs change as the market matures, and the data from what you've already published becomes the best input you have for what to do next. Build in a quarterly review: what's performing, what's stalled, what's now redundant, and whether the original business outcome is still the right one to organize around.
+
+The strategy that survives contact with real publishing data, gets adjusted, and keeps compounding will beat the strategy that was more elegant on paper but never got revisited. The goal was never a perfect plan — it was a durable system for making good content decisions faster than you could make them one at a time.

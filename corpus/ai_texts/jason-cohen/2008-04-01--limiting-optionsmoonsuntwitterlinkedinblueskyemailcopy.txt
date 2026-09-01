@@ -1,0 +1,51 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Limiting OptionsMoonSunTwitterLinkedInBlueskyEmailCopy Link
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/jason-cohen/2008-04-01--limiting-optionsmoonsuntwitterlinkedinblueskyemailcopy.txt
+words: 813
+generated: 2026-08-31
+---
+
+# Limiting OptionsMoonSunTwitterLinkedInBlueskyEmailCopy Link
+
+That title is not a typo. It is what happens when you copy a blog post out of a browser and the share widget comes along for the ride. The author wrote two words. The page delivered eight. Somewhere between the writing and the reading, a dark mode toggle, four social networks, an email button, and a copy-link affordance inserted themselves into the headline.
+
+I keep thinking about this as a metaphor for how startups accumulate surface area.
+
+## The share widget is never the product
+
+No one has ever chosen a product because it had a Bluesky button. No one has churned because it didn't. And yet the share widget exists on nearly every content page on the internet, because at some point someone asked "why wouldn't we?" and there was no good answer available in the room.
+
+"Why wouldn't we" is the most expensive question in early-stage product development. It has no natural stopping point. Every individual addition is cheap, defensible, and roughly free at the margin. The cost only shows up in aggregate, and by then it is distributed across so many small decisions that no single one looks like the culprit.
+
+The startups that ship fast are not the ones with better engineers. They are the ones that have found a way to answer "why wouldn't we" with something other than a shrug.
+
+## Optionality has a carrying cost
+
+Venture professionals are trained to love optionality. Keep the option open. Don't foreclose the path. Raise more than you need so you have room to maneuver. This is good advice about capital structure and bad advice about product.
+
+Every option a product keeps open is a branch that has to be maintained, tested, documented, and reasoned about. The dark mode toggle is not free — it doubles the visual surface every subsequent designer has to check. The four social buttons are not free — they are four third-party scripts, four privacy review items, four things that break when a network rebrands. The copy-link button is not free, though it is close, which is exactly why it survives.
+
+The carrying cost of optionality compounds in the same direction as technical debt, but it is harder to see because it does not live in the codebase. It lives in the decision space. Every new hire has to learn the options. Every roadmap conversation has to route around them. Every customer conversation includes a moment where someone asks what all this does.
+
+Founders who understand this tend to run a specific play: they delete things on purpose, on a schedule, before anyone complains. Not because the deleted things were bad, but because the act of deletion is the only force in a startup that pushes against accumulation. Nothing else does. Sales wants features. Support wants toggles. Engineering wants abstractions. Nobody's job is to want less.
+
+## What this means for investors
+
+If you are diligencing a company, the product tells you something the deck cannot. Count the things on the main screen. Ask what got cut in the last two quarters and why. A founder who can name three features they killed and explain the reasoning is running a different operation than one who can only name what they shipped.
+
+The killed-feature answer is diagnostic in a way that shipped-feature answers are not. Shipping is what happens by default when a team has money and momentum. Killing requires someone to hold a position against the natural drift of the organization, absorb the internal disagreement, and be wrong sometimes in public. That is a leadership signal, and it is much harder to fake than velocity.
+
+The corollary matters too. Watch for companies where the product surface grows in proportion to headcount. That is not a product roadmap; that is an org chart rendered in software. It usually means the company has stopped choosing and started accommodating, and it is very difficult to reverse once the accommodations have owners.
+
+## The narrow version
+
+The title of this post is what a page looks like when nobody was responsible for the boundary. Eight things where two were intended, and no single person who did anything wrong.
+
+Most product bloat looks exactly like this. Not a bad decision, but an absence of decisions — a series of small yeses, each individually reasonable, that add up to something no one would have designed on purpose. The fix is not better taste or a stricter review process. It is having someone whose actual job is to say the word no and mean it, with enough authority that the no sticks.
+
+That role is usually the founder, at least until it can't be. What happens after that is the more interesting question, and it is the one worth asking in diligence: when this company gets to four hundred people, who is still allowed to remove things?

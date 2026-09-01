@@ -1,0 +1,27 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Let's Celebrate: 200th Post!! Also, It's Moving Day!
+type: blog post
+area: Sales & business development
+matched_human_doc: texts/dave-brock/2009-07-23--let-s-celebrate-200th-post-also-it-s-moving-day.txt
+words: 393
+generated: 2026-08-31
+---
+
+Let's Celebrate: 200th Post!! Also, It's Moving Day!
+
+Two hundred. When I wrote the first one, I figured I'd run out of things to say around post twelve. Instead, here we are — two hundred posts deep into the stuff that actually moves deals: prospecting that doesn't feel like spam, discovery calls that uncover the real problem instead of the stated one, pipeline math that doesn't lie to you in Q4, and the thousand small habits that separate reps who hit quota from reps who explain why they didn't.
+
+Thank you for reading, sharing, arguing in the comments, and forwarding these to your team when a post landed a little too close to home. This blog only works because you keep showing up, and a lot of you have turned specific posts into scripts, into onboarding docs, into the thing you read before a hard renewal conversation. That's the whole point.
+
+Now, the other headline: it's moving day. This blog is packing up and heading to a new home with a cleaner design, faster load times, and — long overdue — actual search that works. If you're subscribed by email, nothing changes on your end; the good stuff still lands in your inbox on schedule. If you've bookmarked the site directly, update that link once the move is final, because the old address will redirect for a while but not forever.
+
+Why move at all, 200 posts in? Because the platform that got us here can't support what's coming next: real discussion threads, a proper resource library organized by deal stage instead of publish date, and a few interactive tools I've wanted to build for over a year. Growth means outgrowing the first apartment.
+
+So here's what's ahead: same voice, same focus on practical sales and BD advice you can use before your next call, just with better plumbing underneath. Post 201 will be the first one live on the new site — consider it a housewarming.
+
+If you've got a favorite post from the last 200, or a topic you want covered in the next 200, reply and tell me. Seriously — some of the best posts in this run started as a comment from someone in the trenches, closing deals, wondering why nobody talks about the thing that just bit them.
+
+Here's to the next two hundred. Same commitment, new address.

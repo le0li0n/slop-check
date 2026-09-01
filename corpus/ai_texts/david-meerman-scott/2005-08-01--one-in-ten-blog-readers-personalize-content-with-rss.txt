@@ -1,0 +1,39 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: One in ten blog readers personalize content with RSS
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/david-meerman-scott/2005-08-01--one-in-ten-blog-readers-personalize-content-with-rss.txt
+words: 355
+generated: 2026-08-31
+---
+
+# One in ten blog readers personalize content with RSS
+
+Here's a number worth sitting with: roughly one in ten of your blog readers doesn't read your blog. They read a feed.
+
+RSS never died — it just stopped being visible. The people using it now are a specific, valuable segment: they've deliberately opted out of algorithmic discovery and built their own curation layer. They chose you, added you to a list, and see every post you publish without a subscribe modal or an inbox fight. For content marketers, that's the highest-intent audience you have, and most of us are invisible to it.
+
+**Why this segment matters more than its size**
+
+Ten percent sounds marginal until you look at who's in it. Feed readers skew toward practitioners, analysts, journalists, and developers — the people who cite, share, and repurpose your work. They're the amplification layer. A newsletter subscriber reads your post; a feed reader turns it into a link in someone else's roundup.
+
+They're also durable. No deliverability cliff, no promotions tab, no platform reach adjustment. Once you're in the feed, you stay there until they remove you.
+
+**Where most brands lose them**
+
+Three failures show up constantly:
+
+*Truncated feeds.* Publishing a 40-word excerpt with a "read more" link treats the feed like a teaser channel. Feed readers notice, and many unsubscribe. Full-text feeds get read.
+
+*Broken or hidden discovery.* If your feed URL isn't in your `<head>` as an autodiscovery link, readers can't find it by pasting your homepage. Many CMS migrations quietly kill this.
+
+*Nothing measured.* Feed traffic gets bucketed as "direct" in most analytics setups, so it never appears in the reporting that determines budget. Add UTM parameters to feed links and the channel becomes legible.
+
+**The practical move**
+
+Audit your feed this week. Does it exist? Does it validate? Does it carry full text, images, and author metadata? Is it linked from your site header and footer, not just buried?
+
+This isn't a growth channel you build from scratch. It's an audience you already have, served badly. Fixing it is an afternoon of work, and it compounds every time you publish.

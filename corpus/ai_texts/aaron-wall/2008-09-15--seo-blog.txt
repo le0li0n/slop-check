@@ -1,0 +1,51 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: SEO Blog
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/aaron-wall/2008-09-15--seo-blog.txt
+words: 1336
+generated: 2026-08-31
+---
+
+# SEO Blog
+
+For years, the phrase "SEO blog" meant something specific and a little cynical: a content calendar built around keyword volume, an editor optimizing for search intent over reader value, and a publishing cadence driven by what Ahrefs said would rank rather than what anyone actually wanted to read. That model isn't dead, but it's dying faster than most content teams have admitted internally. The gap between "content that ranks" and "content that gets cited, clicked, and trusted" has widened into something teams can no longer paper over with better meta descriptions.
+
+This matters because the traffic mechanics underneath SEO have changed twice in the last three years, and most blogging strategies were built for the version that existed before either shift.
+
+## The keyword-first playbook is running on fumes
+
+The original SEO blog formula was elegant in its simplicity: find a keyword with decent volume and manageable difficulty, write 1,500–2,000 words that hit the right headers and semantic variations, build a few backlinks, and wait. It worked because search results were a relatively stable, rules-based system. Google's crawlers rewarded structure and relevance; marketers reverse-engineered the structure and relevance.
+
+That formula still produces *some* results, but three things have eroded its return on effort. First, the sheer volume of content chasing the same keywords means differentiation increasingly comes down to brand authority and backlink profile rather than on-page optimization — which means a smaller blog doing everything "right" on a technical level still loses to a bigger domain doing it adequately. Second, Google's own SERP features (featured snippets, People Also Ask, AI Overviews) increasingly answer the query before the user ever reaches an organic listing, which means ranking #1 doesn't guarantee a click the way it did in 2018. Third, and most significantly, a growing share of research and discovery has moved off the search results page entirely, into chat interfaces that don't show ten blue links at all.
+
+None of this means blogging for organic visibility is over. It means the blog post that wins in 2026 is optimized for a different kind of reader — and a different kind of reader isn't always human.
+
+## Writing for two audiences at once
+
+Every piece of content marketing teams publish now effectively has two readers: the person who lands on the page, and the language model that may summarize, cite, or synthesize that page into an answer somewhere else entirely. This is the practical reality behind terms like "answer engine optimization" or "generative engine optimization" that have been circulating — the label matters less than the underlying shift, which is that being *extractable* is now as important as being *rankable*.
+
+What makes a page extractable? Largely the same things that make it good for a human skimmer: clear, direct answers near the top of a section; well-labeled headers that match how someone would actually phrase a question; specific numbers and claims instead of vague assertions; and structured data that helps a crawler (of any kind) understand what the page is actually saying. The uncomfortable truth for a lot of content teams is that writing this way was always good practice — it's just that keyword-stuffed intros and SEO throat-clearing ("In today's fast-paced digital landscape...") used to be tolerated because they didn't cost you the click. Now they do, because an LLM summarizing your page for a user will skip straight past the fluff, and if there's no substance underneath it, it'll skip your page for the next source too.
+
+This is a genuine opportunity for teams willing to write plainly. A blog post that states its point in the first two sentences, backs it with a specific example or data point, and doesn't pad toward a word count is now doing double duty: it satisfies the reader who's in a hurry, and it's more likely to be the paragraph an AI Overview lifts verbatim.
+
+## Volume was never really the strategy — distinctiveness was
+
+There's a related myth worth retiring: that an SEO blog's job is to publish a lot. Content teams that treated the blog as a volume game — three posts a week, cover every long-tail variant of the core keyword, let quantity compensate for thinness — are the ones feeling the most pain right now, because that strategy depended on search rewarding coverage. Search (and now AI summarization) increasingly rewards the *best* answer to a question, not the *most* answers.
+
+The practical implication is a shift from "how many keywords can we cover" to "which questions can we answer better than anyone else has." That's a harder editorial calculus because it can't be automated by a keyword tool alone — it requires actual domain knowledge, a point of view, or proprietary data that a competitor can't simply replicate by paying a freelancer to write a similar-length post. Teams with access to genuine expertise (a product team, a support queue full of real customer questions, usage data, a founder with hard-won operational scars) have an advantage here that a generic content mill does not. The blog becomes less "content operations" and more "packaging what we already know."
+
+## Trust signals matter more than they used to
+
+Search engines have leaned harder on E-E-A-T (experience, expertise, authoritativeness, trustworthiness) for a reason that predates AI: the web filled up with low-effort, AI-generated filler, and ranking systems needed a way to separate it from content written by someone who's actually done the thing. Practically, this shows up in small but consequential choices — a byline with a real name and credentials, an author page, first-person detail that couldn't have been generated from a prompt alone, original screenshots instead of stock imagery, and dates that are kept current rather than backdated to look evergreen.
+
+None of this is about gaming a signal. It's about the fact that "who is saying this and why should I believe them" has become a harder question for readers (and algorithms) to answer amid a flood of synthetic content, and blogs that answer it clearly are being rewarded for doing so. A post written by a practitioner with a name and a LinkedIn profile carries more weight than the same words published anonymously — and increasingly, that weight shows up in rankings and citations, not just reader trust.
+
+## What this means for how teams should actually work
+
+A few practical shifts follow from all of this, and they're less about tactics and more about where effort gets allocated. Editorial calendars built purely off keyword-difficulty spreadsheets should get supplemented — not replaced, but supplemented — with a running list of the specific questions customers, sales teams, and support tickets actually surface, because those are the queries with the least existing competition and the clearest signal of real intent. Content teams should also budget real time for updating and consolidating old posts instead of only producing new ones; a five-year-old post with stale statistics is actively working against trust signals now, in a way it wasn't as costly five years ago. And measurement needs to expand past organic sessions and keyword rank — tracking brand mentions in AI-generated answers, referral traffic from chat interfaces, and share of voice on the specific questions a business cares about is becoming as relevant as a rank tracker, even though the tooling for it is still immature and inconsistent across platforms.
+
+None of this requires abandoning SEO fundamentals — technical crawlability, sensible information architecture, internal linking, and page speed still matter, and teams that let those lapse because "SEO is dead" are making an unforced error. What's changed is the ceiling on what keyword optimization alone can deliver, and the floor beneath what thin, generic content can survive. The SEO blog isn't dead. But the version of it that treated writing as a means to a ranking, rather than the actual thing being evaluated, is running out of road — and the teams adjusting fastest are the ones treating the blog as a genuine knowledge asset again, not just a traffic-acquisition channel with a publish button.

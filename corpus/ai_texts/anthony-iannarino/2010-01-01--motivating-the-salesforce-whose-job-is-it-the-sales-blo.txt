@@ -1,0 +1,65 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Motivating the Salesforce: Whose Job Is It? | The Sales BlogFollow me on my websiteFollow me on FacebookFollow me on Lin
+type: blog post
+area: Sales & business development
+matched_human_doc: texts/anthony-iannarino/2010-01-01--motivating-the-salesforce-whose-job-is-it-the-sales-blo.txt
+words: 1413
+generated: 2026-08-31
+---
+
+# Motivating the Salesforce: Whose Job Is It? | The Sales Blog
+
+Ask a room full of sales leaders who owns motivation and you'll get a fast, confident answer: the sales manager. Ask that same room how well it's working, and the confidence drains out of the conversation. Managers describe salespeople who won't pick up the phone. Salespeople describe managers whose idea of inspiration is a pipeline review and a reminder that the quarter ends in eleven days. Everyone is frustrated. Everyone believes the problem lives one rung away from them on the org chart.
+
+The question in the title has an answer, but it isn't the tidy one. Motivation isn't a single job that belongs to a single person. It's a system with three participants — the individual contributor, the manager, and the organization — and each one owns a different piece. When any of the three abdicates, the other two can't compensate, no matter how loudly they try.
+
+Let's take them in order of importance, which means starting where most companies start last.
+
+## The Salesperson Owns the Fuel
+
+Here's the uncomfortable part, and I'll put it plainly: **no one can motivate you.** Not your manager, not a speaker at your national sales meeting, not a book, not a president's club trip to somewhere with better weather than where you live. What other people can do is create conditions where your own motivation gets easier to access. The motivation itself has to already be in you, or there's nothing to access.
+
+This isn't a pep talk. It's a structural observation about how sales work actually functions. You spend the bulk of your week alone — in your car, at your desk, between calls, staring at a list of people who did not ask to hear from you. Nobody is watching. Nobody is going to notice if you make twelve calls instead of thirty, not that day anyway. The gap between what you're supposed to do and what anyone can verify you did is enormous, and it's filled entirely by whatever you brought with you that morning.
+
+So the first question isn't "how do I get motivated?" It's "what am I actually after?" And the answer needs to be specific enough to survive a bad Tuesday. "I want to be successful" won't do it. "I need $14,000 more this year to stop being anxious about my daughter's tuition" will. "I want to be the person on this team who doesn't need managing, because that's the person who gets the territory when it opens" will. Motivation that runs on abstractions is motivation that evaporates the first time a deal you counted on goes sideways.
+
+The salespeople who sustain performance over years — not quarters, years — have almost always done this work. They know what they're trading their weeks for. They've made peace with the fact that the work is hard and often unrewarding in the short term, and they've located a reason that makes the trade worth it anyway. They don't require a manager to remind them.
+
+If you're reading this as a rep and thinking that sounds like the company off-loading its responsibility onto you: partly, yes. But consider what the alternative implies. If your motivation belongs to your manager, then your career belongs to your manager. That's a bad deal for you. Owning your own fuel is the only version of this where you're actually in charge of your outcomes.
+
+## The Manager Owns the Conditions
+
+The manager can't manufacture motivation, but they can absolutely destroy it — and that asymmetry is the whole job.
+
+Think about what actually drains a good salesperson. Not the rejection; they signed up for that. It's the eleven-field CRM requirement that no one ever looks at. It's the deal that dies in legal for six weeks with no explanation. It's watching someone who plays politics get the enterprise account you sourced. It's asking for help on a stalled opportunity and getting a question about your forecast instead. It's a comp plan that changes in October. Every one of these is a manager-adjacent problem, and every one of them costs more energy than a month of cold calls.
+
+So the manager's first obligation is subtractive: remove the friction that makes motivated people tired. Kill the reports nobody reads. Fight the internal battles your team can't fight. Make the path from effort to outcome as short and as visible as you can, because effort that disappears into a void stops getting made.
+
+The second obligation is developmental, and it's the one most managers under-invest in. Confidence is the closest thing to renewable motivation that exists in sales, and confidence comes from competence. A rep who genuinely knows how to run a discovery conversation is not dreading their calendar the way a rep who's winging it is. When you coach someone into real capability, you're not just improving their numbers — you're removing the low-grade dread that's been quietly eating their willingness to prospect. Most "motivation problems" I've watched up close were skill problems wearing a disguise.
+
+The third obligation is the personal one. You cannot motivate someone you don't know. What moves the 26-year-old who wants to buy a house is not what moves the 51-year-old whose kids just left home and who's wondering whether this is all there is. The manager who runs the same speech at everyone is running a speech that lands with roughly nobody. This requires actual conversations, repeated over time, about things other than pipeline — which is precisely why so few managers do it. It doesn't scale and it doesn't show up in a dashboard.
+
+What managers should stop doing: treating motivation as an event. The rally, the kickoff, the guest speaker, the contest with a gift card. These aren't harmful, but their half-life is about four days, and organizations that lean on them are usually using them to avoid the harder, quieter work above.
+
+## The Organization Owns the Meaning
+
+The third participant is the one most often left out of this conversation, and its contribution may be the most durable.
+
+Companies control three things that individual managers largely don't. First, whether the work is winnable — a quota built on fantasy math, a product that doesn't hold up, a territory that was carved up three times last year. You cannot coach someone into enthusiasm for a game they can't win. Second, whether the rewards are honest — comp plans that don't get clawed back, promotions that go to performers, recognition that reaches the people who earned it rather than the people nearest the executive team. Third, and largest: whether the work means anything.
+
+That last one gets dismissed as soft, which is a mistake. The single most reliable source of durable motivation I've seen in sales is a genuine belief that the client is better off for having bought. It converts prospecting from an imposition into an obligation. It makes the tenth call of the day easier, because you're not trying to extract something — you're trying to reach someone who has a problem you can solve. A salesperson who believes that doesn't need to be talked into the phone.
+
+But no rep can generate that belief alone, and no manager can install it by asserting it. It comes from the organization actually delivering — from a product that works, a delivery team that follows through, references that hold up. Companies that under-deliver and then wonder why their salesforce lacks fire are asking the wrong question. Their people know what happens after the signature. That knowledge is doing the demotivating.
+
+## So, Whose Job Is It?
+
+All three, in this order of weight: **yours first, your manager's second, your company's third.**
+
+That ordering matters. If you're a rep waiting for the other two to hold up their end before you bring your own, you'll wait a long time and lose years doing it. Bring your own fuel; it's the only part fully in your control, and it makes you valuable everywhere.
+
+If you're a manager, don't try to be the source. Be the person who clears the road, builds the skill, and knows what each person on the team is actually chasing. That's a bigger job than giving speeches, and it's the one that works.
+
+And if you lead the organization: understand that you're either adding energy to the system or quietly draining it, and that your salespeople can tell the difference long before your engagement survey can.

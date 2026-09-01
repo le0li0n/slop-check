@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Looking For Work: Are You an Insurance Agent?
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/bill-gurley/2009-03-02--looking-for-work-are-you-an-insurance-agent.txt
+words: 330
+generated: 2026-08-31
+---
+
+# Looking For Work: Are You an Insurance Agent?
+
+Here's a pattern I keep seeing in insurtech: founders raise a seed round, build a slick underwriting model or a beautiful quote flow, and then hit a wall that no amount of engineering solves. They don't actually understand insurance. Not the product-market mechanics of it — the real thing. Why an agent recommends one carrier over another. What actually gets an application kicked back. How trust gets built with a client who's about to hand over their biggest financial exposure to a company they've never heard of.
+
+That knowledge doesn't live in a Zendesk article or an API spec. It lives in agents.
+
+If you're a licensed agent — P&C, life, health, doesn't matter which — and you've ever found yourself explaining to a founder why their "disruptive" product would get laughed out of a real client conversation, you already have the instinct startups are missing. Distribution, underwriting judgment, claims intuition, compliance reflexes: these are exactly the gaps that kill insurtech companies between seed and Series A, and they're almost never filled by another engineer or another growth hire.
+
+So this is a direct ask, not a hypothetical one: if you're an agent open to something new — full-time, advisory, fractional, whatever shape makes sense — startups in this space need you more than they know how to ask for. Titles vary: Head of Insurance Operations, Carrier Relations, Founding Agent, Compliance Lead. The job underneath is usually the same — be the person in the room who's actually sold this before.
+
+For the venture and founder folks reading this: if you're building or backing anything that touches underwriting, distribution, or claims, and there isn't a working agent on the team or the cap table, that's worth flagging before the next round, not after a renewal cycle goes sideways.
+
+If you're an agent curious what this could look like, or a founder who needs one, reach out. Worth a conversation either way.

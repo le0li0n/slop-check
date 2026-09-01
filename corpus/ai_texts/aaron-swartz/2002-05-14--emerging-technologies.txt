@@ -1,0 +1,79 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Emerging Technologies
+type: blog post
+area: Software engineering
+matched_human_doc: texts/aaron-swartz/2002-05-14--emerging-technologies.txt
+words: 1405
+generated: 2026-08-31
+---
+
+# Emerging Technologies
+
+Every few years the industry agrees on a new set of things that are about to change everything. Most of them don't. A few do, but rarely in the shape the early evangelism promised. The useful skill isn't predicting which technologies win — it's knowing what kind of bet each one represents, and what it costs you to be wrong.
+
+Here's an honest look at several technologies currently in the "emerging" bucket, written for people who will have to maintain whatever they adopt.
+
+## The pattern behind the hype cycle
+
+Before the specifics, a structural observation. Technologies that genuinely reshape software engineering tend to share a property: they change the cost of something by an order of magnitude, and that cost was previously load-bearing for a lot of architectural decisions.
+
+Virtualization made a server cost minutes instead of weeks, and the entire discipline of capacity planning reorganized around it. Version control that handled branching cheaply changed how teams collaborate. Cheap object storage killed a generation of careful data lifecycle management.
+
+Compare that to technologies that generate enormous discussion and modest change. Most of them offer a *better* way to do something rather than a *categorically cheaper* one. Better is real, but better gets absorbed into existing practice without reorganizing it. When you evaluate something new, the first question is which category it's in — and be suspicious of your own answer, because everything sounds categorical in a conference talk.
+
+## Language models as infrastructure, not features
+
+The obvious entry. Two years ago, most engineering conversation about LLMs was about whether they were useful. That question is settled for a range of tasks. The interesting question now is architectural: what does it mean to have a dependency in your system that is non-deterministic, has variable latency measured in seconds, costs money per invocation, and occasionally produces confidently wrong output?
+
+We have decades of practice building systems out of components with well-defined contracts. A model has a fuzzy contract. This is genuinely new, and most teams are handling it badly — either by pretending the fuzziness isn't there and shipping features that fail in embarrassing ways, or by wrapping everything in so much validation that the model's flexibility is neutralized.
+
+The teams doing this well have converged on a few things. They treat model output as untrusted input, the same way they'd treat a form submission. They build evaluation infrastructure early — a test suite of representative inputs with graded outputs, run on every prompt change, because prompts are code and they regress. They design for graceful degradation rather than correctness, so a bad response produces a worse experience rather than a broken one. And they're specific about where non-determinism is acceptable: summarizing a document, fine; computing a refund amount, no.
+
+The costliest mistake is architectural. Putting a model in a position where its output flows directly into a consequential action with no verification step creates a class of failure that's difficult to reason about and harder to test. The model isn't the risk; the missing boundary is.
+
+## Coding agents and the shape of the work
+
+Related but distinct: tools that write and modify code with meaningful autonomy. The capability here has moved faster than most people's mental model of it. A tool that autocompletes a line and a tool that reads a codebase, makes a multi-file change, runs the tests, and iterates on failures are different things, and conflating them leads to bad predictions in both directions.
+
+What actually changes when this works: the cost of writing code drops substantially, but the cost of *deciding what code should exist* doesn't move. Reading, reviewing, and integrating code doesn't get much cheaper either. If you make one step in a pipeline ten times faster, the pipeline gets faster by considerably less than ten times, and the bottleneck moves somewhere else — usually to review, to deployment, to the meetings where you figure out what you're building.
+
+The second-order effects are more interesting than the first-order ones. When code is cheap to write, the calculus around abstraction changes. Some of our practices exist because writing code by hand is expensive, so we build abstractions to avoid writing it repeatedly — and pay for that with indirection and coupling. If generating the specific version is nearly free, a bit more duplication and a lot less abstraction may be the better trade. That's a real shift in engineering judgment, and it cuts against instincts most of us spent years developing.
+
+The failure mode to watch: volume without comprehension. A team that produces four times the code with the same review capacity has not become four times more productive. It has accumulated a maintenance liability that nobody on the team fully understands, and the reckoning arrives later.
+
+## WebAssembly outside the browser
+
+Less discussed, quietly interesting. WebAssembly's browser story is a decade old. The server-side story — Wasm as a portable, sandboxed compilation target with fast startup — is where the current momentum is.
+
+The genuine advantage is the security model. A Wasm module has no ambient authority: no filesystem, no network, nothing except what you explicitly grant. For running untrusted code — customer-supplied plugins, third-party extensions, multi-tenant functions — that's a materially better default than containers, which start with a full OS surface you spend effort locking down.
+
+Startup time matters too. Container cold starts run in hundreds of milliseconds to seconds; a Wasm instance starts in microseconds. That reopens architectural options — per-request isolation, edge execution — that were previously too expensive.
+
+The honest counterweight: the ecosystem is immature. The component model is still stabilizing, language support outside Rust and C/C++ ranges from adequate to painful, debugging is worse than what you're used to, and the library situation for anything touching the host is thin. Real fit today if you're building a plugin system or a multi-tenant execution environment. Otherwise it's worth understanding, not worth migrating to.
+
+## Local-first and the reckoning with sync
+
+For fifteen years the default architecture has been a thin client talking to a server that owns the truth. Local-first inverts that: the client owns a real replica, works offline, and syncs when it can.
+
+The reason this is newly practical is CRDTs and related data structures that make merge deterministic rather than a pile of application-specific conflict rules. That's a real advance, and libraries have matured to where you're not implementing the theory yourself.
+
+The reason it's still hard is that the theory only solves the syntactic problem. CRDTs guarantee replicas converge to the same state; they don't guarantee that state is *correct* in your domain. Two users who each decrement an inventory count offline will converge to a number the merge is happy with and your warehouse is not. Anything with a global invariant — uniqueness, non-negative balances, capacity limits — still needs coordination, and no data structure removes that.
+
+Where the model earns its keep: collaborative editing, personal data, anything where the user's own device is the natural home for the data. Where it doesn't: transactional systems with real constraints.
+
+## How to actually decide
+
+A short version of what I'd tell a team weighing any of these.
+
+Ask what gets categorically cheaper, and whether you're currently paying that cost. If you don't run untrusted code, Wasm's sandbox is a solution to a problem you don't have.
+
+Ask what the failure mode looks like in production, not in the demo. Every technology demos well. The question is what happens at 3am when it's wrong.
+
+Ask what the exit costs. Some adoptions are reversible — a library swap, a service you can pull out. Others reshape your data model or your architecture and are effectively permanent. Reversible bets can be made on thin evidence. Irreversible ones need much more.
+
+And ask who on the team will own it in eighteen months. A technology adopted because one enthusiastic engineer championed it becomes a liability the week that engineer changes teams. This is not a technical consideration, and it kills more adoptions than any technical factor.
+
+None of this is an argument for conservatism. The teams that adopt nothing accumulate a different and equally real debt, and eventually find they can't hire people who want to work on what they've got. The argument is for adopting deliberately: knowing which bet you're making, what it costs if you're wrong, and having some way to find out that isn't waiting three years to see.

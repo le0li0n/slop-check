@@ -1,0 +1,33 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: News
+type: essay
+area: Software engineering
+matched_human_doc: texts/joel-spolsky/2003-06-01--news.txt
+words: 609
+generated: 2026-08-31
+---
+
+# News
+
+There is a particular kind of exhaustion that comes from being well-informed. You open your feed reader, your Slack, your Hacker News tab, and there it is: a new runtime, a new framework, a benchmark that reframes everything, a company you've never heard of raising two hundred million dollars to solve a problem you didn't know existed. By the time you close the tab you have learned twelve things and internalized none of them.
+
+The industry has a word for this — keeping up — and it treats the activity as unambiguously virtuous. Staying current. Being plugged in. But it's worth asking what the practice is actually for, because I don't think most of us have interrogated it since we started.
+
+Here's the honest accounting. Over a career, the news that mattered to my daily work arrived through roughly three channels, and none of them was a feed.
+
+The first was breakage. A dependency deprecated something and my build failed. A cloud provider changed a default and my costs tripled. This is news that finds you, and it finds you with perfect precision, because the filter is whether it affects your system. You cannot miss it and you cannot ignore it. The cost is that it arrives at the worst possible moment, which is a real cost, but the signal-to-noise ratio is unbeatable.
+
+The second was people. A colleague mentioned that their team had moved to a different queueing system and it had gone badly for reasons X and Y. Someone at a meetup described a failure mode that mapped onto something I'd been half-worried about. This is news filtered by a human who has actually used the thing and has no incentive to oversell it. It is slow, low-volume, and disproportionately useful.
+
+The third was deliberate study. Sitting down with a specification, or a paper, or someone's codebase, and reading enough to have an actual opinion. This is the only channel that produces durable understanding, and it is the one that feed-reading crowds out most effectively, because reading twenty summaries feels productive in a way that reading one thing properly does not.
+
+What the feed provides is a fourth thing: a map of what exists. That is genuinely valuable — you can't reach for a tool you've never heard of — but it's a much smaller value than the time we spend on it implies, and it decays fast. Knowing that a technology exists is a two-minute investment that pays off maybe once a year, when you happen to need it and remember the name. Most of what we consume is inventory for a warehouse we'll never visit.
+
+The failure mode isn't wasted hours. It's that heavy news consumption quietly reshapes your judgment. You start believing the field moves faster than it does, because you're sampling the tail — the novel, the announced, the funded — and inferring a distribution from it. Meanwhile the median production system is still a Postgres database behind a load balancer, and the skills that make it work well are the same ones that made it work well a decade ago. Engineers who read too much news develop a restlessness about their stack that the stack has done nothing to deserve.
+
+So a modest proposal: treat news as an occasional survey rather than a daily obligation. Once a month, spend an hour scanning broadly to refresh the map. The rest of the time, let breakage and colleagues find you, and spend the reclaimed attention on the third channel — reading one thing all the way down.
+
+You will miss things. You were always missing things. The difference is you'll know something.

@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Zeldman.com Reloaded
+type: blog post
+area: Design, UX & product
+matched_human_doc: texts/jeffrey-zeldman/2006-03-09--zeldman-com-reloaded.txt
+words: 336
+generated: 2026-08-31
+---
+
+Zeldman.com Reloaded
+
+Jeffrey Zeldman relaunched his personal site this month, and if you've been in this industry more than five minutes, that sentence carries weight. Zeldman didn't just write about web standards in the early 2000s — he was the reason "web standards" became a phrase practitioners organized around, back when tables-for-layout and browser-specific hacks were the norm and semantic HTML was a fringe position. A List Apart, Happy Cog, "Designing With Web Standards" — a lot of what we now consider baseline professionalism traces back to that body of work.
+
+The redesign itself is worth looking at on its own terms: quieter, more legible, less performative than most portfolio sites in 2026. No scroll-jacked hero animation, no AI-generated illustration doing the work that a clear sentence should do. It reads like someone who has watched three decades of design trends inflate and deflate and decided legibility still wins.
+
+But the more interesting thing is what the relaunch represents structurally. A huge amount of current UX and product practice — accessibility as a default rather than an afterthought, content-first thinking, the idea that a designer's job includes advocating for the user against the business's short-term incentives — was fought for and won by a specific generation of practitioners, largely in public, on blogs exactly like this one. That generation is still working. Zeldman is still writing. The site itself is a small act of continuity: proof that the standards fight didn't end, it just became invisible because it succeeded.
+
+For anyone newer to the field, it's worth spending twenty minutes in the archive. Not for nostalgia, but because a lot of debates that feel new — AI-generated interfaces, platform lock-in, the tension between growth metrics and user welfare — have earlier drafts sitting right there, argued out by people who'd already been through one hype cycle by the time you started.
+
+The tools change. The argument for designing like people matter doesn't. That's the throughline worth carrying out of this redesign and into whatever comes next.

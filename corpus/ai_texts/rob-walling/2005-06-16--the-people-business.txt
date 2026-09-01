@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: The People Business
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/rob-walling/2005-06-16--the-people-business.txt
+words: 391
+generated: 2026-08-31
+---
+
+# The People Business
+
+Every startup eventually discovers the same thing: the product was never the hard part. The hard part is people — hiring them, keeping them, managing around their blind spots, and occasionally letting them go before they take the culture down with them. Investors say this constantly and still underwrite deals as if a strong market and a clean cap table are sufficient. They aren't.
+
+The tell is in what breaks companies. It's rarely a bad market. It's a cofounder split that should have been resolved at the term sheet stage. It's a VP of Sales hired for a logo instead of a stage-fit. It's a founder who can code brilliantly but can't tell a direct report the truth. Product-market fit is necessary but not sufficient — the team has to survive long enough to find it, and then survive again when finding it changes what the company needs to become.
+
+This is why the best early investors spend so much of their diligence on people questions that sound soft and aren't. How does this founder handle disagreement? What happens when the first hire quits? Who does the CEO call at 11pm when something's on fire? None of that shows up in a deck, and all of it predicts outcomes better than the TAM slide does.
+
+It also means the job doesn't end at the check. A board seat is, in practice, a recurring people-diagnosis exercise: is the leadership team still the right shape for the company at this size? Is the founder growing into the role or getting cornered by it? Are there conversations everyone's avoiding because the company is "doing well" and nobody wants to be the one who brings it up? Boards that only ask about metrics are missing where the actual risk lives.
+
+None of this is an argument against rigor on markets, unit economics, or technology — those still matter enough to kill a company on their own. It's an argument for treating people judgment as a discipline, not an instinct you either have or don't. The firms and founders who get good at it deliberately — who build real processes for hiring, feedback, and hard conversations — end up with a durable edge that's much harder to copy than a feature.
+
+Startups are, underneath everything else, a people business. Act like it.

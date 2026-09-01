@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Early Retirement
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/barry-schwartz/2004-01-06--early-retirement.txt
+words: 344
+generated: 2026-08-31
+---
+
+Early Retirement
+
+The phrase used to mean one thing: quit at 45, buy a boat, disappear. In marketing and content, it now means something narrower and more useful — retiring a piece of work before the calendar says it's tired.
+
+Most teams let content die of old age. A campaign runs its planned course, a landing page sits untouched for two years, an email sequence keeps firing because nobody built a system to question it. The content isn't failing, exactly. It's just decaying quietly, and decay is harder to notice than failure. A dead campaign gets killed fast. A mediocre one that's merely underperforming can limp along for quarters because no one owns the decision to stop.
+
+Early retirement flips that. It means setting a review date at launch, not waiting for a metric to crater. It means asking, at 70% of expected lifespan, whether this asset is still earning its space — not whether it's technically still working. A blog post ranking on page three of search isn't broken. It's just not worth the maintenance anymore, and maintenance is never free: every live asset is something someone has to remember exists, keep accurate, and defend when a stakeholder asks why it's still up.
+
+The resistance to this is almost always sunk cost dressed up as diligence. Someone wrote that nurture sequence. Someone approved that brand campaign. Retiring it early can feel like admitting the original bet was wrong, when usually it just means the bet paid out and it's time to collect. The healthiest content operations treat retirement as a normal step in the lifecycle, not a verdict on anyone's judgment.
+
+Practically, this looks like build a retirement clause into every content brief: what would make this worth killing, and when do we check. Put an owner on the decision, not just the launch. And separate "underperforming" from "done" — the first needs a fix, the second needs an exit.
+
+The content that damages a brand is rarely the bad piece that gets flagged immediately. It's the fine one nobody thought to retire.

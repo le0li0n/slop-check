@@ -1,0 +1,65 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Joining A Startup? Top 6 Questions You Should Ask
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/dharmesh-shah/2006-10-16--joining-a-startup-top-6-questions-you-should-ask.txt
+words: 976
+generated: 2026-08-31
+---
+
+# Joining A Startup? Top 6 Questions You Should Ask
+
+Everyone tells you to do diligence on a startup before you join. Almost nobody tells you what to actually ask. The result is a lot of candidates nodding along through a pitch about market size and TAM, then discovering nine months later that the company had five months of runway when they signed.
+
+Startups are asymmetric bets. You're trading salary and stability for equity and speed, and the only way that trade makes sense is if you understand what you're buying. Here are the six questions that separate a real evaluation from a vibe check.
+
+## 1. "What's your current burn, and when does the money run out?"
+
+Ask it plainly. You're not being rude; you're being competent. A founder who bristles at this question is telling you something more useful than the answer would have been.
+
+What you want is a specific number of months and the assumptions behind it. "About 18 months" is fine. "We're well capitalized" is not an answer. Follow up: does that runway assume the hiring plan they just described to you, or does it assume a hiring freeze? Many runway figures quietly assume the company stops doing the thing it's recruiting you to help do.
+
+Then ask what has to be true to raise the next round. Every founder has a mental list — ARR threshold, a logo, a retention curve. If they can articulate it crisply, they're operating with clear eyes. If the answer is fuzzy, you're joining a company that's hoping the market stays friendly.
+
+## 2. "Walk me through the last three people who left this team."
+
+This is the highest-signal question on the list, and it's the one candidates skip because it feels impolite.
+
+Attrition tells you what tenure at this company actually looks like, as opposed to what the recruiting page says it looks like. You're listening for patterns: did people leave for bigger roles elsewhere, or did they leave because the role they were sold didn't exist? Were they managed out, and if so, was the company honest about why? Did anyone leave from the exact seat you're being asked to fill?
+
+Pay attention to how the story gets told as much as to its content. A leader who describes departures with specificity and some ownership — "we hired that person too senior for the stage, that was my mistake" — is someone you can learn from. A leader who describes every departure as a failure of the departed is someone whose story about you will follow the same template.
+
+## 3. "What's the strike price, the current preferred price, and the total shares outstanding?"
+
+Equity conversations are where sophisticated candidates get lazy. A number of options means nothing without a denominator, and a percentage means nothing without knowing the liquidation stack sitting above you.
+
+You want three things: your percentage on a fully diluted basis, the preference structure from prior rounds, and the current 409A relative to the last preferred price. Then ask about the exercise window post-departure — the standard 90 days can make paper wealth unreachable if you can't write a large check on short notice. Companies with extended windows (seven to ten years) have made a deliberate, employee-favorable choice, and that choice tells you something about how they think.
+
+Also ask about refresh grants. Your initial grant vests over four years; the company's plan for years three and four says whether they intend to keep you.
+
+## 4. "What decision did the leadership team get wrong in the last six months?"
+
+You're testing for two things: whether the company metabolizes error, and whether the person across from you is willing to be candid with someone they're recruiting.
+
+A good answer is specific, recent, and slightly uncomfortable. It includes what changed as a result. A bad answer is a humblebrag — "we grew too fast" — or a deflection into something structural and blameless, like a market shift.
+
+Startups fail more often from an inability to correct than from an inability to execute. A team that can name its mistakes out loud to a stranger is a team that can name them to each other, which is the mechanism by which a wrong turn becomes a two-week detour instead of a two-year one.
+
+## 5. "How does this company make a decision it disagrees about?"
+
+Every startup has a decision-making culture, and almost none of them have written it down. Founder fiat, consensus, data-driven, loudest-voice-in-the-room — all of these can work, and all of them fail differently.
+
+Ask for a concrete example: a recent call where the team was genuinely split, and how it resolved. Who had the final say? How long did it take? Did the losing side stay bought in?
+
+This matters more the more senior you are. A VP walking into a founder-fiat culture while expecting real ownership will be miserable within a quarter, no matter how good the compensation is. The question isn't whether the culture is good — it's whether it's a culture where you can do your best work.
+
+## 6. "What does this role look like if the next round doesn't happen?"
+
+The pitch you're hearing is the upside case. Ask for the other one.
+
+Every candidate hears about the plan where the market cooperates. Fewer ask what happens if it doesn't: which functions get cut first, whether the company can reach default alive on current revenue, whether the founders would do a down round or a bridge. You want to know if there's a version of this company that survives without more capital, and whether your seat exists in that version.
+
+Ask these six and you'll learn more in one conversation than most candidates learn in five. Ask none of them and you're not evaluating a company — you're just accepting an offer.

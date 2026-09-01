@@ -1,0 +1,33 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: The Age Question (continued)
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/fred-wilson/2007-05-01--the-age-question-continued.txt
+words: 504
+generated: 2026-08-31
+---
+
+# The Age Question (continued)
+
+Last time I wrote about age in founders, I got more email than I have on any other post. Most of it was from people over forty, and most of it was some version of: *thank you, but you're wrong about why.*
+
+They were right. I framed it as a bias problem — investors pattern-match on twenty-three-year-olds because Zuckerberg did, and that pattern-match is bad statistics. That's true as far as it goes. The Azoulay/Jones/Kim/Miranda data on the average age of successful founders (forty-five, for high-growth outcomes) is real and doesn't move. But it's also a lazy defense, because it treats the objection as purely empirical when it isn't.
+
+Here's the sharper version of what I heard. The bias isn't really about age. It's about *reversibility*.
+
+A twenty-three-year-old founder can be wrong for four years and lose almost nothing. No mortgage, no kids in school, a labor market that will happily reabsorb them at a higher salary than when they left. The cost of their failure is borne almost entirely by the investor. That's a feature, from the investor's side. It means the founder will keep swinging past the point where a rational person would stop.
+
+A forty-five-year-old founder is playing a different game. Failure costs them something they can't easily rebuild. So they hedge. They take the consulting contract that pays the bills but eats the quarter. They raise less than they need because dilution feels like a real loss rather than an abstraction. They pivot earlier — which sounds like a virtue and often isn't, because the thing that works usually looks like the thing that isn't working, for longer than anyone finds comfortable.
+
+That's a much better argument than the one I was arguing against. It's also, I think, still wrong — but wrong in a way that points somewhere useful.
+
+The hedging isn't a property of age. It's a property of exposure. And exposure is something you can actually change. A founder with eighteen months of personal runway in the bank behaves like a twenty-three-year-old regardless of what year they were born. A founder with three months does not, at any age. I've watched twenty-six-year-olds with sick parents make hedged, cautious, slow decisions that looked exactly like the caricature of the risk-averse older founder — because the underlying variable was never age.
+
+So the diligence question isn't "how old is this person." It's "what does the next four years cost them, and can we do anything about it." Sometimes you can. Founder salary is the most underdiscussed lever in seed investing, and the reflexive insistence that founders take nothing is often a way of selecting for people who are already rich — which is a much worse filter than the one we think we're applying.
+
+The uncomfortable version: a good deal of what the industry calls conviction is just the absence of dependents.
+
+I don't think that's fully right either. But it's the next question, and it's a better one than the one I asked.

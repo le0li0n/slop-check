@@ -1,0 +1,29 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: The Viral Garden: The Age of Conversation is here!
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/mack-collier/2007-07-01--the-viral-garden-the-age-of-conversation-is-here.txt
+words: 356
+generated: 2026-08-31
+---
+
+The Viral Garden: The Age of Conversation is here!
+
+For twenty years, marketing optimized for the feed. We wrote headlines for the scroll, thumbnails for the click, copy for the six-second attention span. That era isn't over, but it's no longer the whole game. A new surface has opened up, and it doesn't scroll — it talks back.
+
+Every day, millions of people ask a chatbot to recommend a product, compare two brands, explain a category, or settle a debate about which tool is actually worth buying. There is no feed to game here. No thumbnail. No paid placement, at least not yet. What gets recommended is shaped by something closer to reputation: what's been written about you, how clearly you've explained what you do, whether real people vouch for you in places a model can read.
+
+Call it the Viral Garden. In a garden, things don't go viral by shouting loudest — they spread because they're rooted well, because the surrounding soil (reviews, documentation, comparison posts, forum threads, press) is healthy enough to let them grow and get passed along, root to root, citation to citation. That's a different discipline than growth-hacking a feed. It rewards clarity over cleverness, substance over spectacle.
+
+What does this mean for the work?
+
+First, answer engine visibility is the new SEO — not a replacement for it, but a parallel discipline with its own rules. Structured, well-explained content that directly answers real questions outperforms keyword-stuffed pages built for crawlers.
+
+Second, third-party credibility now matters more than owned channels. A model forming an opinion of your brand is reading Reddit threads and G2 reviews, not your homepage copy. Reputation management is becoming a growth channel.
+
+Third, conversation is a format now, not just a customer service line. Brands that show up well in dialogue — patient, specific, useful — are the ones that get recommended in dialogue.
+
+The garden doesn't reward the biggest megaphone. It rewards what's worth repeating. That's a genuinely different skill set than the one most of us built our careers on — and the teams that start cultivating it now will have a real head start.

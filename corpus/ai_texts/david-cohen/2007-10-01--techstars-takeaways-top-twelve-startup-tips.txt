@@ -1,0 +1,41 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: TechStars Takeaways: Top Twelve Startup Tips
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/david-cohen/2007-10-01--techstars-takeaways-top-twelve-startup-tips.txt
+words: 367
+generated: 2026-08-31
+---
+
+TechStars Takeaways: Top Twelve Startup Tips
+
+Last week's TechStars session left one message ringing louder than the rest: execution beats polish, every time. Here's what stuck.
+
+**1. Talk to customers before you build.** Founders who skip discovery ship features nobody asked for. Ten conversations beat a hundred assumptions.
+
+**2. Raise less than you think you need.** Every dollar you don't raise is a dollar of dilution you don't give away. Constraint forces discipline.
+
+**3. Your first hire defines your culture.** Not your tenth, your first. They set the bar for everyone who follows.
+
+**4. Traction beats a deck.** Investors fund lines going up. A beautiful narrative with flat metrics still gets a pass.
+
+**5. Say no to almost everything.** Focus is a founder's only renewable resource. The startups that die from distraction outnumber the ones that die from competition.
+
+**6. Pick a lane and dominate it before expanding.** Horizontal ambition before vertical proof is how seed-stage companies burn out.
+
+**7. Build in public, or at least build with feedback loops.** Mentors, advisors, and early users catch blind spots founders can't see from inside the building.
+
+**8. Your co-founder relationship is a marriage — treat it like one.** Have the hard conversations about equity, roles, and conflict early, not after the first crisis.
+
+**9. Revenue is the best fundraising strategy.** Nothing de-risks a pitch like a customer already paying you.
+
+**10. Speed of iteration matters more than size of team.** Small teams that ship weekly beat large teams that ship quarterly.
+
+**11. Know your numbers cold.** Burn rate, runway, CAC, LTV — if you hesitate when an investor asks, that's the meeting over.
+
+**12. Resilience is the only real moat early on.** Markets shift, competitors copy, funding dries up. The founders who last are the ones who keep showing up.
+
+None of these are new ideas — most startup advice isn't. What TechStars does well is compress them into a room full of founders who are living them in real time, so the advice stops being theoretical and starts being a checklist you can hold yourself to. If you're building right now, pick the one item on this list you're avoiding. That's probably the one that matters most.

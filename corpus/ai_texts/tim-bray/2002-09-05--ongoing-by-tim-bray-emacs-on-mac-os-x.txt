@@ -1,0 +1,23 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: ongoing by Tim Bray · Emacs on Mac OS X
+type: blog post
+area: Software engineering
+matched_human_doc: texts/tim-bray/2002-09-05--ongoing-by-tim-bray-emacs-on-mac-os-x.txt
+words: 378
+generated: 2026-08-31
+---
+
+Emacs on Mac OS X
+
+There's a particular flavor of contentment that comes from finally getting your editor right, and I hit it this week after years of half-hearted truces with Emacs on the Mac. The short version: Carbon Emacs, built by Andrew Choi's crew, is the version to run, and once you've got it configured properly the platform friction mostly disappears.
+
+The obvious complaint about Emacs on any Mac has always been the modifier keys. Command wants to behave like a native Mac Command key — Cmd-Q quits, Cmd-W closes — but Emacs wants Meta, and Meta is where half of the muscle-memory keybindings live. The fix is to let Option be Meta and leave Command alone for OS-level shortcuts, which sounds obvious in retrospect but takes some digging through .emacs configuration to actually land. Once it's set, the two-hand chords you've built up over a decade of Unix terminals just work again, and the editor stops feeling like a guest in someone else's house.
+
+Font rendering is the other thing that used to make Emacs on the Mac look like a refugee from X11. Carbon Emacs uses Apple's native text rendering, so you get proper anti-aliasing and can pick actual Mac fonts instead of squinting at a bitmap face ported over from Linux. It's a small thing, but it's the difference between an editor you tolerate and one you enjoy looking at for eight hours a day.
+
+Then there's the integration layer — dired working sensibly with the Finder, shell-mode not fighting with Terminal.app's assumptions, and the whole thing feeling like it was actually built for the OS rather than cross-compiled and shipped as an afterthought. That's the real achievement here: not that Emacs runs on Mac OS X, but that it runs like it belongs there.
+
+None of this is revolutionary. It's the unglamorous work of key remapping, font configuration, and dotfile tuning that every longtime Emacs user eventually does for every new platform. But it's worth documenting, because the difference between "Emacs technically works on this machine" and "Emacs feels native on this machine" is entirely in these details, and getting them right once means you stop thinking about your editor and start thinking about your code again — which was always the point.

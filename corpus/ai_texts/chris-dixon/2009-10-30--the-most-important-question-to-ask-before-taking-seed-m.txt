@@ -1,0 +1,49 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: The most important question to ask before taking seed money
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/chris-dixon/2009-10-30--the-most-important-question-to-ask-before-taking-seed-m.txt
+words: 625
+generated: 2026-08-31
+---
+
+# The most important question to ask before taking seed money
+
+Founders spend the seed round asking the wrong questions. What's the valuation? How much dilution? Is this a lead who can carry the A? Reasonable questions, all of them. But they're second-order. The first-order question, the one that determines whether the next three years are survivable, is this:
+
+**What does this money oblige me to become?**
+
+Not what does it buy. What does it *oblige*.
+
+Every dollar of venture capital arrives with an embedded thesis about what your company will look like in five years. That thesis is usually unstated, often unexamined, and almost never negotiated. It lives in the fund's model. A $400M fund needs to return $1.2B to be good. It writes forty checks. Three of them have to be worth $300M each in fund ownership. If you're taking money from that fund, you have been silently drafted into being one of those three — or into being written off quickly so partner attention can go elsewhere.
+
+That's not predatory. It's arithmetic. The problem is that founders sign up for the arithmetic without ever doing it.
+
+## The question has a practical version
+
+Ask your prospective investor: *Describe the outcome where you're happy and I'm not.*
+
+Good investors answer this immediately, because they've thought about it. A $40M acquisition eighteen months in that returns your seed fund 4x on paper but leaves you with life-changing-but-not-generational money and a boss — is that a win they'd support or block? A profitable $15M ARR business growing 40% a year that will never IPO — do they push you to raise and burn, or do they let you compound?
+
+The answers vary, and no answer is disqualifying. What's disqualifying is the founder who never asked and discovers at the Series B board meeting that "we're aligned" meant "aligned on my model, which you never read."
+
+## Why seed is the moment
+
+Because it's the last round where you have real optionality about what kind of company you're building. At seed, you can still choose: capital-efficient services-inflected business, venture-scale winner-take-most platform, or something in between. After the A, the choice has largely been made for you by your burn rate, your headcount, and the preference stack sitting above your common shares.
+
+Seed money is cheap in dilution and expensive in identity. Founders get that backwards. They negotiate hard on 18% versus 22% and sign the same standard docs without asking what standard assumes.
+
+## What the answer changes
+
+If the honest answer is "this money obliges me to try for a billion-dollar outcome and accept a high probability of zero," then take it — and mean it. Structure your life accordingly: hire ahead of revenue, prioritize growth over margin, and stop feeling guilty about burning.
+
+If the honest answer is "I want a great business and I'm not sure I want the swing," then don't take institutional venture money. Take revenue. Take a smaller round from angels who are genuinely indifferent between a 5x and a 50x. Take debt. There are more paths now than there were in 2015, and the founders who choose them deliberately do better than the ones who take the seed round because it was available and the term sheet flattered them.
+
+## For the investors reading this
+
+You should want founders to ask. The worst outcome in your portfolio isn't the fast zero — it's the four-year zombie run by someone who never wanted your ride and is too honorable to quit. Answer the question honestly on the first call. You'll lose a few deals and save yourself several board seats you'd rather not hold.
+
+The money is the easy part. What it obliges you to become is the whole thing.

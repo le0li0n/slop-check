@@ -1,0 +1,51 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: An Oldie but a Goodie: MSXML and FreeThreadedDomDocument vs. DomDocument
+type: blog post
+area: Software engineering
+matched_human_doc: texts/scott-hanselman/2003-06-24--an-oldie-but-a-goodie-msxml-and-freethreadeddomdocument.txt
+words: 668
+generated: 2026-08-31
+---
+
+# An Oldie but a Goodie: MSXML and FreeThreadedDomDocument vs. DomDocument
+
+Every so often you inherit a system that predates your career. Somewhere in a COM+ application or a classic ASP-era service still holding up an invoicing pipeline, there is a line that reads `Server.CreateObject("MSXML2.DOMDocument.6.0")` — and, three modules over, one that reads `MSXML2.FreeThreadedDOMDocument.6.0`. Someone chose differently in each place. Whether that was deliberate is anyone's guess, and the person who knew has long since moved on.
+
+The distinction is worth understanding, because getting it wrong produces failures that look like anything except a threading model problem.
+
+## The apartment problem
+
+MSXML's `DOMDocument` is an apartment-threaded object. In COM terms, it lives in a single-threaded apartment (STA) and expects every call against it to arrive on the thread that created it. Calls from elsewhere have to be marshalled across the apartment boundary, which COM will do for you — provided the object has been properly marshalled in the first place. Stash a raw pointer somewhere shared and hand it to another thread directly, and you get behaviour ranging from silently wrong results to a hard access violation, usually under load, usually in production, usually never in your test environment.
+
+`FreeThreadedDOMDocument` is the free-threaded variant. It aggregates the free-threaded marshaller, which means any thread can call into it without marshalling overhead. That sounds strictly better, and this is where the trap opens.
+
+## What free-threading actually costs
+
+Free-threaded does not mean fast. It means the document handles its own internal synchronization so that concurrent access is safe. That synchronization is not free — a free-threaded document is meaningfully slower for single-threaded parsing and traversal than its apartment-threaded sibling. Benchmarks from the era put the gap in the range of a factor of two to four for traversal-heavy workloads, and the gap widens the more nodes you walk.
+
+So the rule of thumb is unglamorous but correct: use `DOMDocument` unless you have a specific reason not to. The specific reasons are narrower than people assume.
+
+## The one case that genuinely needs it
+
+The canonical justification is caching a compiled XSLT stylesheet. `XSLTemplate` requires its `stylesheet` property to be set to a free-threaded document — it will reject an apartment-threaded one outright. The pattern is: load the stylesheet once into a `FreeThreadedDOMDocument`, hand it to an `XSLTemplate`, cache the template at application scope, and then create a cheap per-request `IXSLProcessor` from it. The expensive compilation happens once; each request pays only for the transform.
+
+The second case is genuinely caching a parsed document across requests — a configuration file, a lookup table, a schema — where the parse cost is high and the document is read-only afterward. Here the free-threaded object goes in `Application` scope and is read concurrently. Note "read-only": free-threaded gives you safe concurrent access, not a transactional document. Two threads mutating the same tree will still produce nonsense, just deterministically-locked nonsense.
+
+Everything else — parse a request body, pull some nodes, throw it away — should use plain `DOMDocument`.
+
+## The selection-namespace gotcha
+
+While you are in here, one adjacent landmine. In MSXML 6, `selectNodes` and `selectSingleNode` default to XPath rather than the old XSLPattern dialect, but namespace prefixes in your query resolve against nothing unless you set `SelectionNamespaces` explicitly:
+
+```
+doc.setProperty "SelectionNamespaces", "xmlns:ns='http://example.com/schema'"
+```
+
+Without it, any query touching a namespaced document returns an empty node list — no error, no warning, just nothing. More legacy XML bugs trace to this than to threading.
+
+## Why this still matters
+
+MSXML 6 remains a shipping, serviced component of Windows. It is not deprecated in the way MSXML 3 and 4 are, and code depending on it will keep running. If you are maintaining one of these systems, the highest-value change is usually not a rewrite — it is auditing which documents are free-threaded, confirming each one has a reason, and moving the rest back to `DOMDocument`. That is often a measurable throughput win for an afternoon's work, which is a better ratio than most modernization projects manage.

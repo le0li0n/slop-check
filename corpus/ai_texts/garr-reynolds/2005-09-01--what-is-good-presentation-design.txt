@@ -1,0 +1,69 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: What is Good Presentation Design?
+type: blog post
+area: Design, UX & product
+matched_human_doc: texts/garr-reynolds/2005-09-01--what-is-good-presentation-design.txt
+words: 1500
+generated: 2026-08-31
+---
+
+What is Good Presentation Design?
+
+Ask five people what makes a presentation "well-designed" and you'll get five answers, all of them about surface: clean fonts, a consistent color palette, nice icons, maybe some subtle animation. That's not wrong, exactly. It's just answering the wrong question. Visual polish is what good presentation design looks like once it's done. It is not what makes it good.
+
+Good presentation design is an argument, structured for a specific audience, sequenced to change what they believe or do next, and rendered so that the visual layer never competes with the point being made. Everything else — typography, grids, color, motion — is in service of that. If you start with the visuals, you're decorating a document that hasn't been designed yet.
+
+**A presentation is not a document**
+
+The most common failure mode among smart, capable professionals is treating a presentation like a report that happens to have slides. Dense bullet points, complete sentences, every caveat included, all the supporting data visible at once. This is a document instinct, and it comes from a reasonable place: you want to be thorough, you want a record, you're worried about being misquoted or leaving something out.
+
+But a presentation and a document solve different problems. A document is read at the reader's pace, re-read, skimmed, referenced. A presentation is experienced in real time, at the speed the presenter sets, usually once. Those are different design problems with different constraints, the same way a billboard and a novel are different design problems even though both use words.
+
+If you need a leave-behind with full detail, write one. Separately. Trying to make one artifact do both jobs is why so many decks are unreadable as slides and useless as documents — they're a compromise that serves neither audience.
+
+**Start with the argument, not the slide**
+
+Before any tool is open, good presentation design starts with a one-sentence answer to: what does the audience need to believe or do differently after this? Not "cover the quarterly results" — that's a topic, not an argument. Something more like "we should delay the launch by six weeks because the current data suggests a rushed release costs us more in support load than it saves in time-to-market."
+
+Once you have that sentence, the structure of the whole deck falls out of it. Every section either builds the case for that sentence, addresses the objection to it, or shows what happens next if the audience agrees. Slides that don't do one of those three things are candidates for deletion, no matter how good the chart on them looks.
+
+This is where design and product thinking genuinely converge: it's the same discipline as writing a problem statement before opening Figma, or a PRD before writing code. Skipping it doesn't save time — it just moves the cost downstream, to the moment in the room where the audience can't tell what you want them to do.
+
+**One idea per slide**
+
+If the argument is the backbone, the slide is the unit of delivery, and it has a hard constraint that documents don't: the audience can either listen to you or read the slide, not both well, at the same time. Every slide crowded with multiple ideas is asking the audience to split attention between what you're saying and what they're trying to parse. You lose either way — they miss what you're saying while reading, or they stop reading and miss what's on the slide.
+
+The fix isn't fewer words for their own sake, it's fewer ideas. One slide, one claim. The headline of the slide should state that claim as a sentence — "support tickets triple in the first week after rushed releases," not the vague label "Support Impact." A reader skimming only the headlines of your deck should be able to reconstruct the argument. That's a genuinely good test to run on your own work before you present it: cover everything but the headlines and see if the story still holds together.
+
+Everything below the headline — the chart, the diagram, the three bullets — exists to prove or illustrate that one claim, not to introduce new ones. If you have a second idea, it gets a second slide. This feels wasteful until you notice that slide count was never the scarce resource; audience attention was.
+
+**Data visualization is argument, not decoration**
+
+Charts are where presentation design most often reverts to document habits. The default export from whatever tool generated the data — every series, every label, gridlines, a legend in the corner — gets dropped onto a slide because it's already made. But a chart in a presentation has the same job as the slide it lives on: make one point, fast, at a glance, from the back of the room.
+
+That means deliberately removing data, not just formatting it. If the point is "our churn dropped after the redesign," the chart should make that drop the most visually prominent thing on it — direct labels instead of a legend, one highlighted line and the rest muted to gray, a title that states the takeaway rather than describes the axes. The full dataset belongs in an appendix or a follow-up doc, not competing for attention with the point you actually need the audience to take away.
+
+The test is the same one from writing: could someone glance at this chart for three seconds and correctly state your point? If they need to study it, it's not presentation design, it's a data appendix that snuck onto the main stage.
+
+**Design is what disappears**
+
+The best-designed slide in a deck is rarely the one anyone remembers looking at. It's the one where the audience remembers the point and never registered the layout at all. That's the standard to hold visual choices to: typography, spacing, color, and alignment matter enormously, but their job is to make the argument easier to absorb, not to announce themselves.
+
+This is why consistency matters more than cleverness. A fixed grid, a small and deliberate color palette (ideally one where color itself carries meaning — this metric is the one that matters, this box is the risk), one typeface family with two or three weights. Every deviation from that system should be doing real communicative work — drawing the eye to the one number that changed — not happening because a new slide got made in a hurry and inherited whatever formatting was already open.
+
+Motion deserves the same discipline. A build that reveals one bullet at a time because the presenter wants to control pacing is doing work. A transition that spins or fades for its own sake is doing the opposite of work — it's asking the audience to wait on the software instead of getting to the next point.
+
+**Designing for the room you're actually in**
+
+Good presentation design also adapts to delivery context, which is a step people skip because it doesn't feel like "design." A slide narrated live by a confident presenter can carry far less text than a slide that will be sent around and read cold, because the presenter is supplying the connective tissue out loud. Conflating the two is how you end up with the worst of both: too sparse to be read alone, too cluttered to be a clean visual aid while you talk.
+
+The room matters too. A packed conference hall punishes small text and subtle color contrast that reads fine on your laptop. A boardroom of six people rewards density and detail you wouldn't dare put in a keynote. None of this is about taste — it's about legibility as a function of distance, lighting, and how much time the audience actually has with the material.
+
+**Why this matters more for this audience specifically**
+
+For design, UX, and product people, presentations are usually the moment where your internal work meets a decision-maker who wasn't in the room for the process. The deck is not a record of what you did; it's the interface between your work and someone else's decision. You'd never ship a product interface that made the user do more cognitive work than necessary to complete a task — dense unlabeled menus, no visual hierarchy, everything competing for attention at once. A presentation is subject to the exact same interaction-design principles, just compressed into fifteen minutes and a projector instead of a persistent app.
+
+So the honest test for whether a presentation is well-designed isn't "does it look professional." It's "does the person in the back row, seeing this once, at speed, come away believing the thing I needed them to believe." Everything from the one-sentence argument down to the muted gray line on the chart is in service of that single outcome. Get that right and the polish takes care of itself — because a deck built slide by slide around one clear point per screen tends to look clean almost by accident. Get it wrong, and no amount of grid alignment or brand-approved color will save it.

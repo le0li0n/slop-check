@@ -1,0 +1,57 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: List of Values
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/steve-pavlina/2004-11-01--list-of-values.txt
+words: 1022
+generated: 2026-08-31
+---
+
+# List of Values
+
+Every founder eventually writes one. It usually happens somewhere between the Series A and the first fifty hires, often at the prompting of a new Head of People, and it produces a slide with five or six words on it: *Integrity. Ownership. Velocity. Customer Obsession. Radical Candor.* The slide goes into the onboarding deck. It gets painted on a wall, or in the remote-first era, pinned to the top of a Notion page nobody scrolls to. And then, mostly, nothing happens.
+
+I want to argue that this is not because values are stupid corporate theater, and not because the founders were insincere. It's because most lists of values are lists of the wrong kind of thing.
+
+## The tautology problem
+
+Here is a test. Take each word on your list and ask: would any serious competitor put the opposite on theirs?
+
+*Integrity* — is there a company advertising for fraudsters? *Customer obsession* — is anyone building for customer indifference? *Excellence, teamwork, innovation* — these are not values, they are the ambient preferences of every organization that has ever existed. A value that nobody would contradict does no work. It cannot resolve an argument, because both sides of every argument will claim it.
+
+Real values are the ones with a visible cost. They tell you what you are *giving up*. "We ship fast" is a tautology; "we ship fast, and we accept that roughly one in five releases will need a same-week rollback" is a value, because it names the price and dares you to disagree. "We hire the best people" is noise; "we would rather leave a role open for six months than fill it with someone who's merely good" is a value, because it has a body count in the form of missed quarters.
+
+The rule of thumb I'd offer: **if the inverse of your value isn't something a reasonable, decent company could believe, you haven't written a value. You've written an advertisement.**
+
+## Values are tiebreakers, not aspirations
+
+The functional purpose of a value is to settle decisions that the data cannot settle. Most decisions in a startup are not close: the numbers point one way, you go that way. Values are irrelevant to those. They earn their keep in the small number of cases where two defensible options sit at roughly equal expected value and someone has to break the tie without a two-week debate.
+
+Should we take the enterprise deal that requires building a feature none of our other customers want? Should we tell the customer about the bug they haven't noticed? Should we counter the competing offer for our best engineer, knowing it resets the whole comp band? Do we let the underperforming co-founder's direct report go, or wait?
+
+Every one of these has a plausible argument on both sides. A useful list of values is one that, held up against these questions, actually produces different answers than a coin flip would. If your list can't do that — if you can read it aloud and still not know what to do — it isn't functioning as a decision tool. It's decoration.
+
+This also suggests the right way to write them: not top-down from a whiteboard, but bottom-up from your own history. Go through the ten hardest calls the company has made. Write down what you actually decided and why. The patterns in those decisions are your real values, whether or not you like them. Writing values you don't already live is not aspiration; it's a promise you've pre-committed to break in front of everyone.
+
+## The enforcement problem
+
+A value that is never enforced against a high performer is not a value. This is the whole game, and it's where nearly all of them die.
+
+The test case is always the same and always uncomfortable: your top-quartile salesperson, or your most productive engineer, does something that clearly violates the list. They're brilliant and they're corrosive. Everyone can see it. What happens next is the only values statement your team will ever actually read.
+
+If nothing happens, the list is dead — not weakened, dead — and worse than if you'd never written it, because you've now demonstrated that stated commitments are negotiable when they're expensive. That lesson generalizes. It's how a company teaches people that the roadmap, the comp philosophy, and the customer promises are all similarly soft.
+
+Founders systematically underestimate how visible this is. From inside the exec team, a decision to keep the brilliant jerk looks like a nuanced trade-off involving revenue risk and hiring pipelines. From two levels down, it looks like one data point: *that behavior is fine here*.
+
+## For investors
+
+If you're on the other side of the table, values are diagnostic rather than aspirational. You mostly cannot tell anything from the list itself — every deck says roughly the same words. But you can learn a great deal from three questions.
+
+First: *tell me about a time you turned down money because of one of these.* If there's no example, they're not binding. Second: *who have you let go who was hitting their numbers?* You're not looking for a bloodthirsty answer, just evidence that a line exists somewhere. Third — and this one is the most revealing — ask a Series B founder to recite their values without looking. If they can't, nobody else can either, and the list has no chance of shaping behavior in the parts of the org the founder never sees.
+
+That last point is really the argument for having a list at all. In a fifteen-person company, values are unnecessary; the founder is in every room, and culture propagates by proximity. The list matters at the scale where decisions get made by people you've never met, using judgment you can't audit, in situations you didn't anticipate. It's a compression algorithm for your judgment, and like any compression, it works only if it's lossy in the right places — short enough to remember, sharp enough to bind, honest enough that people recognize the company they actually work at.
+
+Five words on a slide can do that. Almost none of them do.

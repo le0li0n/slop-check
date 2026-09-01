@@ -1,0 +1,63 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Who wants to own content?
+type: blog post
+area: Technology & media
+matched_human_doc: texts/jeff-jarvis/2005-08-23--who-wants-to-own-content.txt
+words: 1153
+generated: 2026-08-31
+---
+
+# Who wants to own content?
+
+There is a question that surfaces in every media strategy meeting, usually about forty minutes in, when someone has finished the slide about engagement and someone else is trying to work out what the company actually does. The question is: do we want to own this stuff, or do we just want to move it around?
+
+For twenty years the answer has swung back and forth like a metronome, and the swing tells you more about the state of the industry than any deck ever will.
+
+## The pendulum
+
+Rewind to the mid-2000s. The received wisdom was that owning content was a mug's game. Content was expensive, unpredictable, and depreciating. Platforms were cheap, scalable, and appreciating. The smart money was in pipes, not the water. Distribution was a network effect business, and networks compounded. Production was a hits business, and hits were lottery tickets. Every venture partner in the world could recite this, and mostly they were right — the companies that got enormous in that era were the ones that touched content without owning it.
+
+Then the pendulum came back. Streaming arrived, and it turned out that if everyone has the same pipes, the water is the only thing anyone cares about. Netflix, having built an extraordinary distribution machine, discovered its licensors could simply stop licensing. So it spent a decade and something north of a hundred billion dollars becoming a studio, because the alternative was being a very good delivery mechanism for other people's leverage. Amazon bought MGM. Apple built a studio from a standing start. The lesson everyone drew: own the thing, or the thing will be taken away from you.
+
+And now the pendulum is somewhere ambiguous again, and the reason is that the meaning of "own" has quietly come apart.
+
+## Three different things wearing the same word
+
+When a media executive says "we own that content," they can mean at least three separable things, and the confusion between them causes an enormous amount of bad strategy.
+
+The first is **copyright ownership** — the legal right to control copying and derivative works. This is the thing lawyers mean. It is increasingly the least valuable of the three, not because copyright has weakened in law, but because enforcement economics have changed. Owning a copyright is only as good as your ability and willingness to enforce it, and enforcement against distributed, offshore, or well-capitalised infringers is expensive and slow.
+
+The second is **audience ownership** — the direct relationship, the email address, the app on the home screen, the habit. This is the thing that turned out to matter far more than anyone expected in 2010. Substack's entire proposition is that the writer owns the list. The reason legacy publishers spent the 2010s in agony was not that they lost their copyrights; it was that Facebook owned the relationship and could reprice it at will.
+
+The third is **economic ownership** — the residual claim on the cash the thing throws off, whoever holds the paper. A studio that fully finances a show and takes it worldwide has this. A commissioning broadcaster with a five-year window and no back end does not, whatever the press release says.
+
+The three come apart constantly. You can own the copyright and none of the audience — ask any rights library sitting on decades of material nobody has a habit of watching. You can own the audience and none of the copyright — that is most of the creator economy, and it is why so many creators are relaxed about their videos living on someone else's servers. And you can own the economics of something you did not make and cannot control, which is what a well-structured financing does.
+
+The useful question, then, is not "should we own content." It is: *which of the three do we need, and which are we paying for by accident?*
+
+## What generative models did to the question
+
+The obvious point is that generative AI has collapsed the marginal cost of a certain class of content to near zero, and therefore the value of owning that class to near zero as well. This is true and mostly uninteresting, because the class in question — competent, generic, functional text and image — was never where the value was. The stock photo business was already in trouble. Explainer copy was already commoditised.
+
+The interesting point is subtler and cuts the other way. In a world of infinite competent content, the scarce assets are the ones that cannot be synthesised: verified provenance, a live relationship with an audience that trusts you, a back catalogue of genuinely distinctive work, and — newly — a legally clean corpus that can be licensed for training.
+
+That last one has quietly reversed a decade of assumptions. Archives that were carried as cost centres are now assets with a bid. Reddit, Shutterstock, news groups, academic publishers — organisations that owned large piles of human-made, rights-cleared material discovered a buyer they did not know existed. Whether those deals are one-time windfalls or a durable revenue line is genuinely unresolved, and anyone who tells you confidently either way is selling something. But it has changed the calculus: owning a corpus now has an option value it did not have in 2020.
+
+Meanwhile audience ownership got *more* valuable, not less. If the cost of producing plausible content falls to zero, the bottleneck moves to attention and trust — and those are relationships, not files.
+
+## So who should want to own it?
+
+A rough answer, offered with the appropriate humility about a pendulum that has already fooled everyone twice.
+
+**If you are a platform**, you want the audience relationship and probably not the copyright. You want enough exclusive content to prevent a competitor from making you substitutable, and no more. Every dollar past that is a hits-business dollar dressed up as a moat.
+
+**If you are a producer**, you want the economics and, increasingly, the corpus. Fight for the back end, not the credit. The talent that did well over the last decade did it by holding equity in outcomes, not by owning IP that sat unexploited.
+
+**If you are a creator**, you want the audience, unambiguously, and you should be sceptical of anyone offering you money for it. The list is the asset. Everything else is inventory.
+
+**If you are an incumbent with an archive**, you want to find out what you actually have — rights-cleared, documented, chain-of-title intact — before you find out in a deposition. The dull work of rights hygiene has become the strategic work.
+
+The instinct to own everything is expensive and usually a proxy for not knowing where your leverage is. The instinct to own nothing is how you become a very efficient business that someone else prices. The discipline is knowing which of the three ownerships is load-bearing for you, buying that one properly, and renting the rest.

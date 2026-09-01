@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: Zaca fire continues
+type: blog post
+area: Technology & media
+matched_human_doc: texts/doc-searls/2007-08-07--zaca-fire-continues.txt
+words: 491
+generated: 2026-08-31
+---
+
+# Zaca Fire Continues
+
+The Zaca Fire is still burning through the backcountry of Santa Barbara County, and for an audience that spends its days thinking about distribution, infrastructure, and information flow, it's worth pausing on what a slow-moving wildfire actually demands from the technology and media systems built to track it.
+
+Start with the basic problem: this is a story with no single dateline. The fire moves across ridgelines with no addresses, no press office, and no predictable news cycle. What fills that gap is a patchwork of satellite thermal imagery, InciWeb updates, scanner feeds, and local reporters posting from the edge of evacuation zones. None of it is glamorous, but together it's a real-time information system assembled almost entirely out of tools not designed for the job — a reminder of how much crisis coverage still runs on improvisation rather than infrastructure built for the purpose.
+
+For media organizations, the operational question is less "how do we cover this" and more "how do we cover this continuously, for weeks, without burning out a newsroom or a CDN budget." Wildfire coverage produces exactly the traffic pattern that breaks naive caching strategies: sudden regional spikes tied to wind shifts and containment updates, long tails of national interest when the smoke plume becomes visible from space, and a persistent baseline of local traffic that never quite goes away. Newsrooms that have invested in edge caching and modular live-blog templates are handling this more gracefully than those still treating every update as a fresh page build.
+
+There's also a quieter infrastructure story underneath the fire itself. Backcountry fires like this one routinely threaten the physical plant that local connectivity depends on — utility poles, microwave relay sites, the last-mile fiber that rural ISPs treat as an afterthought. When those links go down, so does the ability of residents to get evacuation information from anywhere other than a car radio, which is its own argument for redundancy in rural network design that rarely gets funded until it's tested by fire.
+
+Then there's the misinformation layer, which has become as reliable a companion to wildfire season as the fires themselves. Old photos get recirculated as current. Rumors about arson or cause spread faster than official cause-and-origin investigations can move. Platforms with local-alert features are being leaned on harder than their design specs anticipated, and the gap between "verified by fire authorities" and "trending locally" is where a lot of avoidable panic lives.
+
+None of this is new, exactly — every major wildfire re-teaches the same lessons about caching, redundancy, and verification. What's notable about the Zaca Fire specifically is its duration: a fire that continues week after week turns those lessons from a one-time stress test into an ongoing operational condition. For anyone building the systems that carry this kind of coverage, that's the detail worth sitting with. The fire will eventually be contained. The infrastructure gaps it's exposing won't fix themselves in the meantime.

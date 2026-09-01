@@ -1,0 +1,79 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Startup Hiring: Why You Should Date Before Getting Married
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/dharmesh-shah/2006-10-16--startup-hiring-why-you-should-date-before-getting-marri.txt
+words: 1189
+generated: 2026-08-31
+---
+
+# Startup Hiring: Why You Should Date Before Getting Married
+
+Every founder has a version of this story. The candidate was perfect. Four rounds of interviews, glowing references, a take-home exercise that came back sharper than anything the team had produced in months. The offer went out on a Thursday. By the following quarter, it was obvious the fit was wrong — not incompetent, not dishonest, just wrong. Wrong pace, wrong appetite for ambiguity, wrong instincts about what mattered. The unwind took three months and cost far more than the salary line suggested.
+
+The interview process is a remarkably bad predictor of what someone will actually be like to work with. This isn't a controversial claim among people who hire a lot; it's just one that rarely changes behavior. We keep running the same ritual — a sequence of structured conversations, conducted under conditions that resemble the job in no meaningful way — and then acting surprised when the signal turns out to be noise.
+
+The alternative is not a better interview. It's less interviewing and more working together before anyone commits.
+
+## What the interview is actually measuring
+
+An interview measures a specific and narrow skill: the ability to describe past work persuasively to a stranger, under time pressure, while being evaluated. Some people are excellent at this and mediocre at the job. Some are the reverse. The correlation exists but it's weak, and it's weakest precisely where startups need it to be strong — in judgment, in how someone behaves when the problem is underspecified, in whether they raise a hard thing early or sit on it.
+
+Take-home exercises help a little. They at least involve doing the work. But they're still artificial: solo, scoped, with a clean brief and a known evaluator. The actual job involves none of those conditions. The actual job involves ambiguity about what to build, disagreement about priority, and colleagues with their own opinions and their own workloads.
+
+References are better than most people think, and worse than they'd need to be to carry the decision. A reference tells you how someone performed in a different company, at a different stage, with a different manager. Useful context. Not a prediction.
+
+The uncomfortable truth is that the strongest predictor of how someone will work with you is having worked with them. Everything else is a proxy of varying quality.
+
+## The case for paid trial work
+
+The move is straightforward: before an offer, run a paid engagement. Two weeks, four weeks, a defined project, real money at a real rate. The candidate works on something the company actually needs, with the people they'd actually work with, under something approximating actual conditions.
+
+What this surfaces is not skill. Skill is the easy part to assess and the least likely to be the reason a hire fails. What it surfaces is everything downstream of skill:
+
+**How they handle being wrong.** You will disagree with them about something within two weeks. How that goes tells you more than any behavioral question.
+
+**What they do with ambiguity.** Given a goal and no spec, do they ask three sharp questions and start, or do they wait, or do they build the wrong thing confidently?
+
+**Their actual pace.** Not their claimed pace. Not the pace they hit on a take-home they spent a weekend on. The pace they sustain when there are three things going at once.
+
+**Whether the team likes working with them.** This is not a culture-fit euphemism. It's a concrete question about whether collaboration is generative or draining, and it's unanswerable from the outside.
+
+**Whether they like working with you.** Which matters more than founders tend to admit, and is the half of the equation the interview process almost entirely ignores.
+
+## The objection, and why it's smaller than it looks
+
+The standard pushback: strong candidates won't do it. They have competing offers. They have a current job. Asking for a trial signals that you don't trust your own judgment.
+
+This is partly true and mostly manageable.
+
+Some candidates genuinely can't. Someone employed full-time at a company with strict IP terms is not going to run a four-week paid engagement on the side, and demanding it will lose you good people. Fine — the trial isn't universal. Adapt it: a paid weekend project, a two-day working session, an actual half-day in the office contributing to a live problem. The principle isn't the duration. The principle is that real work under real conditions beats simulated work under artificial ones, and even a small amount of the former outperforms a lot of the latter.
+
+Some candidates won't, and that itself is information — though read it carefully. A senior person declining a four-week unpaid audition is exercising good judgment. A senior person declining a well-scoped, well-paid, mutually framed engagement when they're between roles is telling you something else.
+
+And the signaling concern usually inverts once you frame it honestly. "We want to make sure this works for both of us, and we'd rather find out in three weeks than in nine months" is not a statement of distrust. It's a statement of respect for the candidate's time and career. The candidates who react badly to that framing are frequently the ones most reliant on the interview being the whole evaluation.
+
+## What this requires from the company
+
+Trial engagements only work if the company holds up its end, and most of the failures are on that side rather than the candidate's.
+
+Pay properly — market rate, promptly, no exceptions. An unpaid trial is not a trial; it's free labor with a hiring story attached, and it selects for people who can afford to work for free.
+
+Scope real work. Not a sandbox project, not a made-up problem. Something you would otherwise pay someone to do, with a clear definition of done.
+
+Assign an actual owner internally. Trials fail when nobody on the inside is responsible for onboarding, unblocking, and forming a view.
+
+Decide in advance what you're looking for and write it down before the engagement starts. Otherwise the trial becomes a longer, more expensive version of vibes-based hiring.
+
+And be honest about the odds. If you've already decided, say so — either the trial is a real decision point or it's a formality, and pretending otherwise burns goodwill you'll want later.
+
+## The stage argument
+
+None of this is novel. Design agencies, film crews, and consultancies have hired this way for decades because their project structure made it natural. What's changed is that a growing share of experienced operators work fractionally or between roles, which makes the trial engagement far easier to arrange than it was ten years ago.
+
+For a company at seed or Series A, where a single senior hire can be five to ten percent of headcount and a bad one can consume a founder's attention for a full quarter, the arithmetic is not close. Four weeks of paid work costs a fraction of a mis-hire's true cost — severance, lost momentum, the team's confidence, the six months before you admit it isn't working.
+
+Date first. The commitment is easier when you already know.

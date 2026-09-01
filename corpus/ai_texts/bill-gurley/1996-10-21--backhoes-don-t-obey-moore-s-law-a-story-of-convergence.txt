@@ -1,0 +1,61 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Backhoes Don't Obey Moore's Law: A Story of Convergence
+type: blog post
+area: Startups & venture
+matched_human_doc: texts/bill-gurley/1996-10-21--backhoes-don-t-obey-moore-s-law-a-story-of-convergence.txt
+words: 1446
+generated: 2026-08-31
+---
+
+# Backhoes Don't Obey Moore's Law: A Story of Convergence
+
+There is a term of art in the telecom industry that has survived every generation of technology since copper: *backhoe fade*. It describes the sudden, total, unrecoverable loss of signal that happens when a contractor digging a footing for a strip mall in Tulsa puts a steel bucket through a bundle of fiber carrying a meaningful fraction of interstate traffic. No amount of error correction fixes it. No redundancy protocol routes around the physical fact of a severed cable. Someone drives a truck out, splices 864 strands by hand, and it takes as long as it takes.
+
+The splice takes about as long today as it did in 2005. The backhoe digs at roughly the same rate it did when Caterpillar was selling the 416 to a previous generation of contractors. Hydraulics have gotten better. GPS grade control is genuinely useful. But there is no doubling curve here. There never was, and there isn't going to be.
+
+I bring this up because the most important thing happening in technology right now is not an acceleration. It's a collision.
+
+## The shape of the collision
+
+For forty years, the operating assumption of venture capital was that the binding constraint on a technology business was ideas and talent, and that everything downstream of those — compute, storage, bandwidth, distribution — would get cheaper on a predictable schedule. You could underwrite a business model that was uneconomic at today's cost curve because you knew, with something close to certainty, where the cost curve would be in thirty-six months. That was the whole trick. Software companies weren't just high-margin; they were *structurally* high-margin, because their primary input was deflating at 30-40% a year while their pricing wasn't.
+
+That assumption is now colliding with a set of curves that do not deflate. Electricity. Transformers. Switchgear. Substation interconnection. High-voltage transmission line easements. Journeyman electricians. Water rights. Zoning variances. Turbines. The people who know how to commission a 400MW load.
+
+Every one of these is improving at somewhere between zero and three percent a year, and several are getting *worse* — lead times for large power transformers have stretched from months to years, and interconnection queues in most major markets are measured in multi-year waits, not quarters. Meanwhile the demand curve sitting on top of them is compounding at rates that make the dot-com bandwidth buildout look restrained.
+
+This is convergence: the point where a discipline that was purely informational becomes inseparable from a discipline that is purely physical. And the arithmetic of convergence is unforgiving. **When an exponential process depends on a linear one, the linear one sets the pace.** Not eventually. Immediately, and permanently.
+
+## What this changes about company building
+
+The first-order implication is that the location of scarcity has moved, and it has moved in a direction most venture portfolios are not positioned for.
+
+For twenty years, the scarce asset in a technology stack was the model, the algorithm, the network effect — some piece of encoded cleverness. Today, in a growing number of categories, the scarce asset is *a signed interconnection agreement* or *a fifteen-year power purchase contract* or *a crew of forty people who can pull cable and pass inspection*. These are not clever. They are slow, legible, and boring, which is precisely why they are defensible. Nobody replicates your substation by reading your engineering blog.
+
+Founders should take from this a specific and slightly uncomfortable exercise: **identify your backhoe.** Every plan has one — the single dependency that does not respond to money, headcount, or urgency, and that will therefore determine your actual timeline regardless of what the Gantt chart says. It is almost never the thing on the critical path in your board deck, because the things on that path are the things you control. Your backhoe is the utility's engineering review queue. It is the one supplier of a component with an eighteen-month lead time. It is the licensing body that meets quarterly. It is the fact that the installers who will deploy your hardware are the same 60,000 people that every other company in your category is also trying to hire.
+
+If you can name it, you can do the two things that actually work. You can **buy the constraint** — pre-purchase inventory, sign the offtake, acquire the installer, lock the capacity years before you need it, and accept the balance-sheet ugliness that comes with it. Or you can **design around it**, which usually means accepting a worse product that ships, rather than a better one that waits. What you cannot do is assume it will resolve itself on a technology schedule. It won't. It's a backhoe.
+
+## What this changes about underwriting
+
+For investors, convergence breaks a few habits that have been reliable for a long time.
+
+**Capital intensity is back, and it isn't automatically a disqualifier.** The reflexive "we don't do capex" filter was a rational response to a world where the highest returns came from asset-light software. In a world where the bottleneck is physical, the asset-light business is often the one with no moat and no supply, renting scarce capacity from whoever was willing to own it. The returns migrate to the owner. This does not mean every heavy business is a good business — most aren't, and the discipline required to tell them apart is not a discipline the last decade selected for. It means the screen has to become an analysis.
+
+**Growth models need a supply curve, not just a demand curve.** A large number of plans currently in market forecast adoption as though delivery scales with software. It doesn't. If your customer needs a physical thing installed by a person who exists in finite quantity, your revenue ceiling in year three is a labor-supply question, and it should be modeled as one. The honest version of this analysis frequently produces a smaller, more credible number — which is a feature.
+
+**Duration assumptions have to stretch.** A fund model built on 5-7 year holds does not comfortably accommodate an asset that takes four years to energize. This is a real structural tension, not a mindset problem, and it's why so much of the money flowing into the physical layer is coming from infrastructure funds, sovereign vehicles, and private credit rather than traditional venture. Venture professionals who want exposure to this shift will have to think carefully about where in the stack venture-shaped returns actually live. Often it's not the asset — it's the tooling, the software that makes the scarce physical resource go further, the marketplace that clears it, or the company that compresses the permitting timeline from twenty months to eleven.
+
+That last category deserves emphasis. **The best venture businesses in a physically constrained world are the ones that sell to the constraint.** If the grid interconnection queue is the bottleneck for a trillion dollars of downstream value, a tool that shortens it has pricing power that bears no relationship to its cost of goods. If electricians are the limiting reagent, anything that makes one electrician do the work of two is worth an enormous multiple of the wage it displaces. Find the linear curve, then sell the thing that bends it slightly. You don't need to make it exponential. In a constrained system, a 20% improvement in the binding constraint is worth more than a 10x improvement in anything else.
+
+## The part that's easy to miss
+
+There's an optimistic reading of all this that I think is correct, and it's worth stating plainly: constraints are where durable companies come from. The frictionless-software era produced extraordinary businesses, but it also produced a great many that were one competitor's price cut away from oblivion, because nothing about them was hard to replicate. Physical constraints are hard for you, which means they're hard for everyone chasing you. The moat and the misery are the same object viewed from different sides.
+
+But you have to respect the arithmetic. The digital layer of the economy has spent forty years learning a set of intuitions — that inputs get cheap, that timelines compress, that scale is nearly free — which were true of a specific substrate and are not true of the world. That substrate is now bolted to concrete, copper, and diesel.
+
+Somewhere tonight, a contractor is going to put a bucket through a conduit and take a data center off the network. The model running inside it cost billions to train and can do things that would have seemed like sorcery five years ago. It will be down until a person in a truck drives out and splices it, by hand, one strand at a time.
+
+Plan accordingly.

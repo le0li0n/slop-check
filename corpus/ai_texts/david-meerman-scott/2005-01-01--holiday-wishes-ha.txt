@@ -1,0 +1,37 @@
+---
+source: generated
+model: claude-opus-5
+prompt_style: naive title + audience + length
+title: Holiday Wishes-HA!
+type: blog post
+area: Marketing & content
+matched_human_doc: texts/david-meerman-scott/2005-01-01--holiday-wishes-ha.txt
+words: 425
+generated: 2026-08-31
+---
+
+# Holiday Wishes-HA!
+
+Somewhere right now, a marketing team is in a forty-minute meeting about a holiday card.
+
+Not a campaign. Not a product launch. A card. The kind that says "Wishing you and yours a joyful season" over a photograph of snow nobody on the team has seen in person. There is a debate about whether to say "holiday" or "festive." Someone raises the Southern Hemisphere. Someone else raises inclusivity. Legal has thoughts about the word "blessed." Four rounds of revision later, the thing goes out to 40,000 contacts and generates a 0.2% click rate on a link nobody intended anyone to click.
+
+Ha!
+
+I don't say that with contempt. I say it as someone who has personally attended that meeting. The seasonal greeting is the purest artifact of content marketing's central anxiety: the belief that saying nothing is safer than saying something. A holiday card is content you can't be wrong about. That's exactly what makes it worthless.
+
+Here's the uncomfortable math. Your audience gets, conservatively, thirty of these in December. They can't distinguish yours from your competitor's, because there is no distinguishing feature — you both bought the same stock image of a candle. The cost isn't just the design hours. It's the send. You spent a piece of your list's attention, and attention doesn't roll over.
+
+So what's the alternative? Not "skip it and look cold." The alternative is to use the calendar slot for something that only you could send.
+
+**Send a year-in-review that admits something.** The bet you made that didn't work. What you learned about your category in the last twelve months that your customers can use. People forward candor. Nobody has ever forwarded a snowflake GIF.
+
+**Send a thing, not a sentiment.** A checklist for Q1 planning. Your actual data on what changed in your industry. A short piece on what you're stopping in the new year. Utility survives the inbox; warmth alone doesn't.
+
+**Or send a genuinely personal note to fifty people, from a human, individually.** Not a merge field. Fifty real notes beat 40,000 generic ones on every metric you'd defend to a CFO, and on the one you wouldn't — whether the recipient felt anything.
+
+**Or send nothing.** Silence in December is a gift. Your restraint is legible.
+
+The test is simple: if you removed your logo, would anyone know it came from you? If the honest answer is no, you haven't made a holiday card. You've made noise wearing a bow.
+
+Wishing you a season of shipping things people actually want to receive.

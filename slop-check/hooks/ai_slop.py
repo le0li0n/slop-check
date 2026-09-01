@@ -32,7 +32,7 @@ import argparse
 import glob
 import json
 import os
-import re, collections
+import re
 import sys
 
 # ─── Scope: what counts as "sent or published" ─────────────────────────────
@@ -203,8 +203,8 @@ LINE_PATTERNS = [
     ("8", MED,  r"\brepresents? (?:a|an|the) (?:shift|opportunity|step)\b", "use is"),
 
     # §9 Not X but Y, and clipped negative endings
-    ("9", HIGH, r"\bit'?s not (?:just|only|merely|about)\b", "state the point directly"),
-    ("9", HIGH, r"\bnot (?:just|only|merely) .{2,60}?,\s*(?:but|it'?s|it is)\b", "state the point directly"),
+    ("9", LOW,  r"\bit'?s not (?:just|only|merely|about)\b", "state the point directly"),
+    ("9", LOW,  r"\bnot (?:just|only|merely) .{2,60}?,\s*(?:but|it'?s|it is)\b", "state the point directly"),
     ("9", MED,  r",\s*no (?:guessing|hassle|fuss|surprises|exceptions|extra steps)\b", "write the clause out"),
     # The antithesis epigram: a claim withdrawn and restated as its opposite,
     # in two short sentences. Reads as insight and commits to nothing, because
@@ -227,12 +227,16 @@ LINE_PATTERNS = [
     ("21", MED,  r"\bit is believed that\b", "attribute it or cut it"),
 
     # §20/§22 Chatbot text and overly agreeable tone
-    ("20", HARD, r"\b(?:I hope this helps|Let me know if|Would you like me to|Want me to|Should I continue|Certainly!|Of course!|Great question|You'?re absolutely right)\b",
+    # "Let me know if" and "Great question" split out to MED 2026-09-01: they
+    # are the two members of this list a blogger writes naturally when
+    # answering a reader, and at HARD they condemned four pre-2012 essays. The
+    # rest stay HARD -- nobody writes "Certainly!" into a blog post on purpose.
+    ("20", MED,  r"\b(?:Let me know if|Great question)\b", "cut — chatbot artifact"),
+    ("20", HARD, r"\b(?:I hope this helps|Would you like me to|Want me to|Should I continue|Certainly!|Of course!|You'?re absolutely right)\b",
                  "cut — chatbot artifact"),
     ("20", HARD, r"^\s*Here'?s (?:a |an |the )?(?:breakdown|overview|summary) (?:of|for)\b", "cut — chatbot artifact"),
 
     # §23 Filler phrases
-    ("23", MED,  r"\bin order to\b", "use to"),
     ("23", MED,  r"\bdue to the fact that\b", "use because"),
     ("23", MED,  r"\bat this point in time\b", "use now"),
     ("23", MED,  r"\bin the event that\b", "use if"),
@@ -240,7 +244,6 @@ LINE_PATTERNS = [
     ("23", MED,  r"\bit is important to note that\b", "cut"),
     ("23", MED,  r"\bit'?s worth noting\b", "cut"),
     ("23", MED,  r"\bneedless to say\b", "cut"),
-    ("23", LOW,  r"\bwhen it comes to\b", "cut"),
 
     # §24 Too many qualifiers
     ("24", MED,  r"\bcould potentially\b", "use could"),
@@ -329,40 +332,17 @@ LINE_PATTERNS = [
     ("OUT", MED,  r"\bcircling back\b", "say what you need"),
     ("OUT", MED,  r"\bhope you'?re doing well\b", "open with the ask"),
 
-    # GB — British spellings, for houses that write American throughout
-    # (marketing/authors/jared-waxman.md §7). HARD because it is an objective
-    # error rather than a judgment call: nobody picks "programme" on
-    # purpose, and one of these alone needs to fire. "standardised" was the
-    # only tell in a mail to 6,000 people and would never clear a threshold.
+    # GB — REMOVED 2026-09-01. British spellings were flagged HARD, so one
+    # "towards" condemned a file outright. Measured against 382 pre-2012
+    # human documents that produced 76 hard hits -- the single largest source
+    # of false positives -- while barely discriminating: 0.20 hits per
+    # document on human prose against 0.24 on machine prose, a ratio of 1.2x.
+    # It was detecting dialect, not machine writing. `[Jared, 2026-09-01]`
     #
-    # Moved here 2026-08-26 from the ges-pulse skill, where it only ever ran
-    # against the newsletter. Partner and student-facing copy never saw it,
-    # and in two days that gap shipped "standardised" to the list plus
-    # "programme" and "enrols" into a reusable sponsor template.
-    #
-    # Two entries were dropped in the move: the original list contained
-    # "favorite" and "behavior", which are the AMERICAN spellings. As written
-    # it flagged correct copy.
-    # The verb ending is required. Bare stems over-match badly: "organis"
-    # also hits organism, "optimis" hits optimism, "criticis" hits criticism,
-    # "specialis" hits specialist and "analys" hits analysis -- all correct
-    # American words. The first cut of this pattern flagged every one of them.
-    ("GB", HARD, r"\b\w*(?:customis|organis|recognis|categoris|analys|optimis"
-                 r"|personalis|specialis|prioritis|realis|summaris|utilis"
-                 r"|minimis|maximis|apologis|standardis|normalis|monetis"
-                 r"|digitis|characteris|criticis|modernis)"
-                 r"(?:e|es|ed|ing|ation|ations)\b",
-     "US spelling: -ize / -yze"),
-    ("GB", HARD, r"\b(?:colour|labour|honour|favourite|behaviour|flavour)\w*\b",
-     "US spelling: drop the u"),
-    ("GB", HARD, r"\b(?:centre|theatre|litre|metre|fibre)\w*\b",
-     "US spelling: -er"),
-    ("GB", HARD, r"\b(?:licence|defence|offence|pretence|practis\w*)\b",
-     "US spelling: -se / practice"),
-    ("GB", HARD, r"\b(?:modelling|labelling|travelling|cancelled|counsellor|enrolment|fulfil|fulfilled|instalment)\b",
-     "US spelling: single l, or -ment"),
-    ("GB", HARD, r"\b(?:whilst|amongst|towards|learnt|spelt|grey|cheque|storey|sceptic\w*|judgement|programme|manoeuvre)\b",
-     "US spelling"),
+    # Dialect is author voice. If a house wants American spelling enforced it
+    # belongs in that author's voice guide (marketing/authors/jared-waxman.md
+    # §7) or a style linter, opt-in per repo -- not in a slop scanner, and
+    # never at HARD. Recover the patterns from git history if you want them.
 
     # CL — reads as written with Claude. Not slop exactly: these are phrases a
     # model reaches for constantly, so anyone who works with one every day
@@ -423,7 +403,11 @@ LINE_PATTERNS = [
     # The noun must be followed by a clause, not a prepositional phrase, or
     # ordinary sentences get caught: "the date on the card is the date on the
     # page" is a statement of fact, not an epigram.
-    ("CL", HARD, r"\b(?:a|an|the) (?:\w+ )?(\w{3,}) "
+    # Downgraded from HARD 2026-09-01: 2.1% of 382 human documents against 7.0%
+    # of 200 machine ones, a 3.3x separation. Real, but it condemned eight
+    # pre-2012 essays outright -- "A class that has multiple purposes is a
+    # class that..." is Robert C. Martin making a point, not a model padding.
+    ("CL", HIGH, r"\b(?:a|an|the) (?:\w+ )?(\w{3,}) "
                  r"(?!(?:on|in|at|of|for|from|with|by|to|about|and|or) )"
                  r"(?:that |which |who )?[^.\n]{3,70}? is (?:a|an|the) (?:\w+ )?\1\b",
      "say the second half plainly; the restatement adds nothing"),
@@ -431,35 +415,50 @@ LINE_PATTERNS = [
     # next clause immediately cashes out ("the failure mode is a founder who
     # sells and never encodes, who has become the most expensive SDR on the
     # payroll"). Worth a look, not worth dominating a file's score alone.
-    # Restored to HIGH. The earlier downgrade argued that the label is fine
-    # when the next clause names the specific breakage. It isn't: "failure
-    # mode" is engineering jargon standing in for ordinary English, and the
-    # specifics following it don't rescue the phrase.
-    ("CL", HIGH, r"\bfailure modes?\b",
-     "plain English: a frequent mistake / easy to miss / watch out for / where this goes wrong"),
+    ("CL", MED, r"\bfailure mode\b", "name the specific way it breaks"),
     # Claims candour instead of demonstrating it, and arrives as a section
     # label rather than a word choice: "The honest take:", "## The honest
     # version", "the honest counterweight". Zero occurrences across 31k words
     # of pre-2012 business writing; a guide measured against that ran 4.4 per
     # 10k, seven of them the same bolded "The honest take:" callout. Ordinary
     # uses ("be honest with yourself", "an honest mistake") are left alone.
-    # Every other form of it. The scaffold below is the worst offender, but a
-    # guide that had it sixteen times also had "Calculate your NRR honestly",
-    # "Decide honestly which form", "be honest about who fits", "Be honest.",
-    # "measure it, honestly" and "seat pricing is honest" — none of which the
-    # scaffold pattern sees. Zero occurrences of any form across 31,282 words
-    # of pre-2012 business writing. Ordered after the scaffold so the two
-    # never double-report on one line.
-    ("CL", MED, r"\bhonestly\b|\b(?:to be|be|being)\s+honest\b|\ban honest\b|"
-                r"\b(?:is|are|was|were|seems?|feels?)\s+honest\b",
-     "realistic, objective, truthful, defensible, take a hard look, "
-     "don't fool yourself, don't round down"),
-    ("CL", HIGH, r"\bthe honest (?:take|version|answer|truth|read|claim|"
+    ("CL", MED, r"\bthe honest (?:take|version|answer|truth|read|claim|"
                 r"assessment|counterweight|boundary|risks?)\b",
-     "say the blunt thing. Or: realistic, objective, truthful, take a hard "
-     "look, don't fool yourself"),
+     "say the blunt thing; the label does not make it candid"),
     ("CL", MED,  r"\bthe (?:real|actual) question is\b", "just ask it"),
     ("CL", MED,  r"\bhere'?s the thing\b", "cut and say it"),
+
+    # Mined 2026-09-01 by contrasting 382 pre-2012 human documents against 200
+    # generated from the same titles at the same lengths. Percentages are the
+    # share of documents on each side containing the phrase at least once, so
+    # they can be re-measured: corpus/tools/mine.py. Current machine prose does
+    # not reach for "delve" or "tapestry" -- none of the classic slop appeared
+    # even once. It argues by negation instead, and that is what these catch.
+    #
+    # The two-beat negation is the strongest single tell found: state what a
+    # thing is not, then immediately restate what it is. 0.3% of human
+    # documents, 24.5% of machine ones -- a 94x separation, the widest in the
+    # study.
+    ("CL", HIGH, r"\bisn'?t [^.!?\n]{3,50}[\u2014\u2013,] (?:it|that)'?s\b",
+     "cut the negation; lead with what it is"),
+    ("CL", MED,  r"\b(?:it|that|this)'?s not [^.!?\n]{3,60}[.;\u2014\u2013] (?:it|that|this)'?s\b",
+     "cut the negation; lead with what it is"),
+    # 1.3% human / 23.5% machine. The pivot-to-conclusion move.
+    ("CL", HIGH, r"\bnone of (?:this|that) (?:is|means|makes|matters|changes)\b",
+     "say what does hold, without clearing the table first"),
+    # 5.2% human / 58.5% machine. The bare word, beyond the existing
+    # "nobody tells you" constructions above.
+    ("CL", MED,  r"\bnobody (?:is|was|has|does|wants|talks|says|knows|actually)\b",
+     "name who, or drop the straw man"),
+    # 2.1% human / 19.0% machine. Sorting the world into two kinds of people.
+    ("CL", MED,  r"\bthe ones (?:who|that) (?:win|lose|survive|get|make|do|stick|last)\b",
+     "say which ones, concretely"),
+    # 1.0% human / 11.0% machine.
+    ("CL", MED,  r"\bthe thing (?:is|that matters|worth)\b", "say the thing"),
+    # 0.3% human / 3.0% machine.
+    ("CL", MED,  r"\bthat'?s (?:exactly )?the (?:whole )?point\b", "cut"),
+    # 1.0% human / 4.5% machine.
+    ("CL", LOW,  r"\bwhich is why\b", "start the sentence at the reason"),
 ]
 
 COMPILED = [
@@ -485,13 +484,8 @@ CURLY = re.compile("[“”‘’]")
 DASHES = re.compile("—|–|(?<!<!)--(?=\\s|$)")
 # A bold label + colon opening a line, with or without a list marker or an
 # emoji in front of it. The tell is the label, not the bullet.
-# "the honest take", "the tell", "the boundary" — a framing label, not a noun
-# the document is about. Content words (answer/question/lesson/point) are out.
-LABEL_PHRASE = re.compile(
-    r"\bthe\s+(?:\w+\s+)?(?:take|version|truth|read|claim|boundary|tell|catch|"
-    r"wrinkle|nuance|upshot|kicker|rub|twist|failure modes?|caveat|traps?|mistakes?)\b", re.I)
-
 # "…is a process, not a person" / "compound the motion, not the headcount"
+FIRST_PERSON = re.compile(r"\b(?:I|I'm|I've|I'd|I'll|[Mm]y|[Mm]e|[Mm]ine|[Mm]yself)\b")
 NOT_Y = re.compile(r"[^.!?\n]{10,70},\s+not\s+(?:a|an|the|just|because|of)\b")
 
 # "- **Thing** — explanation" / "1. **Thing** — explanation"
@@ -609,14 +603,13 @@ def _where(line_nos, limit=4):
     return shown + (f", +{len(line_nos) - limit} more" if len(line_nos) > limit else "")
 
 
-def structural(masked, hits, raw=None):
+def structural(masked, hits):
     body = "\n".join(masked)
     dash_lines, curly_lines, emoji_lines = [], [], []
     dash_count = 0
     word_count = len(body.split())
     bold_dash = []
     not_y, not_y_count = [], 0
-    label_counts, label_first = collections.Counter(), {}
 
     for i, line in enumerate(masked, 1):
         n = len(DASHES.findall(line))
@@ -665,12 +658,28 @@ def structural(masked, hits, raw=None):
     # reads human, one per 56 words does not.
     if dash_count >= 3 and word_count >= 120:
         per = word_count // dash_count
-        if per <= 300:
-            _add(hits, dash_lines[0], "14", HIGH if per <= 120 else MED,
+        # one per 200 words = 5 per 1k, comfortably above the human median of
+        # 0.73 and below the machine median of 10.8. `[2026-09-01]`
+        if per <= 200:
+            _add(hits, dash_lines[0], "14", HIGH if per <= 100 else MED,
                  f"{dash_count} em/en dashes, one per {per} words "
                  f"({_where(dash_lines)})",
                  "aim for one per ~500 words. Period first (two sentences is "
                  "usually the fix), then colon, then comma")
+    # §37 Nothing the writer saw for themselves. 93% of 382 pre-2012 human
+    # business documents use "I", "my" or "me"; only 44% of 200 generated ones
+    # do, at a fifth the rate. A model has no war stories, so it writes from
+    # nowhere -- and that absence is the most reliable single tell measured,
+    # because it cannot be fixed by swapping a word. `[2026-09-01]`
+    #
+    # Long pieces only: a short notice has no room for a story, and reference
+    # material is impersonal on purpose. LOW because plenty of good writing is
+    # deliberately third-person -- it is a prompt to check, not a verdict.
+    if word_count >= 400 and not FIRST_PERSON.search(body):
+        _add(hits, 1, "37", LOW,
+             f"{word_count} words with no first person",
+             "add the thing only you saw: what you tried, what it cost, who said what")
+
     # §36 "X, not Y" — define by negation, land the contrast in the last
     # clause. Once a chapter it is rhythm; as a default sentence shape it is a
     # template a reader starts seeing everywhere. Measured at 2.0 per 10k words
@@ -684,38 +693,6 @@ def structural(masked, hits, raw=None):
                  f"({rate:.0f} per 10k words; ~2 is typical) ({_where(not_y)})",
                  "vary it: state the positive, or cut the foil entirely")
 
-    # §37 The same framing label used over and over. A document earns one
-    # "the honest take" or "the tell"; sixteen of them is a template. This
-    # catches the shape rather than any particular phrase, so it finds tics a
-    # word list never will. Measured on pre-2012 business essays: one to four
-    # framing labels per piece, none repeated. One AI-assisted guide had
-    # eighty-three, with "the honest take" sixteen times.
-    #
-    # Content nouns ("the answer", "the question", "the lesson", "the point")
-    # are deliberately excluded: they can be a document's actual subject, and
-    # a guide about being the cited answer in an AI response will say "the
-    # answer" a lot for good reason.
-    # Counted on the raw lines, not the masked ones. mask() blanks a whole
-    # blockquote, and in markdown a blockquote is as often an authored callout
-    # ("> **The honest take:** ...") as it is a quotation — which is exactly
-    # where this tic likes to live. The cost is that a genuinely quoted label
-    # can be counted; the fix line says to keep it if it is not yours.
-    for i, line in enumerate(raw or masked, 1):
-        for m in LABEL_PHRASE.finditer(line):
-            k = re.sub(r"\s+", " ", m.group(0).strip().lower())
-            label_counts[k] += 1
-            label_first.setdefault(k, i)
-
-    if label_counts:
-        worst = [(k, v) for k, v in label_counts.most_common() if v >= 3]
-        if worst:
-            shown = " · ".join(f'"{k}" x{v}' for k, v in worst[:3])
-            _add(hits, label_first.get(worst[0][0], 1), "37",
-                 HIGH if worst[0][1] >= 6 else MED,
-                 f"the same framing label repeats: {shown}",
-                 "vary them, or cut the label and say the thing. If it is your "
-                 "subject matter rather than a tic, keep it")
-
     # §14b A list of "**Label** — explanation". Mechanical to fix (the dash
     # becomes a period or a colon) and it tends to dominate the dash count in
     # reference-style docs, so it is worth naming separately from the rate.
@@ -725,10 +702,10 @@ def structural(masked, hits, raw=None):
              f"({_where(bold_dash)})",
              "**Label.** Sentence. Or a colon. The dash is doing a period's job")
 
-    if curly_lines:
-        _add(hits, curly_lines[0], "19", LOW,
-             f"{len(curly_lines)} lines with curly quotes ({_where(curly_lines)})",
-             "straight quotes, unless the destination curls them itself")
+    # §19 curly quotes: REMOVED 2026-09-01. Fired on 293 of 382 pre-2012 human
+    # documents and on none of 200 generated ones -- every publishing platform
+    # of the era converted quotes automatically, so this measured the CMS, not
+    # the author. It was the single noisiest rule in the file.
     if emoji_lines:
         _add(hits, emoji_lines[0], "18", MED if len(emoji_lines) >= 3 else LOW,
              f"{len(emoji_lines)} headings or list items led by an emoji ({_where(emoji_lines)})",
@@ -783,18 +760,23 @@ def structural(masked, hits, raw=None):
             w = re.match(r"[A-Za-z][\w'’]*", s.strip())
             if w:
                 openers.setdefault(w.group(0).lower(), []).append(s)
+        # Four, not three. At three this fired on 0.44 human documents per
+        # document and 0.44 machine ones -- no discrimination at all, because
+        # three sentences opening "The" is ordinary English. `[2026-09-01]`
         for word, group in openers.items():
-            if len(group) >= 3:
+            if len(group) >= 4:
                 _add(hits, start, "11", MED,
                      f'{len(group)} sentences in one paragraph open with "{word}"',
                      "merge them, or start with the action")
 
         # §31 runs of dramatic fragments
+        # Four in a row, not three: short sentences <9 words are 19% of human
+        # prose at the median, and a run of three is normal rhythm.
         run = 0
         for s in sentences:
             if len(s.split()) <= 4:
                 run += 1
-                if run >= 3:
+                if run >= 4:
                     _add(hits, start, "31", MED, text,
                          "one short sentence lands; a row of them reads as staging")
                     break
@@ -832,7 +814,7 @@ def scan_text(text):
                 if _is_proper_noun(line, m):
                     continue
                 _add(hits, i, section, weight, m.group(0), fix)
-    structural(masked, hits, text.split("\n"))
+    structural(masked, hits)
 
     seen = set()
     unique = []

@@ -1,0 +1,25 @@
+---
+source: generated
+model: claude-sonnet-5
+prompt_style: naive title + audience + length
+title: radio incorporation | danah boyd
+type: essay
+area: Technology & media
+matched_human_doc: texts/danah-boyd/2002-05-11--radio-incorporation-danah-boyd.txt
+words: 461
+generated: 2026-08-31
+---
+
+radio incorporation | danah boyd
+
+There's a particular shape of history that keeps repeating in media, and it's worth naming plainly: a new medium arrives promising decentralization, and within a generation it consolidates into something closer to what it displaced. Radio is the clearest case study we have, and it's the one I keep returning to when people ask me what will happen to the internet's current fragmentation.
+
+In the 1910s and early 1920s, radio was chaos in the best sense. Amateur operators, hobbyists, small stations, and experimental broadcasters filled the spectrum. It was participatory, unpredictable, and genuinely open in a way that's hard to picture now. Regulation existed, but it was thin. Anyone with the right equipment and enough curiosity could put a signal into the air.
+
+What ended that era wasn't a single villain or a single law. It was incorporation — literal and figurative. Companies like RCA absorbed patents, absorbed competitors, absorbed the technical standards bodies that decided what counted as a legitimate signal. The Radio Act of 1927 and the Federal Communications Commission that followed didn't just regulate an unruly space; they formalized a consolidation that corporate actors had already been engineering. Spectrum scarcity was real, but scarcity became the justification for a licensing regime that favored capital over experimentation. The hobbyists didn't disappear because they lost interest. They lost access.
+
+I bring this up because the instinct in tech circles is to treat "openness" as a stable end state — something you build once and then defend. Radio suggests otherwise. Openness is a phase, and it's usually the early phase, before the economics of scale and the politics of regulation catch up to the technology. The open period isn't an aberration that consolidation corrects; consolidation is what openness always attracts, because open systems generate value that concentrated actors are structurally better positioned to capture.
+
+This matters for anyone thinking about platforms, protocols, or AI infrastructure right now. The pattern isn't "open web good, corporate capture bad" as a moral story — it's a structural one. Decentralized systems tend to lack the coordination mechanisms to defend themselves against actors who are willing to consolidate. Standards bodies, licensing regimes, and regulatory capture aren't external threats to openness; they're the predictable next stage of it, especially once an open system becomes economically significant enough to be worth capturing.
+
+The lesson isn't fatalism. It's that preserving openness takes active, ongoing institutional work — governance designed in from the start, not bolted on after the incorporation has already happened. Radio's amateurs didn't lose because they were technically inferior. They lost because nobody built durable structures to protect the commons before the incumbents did. That's the part worth remembering before we assume today's open protocols are safe simply because they're open today.
