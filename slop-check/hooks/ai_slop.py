@@ -289,11 +289,15 @@ LINE_PATTERNS = [
     # The same device one step earlier in the sentence: stage the thought as
     # hard-won before delivering it. "The version of this I keep coming back
     # to is X" says nothing that "X" alone does not; the preamble asks the
-    # reader to take X as earned rather than argued. 2 hits across 3,718
-    # pre-2012 human documents (0.05%), and both are the literal sense --
-    # returning to a website, not to an idea. "delve" scores 0.46% on the same
-    # set. `[2026-09-01]`
-    ("28", HIGH, r"\b(?:I|we) keep coming back to\b", "just say the thing"),
+    # reader to take X as earned rather than argued. Any subject and tense,
+    # and "returning to" as well as "coming back to": the generated corpus
+    # uses "he keeps returning to a theme" and "Battelle kept returning to a
+    # bigger idea" as readily as the first person. Measured 2026-09-04 against
+    # 2,096 cached pre-2012 human documents of 200+ words: 1 hit (0.05%),
+    # versus 7 of 200 generated posts (3.5%); "delve" scores 0.72% on the same
+    # human set. "to keep coming back to you" is the literal sense and is
+    # excluded by the lookahead. `[2026-09-01]`
+    ("28", HIGH, r"\b(?!to\b)\w+ (?:keeps?|kept) (?:coming back|returning) to\b", "just say the thing"),
     ("28", MED,  r"\b\w+ things? to (?:consider|note|keep in mind|watch)\b", "just say them"),
     ("28", MED,  r"\b(?:is|are) top of mind\b", "say the thing itself"),
     ("28", MED,  r"\bhere are \w+ key (?:developments|takeaways|things|points|updates)\b", "drop the preamble"),
