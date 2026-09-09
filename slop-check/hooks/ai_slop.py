@@ -471,6 +471,15 @@ LINE_PATTERNS = [
     ("CL", MED,  r"\bthat'?s (?:exactly )?the (?:whole )?point\b", "cut"),
     # 1.0% human / 4.5% machine.
     ("CL", LOW,  r"\bwhich is why\b", "start the sentence at the reason"),
+    # "The part that broke", "the part that's easy to miss", "the part where
+    # your background helps": a slot where the noun should be. The sentence
+    # points at the thing and then withholds it, and the reader has to wait
+    # for the next clause to learn what it was. Say the thing. Measured
+    # 2026-09-09: 0 of 375 pre-2012 human documents of 200+ words, 17 of 200
+    # generated posts (8.5%). "The part of the process that fails" is left
+    # alone: naming what the part belongs to is the fix. `[Jared, 2026-09-09]`
+    ("CL", HIGH, r"\bthe (?:part|bit) (?:that|which|where)\b",
+     "name the thing, not its slot"),
 ]
 
 COMPILED = [

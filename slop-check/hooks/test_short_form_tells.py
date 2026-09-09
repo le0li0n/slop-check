@@ -22,6 +22,9 @@ SHOULD_FLAG = [
     "It's not a feature. It's a platform.",
     "You shouldn't hand it write access on day one.",
     "We've done it this way from day one.",
+    "That's the part that broke.",
+    "Here's the part that took me longest to see.",
+    "Now the part where your background helps.",
 ]
 
 SHOULD_NOT_FLAG = [
@@ -41,6 +44,9 @@ SHOULD_NOT_FLAG = [
     "Day one of the cohort is 28 September.",
     "On day one of the trial we saw the bug.",
     "The day one report is filed by the duty manager.",
+    "She talks about the part of the process that fails.",
+    "We replaced the part, which had rusted through.",
+    "Two things broke: the sync and the webhook.",
 ]
 
 def hits(t):
