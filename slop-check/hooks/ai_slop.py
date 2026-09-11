@@ -121,6 +121,18 @@ SECTION_REPORT_CAP = 3
 
 _load_config()
 
+# Intensifiers and evaluative adjectives that attach to the candour label in
+# "the most honest public read". A closed set on purpose: an open \w+ slot
+# turns the rule into a false-positive generator on ordinary prose.
+# Adverbs are spelled out rather than matched as \w+ly, which would also take
+# "family", "supply" and every other noun ending in those two letters.
+_CANDOUR_MOD = (r"(?:most|more|only|real|single|simple|plain|short|blunt|"
+                r"brutal|uncomfortable|best|public|full|complete|straight|"
+                r"unvarnished|painful|hard|"
+                r"really|truly|genuinely|brutally|painfully|refreshingly|"
+                r"disarmingly|plainly|simply|frankly|candidly|completely|"
+                r"fully|unusually)")
+
 # (section, weight, pattern, what to do instead)
 LINE_PATTERNS = [
     # §1 Inflated claims about importance and legacy
@@ -434,7 +446,14 @@ LINE_PATTERNS = [
     # of pre-2012 business writing; a guide measured against that ran 4.4 per
     # 10k, seven of them the same bolded "The honest take:" callout. Ordinary
     # uses ("be honest with yourself", "an honest mistake") are left alone.
-    ("CL", MED, r"\bthe honest (?:take|version|answer|truth|read|claim|"
+    #
+    # Modifiers sit on either side of "honest" and the adjacent-word version of
+    # this missed them: "the most honest public read" walked past a rule that
+    # already lists "read". Both slots take a closed set of intensifiers rather
+    # than \w+, because an open slot flags ordinary sentences — "the honest
+    # people take risks" would otherwise hit on take/risks.
+    ("CL", MED, r"\bthe (?:" + _CANDOUR_MOD + r" )*honest (?:" + _CANDOUR_MOD +
+                r" )*(?:take|version|answer|truth|read|claim|"
                 r"assessment|counterweight|boundary|risks?)\b",
      "say the blunt thing; the label does not make it candid"),
     ("CL", MED,  r"\bthe (?:real|actual) question is\b", "just ask it"),
@@ -508,6 +527,7 @@ DASHES = re.compile("—|–|(?<!<!)--(?=\\s|$)")
 # "…is a process, not a person" / "compound the motion, not the headcount"
 FIRST_PERSON = re.compile(r"\b(?:I|I'm|I've|I'd|I'll|[Mm]y|[Mm]e|[Mm]ine|[Mm]yself)\b")
 NOT_Y = re.compile(r"[^.!?\n]{10,70},\s+not\s+(?:a|an|the|just|because|of)\b")
+RATHER_THAN = re.compile(r"\brather than\b", re.I)
 
 # "- **Thing** — explanation" / "1. **Thing** — explanation"
 BOLD_DASH_LEDE = re.compile(r"^\s*(?:[-*+]\s+|\d+\.\s+)?\*\*[^*]{1,60}\*\*\s+(?:\u2014|\u2013)\s+\S")
@@ -631,6 +651,7 @@ def structural(masked, hits):
     word_count = len(body.split())
     bold_dash = []
     not_y, not_y_count = [], 0
+    rather, rather_count = [], 0
 
     for i, line in enumerate(masked, 1):
         n = len(DASHES.findall(line))
@@ -643,6 +664,10 @@ def structural(masked, hits):
         if n_ny:
             not_y.append(i)
             not_y_count += n_ny
+        n_rt = len(RATHER_THAN.findall(line))
+        if n_rt:
+            rather.append(i)
+            rather_count += n_rt
         if CURLY.search(line):
             curly_lines.append(i)
         h = HEADING.match(line)
@@ -713,6 +738,26 @@ def structural(masked, hits):
                  f"{not_y_count} sentences close on \"X, not Y\" "
                  f"({rate:.0f} per 10k words; ~2 is typical) ({_where(not_y)})",
                  "vary it: state the positive, or cut the foil entirely")
+
+    # §36b "rather than" — the same define-by-negation move as §36, carried by
+    # a preposition instead of a comma. Ordinary prose uses it; the tell is
+    # reaching for it as the default way to draw every contrast.
+    #
+    # Measured 2026-09-10. Human: 29 hits across 173 pre-2012 documents
+    # (161k words) = 1.8 per 10k, and the median document contains none at all.
+    # Machine: 202 across 200 generated documents (140k words) = 14.5 per 10k,
+    # median document 10.5. An 8x separation, wider than §36's own 2.0 vs 15.8,
+    # so the gate sits in the same place relative to the two populations.
+    #
+    # Deliberately rate-based rather than a literal pattern: a single "rather
+    # than" is normal English and flagging it would be noise.
+    if rather_count >= 4 and word_count >= 400:
+        rate = rather_count / word_count * 10000
+        if rate >= 8:
+            _add(hits, rather[0], "36b", HIGH if rate >= 14 else MED,
+                 f"{rather_count} uses of \"rather than\" "
+                 f"({rate:.0f} per 10k words; ~2 is typical) ({_where(rather)})",
+                 "state the positive; not every contrast needs its foil named")
 
     # §14b A list of "**Label** — explanation". Mechanical to fix (the dash
     # becomes a period or a colon) and it tends to dominate the dash count in
