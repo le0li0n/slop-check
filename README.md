@@ -13,7 +13,7 @@ Add the marketplace, then the plugin:
 /plugin install slop-check@slop-check
 ```
 
-That wires up three things: a `PostToolUse` hook that flags Claude's writes to outward-facing files, the `/slop-check` skill as the gate before sending, and the scanner itself as a CLI.
+That wires up four things: a `PostToolUse` hook that flags Claude's writes to outward-facing files, the `/slop-check` skill as the gate before sending, the `/blind-read` skill for deciding whether an edit actually improved a draft, and the scanner itself as a CLI.
 
 Run it by hand any time:
 
@@ -21,6 +21,18 @@ Run it by hand any time:
 python3 hooks/ai_slop.py path/to/file.md
 python3 hooks/ai_slop.py --all docs/
 ```
+
+## After an edit: did it still say what it said?
+
+The scanner asks whether prose reads as machine-written. A rewrite can pass it and still have quietly dropped a source or turned a "can" into a "will", which no tell pattern catches. `edit_check.py` compares two versions and reports both:
+
+```
+python3 hooks/edit_check.py original.md edited.md
+```
+
+It lists what the original had and the edit does not — links, figures, names, quotations, headings — and every word that raised a claim or lost a hedge. Each line is a candidate for a reading rather than a verdict.
+
+When the question is which version is better rather than what changed, use `/blind-read`. It hands the versions to a reader that cannot see which is which, because the person who made an edit is the worst judge of it.
 
 ## Configure per repo
 
