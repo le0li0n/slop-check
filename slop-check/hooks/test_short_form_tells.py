@@ -25,6 +25,19 @@ SHOULD_FLAG = [
     "That's the part that broke.",
     "Here's the part that took me longest to see.",
     "Now the part where your background helps.",
+    "That's the part that most marketers miss.",
+    "That's the step most people skip.",
+    "It's the thing most founders overlook.",
+    "That's what most people miss.",
+    "This is the detail so many teams forget.",
+    "The scenario modeling is where it actually earns its keep.",
+    "That one meeting earned its keep.",
+    "The dashboard has been earning its keep since launch.",
+    "These checks earn their keep on large PRs.",
+    "Ten links from sites that do what your audience actually wants.",
+    "Start with what customers actually want.",
+    "What's actually happening is simpler.",
+    "Here is what the data actually shows.",
 ]
 
 SHOULD_NOT_FLAG = [
@@ -47,6 +60,18 @@ SHOULD_NOT_FLAG = [
     "She talks about the part of the process that fails.",
     "We replaced the part, which had rusted through.",
     "Two things broke: the sync and the webhook.",
+    "The mistake many organizations make is waiting.",
+    "Most people skip this.",
+    "Most of the team missed the call.",
+    "He asked what most customers pay.",
+    "He earned his keep mucking out stables.",
+    "She earned her place on the Olympic team.",
+    "Every feature has to earn its place.",
+    "You can keep what you earn.",
+    "It actually feels very natural to sit back.",
+    "What a year. We actually shipped it.",
+    "What did the customer want?",
+    "Actually, what matters is the price.",
 ]
 
 def hits(t):
