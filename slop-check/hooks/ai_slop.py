@@ -416,7 +416,12 @@ LINE_PATTERNS = [
     ("CL", HARD, r"\b(?:is|are|was|were|isn'?t|aren'?t|wasn'?t|weren'?t)(?: not)? "
                  r"doing (?:real|genuine|actual|the real|heavy|serious) work\b",
      "say what it does"),
-    ("CL", MED,  r"\b(?:earns?|pulls?) (?:its|their) (?:keep|weight)\b", "say what it does"),
+    # "Where it earns its keep" -- the same move with a thing as the subject.
+    # Any tense. its/their only: with his/her/your it is usually a person and
+    # often literal ("he earned his keep mucking out stables"). 10 of 200 AI
+    # texts, 0 of 382 in the human set. `[Jared, 2026-11-19]`
+    ("CL", HIGH, r"\bearn(?:s|ed|ing)? (?:its|their) keep\b", "say what it does"),
+    ("CL", MED,  r"\bpull(?:s|ed|ing)? (?:its|their) weight\b", "say what it does"),
 
     # The aphoristic restatement: "A gate that can't run in a bare python3 is
     # a gate that gets skipped." `[Jared, 2026-08-26]` The marker is the
@@ -457,6 +462,13 @@ LINE_PATTERNS = [
                 r"assessment|counterweight|boundary|risks?)\b",
      "say the blunt thing; the label does not make it candid"),
     ("CL", MED,  r"\bthe (?:real|actual) question is\b", "just ask it"),
+
+    # "what customers actually want", "what's actually happening" -- sets the
+    # sentence against an unnamed wrong version that nobody put forward. The
+    # sharpest single form of the §38 habit. 85 of 200 generated documents,
+    # 8 of 382 pre-2012 human ones. `[Jared, 2026-11-19]`
+    ("CL", MED,  r"\bwhat(?:['’]s)? (?:[\w'’-]+ ){0,4}?actually\b",
+     "drop \"actually\", or name what it is being contrasted with"),
     ("CL", MED,  r"\bhere'?s the thing\b", "cut and say it"),
 
     # Mined 2026-09-01 by contrasting 382 pre-2012 human documents against 200
@@ -499,6 +511,15 @@ LINE_PATTERNS = [
     # alone: naming what the part belongs to is the fix. `[Jared, 2026-09-09]`
     ("CL", HIGH, r"\bthe (?:part|bit) (?:that|which|where)\b",
      "name the thing, not its slot"),
+    # "That's the step most people skip", "the thing most founders overlook",
+    # "what most people miss": the same withholding move as above, with a
+    # crowd of unnamed people standing in for evidence that the reader is
+    # about to be smarter than them. Covers the nouns and the bare "what"
+    # that the "the part that" rule does not. "make" is left out on purpose:
+    # "the mistake many organizations make" is ordinary prose.
+    ("CL", MED,  r"\b(?:the|a) (?:step|thing|piece|detail|question|stage|bottleneck|reason|part|bit) (?:that |which )?(?:most|almost (?:all|every)\w*|nearly (?:all|every)\w*|so many|too many) \w+(?: \w+)? (?:miss|skip|overlook|forget|ignore|gloss over|underestimate|neglect)\b"
+     r"|\bwhat (?:most|almost everyone|nearly everyone|everyone) (?:\w+ ){0,2}(?:miss|skip|overlook|forget|ignores?|gets? wrong)\b",
+     "say what it is and why it matters, without the crowd"),
 ]
 
 COMPILED = [
@@ -528,6 +549,8 @@ DASHES = re.compile("—|–|(?<!<!)--(?=\\s|$)")
 FIRST_PERSON = re.compile(r"\b(?:I|I'm|I've|I'd|I'll|[Mm]y|[Mm]e|[Mm]ine|[Mm]yself)\b")
 NOT_Y = re.compile(r"[^.!?\n]{10,70},\s+not\s+(?:a|an|the|just|because|of)\b")
 RATHER_THAN = re.compile(r"\brather than\b", re.I)
+# §38. "real-time", "real estate" and "real world" are compounds, not emphasis.
+SINCERITY = re.compile(r"\bactually\b|\breal\b(?![- ](?:time|estate|world)\b)", re.I)
 
 # "- **Thing** — explanation" / "1. **Thing** — explanation"
 BOLD_DASH_LEDE = re.compile(r"^\s*(?:[-*+]\s+|\d+\.\s+)?\*\*[^*]{1,60}\*\*\s+(?:\u2014|\u2013)\s+\S")
@@ -652,6 +675,7 @@ def structural(masked, hits):
     bold_dash = []
     not_y, not_y_count = [], 0
     rather, rather_count = [], 0
+    sincere, sincere_count = [], 0
 
     for i, line in enumerate(masked, 1):
         n = len(DASHES.findall(line))
@@ -668,6 +692,10 @@ def structural(masked, hits):
         if n_rt:
             rather.append(i)
             rather_count += n_rt
+        n_sc = len(SINCERITY.findall(line))
+        if n_sc:
+            sincere.append(i)
+            sincere_count += n_sc
         if CURLY.search(line):
             curly_lines.append(i)
         h = HEADING.match(line)
@@ -758,6 +786,28 @@ def structural(masked, hits):
                  f"{rather_count} uses of \"rather than\" "
                  f"({rate:.0f} per 10k words; ~2 is typical) ({_where(rather)})",
                  "state the positive; not every contrast needs its foil named")
+
+    # §38 "actually" and "real" as default emphasis: "what customers actually
+    # want", "the real constraint", "a real replica". Each one sets the sentence
+    # against a fake version nobody proposed. `[Jared, 2026-11-19]`
+    #
+    # Measured 2026-11-19 against 382 pre-2012 human documents (325k words) and
+    # 200 generated from the same titles (137k words). Combined rate: human 8.8
+    # per 10k words, machine 45.6. The median human document uses neither word.
+    # Of 200 matched pairs the generated text had the higher rate in 163.
+    # Human writers emphasise more, not less, but with different words:
+    # "really" 10.2 vs 2.6 per 10k, "very" 11.4 vs 2.7, "in fact" 2.7 vs 0.1.
+    #
+    # Rate-based for the same reason as §36b: both words are ordinary English
+    # and a single use proves nothing.
+    if sincere_count >= 3 and word_count >= 200:
+        rate = sincere_count / word_count * 10000
+        if rate >= 40:
+            _add(hits, sincere[0], "38", HIGH if rate >= 60 else MED,
+                 f"{sincere_count} uses of \"actually\" / \"real\" "
+                 f"({rate:.0f} per 10k words; ~9 is typical) ({_where(sincere)})",
+                 "cut most of them; the sentence usually stands without the "
+                 "word. Keep one where the fake version is named")
 
     # §14b A list of "**Label** — explanation". Mechanical to fix (the dash
     # becomes a period or a colon) and it tends to dominate the dash count in

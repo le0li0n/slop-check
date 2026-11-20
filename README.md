@@ -85,6 +85,7 @@ This matters most for long-form. In an email the risk is one bad sentence, and y
 | §1–§35 | Wikipedia's "Signs of AI writing" — inflated importance, vague sourcing, formulaic outlook sections, the overused-word list, the "it's not just X, it's Y" construction |
 | `GB` | British spellings in American copy. Hard, because it is an objective error and one alone has to fire |
 | `OUT` | B2B outreach openers: "just curious", "circling back", "I wanted to reach out", "hope you're doing well" |
+| §38 | "actually" and "real" as default emphasis. A density rule: it fires on the rate across a file, never on a single use |
 | `CL` | Phrases Claude reaches for constantly |
 
 `CL` is the section worth explaining. These are not slop exactly — a model reaches for them so often that anyone working with one every day clocks them instantly in published writing:
@@ -93,6 +94,10 @@ This matters most for long-form. In an email the risk is one bad sentence, and y
 - **The aphoristic restatement.** "A gate that can't run in a bare python3 is a gate that gets skipped." The repeated noun either side of "is" is the marker. The second half rarely adds information; it restates the first with a consequence attached, and the symmetry makes it sound earned.
 - **"Shape"** standing in for a specific noun. "Same shape all three times" rather than naming the pattern the three share. Only the abstract forms match: "the shape of the curve" is fine, and "AGI-shaped hammer" is good writing.
 - **"X is doing real work"**, praising a sentence for pulling its weight instead of saying what it does.
+- **"Earns its keep"**, the same move with a tool, a feature or a sentence as the subject. Any tense, and only with "its" or "their": "he earned his keep" is usually a person and often literal.
+- **"What … actually"**, as in "what customers actually want" or "what's actually happening". It sets the sentence against a wrong version nobody put forward.
+
+§38 is the wider form of that last one. Generated text uses "actually" and "real" about five times as often as the human corpus does (45.6 against 8.8 per 10k words), and the median human document uses neither. Human writers emphasize more often, with "really", "very" and "in fact". Swapping one set for the other moves the tell, so the fix is to cut the word and keep it only where the thing it contrasts with is named.
 
 ## A hit is a place to look, not a thing to delete
 
