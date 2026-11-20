@@ -1,0 +1,270 @@
+{
+ "note": "one document per author, never measured; see tools/styles.py",
+ "held_out": {
+  "aaron-swartz": {
+   "title": "CodeCon Wrapup",
+   "date": "2002-02-19",
+   "path": "texts/aaron-swartz/2002-02-19--codecon-wrapup.txt"
+  },
+  "anthony-iannarino": {
+   "title": "10 Essentials: Knowing How to Help vs. Being Open to Exploring Possibilities | The Sales BlogFollow me on my websiteFoll",
+   "date": "2010-01-10",
+   "path": "texts/anthony-iannarino/2010-01-10--10-essentials-knowing-how-to-help-vs-being-open-to-expl.txt"
+  },
+  "avinash-kaushik": {
+   "title": "Top Ranked Web Analytics Blogs",
+   "date": "2006-06-01",
+   "path": "texts/avinash-kaushik/2006-06-01--top-ranked-web-analytics-blogs.txt"
+  },
+  "barry-ritholtz": {
+   "title": "Bailout Money Goes Rogue",
+   "date": "2008-11-01",
+   "path": "texts/barry-ritholtz/2008-11-01--bailout-money-goes-rogue.txt"
+  },
+  "barry-schwartz": {
+   "title": "Paid Inclusion & Trusted Feeds",
+   "date": "2004-03-04",
+   "path": "texts/barry-schwartz/2004-03-04--paid-inclusion-trusted-feeds.txt"
+  },
+  "bijan-sabet": {
+   "title": "Thoughts about \u201cthe winner takes it all\u201d",
+   "date": "2009-10-22",
+   "path": "texts/bijan-sabet/2009-10-22--thoughts-about-the-winner-takes-it-all.txt"
+  },
+  "bill-gurley": {
+   "title": "Bleak VC Quarter? Why?",
+   "date": "2008-06-30",
+   "path": "texts/bill-gurley/2008-06-30--bleak-vc-quarter-why.txt"
+  },
+  "brian-clark": {
+   "title": "10 Steps to a Viral Tutorial That Sells",
+   "date": "2006-10-02",
+   "path": "texts/brian-clark/2006-10-02--10-steps-to-a-viral-tutorial-that-sells.txt"
+  },
+  "brian-solis": {
+   "title": "You.tv - A New Chapter in Lifecasting is Already Unfolding",
+   "date": "2007-04-01",
+   "path": "texts/brian-solis/2007-04-01--you-tv-a-new-chapter-in-lifecasting-is-already-unfoldin.txt"
+  },
+  "chris-dixon": {
+   "title": "The most important question to ask before taking seed money",
+   "date": "2009-10-30",
+   "path": "texts/chris-dixon/2009-10-30--the-most-important-question-to-ask-before-taking-seed-m.txt"
+  },
+  "danah-boyd": {
+   "title": "thieves play cribbage | danah boyd",
+   "date": "2002-11-11",
+   "path": "texts/danah-boyd/2002-11-11--thieves-play-cribbage-danah-boyd.txt"
+  },
+  "daniel-pink": {
+   "title": "The peril of giving people what they want",
+   "date": "2010-06-01",
+   "path": "texts/daniel-pink/2010-06-01--the-peril-of-giving-people-what-they-want.txt"
+  },
+  "dave-brock": {
+   "title": "Have You Earned The Right To Engage In Consultative Selling?",
+   "date": "2009-07-29",
+   "path": "texts/dave-brock/2009-07-29--have-you-earned-the-right-to-engage-in-consultative-sel.txt"
+  },
+  "dave-winer": {
+   "title": "Business Week misquote (Scripting News)",
+   "date": "2007-05-09",
+   "path": "texts/dave-winer/2007-05-09--business-week-misquote-scripting-news.txt"
+  },
+  "david-cohen": {
+   "title": "Announcing Boulder Open Angel Forum #2 - August 4, 2010",
+   "date": "2010-07-03",
+   "path": "texts/david-cohen/2010-07-03--announcing-boulder-open-angel-forum-2-august-4-2010.txt"
+  },
+  "david-meerman-scott": {
+   "title": "Journalists Take Note: The Web is a City",
+   "date": "2005-03-01",
+   "path": "texts/david-meerman-scott/2005-03-01--journalists-take-note-the-web-is-a-city.txt"
+  },
+  "david-skok": {
+   "title": "Designing Metrics for Success",
+   "date": "2010-02-01",
+   "path": "texts/david-skok/2010-02-01--designing-metrics-for-success.txt"
+  },
+  "dharmesh-shah": {
+   "title": "Startups: 10 Things MBA Schools Won't Teach You",
+   "date": "2009-06-15",
+   "path": "texts/dharmesh-shah/2009-06-15--startups-10-things-mba-schools-won-t-teach-you.txt"
+  },
+  "doc-searls": {
+   "title": "Answering questions about Facebook, Microsoft and Identity",
+   "date": "2007-10-26",
+   "path": "texts/doc-searls/2007-10-26--answering-questions-about-facebook-microsoft-and-identi.txt"
+  },
+  "eric-raymond": {
+   "title": "On Socially Responsible Programming",
+   "date": "1999-10-02",
+   "path": "texts/eric-raymond/1999-10-02--on-socially-responsible-programming.txt"
+  },
+  "eric-ries": {
+   "title": "Lessons Learned: When NOT to listen to your users; when NOT to rely on split-tests",
+   "date": "2008-10-01",
+   "path": "texts/eric-ries/2008-10-01--lessons-learned-when-not-to-listen-to-your-users-when-n.txt"
+  },
+  "fred-wilson": {
+   "title": "Mahalo.com",
+   "date": "2007-05-01",
+   "path": "texts/fred-wilson/2007-05-01--mahalo-com.txt"
+  },
+  "horace-dediu": {
+   "title": "Will Apple rule the iPad market? (part II)",
+   "date": "2010-05-18",
+   "path": "texts/horace-dediu/2010-05-18--will-apple-rule-the-ipad-market-part-ii.txt"
+  },
+  "jakob-nielsen": {
+   "title": "WebTV Usability Review - NN/GNielsen Norman GroupNielsen Norman Group",
+   "date": "1997-01-31",
+   "path": "texts/jakob-nielsen/1997-01-31--webtv-usability-review-nn-gnielsen-norman-groupnielsen.txt"
+  },
+  "jason-cohen": {
+   "title": "Discount gambitMoonSunTwitterLinkedInBlueskyEmailCopy Link",
+   "date": "2008-03-01",
+   "path": "texts/jason-cohen/2008-03-01--discount-gambitmoonsuntwitterlinkedinblueskyemailcopy-l.txt"
+  },
+  "jeff-jarvis": {
+   "title": "It's about trust",
+   "date": "2005-11-06",
+   "path": "texts/jeff-jarvis/2005-11-06--it-s-about-trust.txt"
+  },
+  "jeffrey-zeldman": {
+   "title": "May Day, May Day",
+   "date": "2006-05-01",
+   "path": "texts/jeffrey-zeldman/2006-05-01--may-day-may-day.txt"
+  },
+  "jeremiah-owyang": {
+   "title": "\u201cMarketers get people to buy stuff that they don\u2019t need\u201d",
+   "date": "2008-02-10",
+   "path": "texts/jeremiah-owyang/2008-02-10--marketers-get-people-to-buy-stuff-that-they-don-t-need.txt"
+  },
+  "joel-spolsky": {
+   "title": "25",
+   "date": "2004-03-01",
+   "path": "texts/joel-spolsky/2004-03-01--25.txt"
+  },
+  "john-battelle": {
+   "title": "John Battelle's Search Blog The Search Papers: Challenges in Web Search Engines (A Google Paper, 2002)",
+   "date": "2003-12-08",
+   "path": "texts/john-battelle/2003-12-08--john-battelle-s-search-blog-the-search-papers-challenge.txt"
+  },
+  "john-gruber": {
+   "title": "Daring Fireball: Movable Type Smart Quote Devilry",
+   "date": "2002-08-01",
+   "path": "texts/john-gruber/2002-08-01--daring-fireball-movable-type-smart-quote-devilry.txt"
+  },
+  "mack-collier": {
+   "title": "The Viral Garden: Don't you want to be a rockstar?",
+   "date": "2009-01-01",
+   "path": "texts/mack-collier/2009-01-01--the-viral-garden-don-t-you-want-to-be-a-rockstar.txt"
+  },
+  "mark-cuban": {
+   "title": "The Movie Business Challenge",
+   "date": "2006-07-23",
+   "path": "texts/mark-cuban/2006-07-23--the-movie-business-challenge.txt"
+  },
+  "martin-fowler": {
+   "title": "The XP 2000 Conference",
+   "date": "2000-07-07",
+   "path": "texts/martin-fowler/2000-07-07--the-xp-2000-conference.txt"
+  },
+  "michael-hyatt": {
+   "title": "Recovering the Lost Art of Note Taking",
+   "date": "2005-04-01",
+   "path": "texts/michael-hyatt/2005-04-01--recovering-the-lost-art-of-note-taking.txt"
+  },
+  "michael-lopp": {
+   "title": "Reorgs for the Average Joe",
+   "date": "2003-03-14",
+   "path": "texts/michael-lopp/2003-03-14--reorgs-for-the-average-joe.txt"
+  },
+  "naval-ravikant": {
+   "title": "The Aging Entrepreneur",
+   "date": "2007-08-08",
+   "path": "texts/naval-ravikant/2007-08-08--the-aging-entrepreneur.txt"
+  },
+  "nicholas-carr": {
+   "title": "IT doesn\u2019t matter, part 8",
+   "date": "2007-01-01",
+   "path": "texts/nicholas-carr/2007-01-01--it-doesn-t-matter-part-8.txt"
+  },
+  "paul-buchheit": {
+   "title": "Paul Buchheit: Three types of ideas",
+   "date": "2007-06-01",
+   "path": "texts/paul-buchheit/2007-06-01--paul-buchheit-three-types-of-ideas.txt"
+  },
+  "paul-graham": {
+   "title": "Will Filters Kill Spam?",
+   "date": "2003-01-01",
+   "path": "texts/paul-graham/2003-01-01--will-filters-kill-spam.txt"
+  },
+  "penelope-trunk": {
+   "title": "6 questions with LinkedIn co-founder Konstantin Guericke",
+   "date": "2006-10-31",
+   "path": "texts/penelope-trunk/2006-10-31--6-questions-with-linkedin-co-founder-konstantin-guerick.txt"
+  },
+  "peter-merholz": {
+   "title": "peterme.com: American Candor",
+   "date": "2003-08-27",
+   "path": "texts/peter-merholz/2003-08-27--peterme-com-american-candor.txt"
+  },
+  "rand-fishkin": {
+   "title": "A Long List of Competitive Link Searches - MozMoz logoMenu openMenu closeSearchMoz logo",
+   "date": "2006-11-02",
+   "path": "texts/rand-fishkin/2006-11-02--a-long-list-of-competitive-link-searches-mozmoz-logomen.txt"
+  },
+  "rob-walling": {
+   "title": "One of the Most Time Consuming Startup Roadblocks",
+   "date": "2009-07-14",
+   "path": "texts/rob-walling/2009-07-14--one-of-the-most-time-consuming-startup-roadblocks.txt"
+  },
+  "robert-c-martin": {
+   "title": "All-hotels.com",
+   "date": "2007-01-23",
+   "path": "texts/robert-c-martin/2007-01-23--all-hotels-com.txt"
+  },
+  "scott-hanselman": {
+   "title": "Are you from the Northwest?",
+   "date": "2005-09-03",
+   "path": "texts/scott-hanselman/2005-09-03--are-you-from-the-northwest.txt"
+  },
+  "simon-willison": {
+   "title": "Iterating over a sequence in reverse",
+   "date": "2004-01-28",
+   "path": "texts/simon-willison/2004-01-28--iterating-over-a-sequence-in-reverse.txt"
+  },
+  "steve-blank": {
+   "title": "Steve Blank There\u2019s a Pattern Here",
+   "date": "2009-02-23",
+   "path": "texts/steve-blank/2009-02-23--steve-blank-there-s-a-pattern-here.txt"
+  },
+  "steve-pavlina": {
+   "title": "Triple Your Personal Productivity",
+   "date": "2005-03-01",
+   "path": "texts/steve-pavlina/2005-03-01--triple-your-personal-productivity.txt"
+  },
+  "steve-souders": {
+   "title": "Purple Hippo at SXSW",
+   "date": "2008-03-13",
+   "path": "texts/steve-souders/2008-03-13--purple-hippo-at-sxsw.txt"
+  },
+  "steve-yegge": {
+   "title": "Stevey's Blog Rants: Math For Programmers",
+   "date": "2006-03-01",
+   "path": "texts/steve-yegge/2006-03-01--stevey-s-blog-rants-math-for-programmers.txt"
+  },
+  "tim-bray": {
+   "title": "ongoing by Tim Bray \u00b7 Extended Test Drive",
+   "date": "2003-01-01",
+   "path": "texts/tim-bray/2003-01-01--ongoing-by-tim-bray-extended-test-drive.txt"
+  },
+  "tim-ferriss": {
+   "title": "How to Lose 20 lbs. of Fat in 30 Days... Without Doing Any Exercise",
+   "date": "2007-04-06",
+   "path": "texts/tim-ferriss/2007-04-06--how-to-lose-20-lbs-of-fat-in-30-days-without-doing-any.txt"
+  }
+ }
+}
