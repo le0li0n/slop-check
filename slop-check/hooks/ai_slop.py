@@ -133,6 +133,16 @@ _CANDOUR_MOD = (r"(?:most|more|only|real|single|simple|plain|short|blunt|"
                 r"disarmingly|plainly|simply|frankly|candidly|completely|"
                 r"fully|unusually)")
 
+# What stands in for "a machine" in "the part no tool supplies". Closed for
+# the same reason as the list above: with \w+ here the rule takes "the one
+# thing no customer wants" and every other ordinary sentence about people.
+_TOOL_NOUN = (r"(?:tools?|tooling|models?|agents?|AI|AIs|LLMs?|software|"
+              r"systems?|automations?|prompts?|prompting|machines?|"
+              r"algorithms?|bots?|chatbots?|scripts?|platforms?|apps?|"
+              r"dashboards?|programs?|computers?|workflows?|templates?|"
+              r"frameworks?|playbooks?|spreadsheets?|technology|tech|robots?|"
+              r"APIs?|CRMs?|databases?|code)")
+
 # (section, weight, pattern, what to do instead)
 LINE_PATTERNS = [
     # §1 Inflated claims about importance and legacy
@@ -520,6 +530,25 @@ LINE_PATTERNS = [
     ("CL", MED,  r"\b(?:the|a) (?:step|thing|piece|detail|question|stage|bottleneck|reason|part|bit) (?:that |which )?(?:most|almost (?:all|every)\w*|nearly (?:all|every)\w*|so many|too many) \w+(?: \w+)? (?:miss|skip|overlook|forget|ignore|gloss over|underestimate|neglect)\b"
      r"|\bwhat (?:most|almost everyone|nearly everyone|everyone) (?:\w+ ){0,2}(?:miss|skip|overlook|forget|ignores?|gets? wrong)\b",
      "say what it is and why it matters, without the crowd"),
+    # "Knowing which 92 is the part no tool supplies." "Taste is the thing no
+    # model can replace." The same slot-for-a-noun as "the part that" above,
+    # with a machine as the foil: it says the human contribution is special
+    # and stops before saying what that contribution is. None of the
+    # nobody / "the part that" rules reach it, because the subject is "no
+    # tool" and there is no "that". `[Jared, 2026-11-22]`
+    #
+    # Both slots are closed lists on purpose. The slot noun must sit directly
+    # before "no", so "the one field no enrichment tool returned" and "the
+    # only part number no supplier had in stock" are left alone, and the noun
+    # after "no" has to be tool-like, with up to two modifiers ("no large
+    # language model"). The verb is left open: supplies, replaces, can fake,
+    # gives you -- the surface forms are unlimited. Weighted rather than
+    # HARD because the literal version is a plain fact a regex cannot tell
+    # apart: "email is the one thing no enrichment tool returned".
+    ("CL", MED,  r"\bthe (?:(?:one|only|single|last) )?(?:part|thing|piece|bit|one) "
+                 r"(?:that |which )?(?:no|not even (?:a|an|the)|no amount of) "
+                 r"(?:[\w-]+ ){0,2}?" + _TOOL_NOUN + r"\b",
+     "say what it is"),
 ]
 
 COMPILED = [

@@ -38,6 +38,13 @@ SHOULD_FLAG = [
     "Start with what customers actually want.",
     "What's actually happening is simpler.",
     "Here is what the data actually shows.",
+    "Knowing which 92 is the part no tool supplies.",
+    "Taste is the thing no model can replace.",
+    "Judgment is the one piece no AI gives you.",
+    "That context is the part that no agent can fake.",
+    "That's the bit no language model will ever learn.",
+    "Trust is the one thing not even the best model can generate.",
+    "Relationships are the part no amount of automation replaces.",
 ]
 
 SHOULD_NOT_FLAG = [
@@ -72,6 +79,15 @@ SHOULD_NOT_FLAG = [
     "What a year. We actually shipped it.",
     "What did the customer want?",
     "Actually, what matters is the price.",
+    "Email is the one field no enrichment tool returned for this account.",
+    "No tool supplies this data.",
+    "The part of the pipeline that fails is the sync step.",
+    "The man nobody knew.",
+    "It was the only part number no supplier had in stock.",
+    "The one thing no customer wants is a surprise invoice.",
+    "This is the part no longer covered by the warranty.",
+    "There is no tool for the part we need.",
+    "It was the one piece no museum would lend.",
 ]
 
 def hits(t):
