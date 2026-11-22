@@ -38,6 +38,7 @@ Current model output rarely uses the classic words (delve, tapestry). It argues 
 
 - "The part that / which / where...", "the bit that...": a slot where the noun should be. Name the thing. High. "The part of the process that fails" is fine; naming what the part belongs to is the fix.
 - Crowd-miss constructions: "the step most people skip", "the thing most founders overlook", "that's what most people miss", "the detail so many teams forget". An unnamed crowd stands in for evidence that the reader is about to be smarter than them. Say what it is and why it matters. Med. "The mistake many organizations make" is ordinary prose and is left alone.
+- "The part no tool supplies", "the thing no model can replace", "the one piece no AI gives you": the human contribution is called special and never named. Say what it is. Med, because the literal version is a plain fact: "email is the one thing no enrichment tool returned" stays.
 - "But here's the thing", "Here's the thing", "The thing is,", "The thing is / that matters / worth...", "Here's the kicker / catch / twist", "The real question is", "What really matters", "At its core,", "The deeper issue", "The heart of the matter", "In reality,". Say it.
 - "The one that didn't:" followed by a name. "The ones who win / lose / survive..." sorting the world into two kinds of people.
 - "The uncomfortable / inconvenient / hard truth", "hiding in plain sight", "the dirty / open secret". High.
